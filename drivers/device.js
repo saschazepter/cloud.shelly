@@ -4,6 +4,7 @@ const Homey = require('homey');
 const Util = require('../lib/util.js');
 const WebSocket = require('ws');
 const tinycolor = require("tinycolor2");
+const {getIp} = require('../lib/localip.js');
 
 class ShellyDevice extends Homey.Device {
 
@@ -147,16 +148,16 @@ class ShellyDevice extends Homey.Device {
 
       // validate communication configuration
       if (!this.getStoreValue('battery') && this.getStoreValue('channel') === 0 && this.getStoreValue('communication') === 'coap') {
-        const homey_ip = await this.homey.cloud.getLocalAddress();
+        const homey_ip = await getIp(this.homey);
         if (this.getStoreValue('device_settings').hasOwnProperty("coiot")) {
-          if (this.getStoreValue('device_settings').coiot.enabled === false || (this.getStoreValue('device_settings').coiot.enabled === true && !this.getStoreValue('device_settings').coiot.peer.includes(homey_ip.substring(0, homey_ip.length-3)) && this.getStoreValue('device_settings').coiot.peer !== "")) {
+          if (this.getStoreValue('device_settings').coiot.enabled === false || (this.getStoreValue('device_settings').coiot.enabled === true && !this.getStoreValue('device_settings').coiot.peer.includes(homey_ip) && this.getStoreValue('device_settings').coiot.peer !== "")) {
             await this.util.setUnicast(this.getSetting('address'), this.getSetting('username'), this.getSetting('password'));
           }
         }
       } else if (!this.getStoreValue('battery') && this.getStoreValue('channel') === 0 && (this.getStoreValue('communication') === 'websocket' || this.getStoreValue('communication') === 'gateway')) {
-        const homey_ip = await this.homey.cloud.getLocalAddress();
+        const homey_ip = await getIp(this.homey);
         if (this.getStoreValue('device_settings').hasOwnProperty("ws")) {
-          if (this.getStoreValue('device_settings').ws.enable === false || !this.getStoreValue('device_settings').ws.server.includes(homey_ip.substring(0, homey_ip.length-3))) {
+          if (this.getStoreValue('device_settings').ws.enable === false || !this.getStoreValue('device_settings').ws.server.includes(homey_ip)){
             await this.util.setWsServer(this.getSetting('address'), this.getSetting('password'));
           }
         }
