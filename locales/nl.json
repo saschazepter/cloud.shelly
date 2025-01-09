@@ -52,7 +52,8 @@
     "overcurrent": "Error: overcurrent.",
     "maximum_dim_duration": "Shelly apparaten hebben een maximum van 5 seconden dim tijd",
     "oauth2_repairing": "Apparaat moet opnieuw geauthenticeerd worden vanwege wijzigingen in de cloud communicatie, gebruik de re-pair optie onder de apparaat onderhoud instellingen in Homey.",
-    "deprecated": "**Waarschuwing:** __name__ maakt gebruik van een driver die al bijna 2 jaar verouderd is. Deze driver wordt verwijderd bij de volgende app-update. Koppel uw apparaat opnieuw om problemen te voorkomen. Status updates zijn nu uitgeschakeld voor dit apparaat."
+    "deprecated": "**Waarschuwing:** __name__ maakt gebruik van een driver die al bijna 2 jaar verouderd is. Deze driver wordt verwijderd bij de volgende app-update. Koppel uw apparaat opnieuw om problemen te voorkomen. Status updates zijn nu uitgeschakeld voor dit apparaat.",
+    "startup": "Dit apparaat wordt geconfigureerd, even geduld a.u.b."
   },
   "driver": {
     "wrongdevice": "Het Shelly apparaat dat je probeert te koppelen komt niet overeen met het gekozen Shelly apparaat in het apparaten toevoegscherm."
