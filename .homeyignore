@@ -1,0 +1,12 @@
+.git*
+.idea
+types
+.editorconfig
+.eslint*
+*.ts
+env.json.dist
+renovate.json
+tsconfig.json
+LICENSE
+package-lock.json
+interview.json
