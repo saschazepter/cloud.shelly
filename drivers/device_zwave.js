@@ -41,7 +41,9 @@ class ShellyZwaveDevice extends ZwaveDevice {
       }
 
       // Listen for calibration maintenance action for Wave Shutter
-      this.registerCapabilityListener('button.calibration', this._onCalibrationHandler.bind(this));
+      if (this.hasCapability('button.calibration')) {
+        this.registerCapabilityListener('button.calibration', this._onCalibrationHandler.bind(this));
+      }
 
       // Device is ready to be used, mark as available
       await this.setAvailable();
