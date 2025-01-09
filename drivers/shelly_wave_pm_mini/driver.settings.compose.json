@@ -7,11 +7,9 @@
     },
     "children": [
       {
-        "id": "zwavePowerReportOnChangeO1",
         "$extends": "zwavePowerReportOnChangeO1"
       },
       {
-        "id": "zwaveMinimalTimePowerReportO1",
         "$extends": "zwaveMinimalTimePowerReportO1"
       }
     ]
@@ -24,7 +22,6 @@
     },
     "children": [
       {
-        "id": "zwaveResetToDefaultAndLeave",
         "$extends": "zwaveResetToDefaultAndLeave"
       }
     ]

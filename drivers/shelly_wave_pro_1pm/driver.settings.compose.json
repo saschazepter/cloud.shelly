@@ -7,23 +7,18 @@
     },
     "children": [
       {
-        "id": "zwaveSwitchTypeSW1",
         "$extends": "zwaveSwitchTypeSW1"
       },
       {
-        "id": "zwaveRestoreStateO1",
         "$extends": "zwaveRestoreStateO1"
       },
       {
-        "id": "zwaveAutoOffO1",
         "$extends": "zwaveAutoOffO1"
       },
       {
-        "id": "zwaveAutoOnO1",
         "$extends": "zwaveAutoOnO1"
       },
       {
-        "id": "zwaveContactTypeO1",
         "$extends": "zwaveContactTypeO1"
       }
     ]
@@ -36,7 +31,6 @@
     },
     "children": [
       {
-        "id": "zwaveSwitchTypeSW2",
         "$extends": "zwaveSwitchTypeSW2"
       }
     ]
@@ -49,11 +43,9 @@
     },
     "children": [
       {
-        "id": "zwavePowerReportOnChangeO1",
         "$extends": "zwavePowerReportOnChangeO1"
       },
       {
-        "id": "zwaveMinimalTimePowerReportO1",
         "$extends": "zwaveMinimalTimePowerReportO1"
       }
     ]
@@ -66,7 +58,6 @@
     },
     "children": [
       {
-        "id": "zwaveResetToDefaultAndLeave",
         "$extends": "zwaveResetToDefaultAndLeave"
       }
     ]

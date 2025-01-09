@@ -7,23 +7,18 @@
     },
     "children": [
       {
-        "id": "zwaveSwitchTypeSW1",
         "$extends": "zwaveSwitchTypeSW1"
       },
       {
-        "id": "zwaveOutputDetached1",
         "$extends": "zwaveOutputDetached1"
       },
       {
-        "id": "zwaveRestoreStateO1",
         "$extends": "zwaveRestoreStateO1"
       },
       {
-        "id": "zwaveAutoOffO1",
         "$extends": "zwaveAutoOffO1"
       },
       {
-        "id": "zwaveAutoOnO1",
         "$extends": "zwaveAutoOnO1"
       }
     ]
@@ -36,11 +31,9 @@
     },
     "children": [
       {
-        "id": "zwaveSwitchTypeSW2",
         "$extends": "zwaveSwitchTypeSW2"
       },
       {
-        "id": "zwaveOutputDetached2",
         "$extends": "zwaveOutputDetached2"
       }
     ]
@@ -53,11 +46,9 @@
     },
     "children": [
       {
-        "id": "zwavePowerReportOnChangeO1",
         "$extends": "zwavePowerReportOnChangeO1"
       },
       {
-        "id": "zwaveMinimalTimePowerReportO1",
         "$extends": "zwaveMinimalTimePowerReportO1"
       }
     ]
@@ -70,35 +61,27 @@
     },
     "children": [
       {
-        "id": "dimmerCalibration",
         "$extends": "dimmerCalibration"
       },
       {
-        "id": "dimmerMinValue",
         "$extends": "dimmerMinValue"
       },
       {
-        "id": "dimmerDimTime",
         "$extends": "dimmerDimTime"
       },
       {
-        "id": "dimmerFadeRate",
         "$extends": "dimmerFadeRate"
       },
       {
-        "id": "dimmerMinBrightness",
         "$extends": "dimmerMinBrightness"
       },
       {
-        "id": "dimmerDualButton",
         "$extends": "dimmerDualButton"
       },
       {
-        "id": "dimmerMaxValue",
         "$extends": "dimmerMaxValue"
       },
       {
-        "id": "zwaveResetToDefaultAndLeave",
         "$extends": "zwaveResetToDefaultAndLeave"
       }
     ]
