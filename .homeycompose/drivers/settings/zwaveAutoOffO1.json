@@ -1,5 +1,4 @@
 {
-  "id": "zwaveAutoOffO1",
   "type": "number",
   "label": {
     "en": "Auto OFF O1 with timer",

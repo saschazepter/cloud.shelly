@@ -1,5 +1,4 @@
 {
-  "id": "zwaveOutputDetached2",
   "type": "dropdown",
   "label": {
     "en": "Output O2 Detached",

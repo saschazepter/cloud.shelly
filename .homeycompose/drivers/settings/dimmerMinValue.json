@@ -1,5 +1,4 @@
 {
-  "id": "dimmerMinValue",
   "type": "number",
   "label": {
     "en": "Min dimming value for O1",

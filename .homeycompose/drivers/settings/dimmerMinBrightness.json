@@ -1,5 +1,4 @@
 {
-  "id": "dimmerMinBrightness",
   "type": "number",
   "label": {
     "en": "Min brightness for O1",

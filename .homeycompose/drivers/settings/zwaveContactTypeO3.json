@@ -1,5 +1,4 @@
 {
-  "id": "zwaveContactTypeO3",
   "type": "dropdown",
   "label": {
     "en": "Contact Type O3 - NO/NC",

@@ -1,5 +1,4 @@
 {
-  "id": "zwaveReverseInputsO1O2",
   "type": "dropdown",
   "label": {
     "en": "Swap Inputs SW1 & SW2",

@@ -1,5 +1,4 @@
 {
-  "id": "dimmerCalibration",
   "type": "dropdown",
   "label": {
     "en": "Forced Dimmer Calibration",

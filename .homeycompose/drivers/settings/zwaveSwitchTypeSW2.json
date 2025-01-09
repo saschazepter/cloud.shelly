@@ -1,5 +1,4 @@
 {
-  "id": "zwaveSwitchTypeSW2",
   "type": "dropdown",
   "label": {
     "en": "Switch Type SW2",

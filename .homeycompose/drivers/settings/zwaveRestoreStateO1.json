@@ -1,5 +1,4 @@
 {
-  "id": "zwaveRestoreStateO1",
   "type": "dropdown",
   "label": {
     "en": "Restore state of O1 after power failure",

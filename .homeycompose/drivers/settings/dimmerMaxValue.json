@@ -1,5 +1,4 @@
 {
-  "id": "dimmerMaxValue",
   "type": "number",
   "label": {
     "en": "Max dimming value for O1",

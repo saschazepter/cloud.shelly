@@ -1,5 +1,4 @@
 {
-  "id": "dimmerDualButton",
   "type": "dropdown",
   "label": {
     "en": "SW1 & SW2 Dual Button Mode",

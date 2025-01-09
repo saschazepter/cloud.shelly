@@ -1,5 +1,4 @@
 {
-  "id": "address",
   "type": "text",
   "value": "0.0.0.0",
   "label": {

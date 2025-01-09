@@ -1,5 +1,4 @@
 {
-  "id": "server_address",
   "type": "text",
   "value": "https://shelly-8-eu.shelly.cloud",
   "label": {

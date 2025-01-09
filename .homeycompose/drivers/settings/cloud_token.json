@@ -1,5 +1,4 @@
 {
-  "id": "cloud_token",
   "type": "password",
   "value": "",
   "label": {

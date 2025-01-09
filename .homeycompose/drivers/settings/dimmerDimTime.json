@@ -1,5 +1,4 @@
 {
-  "id": "dimmerDimTime",
   "type": "number",
   "label": {
     "en": "Dimming time for O1",

@@ -1,5 +1,4 @@
 {
-  "id": "zwaveAutoOffO2",
   "type": "number",
   "label": {
     "en": "Auto OFF O2 with timer",

@@ -1,5 +1,4 @@
 {
-  "id": "beacon_timeout",
   "type": "number",
   "value": 5,
   "min": 1,

@@ -1,5 +1,4 @@
 {
-  "id": "zwavePowerReportOnChangeO1",
   "type": "number",
   "label": {
     "en": "Power report on change for O1",

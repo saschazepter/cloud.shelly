@@ -1,5 +1,4 @@
 {
-  "id": "zwaveResetToDefaultAndLeave",
   "type": "dropdown",
   "label": {
     "en": "Reset parameters to default and leave network",

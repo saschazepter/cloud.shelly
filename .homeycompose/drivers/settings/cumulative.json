@@ -1,5 +1,4 @@
 {
-	"id": "cumulative",
 	"type": "checkbox",
 	"label": {
 		"en": "Make cumulative",

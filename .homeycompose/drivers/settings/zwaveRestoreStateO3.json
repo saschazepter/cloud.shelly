@@ -1,5 +1,4 @@
 {
-  "id": "zwaveRestoreStateO3",
   "type": "dropdown",
   "label": {
     "en": "Restore state of O3 after power failure",

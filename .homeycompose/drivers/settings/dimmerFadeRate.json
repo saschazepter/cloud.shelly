@@ -1,5 +1,4 @@
 {
-  "id": "dimmerFadeRate",
   "type": "dropdown",
   "label": {
     "en": "Fade rate for O1",

@@ -1,5 +1,4 @@
 {
-  "id": "zwaveReverseOutputsO1O2",
   "type": "dropdown",
   "label": {
     "en": "Swap Outputs O1 & O2",

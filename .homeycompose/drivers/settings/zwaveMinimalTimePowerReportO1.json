@@ -1,5 +1,4 @@
 {
-  "id": "zwaveMinimalTimePowerReportO1",
   "type": "number",
   "label": {
     "en": "Minimal time between reports for O1",
