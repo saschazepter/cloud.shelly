@@ -492,7 +492,7 @@ class ShellyDevice extends Homey.Device {
       switch(this.getStoreValue('communication')) {
         case 'websocket': {
           const rgb_values = color.toRgb();
-          return await this.util.sendRPCCommand('/rpc/'+ this.getStoreValue('config').extra.component +'.Set?id='+ this.getStoreValue('channel') +'&rgb=['+ Number(rgb_values.r) +','+ Number(rgb_values.g) +','+ Number(rgb_values.b) +']', this.getSetting('address'), this.getSetting('password'));
+          return await this.util.sendRPCCommand('/rpc/'+ this.getStoreValue('config').extra.component +'.Set?id='+ this.getStoreValue('channel') +'&rgb=' + encodeURIComponent('[' + Number(rgb_values.r) +','+ Number(rgb_values.g) +','+ Number(rgb_values.b) +']'), this.getSetting('address'), this.getSetting('password'));
         }
         case 'coap': {
           if (this.hasCapability('light_mode')) {
