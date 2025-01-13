@@ -886,5 +886,8 @@
   },
   "3.35.0": {
     "en": "Detect failed temperature sensors, add missing energy options to Pro 4PM, deprecate set cumulative option flow card (this is forced from the app configuration, and can be disabled using the Homey interface), improve invalid value handle from gen1 devices."
+  },
+  "3.36.0": {
+    "en": "Fix communication issues with password protected devices (RGB control, virtual component retrieval and BLE proxy script control), add missing second input to Pro 1PM, add flow cards to control BLE scripts"
   }
 }
