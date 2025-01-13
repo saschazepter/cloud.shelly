@@ -279,6 +279,19 @@ class ShellyApp extends OAuth2App {
           }
         })
 
+      this.homey.flow.getActionCard('bleStartProxy')
+          .registerRunListener(args => args.device.triggerCapabilityListener('button.enable_ble_script', true));
+
+      this.homey.flow.getActionCard('bleStopProxy')
+          .registerRunListener(args => args.device.triggerCapabilityListener('button.disable_ble_script', true));
+
+      this.homey.flow.getActionCard('bleRestartProxy')
+          .registerRunListener(async (args) => {
+            await args.device.triggerCapabilityListener('button.disable_ble_script', true);
+            await new Promise(resolve => this.homey.setTimeout(resolve, 1000));
+            await args.device.triggerCapabilityListener('button.enable_ble_script', true);
+          });
+
       // GENERIC DEVICE TRIGGER CARDS
 
       /* action events */

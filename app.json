@@ -3234,6 +3234,48 @@
       },
       {
         "title": {
+          "en": "Restart BLE Proxy",
+          "nl": "Herstart BLE Proxy"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=shelly&capabilities=button.enable_ble_script,button.disable_ble_script"
+          }
+        ],
+        "id": "bleRestartProxy"
+      },
+      {
+        "title": {
+          "en": "Start BLE Proxy",
+          "nl": "Start BLE Proxy"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=shelly&capabilities=button.enable_ble_script"
+          }
+        ],
+        "id": "bleStartProxy"
+      },
+      {
+        "title": {
+          "en": "Stop BLE Proxy",
+          "nl": "Stop BLE Proxy"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=shelly&capabilities=button.disable_ble_script"
+          }
+        ],
+        "id": "bleStopProxy"
+      },
+      {
+        "title": {
           "en": "Switch Effect",
           "nl": "Effect schakelen"
         },

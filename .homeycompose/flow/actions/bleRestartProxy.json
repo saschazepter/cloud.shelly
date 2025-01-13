@@ -1,0 +1,13 @@
+{
+  "title": {
+    "en": "Restart BLE Proxy",
+    "nl": "Herstart BLE Proxy"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": "driver_id=shelly&capabilities=button.enable_ble_script,button.disable_ble_script"
+    }
+  ]
+}
