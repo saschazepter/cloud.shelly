@@ -99,7 +99,8 @@ class ShellyDriver extends Homey.Driver {
 
           if (typeof device_config === 'undefined') {
             this.error('No device config found for device with hostname', hostname);
-            throw new Error(this.homey.__('pair.no_device_config') + ' Device has hostname:' + hostname);
+            this.homey.app.homeyLog.captureMessage(`Device config missing for hostname ${hostname}`).catch(this.error);
+            throw new Error(this.homey.__('pair.no_device_config') + ' Device has hostname: ' + hostname);
           }
 
           switch(device_config.gen) {
@@ -145,12 +146,13 @@ class ShellyDriver extends Homey.Driver {
                   if (result.profile === "cover") {
                     device_config = this.util.getDeviceConfig(hostname + 'roller-', 'hostname');
                   } else {
-                    device_config = this.util.getDeviceConfig(hostname + result.profile +'-', 'hostname');
+                    device_config = this.util.getDeviceConfig(hostname + result.profile + '-', 'hostname');
                   }
 
                   if (typeof device_config === 'undefined') {
-                    this.error('No device config found for device with hostname', hostname + result.profile +'-');
-                    throw new Error(this.homey.__('pair.no_device_config') + ' Device has hostname:' + hostname + result.profile +'-');
+                    this.error('No device config found for device with hostname', hostname + ', ' + result.profile);
+                    this.homey.app.homeyLog.captureMessage(`Device config missing for hostname ${hostname} and profile ${result.profile}`).catch(this.error);
+                    throw new Error(this.homey.__('pair.no_device_config') + ' Device has hostname: ' + hostname + ', ' + result.profile);
                   }
 
                 }
@@ -236,7 +238,8 @@ class ShellyDriver extends Homey.Driver {
 
         if (typeof device_config === 'undefined') {
           this.log('No device config found for device with hostname', hostname);
-          throw new Error(this.homey.__('pair.no_device_config'));
+          this.homey.app.homeyLog.captureMessage(`Device config missing for hostname ${hostname}`).catch(this.error);
+          throw new Error(this.homey.__('pair.no_device_config') + ' Device has hostname: ' + hostname);
         }
 
         switch(device_config.gen) {
@@ -270,12 +273,13 @@ class ShellyDriver extends Homey.Driver {
                 if (result.profile === "cover") {
                   device_config = this.util.getDeviceConfig(hostname + 'roller-', 'hostname');
                 } else {
-                  device_config = this.util.getDeviceConfig(hostname + result.profile +'-', 'hostname');
+                  device_config = this.util.getDeviceConfig(hostname + result.profile + '-', 'hostname');
                 }
 
                 if (typeof device_config === 'undefined') {
-                  this.error('No device config found for device with hostname', hostname + result.profile +'-');
-                  throw new Error(this.homey.__('pair.no_device_config') + ' Device has hostname:' + hostname + result.profile +'-');
+                  this.error('No device config found for device with hostname', hostname + ', ' + result.profile);
+                  this.homey.app.homeyLog.captureMessage(`Device config missing for hostname ${hostname} and profile ${result.profile}`).catch(this.error);
+                  throw new Error(this.homey.__('pair.no_device_config') + ' Device has hostname: ' + hostname + ', ' + result.profile);
                 }
 
               }

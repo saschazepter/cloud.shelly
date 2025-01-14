@@ -54,7 +54,8 @@ class ShellyCloudDriver extends OAuth2Driver {
 
             if (typeof device_config === 'undefined') {
               this.error('No device config found for device with device code', device_code);
-              throw new Error(this.homey.__('pair.no_device_config') + ' Device has device code:' + device_code);
+              this.homey.app.homeyLog.captureMessage(`Device config missing for device code ${device_code}`).catch(this.error);
+              throw new Error(this.homey.__('pair.no_device_config') + ' Device has device code: ' + device_code);
             }
 
             /* update device config if it's a gen1 roller shutter */
@@ -80,7 +81,8 @@ class ShellyCloudDriver extends OAuth2Driver {
 
             if (typeof device_config === 'undefined') {
               this.error('No device config found for device with device code', device_code);
-              throw new Error(this.homey.__('pair.no_device_config') + ' Device has device code:' + device_code);
+              this.homey.app.homeyLog.captureMessage(`Device config missing for device code ${device_code}`).catch(this.error);
+              throw new Error(this.homey.__('pair.no_device_config') + ' Device has device code: ' + device_code);
             }
     
             devices.push({
