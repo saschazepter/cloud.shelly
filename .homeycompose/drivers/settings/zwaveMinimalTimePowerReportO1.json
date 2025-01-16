@@ -14,8 +14,8 @@
     "nl": "s"
   },
   "hint": {
-    "en": "This parameter (39) defines the minimum time between sending reports to Homey for output 1.",
-    "nl": "Deze parameter (39) bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+    "en": "Defines the minimum time between sending reports to Homey for output 1.",
+    "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
   },
   "zwave": {
     "index": 39,

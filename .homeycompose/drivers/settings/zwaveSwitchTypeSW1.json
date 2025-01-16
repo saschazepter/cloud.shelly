@@ -1,7 +1,7 @@
 {
   "type": "dropdown",
   "label": {
-    "en": "Switch Type SW1",
+    "en": "Switch type SW1",
     "nl": "Schakelaar type SW1"
   },
   "value": "2",
@@ -29,8 +29,8 @@
     }
   ],
   "hint": {
-    "en": "This parameter (1) determines the type of switch connected to input 1.",
-    "nl": "Deze parameter (1) specificeert het type schakelaar dat is aangesloten op input 1."
+    "en": "Determines the type of switch connected to input 1.",
+    "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
   },
   "zwave": {
     "index": 1,

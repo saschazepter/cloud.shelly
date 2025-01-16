@@ -22,8 +22,8 @@
     }
   ],
   "hint": {
-    "en": "This parameter (120) will reset all configuration parameters to factory default settings and device will leave the network.",
-    "nl": "Deze parameter (120) reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+    "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+    "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
   },
   "zwave": {
     "index": 120,

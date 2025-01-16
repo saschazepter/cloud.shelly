@@ -14,8 +14,8 @@
     "nl": "seconden"
   },
   "hint": {
-    "en": "This parameter (30) defines the time after which output 3 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-    "nl": "Deze parameter (30) bepaalt de tijd waarna output 3 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+    "en": "Defines the time after which output 3 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+    "nl": "Bepaalt de tijd waarna output 3 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
   },
   "zwave": {
     "index": 30,

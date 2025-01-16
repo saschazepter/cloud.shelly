@@ -3982,7 +3982,7 @@
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW1",
+                "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
               "value": "2",
@@ -4010,8 +4010,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (1) determines the type of switch connected to input 1.",
-                "nl": "Deze parameter (1) specificeert het type schakelaar dat is aangesloten op input 1."
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
               },
               "zwave": {
                 "index": 1,
@@ -4064,8 +4064,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (19) defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (19) bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 19,
@@ -4089,8 +4089,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (20) defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (20) bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 20,
@@ -4101,29 +4101,29 @@
               "id": "zwaveContactTypeO1",
               "type": "dropdown",
               "label": {
-                "en": "Contact Type O1 - NO/NC",
-                "nl": "Contact type O1 - NO/NC"
+                "en": "Contact type O1 - NO/NC",
+                "nl": "Contacttype O1 - NO/NC"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normally Open (NO)",
-                    "nl": "Normaal Open (NO)"
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Normally Closed (NC)",
+                    "en": "Normally closed (NC)",
                     "nl": "Normaal gesloten (NC)"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (23) defines the type of Relay contact type for Output 1.",
-                "nl": "Deze parameter (23) bepaalt het type van relay contact voor Output 1."
+                "en": "Defines the type of relay contact type for output 1.",
+                "nl": "Bepaalt het type van relay contact voor output 1."
               },
               "zwave": {
                 "index": 23,
@@ -4164,8 +4164,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (120) will reset all configuration parameters to factory default settings and device will leave the network.",
-                "nl": "Deze parameter (120) reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
               },
               "zwave": {
                 "index": 120,
@@ -4255,7 +4255,7 @@
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW1",
+                "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
               "value": "2",
@@ -4283,8 +4283,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (1) determines the type of switch connected to input 1.",
-                "nl": "Deze parameter (1) specificeert het type schakelaar dat is aangesloten op input 1."
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
               },
               "zwave": {
                 "index": 1,
@@ -4337,8 +4337,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (19) defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (19) bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 19,
@@ -4362,8 +4362,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (20) defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (20) bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 20,
@@ -4374,29 +4374,29 @@
               "id": "zwaveContactTypeO1",
               "type": "dropdown",
               "label": {
-                "en": "Contact Type O1 - NO/NC",
-                "nl": "Contact type O1 - NO/NC"
+                "en": "Contact type O1 - NO/NC",
+                "nl": "Contacttype O1 - NO/NC"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normally Open (NO)",
-                    "nl": "Normaal Open (NO)"
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Normally Closed (NC)",
+                    "en": "Normally closed (NC)",
                     "nl": "Normaal gesloten (NC)"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (23) defines the type of Relay contact type for Output 1.",
-                "nl": "Deze parameter (23) bepaalt het type van relay contact voor Output 1."
+                "en": "Defines the type of relay contact type for output 1.",
+                "nl": "Bepaalt het type van relay contact voor output 1."
               },
               "zwave": {
                 "index": 23,
@@ -4429,8 +4429,8 @@
                 "nl": "%"
               },
               "hint": {
-                "en": "This parameter (36) defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
-                "nl": "Deze parameter (36) bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
               },
               "zwave": {
                 "index": 36,
@@ -4454,8 +4454,8 @@
                 "nl": "s"
               },
               "hint": {
-                "en": "This parameter (39) defines the minimum time between sending reports to Homey for output 1.",
-                "nl": "Deze parameter (39) bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
               },
               "zwave": {
                 "index": 39,
@@ -4496,8 +4496,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (120) will reset all configuration parameters to factory default settings and device will leave the network.",
-                "nl": "Deze parameter (120) reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
               },
               "zwave": {
                 "index": 120,
@@ -4644,7 +4644,7 @@
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW1",
+                "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
               "value": "2",
@@ -4672,8 +4672,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (1) determines the type of switch connected to input 1.",
-                "nl": "Deze parameter (1) specificeert het type schakelaar dat is aangesloten op input 1."
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
               },
               "zwave": {
                 "index": 1,
@@ -4726,8 +4726,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (19) defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (19) bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 19,
@@ -4751,8 +4751,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (20) defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (20) bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 20,
@@ -4763,29 +4763,29 @@
               "id": "zwaveContactTypeO1",
               "type": "dropdown",
               "label": {
-                "en": "Contact Type O1 - NO/NC",
-                "nl": "Contact type O1 - NO/NC"
+                "en": "Contact type O1 - NO/NC",
+                "nl": "Contacttype O1 - NO/NC"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normally Open (NO)",
-                    "nl": "Normaal Open (NO)"
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Normally Closed (NC)",
+                    "en": "Normally closed (NC)",
                     "nl": "Normaal gesloten (NC)"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (23) defines the type of Relay contact type for Output 1.",
-                "nl": "Deze parameter (23) bepaalt het type van relay contact voor Output 1."
+                "en": "Defines the type of relay contact type for output 1.",
+                "nl": "Bepaalt het type van relay contact voor output 1."
               },
               "zwave": {
                 "index": 23,
@@ -4805,7 +4805,7 @@
               "id": "zwaveSwitchTypeSW2",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW2",
+                "en": "Switch type SW2",
                 "nl": "Schakelaar type SW2"
               },
               "value": "2",
@@ -4833,8 +4833,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (2) determines the type of switch connected to input 2.",
-                "nl": "Deze parameter (2) specificeert het type schakelaar dat is aangesloten op input 2."
+                "en": "Determines the type of switch connected to input 2.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 2."
               },
               "zwave": {
                 "index": 2,
@@ -4887,8 +4887,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (21) defines the time after which the output 2 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (21) bepaalt de tijd waarna output 2 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which the output 2 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 2 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 21,
@@ -4912,8 +4912,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (22) defines the time after which output 2 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (22) bepaalt de tijd waarna output 2 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 2 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 2 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 22,
@@ -4924,29 +4924,29 @@
               "id": "zwaveContactTypeO2",
               "type": "dropdown",
               "label": {
-                "en": "Contact Type O2 - NO/NC",
-                "nl": "Contact type O2 - NO/NC"
+                "en": "Contact type O2 - NO/NC",
+                "nl": "Contacttype O2 - NO/NC"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normally Open (NO)",
-                    "nl": "Normaal Open (NO)"
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Normally Closed (NC)",
+                    "en": "Normally closed (NC)",
                     "nl": "Normaal gesloten (NC)"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (24) defines the type of Relay contact type for Output 2.",
-                "nl": "Deze parameter (24) bepaalt het type van relay contact voor Output 2."
+                "en": "Defines the type of Relay contact type for output 2.",
+                "nl": "Bepaalt het type van relay contact voor output 2."
               },
               "zwave": {
                 "index": 24,
@@ -4979,8 +4979,8 @@
                 "nl": "%"
               },
               "hint": {
-                "en": "This parameter (36) defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
-                "nl": "Deze parameter (36) bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
               },
               "zwave": {
                 "index": 36,
@@ -5004,8 +5004,8 @@
                 "nl": "s"
               },
               "hint": {
-                "en": "This parameter (39) defines the minimum time between sending reports to Homey for output 1.",
-                "nl": "Deze parameter (39) bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
               },
               "zwave": {
                 "index": 39,
@@ -5038,8 +5038,8 @@
                 "nl": "%"
               },
               "hint": {
-                "en": "This parameter (37) defines the minimum change in consumed power for output 2 that will result in sending new report to Homey.",
-                "nl": "Deze parameter (37) bepaalt de minimum wijziging in stroomverbruik voor output 2 dat nodig is om een status update naar Homey te versturen."
+                "en": "Defines the minimum change in consumed power for output 2 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 2 dat nodig is om een status update naar Homey te versturen."
               },
               "zwave": {
                 "index": 37,
@@ -5063,8 +5063,8 @@
                 "nl": "s"
               },
               "hint": {
-                "en": "This parameter (40) defines the minimum time between sending reports to Homey for output 2.",
-                "nl": "Deze parameter (40) bepaalt de minimum tijd tussen status updates naar Homey voor output 2."
+                "en": "Defines the minimum time between sending reports to Homey for output 2.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 2."
               },
               "zwave": {
                 "index": 40,
@@ -5084,8 +5084,8 @@
               "id": "zwaveReverseInputsO1O2",
               "type": "dropdown",
               "label": {
-                "en": "Swap Inputs SW1 & SW2",
-                "nl": "Wissel Inputs SW1 & SW2"
+                "en": "Swap inputs SW1 & SW2",
+                "nl": "Wissel ingangen SW1 & SW2"
               },
               "value": "0",
               "values": [
@@ -5105,8 +5105,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (6) allows to swap the operation of switches connected to inputs SW1 and SW2 without changing the wiring.",
-                "nl": "Deze parameter (6) maakt het mogelijk om inputs SW1 en SW2 om te wisselen zonder de bedrading aan te passen."
+                "en": "Allows to swap the operation of switches connected to inputs SW1 and SW2 without changing the wiring.",
+                "nl": "Maakt het mogelijk om ingangen SW1 en SW2 om te wisselen zonder de bedrading aan te passen."
               },
               "zwave": {
                 "index": 6,
@@ -5117,8 +5117,8 @@
               "id": "zwaveReverseOutputsO1O2",
               "type": "dropdown",
               "label": {
-                "en": "Swap Outputs O1 & O2",
-                "nl": "Wissel Outputs O1 & O2"
+                "en": "Swap outputs O1 & O2",
+                "nl": "Wissel outputs O1 & O2"
               },
               "value": "0",
               "values": [
@@ -5138,8 +5138,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (16) allows to swap the operation of outputs O1 and O2 without changing the wiring.",
-                "nl": "Deze parameter (16) maakt het mogelijk om outputs O1 en O2 om te wisselen zonder de bedrading aan te passen."
+                "en": "Allows to swap the operation of outputs O1 and O2 without changing the wiring.",
+                "nl": "Maakt het mogelijk om outputs O1 en O2 om te wisselen zonder de bedrading aan te passen."
               },
               "zwave": {
                 "index": 16,
@@ -5171,8 +5171,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (120) will reset all configuration parameters to factory default settings and device will leave the network.",
-                "nl": "Deze parameter (120) reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
               },
               "zwave": {
                 "index": 120,
@@ -5249,7 +5249,7 @@
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW1",
+                "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
               "value": "2",
@@ -5277,8 +5277,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (1) determines the type of switch connected to input 1.",
-                "nl": "Deze parameter (1) specificeert het type schakelaar dat is aangesloten op input 1."
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
               },
               "zwave": {
                 "index": 1,
@@ -5289,7 +5289,7 @@
               "id": "zwaveSwitchTypeSW2",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW2",
+                "en": "Switch type SW2",
                 "nl": "Schakelaar type SW2"
               },
               "value": "2",
@@ -5317,8 +5317,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (2) determines the type of switch connected to input 2.",
-                "nl": "Deze parameter (2) specificeert het type schakelaar dat is aangesloten op input 2."
+                "en": "Determines the type of switch connected to input 2.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 2."
               },
               "zwave": {
                 "index": 2,
@@ -5329,7 +5329,7 @@
               "id": "zwaveSwitchTypeSW3",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW3",
+                "en": "Switch type SW3",
                 "nl": "Schakelaar type SW3"
               },
               "value": "2",
@@ -5357,8 +5357,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (3) determines the type of switch connected to input 3.",
-                "nl": "Deze parameter (3) specificeert het type schakelaar dat is aangesloten op input 3."
+                "en": "Determines the type of switch connected to input 3.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 3."
               },
               "zwave": {
                 "index": 3,
@@ -5369,7 +5369,7 @@
               "id": "zwaveSwitchTypeSW4",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW4",
+                "en": "Switch type SW4",
                 "nl": "Schakelaar type SW4"
               },
               "value": "2",
@@ -5397,8 +5397,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (4) determines the type of switch connected to input 4.",
-                "nl": "Deze parameter (4) specificeert het type schakelaar dat is aangesloten op input 4."
+                "en": "Determines the type of switch connected to input 4.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 4."
               },
               "zwave": {
                 "index": 4,
@@ -5439,8 +5439,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (120) will reset all configuration parameters to factory default settings and device will leave the network.",
-                "nl": "Deze parameter (120) reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
               },
               "zwave": {
                 "index": 120,
@@ -5571,8 +5571,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (19) defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (19) bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 19,
@@ -5596,8 +5596,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (20) defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (20) bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 20,
@@ -5608,29 +5608,29 @@
               "id": "zwaveContactTypeO1",
               "type": "dropdown",
               "label": {
-                "en": "Contact Type O1 - NO/NC",
-                "nl": "Contact type O1 - NO/NC"
+                "en": "Contact type O1 - NO/NC",
+                "nl": "Contacttype O1 - NO/NC"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normally Open (NO)",
-                    "nl": "Normaal Open (NO)"
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Normally Closed (NC)",
+                    "en": "Normally closed (NC)",
                     "nl": "Normaal gesloten (NC)"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (23) defines the type of Relay contact type for Output 1.",
-                "nl": "Deze parameter (23) bepaalt het type van relay contact voor Output 1."
+                "en": "Defines the type of relay contact type for output 1.",
+                "nl": "Bepaalt het type van relay contact voor output 1."
               },
               "zwave": {
                 "index": 23,
@@ -5663,8 +5663,8 @@
                 "nl": "%"
               },
               "hint": {
-                "en": "This parameter (36) defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
-                "nl": "Deze parameter (36) bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
               },
               "zwave": {
                 "index": 36,
@@ -5688,8 +5688,8 @@
                 "nl": "s"
               },
               "hint": {
-                "en": "This parameter (39) defines the minimum time between sending reports to Homey for output 1.",
-                "nl": "Deze parameter (39) bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
               },
               "zwave": {
                 "index": 39,
@@ -5730,8 +5730,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (120) will reset all configuration parameters to factory default settings and device will leave the network.",
-                "nl": "Deze parameter (120) reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
               },
               "zwave": {
                 "index": 120,
@@ -5831,8 +5831,8 @@
                 "nl": "%"
               },
               "hint": {
-                "en": "This parameter (36) defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
-                "nl": "Deze parameter (36) bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
               },
               "zwave": {
                 "index": 36,
@@ -5856,8 +5856,8 @@
                 "nl": "s"
               },
               "hint": {
-                "en": "This parameter (39) defines the minimum time between sending reports to Homey for output 1.",
-                "nl": "Deze parameter (39) bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
               },
               "zwave": {
                 "index": 39,
@@ -5898,8 +5898,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (120) will reset all configuration parameters to factory default settings and device will leave the network.",
-                "nl": "Deze parameter (120) reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
               },
               "zwave": {
                 "index": 120,
@@ -5971,7 +5971,7 @@
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW1",
+                "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
               "value": "2",
@@ -5999,8 +5999,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (1) determines the type of switch connected to input 1.",
-                "nl": "Deze parameter (1) specificeert het type schakelaar dat is aangesloten op input 1."
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
               },
               "zwave": {
                 "index": 1,
@@ -6053,8 +6053,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (19) defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (19) bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 19,
@@ -6078,8 +6078,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (20) defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (20) bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 20,
@@ -6090,29 +6090,29 @@
               "id": "zwaveContactTypeO1",
               "type": "dropdown",
               "label": {
-                "en": "Contact Type O1 - NO/NC",
-                "nl": "Contact type O1 - NO/NC"
+                "en": "Contact type O1 - NO/NC",
+                "nl": "Contacttype O1 - NO/NC"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normally Open (NO)",
-                    "nl": "Normaal Open (NO)"
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Normally Closed (NC)",
+                    "en": "Normally closed (NC)",
                     "nl": "Normaal gesloten (NC)"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (23) defines the type of Relay contact type for Output 1.",
-                "nl": "Deze parameter (23) bepaalt het type van relay contact voor Output 1."
+                "en": "Defines the type of relay contact type for output 1.",
+                "nl": "Bepaalt het type van relay contact voor output 1."
               },
               "zwave": {
                 "index": 23,
@@ -6132,7 +6132,7 @@
               "id": "zwaveSwitchTypeSW2",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW2",
+                "en": "Switch type SW2",
                 "nl": "Schakelaar type SW2"
               },
               "value": "2",
@@ -6160,8 +6160,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (2) determines the type of switch connected to input 2.",
-                "nl": "Deze parameter (2) specificeert het type schakelaar dat is aangesloten op input 2."
+                "en": "Determines the type of switch connected to input 2.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 2."
               },
               "zwave": {
                 "index": 2,
@@ -6202,8 +6202,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (120) will reset all configuration parameters to factory default settings and device will leave the network.",
-                "nl": "Deze parameter (120) reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
               },
               "zwave": {
                 "index": 120,
@@ -6278,7 +6278,7 @@
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW1",
+                "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
               "value": "2",
@@ -6306,8 +6306,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (1) determines the type of switch connected to input 1.",
-                "nl": "Deze parameter (1) specificeert het type schakelaar dat is aangesloten op input 1."
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
               },
               "zwave": {
                 "index": 1,
@@ -6360,8 +6360,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (19) defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (19) bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 19,
@@ -6385,8 +6385,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (20) defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (20) bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 20,
@@ -6397,29 +6397,29 @@
               "id": "zwaveContactTypeO1",
               "type": "dropdown",
               "label": {
-                "en": "Contact Type O1 - NO/NC",
-                "nl": "Contact type O1 - NO/NC"
+                "en": "Contact type O1 - NO/NC",
+                "nl": "Contacttype O1 - NO/NC"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normally Open (NO)",
-                    "nl": "Normaal Open (NO)"
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Normally Closed (NC)",
+                    "en": "Normally closed (NC)",
                     "nl": "Normaal gesloten (NC)"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (23) defines the type of Relay contact type for Output 1.",
-                "nl": "Deze parameter (23) bepaalt het type van relay contact voor Output 1."
+                "en": "Defines the type of relay contact type for output 1.",
+                "nl": "Bepaalt het type van relay contact voor output 1."
               },
               "zwave": {
                 "index": 23,
@@ -6439,7 +6439,7 @@
               "id": "zwaveSwitchTypeSW2",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW2",
+                "en": "Switch type SW2",
                 "nl": "Schakelaar type SW2"
               },
               "value": "2",
@@ -6467,8 +6467,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (2) determines the type of switch connected to input 2.",
-                "nl": "Deze parameter (2) specificeert het type schakelaar dat is aangesloten op input 2."
+                "en": "Determines the type of switch connected to input 2.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 2."
               },
               "zwave": {
                 "index": 2,
@@ -6501,8 +6501,8 @@
                 "nl": "%"
               },
               "hint": {
-                "en": "This parameter (36) defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
-                "nl": "Deze parameter (36) bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
               },
               "zwave": {
                 "index": 36,
@@ -6526,8 +6526,8 @@
                 "nl": "s"
               },
               "hint": {
-                "en": "This parameter (39) defines the minimum time between sending reports to Homey for output 1.",
-                "nl": "Deze parameter (39) bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
               },
               "zwave": {
                 "index": 39,
@@ -6568,8 +6568,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (120) will reset all configuration parameters to factory default settings and device will leave the network.",
-                "nl": "Deze parameter (120) reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
               },
               "zwave": {
                 "index": 120,
@@ -6670,7 +6670,7 @@
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW1",
+                "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
               "value": "2",
@@ -6698,8 +6698,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (1) determines the type of switch connected to input 1.",
-                "nl": "Deze parameter (1) specificeert het type schakelaar dat is aangesloten op input 1."
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
               },
               "zwave": {
                 "index": 1,
@@ -6752,8 +6752,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (19) defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (19) bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 19,
@@ -6777,8 +6777,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (20) defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (20) bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 20,
@@ -6789,29 +6789,29 @@
               "id": "zwaveContactTypeO1",
               "type": "dropdown",
               "label": {
-                "en": "Contact Type O1 - NO/NC",
-                "nl": "Contact type O1 - NO/NC"
+                "en": "Contact type O1 - NO/NC",
+                "nl": "Contacttype O1 - NO/NC"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normally Open (NO)",
-                    "nl": "Normaal Open (NO)"
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Normally Closed (NC)",
+                    "en": "Normally closed (NC)",
                     "nl": "Normaal gesloten (NC)"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (23) defines the type of Relay contact type for Output 1.",
-                "nl": "Deze parameter (23) bepaalt het type van relay contact voor Output 1."
+                "en": "Defines the type of relay contact type for output 1.",
+                "nl": "Bepaalt het type van relay contact voor output 1."
               },
               "zwave": {
                 "index": 23,
@@ -6831,7 +6831,7 @@
               "id": "zwaveSwitchTypeSW2",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW2",
+                "en": "Switch type SW2",
                 "nl": "Schakelaar type SW2"
               },
               "value": "2",
@@ -6859,8 +6859,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (2) determines the type of switch connected to input 2.",
-                "nl": "Deze parameter (2) specificeert het type schakelaar dat is aangesloten op input 2."
+                "en": "Determines the type of switch connected to input 2.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 2."
               },
               "zwave": {
                 "index": 2,
@@ -6913,8 +6913,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (21) defines the time after which the output 2 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (21) bepaalt de tijd waarna output 2 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which the output 2 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 2 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 21,
@@ -6938,8 +6938,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (22) defines the time after which output 2 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (22) bepaalt de tijd waarna output 2 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 2 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 2 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 22,
@@ -6950,29 +6950,29 @@
               "id": "zwaveContactTypeO2",
               "type": "dropdown",
               "label": {
-                "en": "Contact Type O2 - NO/NC",
-                "nl": "Contact type O2 - NO/NC"
+                "en": "Contact type O2 - NO/NC",
+                "nl": "Contacttype O2 - NO/NC"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normally Open (NO)",
-                    "nl": "Normaal Open (NO)"
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Normally Closed (NC)",
+                    "en": "Normally closed (NC)",
                     "nl": "Normaal gesloten (NC)"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (24) defines the type of Relay contact type for Output 2.",
-                "nl": "Deze parameter (24) bepaalt het type van relay contact voor Output 2."
+                "en": "Defines the type of Relay contact type for output 2.",
+                "nl": "Bepaalt het type van relay contact voor output 2."
               },
               "zwave": {
                 "index": 24,
@@ -7013,8 +7013,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (120) will reset all configuration parameters to factory default settings and device will leave the network.",
-                "nl": "Deze parameter (120) reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
               },
               "zwave": {
                 "index": 120,
@@ -7161,7 +7161,7 @@
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW1",
+                "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
               "value": "2",
@@ -7189,8 +7189,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (1) determines the type of switch connected to input 1.",
-                "nl": "Deze parameter (1) specificeert het type schakelaar dat is aangesloten op input 1."
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
               },
               "zwave": {
                 "index": 1,
@@ -7243,8 +7243,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (19) defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (19) bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 19,
@@ -7268,8 +7268,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (20) defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (20) bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 20,
@@ -7280,29 +7280,29 @@
               "id": "zwaveContactTypeO1",
               "type": "dropdown",
               "label": {
-                "en": "Contact Type O1 - NO/NC",
-                "nl": "Contact type O1 - NO/NC"
+                "en": "Contact type O1 - NO/NC",
+                "nl": "Contacttype O1 - NO/NC"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normally Open (NO)",
-                    "nl": "Normaal Open (NO)"
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Normally Closed (NC)",
+                    "en": "Normally closed (NC)",
                     "nl": "Normaal gesloten (NC)"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (23) defines the type of Relay contact type for Output 1.",
-                "nl": "Deze parameter (23) bepaalt het type van relay contact voor Output 1."
+                "en": "Defines the type of relay contact type for output 1.",
+                "nl": "Bepaalt het type van relay contact voor output 1."
               },
               "zwave": {
                 "index": 23,
@@ -7322,7 +7322,7 @@
               "id": "zwaveSwitchTypeSW2",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW2",
+                "en": "Switch type SW2",
                 "nl": "Schakelaar type SW2"
               },
               "value": "2",
@@ -7350,8 +7350,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (2) determines the type of switch connected to input 2.",
-                "nl": "Deze parameter (2) specificeert het type schakelaar dat is aangesloten op input 2."
+                "en": "Determines the type of switch connected to input 2.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 2."
               },
               "zwave": {
                 "index": 2,
@@ -7404,8 +7404,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (21) defines the time after which the output 2 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (21) bepaalt de tijd waarna output 2 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which the output 2 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 2 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 21,
@@ -7429,8 +7429,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (22) defines the time after which output 2 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (22) bepaalt de tijd waarna output 2 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 2 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 2 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 22,
@@ -7441,29 +7441,29 @@
               "id": "zwaveContactTypeO2",
               "type": "dropdown",
               "label": {
-                "en": "Contact Type O2 - NO/NC",
-                "nl": "Contact type O2 - NO/NC"
+                "en": "Contact type O2 - NO/NC",
+                "nl": "Contacttype O2 - NO/NC"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normally Open (NO)",
-                    "nl": "Normaal Open (NO)"
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Normally Closed (NC)",
+                    "en": "Normally closed (NC)",
                     "nl": "Normaal gesloten (NC)"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (24) defines the type of Relay contact type for Output 2.",
-                "nl": "Deze parameter (24) bepaalt het type van relay contact voor Output 2."
+                "en": "Defines the type of Relay contact type for output 2.",
+                "nl": "Bepaalt het type van relay contact voor output 2."
               },
               "zwave": {
                 "index": 24,
@@ -7496,8 +7496,8 @@
                 "nl": "%"
               },
               "hint": {
-                "en": "This parameter (36) defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
-                "nl": "Deze parameter (36) bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
               },
               "zwave": {
                 "index": 36,
@@ -7521,8 +7521,8 @@
                 "nl": "s"
               },
               "hint": {
-                "en": "This parameter (39) defines the minimum time between sending reports to Homey for output 1.",
-                "nl": "Deze parameter (39) bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
               },
               "zwave": {
                 "index": 39,
@@ -7555,8 +7555,8 @@
                 "nl": "%"
               },
               "hint": {
-                "en": "This parameter (37) defines the minimum change in consumed power for output 2 that will result in sending new report to Homey.",
-                "nl": "Deze parameter (37) bepaalt de minimum wijziging in stroomverbruik voor output 2 dat nodig is om een status update naar Homey te versturen."
+                "en": "Defines the minimum change in consumed power for output 2 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 2 dat nodig is om een status update naar Homey te versturen."
               },
               "zwave": {
                 "index": 37,
@@ -7580,8 +7580,8 @@
                 "nl": "s"
               },
               "hint": {
-                "en": "This parameter (40) defines the minimum time between sending reports to Homey for output 2.",
-                "nl": "Deze parameter (40) bepaalt de minimum tijd tussen status updates naar Homey voor output 2."
+                "en": "Defines the minimum time between sending reports to Homey for output 2.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 2."
               },
               "zwave": {
                 "index": 40,
@@ -7601,8 +7601,8 @@
               "id": "zwaveReverseInputsO1O2",
               "type": "dropdown",
               "label": {
-                "en": "Swap Inputs SW1 & SW2",
-                "nl": "Wissel Inputs SW1 & SW2"
+                "en": "Swap inputs SW1 & SW2",
+                "nl": "Wissel ingangen SW1 & SW2"
               },
               "value": "0",
               "values": [
@@ -7622,8 +7622,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (6) allows to swap the operation of switches connected to inputs SW1 and SW2 without changing the wiring.",
-                "nl": "Deze parameter (6) maakt het mogelijk om inputs SW1 en SW2 om te wisselen zonder de bedrading aan te passen."
+                "en": "Allows to swap the operation of switches connected to inputs SW1 and SW2 without changing the wiring.",
+                "nl": "Maakt het mogelijk om ingangen SW1 en SW2 om te wisselen zonder de bedrading aan te passen."
               },
               "zwave": {
                 "index": 6,
@@ -7634,8 +7634,8 @@
               "id": "zwaveReverseOutputsO1O2",
               "type": "dropdown",
               "label": {
-                "en": "Swap Outputs O1 & O2",
-                "nl": "Wissel Outputs O1 & O2"
+                "en": "Swap outputs O1 & O2",
+                "nl": "Wissel outputs O1 & O2"
               },
               "value": "0",
               "values": [
@@ -7655,8 +7655,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (16) allows to swap the operation of outputs O1 and O2 without changing the wiring.",
-                "nl": "Deze parameter (16) maakt het mogelijk om outputs O1 en O2 om te wisselen zonder de bedrading aan te passen."
+                "en": "Allows to swap the operation of outputs O1 and O2 without changing the wiring.",
+                "nl": "Maakt het mogelijk om outputs O1 en O2 om te wisselen zonder de bedrading aan te passen."
               },
               "zwave": {
                 "index": 16,
@@ -7688,8 +7688,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (120) will reset all configuration parameters to factory default settings and device will leave the network.",
-                "nl": "Deze parameter (120) reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
               },
               "zwave": {
                 "index": 120,
@@ -7803,7 +7803,7 @@
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW1",
+                "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
               "value": "2",
@@ -7831,8 +7831,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (1) determines the type of switch connected to input 1.",
-                "nl": "Deze parameter (1) specificeert het type schakelaar dat is aangesloten op input 1."
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
               },
               "zwave": {
                 "index": 1,
@@ -7885,8 +7885,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (19) defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (19) bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 19,
@@ -7910,8 +7910,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (20) defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (20) bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 20,
@@ -7922,29 +7922,29 @@
               "id": "zwaveContactTypeO1",
               "type": "dropdown",
               "label": {
-                "en": "Contact Type O1 - NO/NC",
-                "nl": "Contact type O1 - NO/NC"
+                "en": "Contact type O1 - NO/NC",
+                "nl": "Contacttype O1 - NO/NC"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normally Open (NO)",
-                    "nl": "Normaal Open (NO)"
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Normally Closed (NC)",
+                    "en": "Normally closed (NC)",
                     "nl": "Normaal gesloten (NC)"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (23) defines the type of Relay contact type for Output 1.",
-                "nl": "Deze parameter (23) bepaalt het type van relay contact voor Output 1."
+                "en": "Defines the type of relay contact type for output 1.",
+                "nl": "Bepaalt het type van relay contact voor output 1."
               },
               "zwave": {
                 "index": 23,
@@ -7964,7 +7964,7 @@
               "id": "zwaveSwitchTypeSW2",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW2",
+                "en": "Switch type SW2",
                 "nl": "Schakelaar type SW2"
               },
               "value": "2",
@@ -7992,8 +7992,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (2) determines the type of switch connected to input 2.",
-                "nl": "Deze parameter (2) specificeert het type schakelaar dat is aangesloten op input 2."
+                "en": "Determines the type of switch connected to input 2.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 2."
               },
               "zwave": {
                 "index": 2,
@@ -8046,8 +8046,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (21) defines the time after which the output 2 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (21) bepaalt de tijd waarna output 2 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which the output 2 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 2 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 21,
@@ -8071,8 +8071,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (22) defines the time after which output 2 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (22) bepaalt de tijd waarna output 2 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 2 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 2 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 22,
@@ -8083,29 +8083,29 @@
               "id": "zwaveContactTypeO2",
               "type": "dropdown",
               "label": {
-                "en": "Contact Type O2 - NO/NC",
-                "nl": "Contact type O2 - NO/NC"
+                "en": "Contact type O2 - NO/NC",
+                "nl": "Contacttype O2 - NO/NC"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normally Open (NO)",
-                    "nl": "Normaal Open (NO)"
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Normally Closed (NC)",
+                    "en": "Normally closed (NC)",
                     "nl": "Normaal gesloten (NC)"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (24) defines the type of Relay contact type for Output 2.",
-                "nl": "Deze parameter (24) bepaalt het type van relay contact voor Output 2."
+                "en": "Defines the type of Relay contact type for output 2.",
+                "nl": "Bepaalt het type van relay contact voor output 2."
               },
               "zwave": {
                 "index": 24,
@@ -8125,7 +8125,7 @@
               "id": "zwaveSwitchTypeSW3",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW3",
+                "en": "Switch type SW3",
                 "nl": "Schakelaar type SW3"
               },
               "value": "2",
@@ -8153,8 +8153,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (3) determines the type of switch connected to input 3.",
-                "nl": "Deze parameter (3) specificeert het type schakelaar dat is aangesloten op input 3."
+                "en": "Determines the type of switch connected to input 3.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 3."
               },
               "zwave": {
                 "index": 3,
@@ -8207,8 +8207,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (29) defines the time after which the output 3 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (29) bepaalt de tijd waarna output 3 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which the output 3 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 3 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 29,
@@ -8232,8 +8232,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (30) defines the time after which output 3 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (30) bepaalt de tijd waarna output 3 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 3 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 3 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 30,
@@ -8244,29 +8244,29 @@
               "id": "zwaveContactTypeO3",
               "type": "dropdown",
               "label": {
-                "en": "Contact Type O3 - NO/NC",
-                "nl": "Contact type O3 - NO/NC"
+                "en": "Contact type O3 - NO/NC",
+                "nl": "Contacttype O3 - NO/NC"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normally Open (NO)",
-                    "nl": "Normaal Open (NO)"
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Normally Closed (NC)",
+                    "en": "Normally closed (NC)",
                     "nl": "Normaal gesloten (NC)"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (103) defines the type of Relay contact type for Output 2.",
-                "nl": "Deze parameter (103) bepaalt het type van relay contact voor Output 2."
+                "en": "Defines the type of relay contact type for output 2.",
+                "nl": "Bepaalt het type van relay contact voor output 2."
               },
               "zwave": {
                 "index": 103,
@@ -8307,8 +8307,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (120) will reset all configuration parameters to factory default settings and device will leave the network.",
-                "nl": "Deze parameter (120) reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
               },
               "zwave": {
                 "index": 120,
@@ -8398,7 +8398,7 @@
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW1",
+                "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
               "value": "2",
@@ -8426,8 +8426,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (1) determines the type of switch connected to input 1.",
-                "nl": "Deze parameter (1) specificeert het type schakelaar dat is aangesloten op input 1."
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
               },
               "zwave": {
                 "index": 1,
@@ -8438,8 +8438,8 @@
               "id": "zwaveOutputDetached1",
               "type": "dropdown",
               "label": {
-                "en": "Output O1 Detached",
-                "nl": "Output O1 losgekoppeld"
+                "en": "SW1 detached",
+                "nl": "SW1 ontkoppeld"
               },
               "value": "0",
               "values": [
@@ -8453,14 +8453,14 @@
                 {
                   "id": "1",
                   "label": {
-                    "en": "Detached Mode",
-                    "nl": "Losgekoppeld"
+                    "en": "Detached mode",
+                    "nl": "Ontkoppeld"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (7) defines if the input switch SW1 is separated from the state of the output O1.",
-                "nl": "Deze parameter (7) specificeert of de input schakelaar SW1 is losgekoppeld van de status van de output O1."
+                "en": "Defines if the input switch SW1 is separated from the state of the output.",
+                "nl": "Specificeert of de input schakelaar SW1 is ontkoppeld van de status van de output."
               },
               "zwave": {
                 "index": 7,
@@ -8513,8 +8513,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (19) defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
-                "nl": "Deze parameter (19) bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
               },
               "zwave": {
                 "index": 19,
@@ -8538,8 +8538,8 @@
                 "nl": "seconden"
               },
               "hint": {
-                "en": "This parameter (20) defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
-                "nl": "Deze parameter (20) bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
               },
               "zwave": {
                 "index": 20,
@@ -8559,7 +8559,7 @@
               "id": "zwaveSwitchTypeSW2",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW2",
+                "en": "Switch type SW2",
                 "nl": "Schakelaar type SW2"
               },
               "value": "2",
@@ -8587,8 +8587,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (2) determines the type of switch connected to input 2.",
-                "nl": "Deze parameter (2) specificeert het type schakelaar dat is aangesloten op input 2."
+                "en": "Determines the type of switch connected to input 2.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 2."
               },
               "zwave": {
                 "index": 2,
@@ -8599,8 +8599,8 @@
               "id": "zwaveOutputDetached2",
               "type": "dropdown",
               "label": {
-                "en": "Output O2 Detached",
-                "nl": "Output O2 losgekoppeld"
+                "en": "SW2 detached",
+                "nl": "SW2 ontkoppeld"
               },
               "value": "0",
               "values": [
@@ -8614,14 +8614,14 @@
                 {
                   "id": "1",
                   "label": {
-                    "en": "Detached Mode",
-                    "nl": "Losgekoppeld"
+                    "en": "Detached mode",
+                    "nl": "Ontkoppeld"
                   }
                 }
               ],
               "hint": {
-                "en": "This parameter (8) defines if the input switch SW2 is separated from the state of the output O2.",
-                "nl": "Deze parameter (8) specificeert of de input schakelaar SW2 is losgekoppeld van de status van de output O2."
+                "en": "Defines if the input switch SW2 is separated from the state of the output.",
+                "nl": "Specificeert of de input schakelaar SW2 is ontkoppeld van de status van de output."
               },
               "zwave": {
                 "index": 8,
@@ -8654,8 +8654,8 @@
                 "nl": "%"
               },
               "hint": {
-                "en": "This parameter (36) defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
-                "nl": "Deze parameter (36) bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
               },
               "zwave": {
                 "index": 36,
@@ -8679,8 +8679,8 @@
                 "nl": "s"
               },
               "hint": {
-                "en": "This parameter (39) defines the minimum time between sending reports to Homey for output 1.",
-                "nl": "Deze parameter (39) bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
               },
               "zwave": {
                 "index": 39,
@@ -8962,8 +8962,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (120) will reset all configuration parameters to factory default settings and device will leave the network.",
-                "nl": "Deze parameter (120) reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
               },
               "zwave": {
                 "index": 120,
@@ -9183,7 +9183,7 @@
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW1",
+                "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
               "value": "2",
@@ -9211,8 +9211,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (1) determines the type of switch connected to input 1.",
-                "nl": "Deze parameter (1) specificeert het type schakelaar dat is aangesloten op input 1."
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
               },
               "zwave": {
                 "index": 1,
@@ -9635,7 +9635,7 @@
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
-                "en": "Switch Type SW1",
+                "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
               "value": "2",
@@ -9663,8 +9663,8 @@
                 }
               ],
               "hint": {
-                "en": "This parameter (1) determines the type of switch connected to input 1.",
-                "nl": "Deze parameter (1) specificeert het type schakelaar dat is aangesloten op input 1."
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
               },
               "zwave": {
                 "index": 1,

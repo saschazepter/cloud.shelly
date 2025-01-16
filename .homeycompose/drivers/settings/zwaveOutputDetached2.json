@@ -1,8 +1,8 @@
 {
   "type": "dropdown",
   "label": {
-    "en": "Output O2 Detached",
-    "nl": "Output O2 losgekoppeld"
+    "en": "SW2 detached",
+    "nl": "SW2 ontkoppeld"
   },
   "value": "0",
   "values": [
@@ -16,14 +16,14 @@
     {
       "id": "1",
       "label": {
-        "en": "Detached Mode",
-        "nl": "Losgekoppeld"
+        "en": "Detached mode",
+        "nl": "Ontkoppeld"
       }
     }
   ],
   "hint": {
-    "en": "This parameter (8) defines if the input switch SW2 is separated from the state of the output O2.",
-    "nl": "Deze parameter (8) specificeert of de input schakelaar SW2 is losgekoppeld van de status van de output O2."
+    "en": "Defines if the input switch SW2 is separated from the state of the output.",
+    "nl": "Specificeert of de input schakelaar SW2 is ontkoppeld van de status van de output."
   },
   "zwave": {
     "index": 8,
