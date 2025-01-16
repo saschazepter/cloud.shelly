@@ -22,11 +22,11 @@
     }
   ],
   "hint": {
-    "en": "Defines the type of relay contact type for output 2.",
-    "nl": "Bepaalt het type van relay contact voor output 2."
+    "en": "Defines the type of relay contact type for output 3.",
+    "nl": "Bepaalt het type van relay contact voor output 3."
   },
     "zwave": {
-    "index": 103,
+    "index": 106,
     "size": 1
   }
 }

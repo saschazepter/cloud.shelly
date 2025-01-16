@@ -5246,13 +5246,13 @@
           },
           "children": [
             {
+              "value": "0",
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
                 "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
-              "value": "2",
               "values": [
                 {
                   "id": "0",
@@ -5286,13 +5286,13 @@
               }
             },
             {
+              "value": "0",
               "id": "zwaveSwitchTypeSW2",
               "type": "dropdown",
               "label": {
                 "en": "Switch type SW2",
                 "nl": "Schakelaar type SW2"
               },
-              "value": "2",
               "values": [
                 {
                   "id": "0",
@@ -5326,13 +5326,13 @@
               }
             },
             {
+              "value": "0",
               "id": "zwaveSwitchTypeSW3",
               "type": "dropdown",
               "label": {
                 "en": "Switch type SW3",
                 "nl": "Schakelaar type SW3"
               },
-              "value": "2",
               "values": [
                 {
                   "id": "0",
@@ -5366,13 +5366,13 @@
               }
             },
             {
+              "value": "0",
               "id": "zwaveSwitchTypeSW4",
               "type": "dropdown",
               "label": {
                 "en": "Switch type SW4",
                 "nl": "Schakelaar type SW4"
               },
-              "value": "2",
               "values": [
                 {
                   "id": "0",
@@ -8265,11 +8265,11 @@
                 }
               ],
               "hint": {
-                "en": "Defines the type of relay contact type for output 2.",
-                "nl": "Bepaalt het type van relay contact voor output 2."
+                "en": "Defines the type of relay contact type for output 3.",
+                "nl": "Bepaalt het type van relay contact voor output 3."
               },
               "zwave": {
-                "index": 103,
+                "index": 106,
                 "size": 1
               }
             }
@@ -8395,13 +8395,13 @@
           },
           "children": [
             {
+              "value": "0",
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
                 "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
-              "value": "2",
               "values": [
                 {
                   "id": "0",
@@ -8556,13 +8556,13 @@
           },
           "children": [
             {
+              "value": "0",
               "id": "zwaveSwitchTypeSW2",
               "type": "dropdown",
               "label": {
                 "en": "Switch type SW2",
                 "nl": "Schakelaar type SW2"
               },
-              "value": "2",
               "values": [
                 {
                   "id": "0",
@@ -8596,13 +8596,13 @@
               }
             },
             {
+              "value": "1",
               "id": "zwaveOutputDetached2",
               "type": "dropdown",
               "label": {
                 "en": "SW2 detached",
                 "nl": "SW2 ontkoppeld"
               },
-              "value": "0",
               "values": [
                 {
                   "id": "0",
@@ -8638,13 +8638,13 @@
           },
           "children": [
             {
+              "value": 10,
               "id": "zwavePowerReportOnChangeO1",
               "type": "number",
               "label": {
                 "en": "Power report on change for O1",
                 "nl": "Power report bij wijziging voor O1"
               },
-              "value": 50,
               "attr": {
                 "min": 0,
                 "max": 100
@@ -9180,13 +9180,13 @@
           },
           "children": [
             {
+              "value": "0",
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
                 "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
-              "value": "2",
               "values": [
                 {
                   "id": "0",
@@ -9216,6 +9216,46 @@
               },
               "zwave": {
                 "index": 1,
+                "size": 1
+              }
+            },
+            {
+              "value": "0",
+              "id": "zwaveSwitchTypeSW2",
+              "type": "dropdown",
+              "label": {
+                "en": "Switch type SW2",
+                "nl": "Schakelaar type SW2"
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Momentary switch (push button)",
+                    "nl": "Pulsdrukschakelaar (push button)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Toggle switch (contact closed - ON / contact opened - OFF)",
+                    "nl": "Tuimelschakelaar (contact closed - ON / contact opened - OFF)"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Toggle switch (device changes status when switch changes status)",
+                    "nl": "Tuimelschakelaar (apparaat wijzigt status wanneer schakelaar status wijzigt)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Determines the type of switch connected to input 2.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 2."
+              },
+              "zwave": {
+                "index": 2,
                 "size": 1
               }
             },
@@ -9295,6 +9335,10 @@
           },
           "children": [
             {
+              "zwave": {
+                "index": 40,
+                "size": 1
+              },
               "id": "zwavePowerReportOnChangeO1",
               "type": "number",
               "label": {
@@ -9311,37 +9355,33 @@
                 "nl": "%"
               },
               "hint": {
-                "en": "This parameter (40) defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
-                "nl": "Deze parameter (40) bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
-              },
-              "zwave": {
-                "index": 40,
-                "size": 1
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
               }
             },
             {
-              "id": "zwaveMinimalTimePowerReportO1",
-              "type": "number",
-              "label": {
-                "en": "Minimal time between reports for O1",
-                "nl": "Minimale tijd tussen reporrts voor O1"
-              },
-              "value": 30,
               "attr": {
                 "min": 3,
                 "max": 50
               },
-              "units": {
-                "en": "%",
-                "nl": "%"
-              },
-              "hint": {
-                "en": "This parameter (85) defines the minimum time between sending reports to Homey for output 1.",
-                "nl": "Deze parameter (85) bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
-              },
               "zwave": {
                 "index": 85,
                 "size": 1
+              },
+              "id": "zwaveMinimalTimePowerReportO1",
+              "type": "number",
+              "label": {
+                "en": "Minimal time between reports for O1",
+                "nl": "Minimale tijd tussen reports voor O1"
+              },
+              "value": 30,
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
               }
             }
           ]
@@ -9632,13 +9672,13 @@
           },
           "children": [
             {
+              "value": "0",
               "id": "zwaveSwitchTypeSW1",
               "type": "dropdown",
               "label": {
                 "en": "Switch type SW1",
                 "nl": "Schakelaar type SW1"
               },
-              "value": "2",
               "values": [
                 {
                   "id": "0",
@@ -9668,6 +9708,46 @@
               },
               "zwave": {
                 "index": 1,
+                "size": 1
+              }
+            },
+            {
+              "value": "0",
+              "id": "zwaveSwitchTypeSW2",
+              "type": "dropdown",
+              "label": {
+                "en": "Switch type SW2",
+                "nl": "Schakelaar type SW2"
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Momentary switch (push button)",
+                    "nl": "Pulsdrukschakelaar (push button)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Toggle switch (contact closed - ON / contact opened - OFF)",
+                    "nl": "Tuimelschakelaar (contact closed - ON / contact opened - OFF)"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Toggle switch (device changes status when switch changes status)",
+                    "nl": "Tuimelschakelaar (apparaat wijzigt status wanneer schakelaar status wijzigt)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Determines the type of switch connected to input 2.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 2."
+              },
+              "zwave": {
+                "index": 2,
                 "size": 1
               }
             },
@@ -9747,6 +9827,10 @@
           },
           "children": [
             {
+              "zwave": {
+                "index": 40,
+                "size": 1
+              },
               "id": "zwavePowerReportOnChangeO1",
               "type": "number",
               "label": {
@@ -9763,37 +9847,33 @@
                 "nl": "%"
               },
               "hint": {
-                "en": "This parameter (40) defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
-                "nl": "Deze parameter (40) bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
-              },
-              "zwave": {
-                "index": 40,
-                "size": 1
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
               }
             },
             {
-              "id": "zwaveMinimalTimePowerReportO1",
-              "type": "number",
-              "label": {
-                "en": "Minimal time between reports for O1",
-                "nl": "Minimale tijd tussen reporrts voor O1"
-              },
-              "value": 30,
               "attr": {
                 "min": 3,
                 "max": 50
               },
-              "units": {
-                "en": "%",
-                "nl": "%"
-              },
-              "hint": {
-                "en": "This parameter (85) defines the minimum time between sending reports to Homey for output 1.",
-                "nl": "Deze parameter (85) bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
-              },
               "zwave": {
                 "index": 85,
                 "size": 1
+              },
+              "id": "zwaveMinimalTimePowerReportO1",
+              "type": "number",
+              "label": {
+                "en": "Minimal time between reports for O1",
+                "nl": "Minimale tijd tussen reports voor O1"
+              },
+              "value": 30,
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
               }
             }
           ]

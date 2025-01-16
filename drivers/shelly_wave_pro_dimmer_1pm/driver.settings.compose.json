@@ -7,7 +7,8 @@
     },
     "children": [
       {
-        "$extends": "zwaveSwitchTypeSW1"
+        "$extends": "zwaveSwitchTypeSW1",
+        "value": "0"
       },
       {
         "$extends": "zwaveOutputDetached1"
@@ -31,10 +32,12 @@
     },
     "children": [
       {
-        "$extends": "zwaveSwitchTypeSW2"
+        "$extends": "zwaveSwitchTypeSW2",
+        "value": "0"
       },
       {
-        "$extends": "zwaveOutputDetached2"
+        "$extends": "zwaveOutputDetached2",
+        "value": "1"
       }
     ]
   },
@@ -46,7 +49,8 @@
     },
     "children": [
       {
-        "$extends": "zwavePowerReportOnChangeO1"
+        "$extends": "zwavePowerReportOnChangeO1",
+        "value": 10
       },
       {
         "$extends": "zwaveMinimalTimePowerReportO1"
