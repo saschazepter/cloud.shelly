@@ -21,26 +21,25 @@ module.exports = class ShellyWaveProDimmer2PMDevice extends ShellyZwaveDevice {
     });
 
     // Listen to the different channel reports to update main device onoff/dim capabilities
-    [1, 2].forEach((multiChannelNodeId, idx) => {
+    for (const multiChannelNodeId of [1, 2]) {
+      const dimChannel = multiChannelNodeId - 1;
       this.registerMultiChannelReportListener(
         multiChannelNodeId,
         'SWITCH_MULTILEVEL',
         'SWITCH_MULTILEVEL_REPORT',
-        (report) => this.handleDimReport(idx, report),
+        (report) => this.handleDimReport(dimChannel, report),
       );
 
-      if (this.dimValues[idx] !== null) {
-        return;
+      if (this.dimValues[dimChannel] !== null) {
+        continue;
       }
 
-      this.node
-        .MultiChannelNodes[multiChannelNodeId]
-        .CommandClass
-        .COMMAND_CLASS_SWITCH_MULTILEVEL
+      await this
+        .getCommandClass('SWITCH_MULTILEVEL', {multiChannelNodeId})
         .SWITCH_MULTILEVEL_GET()
-        .then((result: any) => this.handleDimReport(idx, result))
+        .then((result: any) => this.handleDimReport(dimChannel, result))
         .catch(this.error);
-    });
+    }
   }
 
   private async configureSubDevice(): Promise<void> {
