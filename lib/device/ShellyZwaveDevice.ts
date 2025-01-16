@@ -1,6 +1,6 @@
 import Homey, {type ZwaveNode} from 'homey';
 import {ZwaveDevice} from 'homey-zwavedriver';
-import  ShellyZwaveDriver from '../driver/ShellyZwaveDriver';
+import ShellyZwaveDriver from '../driver/ShellyZwaveDriver';
 import Logger from '../log/Logger';
 
 export default abstract class ShellyZwaveDevice extends ZwaveDevice {
@@ -14,7 +14,7 @@ export default abstract class ShellyZwaveDevice extends ZwaveDevice {
   public async onNodeInit(payload: { node: ZwaveNode }): Promise<void> {
     this.logger = new Logger(
       this, super.log, super.error,
-      this.node.isMultiChannelNode ? `chan:${this.node.multiChannelNodeId}` : 'main'
+      this.node.isMultiChannelNode ? `chan:${this.node.multiChannelNodeId}` : 'main',
     );
 
     if (Homey.env.DEBUG) {
@@ -46,6 +46,13 @@ export default abstract class ShellyZwaveDevice extends ZwaveDevice {
 
       // Let the device configure itself
       await this.configureDevice(!this.node.isMultiChannelNode);
+
+      if (this.hasCapability('button.reset_meter')) {
+        this.registerCapabilityListener('button.reset_meter', async () => {
+          this.log('Trying to reset meter');
+          await this.meterReset();
+        });
+      }
 
       // Mark as available
       await this.setAvailable();

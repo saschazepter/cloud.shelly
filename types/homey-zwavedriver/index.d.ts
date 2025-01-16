@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 declare module 'homey-zwavedriver' {
-  import Homey, {ZwaveNode} from 'homey';
+  import Homey, {ZwaveCommandClass, ZwaveNode} from 'homey';
 
   class ZwaveDevice extends Homey.Device {
     thermostatSetpointType: string;
@@ -12,7 +12,9 @@ declare module 'homey-zwavedriver' {
     enableDebug(): void;
     async configurationGet(options: {index: number}): Promise<any>;
     async configurationSet(options: {id: number, index: number, size: number, signed: boolean}, value: any)
-    async getCommandClass(commandClassId: string): any;
+    getCommandClass(commandClassId: string, opts?: {multiChannelNodeId?: number}): ZwaveCommandClass;
     printNode(): void;
+    meterReset(payload?: {multiChannelNodeId?: number}, options?: any): Promise<void>;
+    refreshCapabilityValue(capabilityId: string, commandClassId: string): Promise<any>;
   }
 }
