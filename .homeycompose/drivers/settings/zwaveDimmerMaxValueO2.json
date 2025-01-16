@@ -1,0 +1,24 @@
+{
+  "type": "number",
+  "label": {
+    "en": "Maximum dim value for O2",
+    "nl": "Maximale dimwaarde voor O2"
+  },
+  "value": 99,
+  "attr": {
+    "min": 0,
+    "max": 99
+  },
+  "units": {
+    "en": "%",
+    "nl": "%"
+  },
+  "hint": {
+    "en": "Defines the maximum dimming value of output 2 (the highest value which can be set on the device).",
+    "nl": "Bepaalt de maximale dimwaarde van output 2 (de hoogste waarde die op het apparaat kan worden ingesteld)."
+  },
+  "zwave": {
+    "index": 122,
+    "size": 1
+  }
+}

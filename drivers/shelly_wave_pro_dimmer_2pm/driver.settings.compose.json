@@ -1,3 +1,170 @@
 [
-
+  {
+    "type": "group",
+    "label": {
+      "en": "Output 1 settings",
+      "nl": "Output 1 instellingen"
+    },
+    "children": [
+      {
+        "$extends": "zwaveDimmerCalibrationO1"
+      },
+      {
+        "$extends": "zwaveDimmerMinValueO1"
+      },
+      {
+        "$extends": "zwaveDimmerDimTimeO1"
+      },
+      {
+        "$extends": "zwaveDimmerFadeRateO1"
+      },
+      {
+        "$extends": "zwaveDimmerMinBrightnessO1"
+      },
+      {
+        "$extends": "zwaveDimmerMaxValueO1"
+      },
+      {
+        "$extends": "zwaveRestoreStateO1"
+      },
+      {
+        "$extends": "zwaveAutoOffO1"
+      },
+      {
+        "$extends": "zwaveAutoOnO1"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Output 2 settings",
+      "nl": "Output 2 instellingen"
+    },
+    "children": [
+      {
+        "$extends": "zwaveDimmerCalibrationO2"
+      },
+      {
+        "$extends": "zwaveDimmerMinValueO2"
+      },
+      {
+        "$extends": "zwaveDimmerDimTimeO2"
+      },
+      {
+        "$extends": "zwaveDimmerFadeRateO2"
+      },
+      {
+        "$extends": "zwaveDimmerMinBrightnessO2"
+      },
+      {
+        "$extends": "zwaveDimmerMaxValueO2"
+      },
+      {
+        "$extends": "zwaveRestoreStateO2"
+      },
+      {
+        "$extends": "zwaveAutoOffO2"
+      },
+      {
+        "$extends": "zwaveAutoOnO2"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Switch 1 settings",
+      "nl": "Switch 1 instellingen"
+    },
+    "children": [
+      {
+        "$extends": "zwaveDimmerDualButtonO1"
+      },
+      {
+        "value": "0",
+        "$extends": "zwaveSwitchTypeSW1"
+      },
+      {
+        "$extends": "zwaveOutputDetached1"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Switch 2 settings",
+      "nl": "Switch 2 instellingen"
+    },
+    "children": [
+      {
+        "value": "0",
+        "$extends": "zwaveSwitchTypeSW2"
+      },
+      {
+        "$extends": "zwaveOutputDetached2"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Switch 3 settings",
+      "nl": "Switch 3 instellingen"
+    },
+    "children": [
+      {
+        "$extends": "zwaveDimmerDualButtonO2"
+      },
+      {
+        "value": "0",
+        "$extends": "zwaveSwitchTypeSW3"
+      },
+      {
+        "$extends": "zwaveOutputDetached3"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Switch 4 settings",
+      "nl": "Switch 4 instellingen"
+    },
+    "children": [
+      {
+        "value": "0",
+        "$extends": "zwaveSwitchTypeSW4"
+      },
+      {
+        "$extends": "zwaveOutputDetached4"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Device Settings",
+      "nl": "Apparaatinstellingen"
+    },
+    "children": [
+      {
+        "$extends": "zwavePowerReportOnChangeO1",
+        "value": 10
+      },
+      {
+        "$extends": "zwavePowerReportOnChangeO2",
+        "value": 10
+      },
+      {
+        "$extends": "zwaveMinimalTimePowerReportO1"
+      },
+      {
+        "$extends": "zwaveMinimalTimePowerReportO2"
+      },
+      {
+        "$extends": "zwaveResetToDefaultAndLeave"
+      }
+    ]
+  }
 ]

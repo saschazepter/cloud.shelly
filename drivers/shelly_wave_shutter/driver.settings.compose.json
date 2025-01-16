@@ -85,35 +85,8 @@
   {
     "type": "group",
     "label": {
-      "en": "Power Settings",
-      "nl": "Energie instellingen"
-    },
-    "children": [
-      {
-        "$extends": "zwavePowerReportOnChangeO1",
-        "zwave": {
-          "index": 40,
-          "size": 1
-        }
-      },
-      {
-        "$extends": "zwaveMinimalTimePowerReportO1",
-        "attr": {
-          "min": 3,
-          "max": 50
-        },
-        "zwave": {
-          "index": 85,
-          "size": 1
-        }
-      }
-    ]
-  },
-  {
-    "type": "group",
-    "label": {
       "en": "Device Settings",
-      "nl": "Apparaat instellingen"
+      "nl": "Apparaatinstellingen"
     },
     "children": [
       {
@@ -302,6 +275,24 @@
         "zwave": {
           "index": 91,
           "size": 2
+        }
+      },
+      {
+        "$extends": "zwavePowerReportOnChangeO1",
+        "zwave": {
+          "index": 40,
+          "size": 1
+        }
+      },
+      {
+        "$extends": "zwaveMinimalTimePowerReportO1",
+        "attr": {
+          "min": 3,
+          "max": 50
+        },
+        "zwave": {
+          "index": 85,
+          "size": 1
         }
       }
     ]

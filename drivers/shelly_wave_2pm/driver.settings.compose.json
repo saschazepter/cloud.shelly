@@ -50,38 +50,8 @@
   {
     "type": "group",
     "label": {
-      "en": "Switch 1 - Power Settings",
-      "nl": "Switch 1 - Energie instellingen"
-    },
-    "children": [
-      {
-        "$extends": "zwavePowerReportOnChangeO1"
-      },
-      {
-        "$extends": "zwaveMinimalTimePowerReportO1"
-      }
-    ]
-  },
-  {
-    "type": "group",
-    "label": {
-      "en": "Switch 2 - Power Settings",
-      "nl": "Switch 2 - Energie instellingen"
-    },
-    "children": [
-      {
-        "$extends": "zwavePowerReportOnChangeO2"
-      },
-      {
-        "$extends": "zwaveMinimalTimePowerReportO2"
-      }
-    ]
-  },
-  {
-    "type": "group",
-    "label": {
       "en": "Device Settings",
-      "nl": "Apparaat instellingen"
+      "nl": "Apparaatinstellingen"
     },
     "children": [
       {
@@ -89,6 +59,18 @@
       },
       {
         "$extends": "zwaveReverseOutputsO1O2"
+      },
+      {
+        "$extends": "zwavePowerReportOnChangeO1"
+      },
+      {
+        "$extends": "zwaveMinimalTimePowerReportO1"
+      },
+      {
+        "$extends": "zwavePowerReportOnChangeO2"
+      },
+      {
+        "$extends": "zwaveMinimalTimePowerReportO2"
       },
       {
         "$extends": "zwaveResetToDefaultAndLeave"

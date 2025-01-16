@@ -1,0 +1,53 @@
+{
+  "type": "dropdown",
+  "label": {
+    "en": "Dimmer O2 calibration",
+    "nl": "Dimmer O2 kalibratie"
+  },
+  "value": "3",
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "Default",
+        "nl": "Standaard"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "Start calibration",
+        "nl": "Start calibratie"
+      }
+    },
+    {
+      "id": "2",
+      "label": {
+        "en": "Calibrated (status - read only)",
+        "nl": "Gekalibreerd (status - read only)"
+      }
+    },
+    {
+      "id": "3",
+      "label": {
+        "en": "Not calibrated (status - read only)",
+        "nl": "Niet gekalibreerd (status - read only)"
+      }
+    },
+    {
+      "id": "4",
+      "label": {
+        "en": "Calibration error (status - read only)",
+        "nl": "Kalibratie fout (status - read only)"
+      }
+    }
+  ],
+  "hint": {
+    "en": "By setting this to value 1 the device will start executing force calibration procedure for output 2.",
+    "nl": "Door deze in te stellen op waarde 1 zal het apparaat beginnen met het uitvoeren van de geforceerde kalibratieprocedure voor output 2."
+  },
+  "zwave": {
+    "index": 89,
+    "size": 1
+  }
+}

@@ -51,7 +51,7 @@
     "type": "group",
     "label": {
       "en": "Device Settings",
-      "nl": "Apparaat instellingen"
+      "nl": "Apparaatinstellingen"
     },
     "children": [
       {

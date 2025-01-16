@@ -3755,7 +3755,7 @@
           "type": "group",
           "label": {
             "en": "Device Settings",
-            "nl": "Apparaat instellingen"
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -3841,7 +3841,7 @@
           "type": "group",
           "label": {
             "en": "Device Settings",
-            "nl": "Apparaat instellingen"
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -4136,7 +4136,7 @@
           "type": "group",
           "label": {
             "en": "Device Settings",
-            "nl": "Apparaat instellingen"
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -4408,8 +4408,8 @@
         {
           "type": "group",
           "label": {
-            "en": "Power Settings",
-            "nl": "Energie instellingen"
+            "en": "Device Settings",
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -4461,16 +4461,7 @@
                 "index": 39,
                 "size": 1
               }
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "label": {
-            "en": "Device Settings",
-            "nl": "Apparaat instellingen"
-          },
-          "children": [
+            },
             {
               "id": "zwaveResetToDefaultAndLeave",
               "type": "dropdown",
@@ -4958,126 +4949,8 @@
         {
           "type": "group",
           "label": {
-            "en": "Switch 1 - Power Settings",
-            "nl": "Switch 1 - Energie instellingen"
-          },
-          "children": [
-            {
-              "id": "zwavePowerReportOnChangeO1",
-              "type": "number",
-              "label": {
-                "en": "Power report on change for O1",
-                "nl": "Power report bij wijziging voor O1"
-              },
-              "value": 50,
-              "attr": {
-                "min": 0,
-                "max": 100
-              },
-              "units": {
-                "en": "%",
-                "nl": "%"
-              },
-              "hint": {
-                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
-                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
-              },
-              "zwave": {
-                "index": 36,
-                "size": 1
-              }
-            },
-            {
-              "id": "zwaveMinimalTimePowerReportO1",
-              "type": "number",
-              "label": {
-                "en": "Minimal time between reports for O1",
-                "nl": "Minimale tijd tussen reports voor O1"
-              },
-              "value": 30,
-              "attr": {
-                "min": 10,
-                "max": 120
-              },
-              "units": {
-                "en": "s",
-                "nl": "s"
-              },
-              "hint": {
-                "en": "Defines the minimum time between sending reports to Homey for output 1.",
-                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
-              },
-              "zwave": {
-                "index": 39,
-                "size": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "label": {
-            "en": "Switch 2 - Power Settings",
-            "nl": "Switch 2 - Energie instellingen"
-          },
-          "children": [
-            {
-              "id": "zwavePowerReportOnChangeO2",
-              "type": "number",
-              "label": {
-                "en": "Power report on change for O2",
-                "nl": "Power report bij wijziging voor O2"
-              },
-              "value": 50,
-              "attr": {
-                "min": 0,
-                "max": 100
-              },
-              "units": {
-                "en": "%",
-                "nl": "%"
-              },
-              "hint": {
-                "en": "Defines the minimum change in consumed power for output 2 that will result in sending new report to Homey.",
-                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 2 dat nodig is om een status update naar Homey te versturen."
-              },
-              "zwave": {
-                "index": 37,
-                "size": 1
-              }
-            },
-            {
-              "id": "zwaveMinimalTimePowerReportO2",
-              "type": "number",
-              "label": {
-                "en": "Minimal time between reports for O2",
-                "nl": "Minimale tijd tussen reports voor O2"
-              },
-              "value": 30,
-              "attr": {
-                "min": 10,
-                "max": 120
-              },
-              "units": {
-                "en": "s",
-                "nl": "s"
-              },
-              "hint": {
-                "en": "Defines the minimum time between sending reports to Homey for output 2.",
-                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 2."
-              },
-              "zwave": {
-                "index": 40,
-                "size": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "label": {
             "en": "Device Settings",
-            "nl": "Apparaat instellingen"
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -5143,6 +5016,106 @@
               },
               "zwave": {
                 "index": 16,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwavePowerReportOnChangeO1",
+              "type": "number",
+              "label": {
+                "en": "Power report on change for O1",
+                "nl": "Power report bij wijziging voor O1"
+              },
+              "value": 50,
+              "attr": {
+                "min": 0,
+                "max": 100
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+              },
+              "zwave": {
+                "index": 36,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveMinimalTimePowerReportO1",
+              "type": "number",
+              "label": {
+                "en": "Minimal time between reports for O1",
+                "nl": "Minimale tijd tussen reports voor O1"
+              },
+              "value": 30,
+              "attr": {
+                "min": 10,
+                "max": 120
+              },
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+              },
+              "zwave": {
+                "index": 39,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwavePowerReportOnChangeO2",
+              "type": "number",
+              "label": {
+                "en": "Power report on change for O2",
+                "nl": "Power report bij wijziging voor O2"
+              },
+              "value": 50,
+              "attr": {
+                "min": 0,
+                "max": 100
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum change in consumed power for output 2 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 2 dat nodig is om een status update naar Homey te versturen."
+              },
+              "zwave": {
+                "index": 37,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveMinimalTimePowerReportO2",
+              "type": "number",
+              "label": {
+                "en": "Minimal time between reports for O2",
+                "nl": "Minimale tijd tussen reports voor O2"
+              },
+              "value": 30,
+              "attr": {
+                "min": 10,
+                "max": 120
+              },
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the minimum time between sending reports to Homey for output 2.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 2."
+              },
+              "zwave": {
+                "index": 40,
                 "size": 1
               }
             },
@@ -5411,7 +5384,7 @@
           "type": "group",
           "label": {
             "en": "Device Settings",
-            "nl": "Apparaat instellingen"
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -5642,8 +5615,8 @@
         {
           "type": "group",
           "label": {
-            "en": "Power Settings",
-            "nl": "Energie instellingen"
+            "en": "Device Settings",
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -5695,16 +5668,7 @@
                 "index": 39,
                 "size": 1
               }
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "label": {
-            "en": "Device Settings",
-            "nl": "Apparaat instellingen"
-          },
-          "children": [
+            },
             {
               "id": "zwaveResetToDefaultAndLeave",
               "type": "dropdown",
@@ -5810,8 +5774,8 @@
         {
           "type": "group",
           "label": {
-            "en": "Power Settings",
-            "nl": "Energie instellingen"
+            "en": "Device Settings",
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -5863,16 +5827,7 @@
                 "index": 39,
                 "size": 1
               }
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "label": {
-            "en": "Device Settings",
-            "nl": "Apparaat instellingen"
-          },
-          "children": [
+            },
             {
               "id": "zwaveResetToDefaultAndLeave",
               "type": "dropdown",
@@ -6174,7 +6129,7 @@
           "type": "group",
           "label": {
             "en": "Device Settings",
-            "nl": "Apparaat instellingen"
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -6480,8 +6435,8 @@
         {
           "type": "group",
           "label": {
-            "en": "Power Settings",
-            "nl": "Energie instellingen"
+            "en": "Device Settings",
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -6533,16 +6488,7 @@
                 "index": 39,
                 "size": 1
               }
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "label": {
-            "en": "Device Settings",
-            "nl": "Apparaat instellingen"
-          },
-          "children": [
+            },
             {
               "id": "zwaveResetToDefaultAndLeave",
               "type": "dropdown",
@@ -6985,7 +6931,7 @@
           "type": "group",
           "label": {
             "en": "Device Settings",
-            "nl": "Apparaat instellingen"
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -7475,126 +7421,8 @@
         {
           "type": "group",
           "label": {
-            "en": "Switch 1 - Power Settings",
-            "nl": "Switch 1 - Energie instellingen"
-          },
-          "children": [
-            {
-              "id": "zwavePowerReportOnChangeO1",
-              "type": "number",
-              "label": {
-                "en": "Power report on change for O1",
-                "nl": "Power report bij wijziging voor O1"
-              },
-              "value": 50,
-              "attr": {
-                "min": 0,
-                "max": 100
-              },
-              "units": {
-                "en": "%",
-                "nl": "%"
-              },
-              "hint": {
-                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
-                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
-              },
-              "zwave": {
-                "index": 36,
-                "size": 1
-              }
-            },
-            {
-              "id": "zwaveMinimalTimePowerReportO1",
-              "type": "number",
-              "label": {
-                "en": "Minimal time between reports for O1",
-                "nl": "Minimale tijd tussen reports voor O1"
-              },
-              "value": 30,
-              "attr": {
-                "min": 10,
-                "max": 120
-              },
-              "units": {
-                "en": "s",
-                "nl": "s"
-              },
-              "hint": {
-                "en": "Defines the minimum time between sending reports to Homey for output 1.",
-                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
-              },
-              "zwave": {
-                "index": 39,
-                "size": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "label": {
-            "en": "Switch 2 - Power Settings",
-            "nl": "Switch 2 - Energie instellingen"
-          },
-          "children": [
-            {
-              "id": "zwavePowerReportOnChangeO2",
-              "type": "number",
-              "label": {
-                "en": "Power report on change for O2",
-                "nl": "Power report bij wijziging voor O2"
-              },
-              "value": 50,
-              "attr": {
-                "min": 0,
-                "max": 100
-              },
-              "units": {
-                "en": "%",
-                "nl": "%"
-              },
-              "hint": {
-                "en": "Defines the minimum change in consumed power for output 2 that will result in sending new report to Homey.",
-                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 2 dat nodig is om een status update naar Homey te versturen."
-              },
-              "zwave": {
-                "index": 37,
-                "size": 1
-              }
-            },
-            {
-              "id": "zwaveMinimalTimePowerReportO2",
-              "type": "number",
-              "label": {
-                "en": "Minimal time between reports for O2",
-                "nl": "Minimale tijd tussen reports voor O2"
-              },
-              "value": 30,
-              "attr": {
-                "min": 10,
-                "max": 120
-              },
-              "units": {
-                "en": "s",
-                "nl": "s"
-              },
-              "hint": {
-                "en": "Defines the minimum time between sending reports to Homey for output 2.",
-                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 2."
-              },
-              "zwave": {
-                "index": 40,
-                "size": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "label": {
             "en": "Device Settings",
-            "nl": "Apparaat instellingen"
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -7660,6 +7488,106 @@
               },
               "zwave": {
                 "index": 16,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwavePowerReportOnChangeO1",
+              "type": "number",
+              "label": {
+                "en": "Power report on change for O1",
+                "nl": "Power report bij wijziging voor O1"
+              },
+              "value": 50,
+              "attr": {
+                "min": 0,
+                "max": 100
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+              },
+              "zwave": {
+                "index": 36,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveMinimalTimePowerReportO1",
+              "type": "number",
+              "label": {
+                "en": "Minimal time between reports for O1",
+                "nl": "Minimale tijd tussen reports voor O1"
+              },
+              "value": 30,
+              "attr": {
+                "min": 10,
+                "max": 120
+              },
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+              },
+              "zwave": {
+                "index": 39,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwavePowerReportOnChangeO2",
+              "type": "number",
+              "label": {
+                "en": "Power report on change for O2",
+                "nl": "Power report bij wijziging voor O2"
+              },
+              "value": 50,
+              "attr": {
+                "min": 0,
+                "max": 100
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum change in consumed power for output 2 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 2 dat nodig is om een status update naar Homey te versturen."
+              },
+              "zwave": {
+                "index": 37,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveMinimalTimePowerReportO2",
+              "type": "number",
+              "label": {
+                "en": "Minimal time between reports for O2",
+                "nl": "Minimale tijd tussen reports voor O2"
+              },
+              "value": 30,
+              "attr": {
+                "min": 10,
+                "max": 120
+              },
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the minimum time between sending reports to Homey for output 2.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 2."
+              },
+              "zwave": {
+                "index": 40,
                 "size": 1
               }
             },
@@ -8279,7 +8207,7 @@
           "type": "group",
           "label": {
             "en": "Device Settings",
-            "nl": "Apparaat instellingen"
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -8390,80 +8318,248 @@
         {
           "type": "group",
           "label": {
-            "en": "Switch 1 - Output Settings",
-            "nl": "Switch 1 - Output instellingen"
+            "en": "Output 1 settings",
+            "nl": "Output 1 instellingen"
           },
           "children": [
             {
-              "value": "0",
-              "id": "zwaveSwitchTypeSW1",
+              "id": "dimmerCalibration",
               "type": "dropdown",
               "label": {
-                "en": "Switch type SW1",
-                "nl": "Schakelaar type SW1"
+                "en": "Dimmer O1 calibration",
+                "nl": "Dimmer O1 kalibratie"
               },
+              "value": "3",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Momentary switch (push button)",
-                    "nl": "Pulsdrukschakelaar (push button)"
+                    "en": "Default",
+                    "nl": "Standaard"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Toggle switch (contact closed - ON / contact opened - OFF)",
-                    "nl": "Tuimelschakelaar (contact closed - ON / contact opened - OFF)"
+                    "en": "Start calibration",
+                    "nl": "Start calibratie"
                   }
                 },
                 {
                   "id": "2",
                   "label": {
-                    "en": "Toggle switch (device changes status when switch changes status)",
-                    "nl": "Tuimelschakelaar (apparaat wijzigt status wanneer schakelaar status wijzigt)"
+                    "en": "Calibrated (status - read only)",
+                    "nl": "Gekalibreerd (status - read only)"
+                  }
+                },
+                {
+                  "id": "3",
+                  "label": {
+                    "en": "Not calibrated (status - read only)",
+                    "nl": "Niet gekalibreerd (status - read only)"
+                  }
+                },
+                {
+                  "id": "4",
+                  "label": {
+                    "en": "Calibration error (status - read only)",
+                    "nl": "Kalibratie fout (status - read only)"
                   }
                 }
               ],
               "hint": {
-                "en": "Determines the type of switch connected to input 1.",
-                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
+                "en": "By setting this to value 1 the device will start executing force calibration procedure for output 1.",
+                "nl": "Door deze in te stellen op waarde 1 zal het apparaat beginnen met het uitvoeren van de geforceerde kalibratieprocedure voor output 1."
               },
               "zwave": {
-                "index": 1,
+                "index": 78,
                 "size": 1
               }
             },
             {
-              "id": "zwaveOutputDetached1",
+              "id": "dimmerMinValue",
+              "type": "number",
+              "label": {
+                "en": "Minimum dim value for O1",
+                "nl": "Minimale dimwaarde voor O1"
+              },
+              "value": 15,
+              "attr": {
+                "min": 0,
+                "max": 98
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimim dimming value for output 1 (the lowest value which can be set on the device, when, for example, dimming lights with wall switch or slider in Homey.",
+                "nl": "Bepaalt de minimale dimwaarde voor output 1 (de laagste waarde die op het apparaat kan worden ingesteld, bijvoorbeeld bij het dimmen van lichten met een wandschakelaar of schuifregelaar in Homey)."
+              },
+              "zwave": {
+                "index": 123,
+                "size": 1
+              }
+            },
+            {
+              "id": "dimmerDimTime",
+              "type": "number",
+              "label": {
+                "en": "Dimming time for O1",
+                "nl": "Dimtijd voor O1"
+              },
+              "value": 3,
+              "attr": {
+                "min": 1,
+                "max": 10
+              },
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the time during which the device will move between the min. and max. dimming values by a short press of the momentary switch connected to input terminal for output 1.",
+                "nl": "Bepaalt de tijd waarin het apparaat zich zal verplaatsen tussen de minimale en maximale dimwaarden door een korte druk op de impulsdrukker die is verbonden met de ingangsterminal voor output 1."
+              },
+              "zwave": {
+                "index": 125,
+                "size": 1
+              }
+            },
+            {
+              "id": "dimmerFadeRate",
               "type": "dropdown",
               "label": {
-                "en": "SW1 detached",
-                "nl": "SW1 ontkoppeld"
+                "en": "Fade rate for O1",
+                "nl": "Fade waarde voor O1"
+              },
+              "value": "3",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "5% per sec",
+                    "nl": "5% per sec"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "7% per sec",
+                    "nl": "7% per sec"
+                  }
+                },
+                {
+                  "id": "3",
+                  "label": {
+                    "en": "10% per sec (default)",
+                    "nl": "10% per sec (standaard)"
+                  }
+                },
+                {
+                  "id": "4",
+                  "label": {
+                    "en": "15% per sec",
+                    "nl": "15% per sec"
+                  }
+                },
+                {
+                  "id": "5",
+                  "label": {
+                    "en": "20% per sec",
+                    "nl": "20% per sec"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines the time during which the Dimmer will move between the min. and max. dimming values during a continuous press of the momentary switch for output 1.",
+                "nl": "Bepaalt de tijd waarin de dimmer zich zal verplaatsen tussen de minimale en maximale dimwaarden tijdens een continue druk op de impulsdrukker voor output 1."
+              },
+              "zwave": {
+                "index": 127,
+                "size": 1
+              }
+            },
+            {
+              "id": "dimmerMinBrightness",
+              "type": "number",
+              "label": {
+                "en": "Minimum brightness for O1",
+                "nl": "Minimale helderheid voor O1"
+              },
+              "value": 15,
+              "attr": {
+                "min": 1,
+                "max": 99
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum brightness on toggle for output 1. It is applied on toggle on (Off → On state change) when the light brightness is lower than the set value of this parameter.",
+                "nl": "Bepaalt de minimale helderheid bij het inschakelen van output 1. Het wordt toegepast bij het inschakelen (van Uit → Aan) wanneer de helderheid van het licht lager is dan de ingestelde waarde van deze parameter."
+              },
+              "zwave": {
+                "index": 129,
+                "size": 1
+              }
+            },
+            {
+              "id": "dimmerMaxValue",
+              "type": "number",
+              "label": {
+                "en": "Maximum dim value for O1",
+                "nl": "Maximale dimwaarde voor O1"
+              },
+              "value": 99,
+              "attr": {
+                "min": 0,
+                "max": 99
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the maximum dimming value of output 1 (the highest value which can be set on the device).",
+                "nl": "Bepaalt de maximale dimwaarde van output 1 (de hoogste waarde die op het apparaat kan worden ingesteld)."
+              },
+              "zwave": {
+                "index": 121,
+                "size": 1
+              }
+            },
+            {
+              "id": "dimmerDualButton",
+              "type": "dropdown",
+              "label": {
+                "en": "SW1 & SW2 Dual button mode",
+                "nl": "SW1 & SW2 dubbele knop modus"
               },
               "value": "0",
               "values": [
                 {
                   "id": "0",
                   "label": {
-                    "en": "Normal mode",
-                    "nl": "Normale modus"
+                    "en": "Inactive",
+                    "nl": "Inactief"
                   }
                 },
                 {
                   "id": "1",
                   "label": {
-                    "en": "Detached mode",
-                    "nl": "Ontkoppeld"
+                    "en": "Active",
+                    "nl": "Actief"
                   }
                 }
               ],
               "hint": {
-                "en": "Defines if the input switch SW1 is separated from the state of the output.",
-                "nl": "Specificeert of de input schakelaar SW1 is ontkoppeld van de status van de output."
+                "en": "Defines the SW1 & SW2 Dual button mode for output 1 (only push button).",
+                "nl": "Bepaalt de SW1 & SW2 dubbele knop modus voor output 1 (alleen drukknop)."
               },
               "zwave": {
-                "index": 7,
+                "index": 131,
                 "size": 1
               }
             },
@@ -8551,8 +8647,90 @@
         {
           "type": "group",
           "label": {
-            "en": "Switch 2 - Output Settings",
-            "nl": "Switch 2 - Output instellingen"
+            "en": "Switch 1 settings",
+            "nl": "Switch 1 instellingen"
+          },
+          "children": [
+            {
+              "value": "0",
+              "id": "zwaveSwitchTypeSW1",
+              "type": "dropdown",
+              "label": {
+                "en": "Switch type SW1",
+                "nl": "Schakelaar type SW1"
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Momentary switch (push button)",
+                    "nl": "Pulsdrukschakelaar (push button)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Toggle switch (contact closed - ON / contact opened - OFF)",
+                    "nl": "Tuimelschakelaar (contact closed - ON / contact opened - OFF)"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Toggle switch (device changes status when switch changes status)",
+                    "nl": "Tuimelschakelaar (apparaat wijzigt status wanneer schakelaar status wijzigt)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
+              },
+              "zwave": {
+                "index": 1,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveOutputDetached1",
+              "type": "dropdown",
+              "label": {
+                "en": "SW1 detached",
+                "nl": "SW1 ontkoppeld"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Normal mode",
+                    "nl": "Normale modus"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Detached mode",
+                    "nl": "Ontkoppeld"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines if the input switch SW1 is separated from the state of the output.",
+                "nl": "Specificeert of de input schakelaar SW1 is ontkoppeld van de status van de output."
+              },
+              "zwave": {
+                "index": 7,
+                "size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Switch 2 settings",
+            "nl": "Switch 2 instellingen"
           },
           "children": [
             {
@@ -8596,13 +8774,13 @@
               }
             },
             {
-              "value": "1",
               "id": "zwaveOutputDetached2",
               "type": "dropdown",
               "label": {
                 "en": "SW2 detached",
                 "nl": "SW2 ontkoppeld"
               },
+              "value": "1",
               "values": [
                 {
                   "id": "0",
@@ -8633,8 +8811,8 @@
         {
           "type": "group",
           "label": {
-            "en": "Power Settings",
-            "nl": "Energie instellingen"
+            "en": "Device Settings",
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -8684,256 +8862,6 @@
               },
               "zwave": {
                 "index": 39,
-                "size": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "label": {
-            "en": "Device Settings",
-            "nl": "Apparaat instellingen"
-          },
-          "children": [
-            {
-              "id": "dimmerCalibration",
-              "type": "dropdown",
-              "label": {
-                "en": "Forced Dimmer Calibration",
-                "nl": "Geforceerde dimmer kalibratie"
-              },
-              "value": "0",
-              "values": [
-                {
-                  "id": "0",
-                  "label": {
-                    "en": "Default",
-                    "nl": "Standaard"
-                  }
-                },
-                {
-                  "id": "1",
-                  "label": {
-                    "en": "Calibrated (status - read only)",
-                    "nl": "Gekalibreerd (status - read only)"
-                  }
-                },
-                {
-                  "id": "2",
-                  "label": {
-                    "en": "Not Calibrated (status - read only)",
-                    "nl": "Niet gekalibreerd (status - read only)"
-                  }
-                },
-                {
-                  "id": "3",
-                  "label": {
-                    "en": "Start calibration",
-                    "nl": "Start calibratie"
-                  }
-                },
-                {
-                  "id": "4",
-                  "label": {
-                    "en": "Calibration Error (status - read only)",
-                    "nl": "Kalibratie fout (status - read only)"
-                  }
-                }
-              ],
-              "hint": {
-                "en": "By setting this parameter (78) to value 1 the Device will start executing force calibration procedure.",
-                "nl": "Door deze parameter (78) in te stellen op waarde 1, zal het apparaat beginnen met het uitvoeren van de geforceerde kalibratieprocedure."
-              },
-              "zwave": {
-                "index": 78,
-                "size": 1
-              }
-            },
-            {
-              "id": "dimmerMinValue",
-              "type": "number",
-              "label": {
-                "en": "Min dimming value for O1",
-                "nl": "Min dim waarde voor O1"
-              },
-              "value": 15,
-              "attr": {
-                "min": 0,
-                "max": 98
-              },
-              "units": {
-                "en": "%",
-                "nl": "%"
-              },
-              "hint": {
-                "en": "This parameter (123) defines the minimim dimming value (the lowest value which can be set on the device, when, for example, dimming lights with wall switch or slider in Homey.",
-                "nl": "Deze parameter (123) bepaalt de minimale dimwaarde (de laagste waarde die op het apparaat kan worden ingesteld, bijvoorbeeld bij het dimmen van lichten met een wandschakelaar of schuifregelaar in Homey)."
-              },
-              "zwave": {
-                "index": 123,
-                "size": 1
-              }
-            },
-            {
-              "id": "dimmerDimTime",
-              "type": "number",
-              "label": {
-                "en": "Dimming time for O1",
-                "nl": "Dim tijd voor O1"
-              },
-              "value": 3,
-              "attr": {
-                "min": 1,
-                "max": 10
-              },
-              "units": {
-                "en": "s",
-                "nl": "s"
-              },
-              "hint": {
-                "en": "This parameter (125) defines the time during which the device will move between the min. and max. dimming values by a short press of the momentary switch connected to input terminal.",
-                "nl": "Deze parameter (125) bepaalt de tijd waarin het apparaat zich zal verplaatsen tussen de minimale en maximale dimwaarden door een korte druk op de impulsdrukker die is verbonden met de ingangsterminal."
-              },
-              "zwave": {
-                "index": 125,
-                "size": 1
-              }
-            },
-            {
-              "id": "dimmerFadeRate",
-              "type": "dropdown",
-              "label": {
-                "en": "Fade rate for O1",
-                "nl": "Fade waarde voor O1"
-              },
-              "value": "3",
-              "values": [
-                {
-                  "id": "0",
-                  "label": {
-                    "en": "5% per sec",
-                    "nl": "5% per sec"
-                  }
-                },
-                {
-                  "id": "1",
-                  "label": {
-                    "en": "7% per sec",
-                    "nl": "7% per sec"
-                  }
-                },
-                {
-                  "id": "3",
-                  "label": {
-                    "en": "10% per sec (default)",
-                    "nl": "10% per sec (standaard)"
-                  }
-                },
-                {
-                  "id": "4",
-                  "label": {
-                    "en": "15% per sec",
-                    "nl": "15% per sec"
-                  }
-                },
-                {
-                  "id": "5",
-                  "label": {
-                    "en": "20% per sec",
-                    "nl": "20% per sec"
-                  }
-                }
-              ],
-              "hint": {
-                "en": "This parameter (127) defines the time during which the Dimmer will move between the min. and max. dimming values during a continuous press of the momentary switch connected to terminal, by an associated device or through Homey.",
-                "nl": "Deze parameter (127) bepaalt de tijd waarin de dimmer zich zal verplaatsen tussen de minimale en maximale dimwaarden tijdens een continue druk op de impulsdrukker die is aangesloten op de terminal, door een gekoppeld apparaat of via Homey."
-              },
-              "zwave": {
-                "index": 127,
-                "size": 1
-              }
-            },
-            {
-              "id": "dimmerMinBrightness",
-              "type": "number",
-              "label": {
-                "en": "Min brightness for O1",
-                "nl": "Min helderheid voor O1"
-              },
-              "value": 15,
-              "attr": {
-                "min": 1,
-                "max": 99
-              },
-              "units": {
-                "en": "%",
-                "nl": "%"
-              },
-              "hint": {
-                "en": "This parameter (129) defines the minimum brightness on toggle. It is applied on toggle on (Off → On state change) when the light brightness is lower than the set value of this parameter.",
-                "nl": "Deze parameter (129) bepaalt de minimale helderheid bij het inschakelen. Het wordt toegepast bij het inschakelen (van Uit → Aan) wanneer de helderheid van het licht lager is dan de ingestelde waarde van deze parameter."
-              },
-              "zwave": {
-                "index": 129,
-                "size": 1
-              }
-            },
-            {
-              "id": "dimmerDualButton",
-              "type": "dropdown",
-              "label": {
-                "en": "SW1 & SW2 Dual Button Mode",
-                "nl": "SW1 & SW2 dubbele knop modus"
-              },
-              "value": "0",
-              "values": [
-                {
-                  "id": "0",
-                  "label": {
-                    "en": "Inactive",
-                    "nl": "Inactief"
-                  }
-                },
-                {
-                  "id": "1",
-                  "label": {
-                    "en": "Active",
-                    "nl": "Actief"
-                  }
-                }
-              ],
-              "hint": {
-                "en": "This parameter (131) defines the SW1 & SW2 Dual button mode (only push button).",
-                "nl": "Deze parameter (131) bepaalt de SW1 & SW2 dubbele knop modus (alleen druk knop)."
-              },
-              "zwave": {
-                "index": 131,
-                "size": 1
-              }
-            },
-            {
-              "id": "dimmerMaxValue",
-              "type": "number",
-              "label": {
-                "en": "Max dimming value for O1",
-                "nl": "Max dim waarde voor O1"
-              },
-              "value": 99,
-              "attr": {
-                "min": 0,
-                "max": 99
-              },
-              "units": {
-                "en": "%",
-                "nl": "%"
-              },
-              "hint": {
-                "en": "This parameter (121) defines the maximum dimming value (the highest value which can be set on the device, when, for example, dimming lights with wall switch or slider in Homey.",
-                "nl": "Deze parameter (121) bepaalt de maximale dimwaarde (de hoogste waarde die op het apparaat kan worden ingesteld, bijvoorbeeld bij het dimmen van lichten met een wandschakelaar of schuifregelaar in Homey)."
-              },
-              "zwave": {
-                "index": 121,
                 "size": 1
               }
             },
@@ -9091,7 +9019,1136 @@
         }
       },
       "id": "shelly_wave_pro_dimmer_2pm",
-      "settings": []
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Output 1 settings",
+            "nl": "Output 1 instellingen"
+          },
+          "children": [
+            {
+              "id": "zwaveDimmerCalibrationO1",
+              "type": "dropdown",
+              "label": {
+                "en": "Dimmer O1 calibration",
+                "nl": "Dimmer O1 kalibratie"
+              },
+              "value": "3",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Default",
+                    "nl": "Standaard"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Start calibration",
+                    "nl": "Start calibratie"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Calibrated (status - read only)",
+                    "nl": "Gekalibreerd (status - read only)"
+                  }
+                },
+                {
+                  "id": "3",
+                  "label": {
+                    "en": "Not calibrated (status - read only)",
+                    "nl": "Niet gekalibreerd (status - read only)"
+                  }
+                },
+                {
+                  "id": "4",
+                  "label": {
+                    "en": "Calibration error (status - read only)",
+                    "nl": "Kalibratie fout (status - read only)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "By setting this to value 1 the device will start executing force calibration procedure for output 1.",
+                "nl": "Door deze in te stellen op waarde 1 zal het apparaat beginnen met het uitvoeren van de geforceerde kalibratieprocedure voor output 1."
+              },
+              "zwave": {
+                "index": 78,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveDimmerMinValueO1",
+              "type": "number",
+              "label": {
+                "en": "Minimum dim value for O1",
+                "nl": "Minimale dimwaarde voor O1"
+              },
+              "value": 15,
+              "attr": {
+                "min": 0,
+                "max": 98
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimim dimming value for output 1 (the lowest value which can be set on the device, when, for example, dimming lights with wall switch or slider in Homey.",
+                "nl": "Bepaalt de minimale dimwaarde voor output 1 (de laagste waarde die op het apparaat kan worden ingesteld, bijvoorbeeld bij het dimmen van lichten met een wandschakelaar of schuifregelaar in Homey)."
+              },
+              "zwave": {
+                "index": 123,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveDimmerDimTimeO1",
+              "type": "number",
+              "label": {
+                "en": "Dimming time for O1",
+                "nl": "Dimtijd voor O1"
+              },
+              "value": 3,
+              "attr": {
+                "min": 1,
+                "max": 10
+              },
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the time during which the device will move between the min. and max. dimming values by a short press of the momentary switch connected to input terminal for output 1.",
+                "nl": "Bepaalt de tijd waarin het apparaat zich zal verplaatsen tussen de minimale en maximale dimwaarden door een korte druk op de impulsdrukker die is verbonden met de ingangsterminal voor output 1."
+              },
+              "zwave": {
+                "index": 125,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveDimmerFadeRateO1",
+              "type": "dropdown",
+              "label": {
+                "en": "Fade rate for O1",
+                "nl": "Fade waarde voor O1"
+              },
+              "value": "3",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "5% per sec",
+                    "nl": "5% per sec"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "7% per sec",
+                    "nl": "7% per sec"
+                  }
+                },
+                {
+                  "id": "3",
+                  "label": {
+                    "en": "10% per sec (default)",
+                    "nl": "10% per sec (standaard)"
+                  }
+                },
+                {
+                  "id": "4",
+                  "label": {
+                    "en": "15% per sec",
+                    "nl": "15% per sec"
+                  }
+                },
+                {
+                  "id": "5",
+                  "label": {
+                    "en": "20% per sec",
+                    "nl": "20% per sec"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines the time during which the Dimmer will move between the min. and max. dimming values during a continuous press of the momentary switch for output 1.",
+                "nl": "Bepaalt de tijd waarin de dimmer zich zal verplaatsen tussen de minimale en maximale dimwaarden tijdens een continue druk op de impulsdrukker voor output 1."
+              },
+              "zwave": {
+                "index": 127,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveDimmerMinBrightnessO1",
+              "type": "number",
+              "label": {
+                "en": "Minimum brightness for O1",
+                "nl": "Minimale helderheid voor O1"
+              },
+              "value": 15,
+              "attr": {
+                "min": 1,
+                "max": 99
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum brightness on toggle for output 1. It is applied on toggle on (Off → On state change) when the light brightness is lower than the set value of this parameter.",
+                "nl": "Bepaalt de minimale helderheid bij het inschakelen van output 1. Het wordt toegepast bij het inschakelen (van Uit → Aan) wanneer de helderheid van het licht lager is dan de ingestelde waarde van deze parameter."
+              },
+              "zwave": {
+                "index": 129,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveDimmerMaxValueO1",
+              "type": "number",
+              "label": {
+                "en": "Maximum dim value for O1",
+                "nl": "Maximale dimwaarde voor O1"
+              },
+              "value": 99,
+              "attr": {
+                "min": 0,
+                "max": 99
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the maximum dimming value of output 1 (the highest value which can be set on the device).",
+                "nl": "Bepaalt de maximale dimwaarde van output 1 (de hoogste waarde die op het apparaat kan worden ingesteld)."
+              },
+              "zwave": {
+                "index": 121,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveRestoreStateO1",
+              "type": "dropdown",
+              "label": {
+                "en": "Restore state of O1 after power failure",
+                "nl": "Herstel status van O1 na stroom uitval"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Output 1 saves last on/off status and restores it after a power failure",
+                    "nl": "Output 1 hersteld on/off status na stroom uitval"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Output 1 does not save on/off status and does not restore it after a power failure, it remains off",
+                    "nl": "Output 1 is standaard uit na stroom uitval"
+                  }
+                }
+              ],
+              "zwave": {
+                "index": 17,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveAutoOffO1",
+              "type": "number",
+              "label": {
+                "en": "Auto OFF O1 with timer",
+                "nl": "Automatisch UIT O1 met timer"
+              },
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 32535
+              },
+              "units": {
+                "en": "seconds",
+                "nl": "seconden"
+              },
+              "hint": {
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+              },
+              "zwave": {
+                "index": 19,
+                "size": 2
+              }
+            },
+            {
+              "id": "zwaveAutoOnO1",
+              "type": "number",
+              "label": {
+                "en": "Auto ON O1 with timer",
+                "nl": "Automatisch AAN O1 met timer"
+              },
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 32535
+              },
+              "units": {
+                "en": "seconds",
+                "nl": "seconden"
+              },
+              "hint": {
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+              },
+              "zwave": {
+                "index": 20,
+                "size": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Output 2 settings",
+            "nl": "Output 2 instellingen"
+          },
+          "children": [
+            {
+              "id": "zwaveDimmerCalibrationO2",
+              "type": "dropdown",
+              "label": {
+                "en": "Dimmer O2 calibration",
+                "nl": "Dimmer O2 kalibratie"
+              },
+              "value": "3",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Default",
+                    "nl": "Standaard"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Start calibration",
+                    "nl": "Start calibratie"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Calibrated (status - read only)",
+                    "nl": "Gekalibreerd (status - read only)"
+                  }
+                },
+                {
+                  "id": "3",
+                  "label": {
+                    "en": "Not calibrated (status - read only)",
+                    "nl": "Niet gekalibreerd (status - read only)"
+                  }
+                },
+                {
+                  "id": "4",
+                  "label": {
+                    "en": "Calibration error (status - read only)",
+                    "nl": "Kalibratie fout (status - read only)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "By setting this to value 1 the device will start executing force calibration procedure for output 2.",
+                "nl": "Door deze in te stellen op waarde 1 zal het apparaat beginnen met het uitvoeren van de geforceerde kalibratieprocedure voor output 2."
+              },
+              "zwave": {
+                "index": 89,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveDimmerMinValueO2",
+              "type": "number",
+              "label": {
+                "en": "Minimum dim value for O2",
+                "nl": "Minimale dimwaarde voor O2"
+              },
+              "value": 15,
+              "attr": {
+                "min": 0,
+                "max": 98
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimim dimming value for output 2 (the lowest value which can be set on the device, when, for example, dimming lights with wall switch or slider in Homey.",
+                "nl": "Bepaalt de minimale dimwaarde voor output 2 (de laagste waarde die op het apparaat kan worden ingesteld, bijvoorbeeld bij het dimmen van lichten met een wandschakelaar of schuifregelaar in Homey)."
+              },
+              "zwave": {
+                "index": 124,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveDimmerDimTimeO2",
+              "type": "number",
+              "label": {
+                "en": "Dimming time for O2",
+                "nl": "Dimtijd voor O2"
+              },
+              "value": 3,
+              "attr": {
+                "min": 1,
+                "max": 10
+              },
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the time during which the device will move between the min. and max. dimming values by a short press of the momentary switch connected to input terminal for output 2.",
+                "nl": "Bepaalt de tijd waarin het apparaat zich zal verplaatsen tussen de minimale en maximale dimwaarden door een korte druk op de impulsdrukker die is verbonden met de ingangsterminal voor output 2."
+              },
+              "zwave": {
+                "index": 126,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveDimmerFadeRateO2",
+              "type": "dropdown",
+              "label": {
+                "en": "Fade rate for O2",
+                "nl": "Fade waarde voor O2"
+              },
+              "value": "3",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "5% per sec",
+                    "nl": "5% per sec"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "7% per sec",
+                    "nl": "7% per sec"
+                  }
+                },
+                {
+                  "id": "3",
+                  "label": {
+                    "en": "10% per sec (default)",
+                    "nl": "10% per sec (standaard)"
+                  }
+                },
+                {
+                  "id": "4",
+                  "label": {
+                    "en": "15% per sec",
+                    "nl": "15% per sec"
+                  }
+                },
+                {
+                  "id": "5",
+                  "label": {
+                    "en": "20% per sec",
+                    "nl": "20% per sec"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines the time during which the Dimmer will move between the min. and max. dimming values during a continuous press of the momentary switch for output 2.",
+                "nl": "Bepaalt de tijd waarin de dimmer zich zal verplaatsen tussen de minimale en maximale dimwaarden tijdens een continue druk op de impulsdrukker voor output 2."
+              },
+              "zwave": {
+                "index": 128,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveDimmerMinBrightnessO2",
+              "type": "number",
+              "label": {
+                "en": "Minimum brightness for O2",
+                "nl": "Minimale helderheid voor O2"
+              },
+              "value": 15,
+              "attr": {
+                "min": 1,
+                "max": 99
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum brightness on toggle for output 2. It is applied on toggle on (Off → On state change) when the light brightness is lower than the set value of this parameter.",
+                "nl": "Bepaalt de minimale helderheid bij het inschakelen van output 2. Het wordt toegepast bij het inschakelen (van Uit → Aan) wanneer de helderheid van het licht lager is dan de ingestelde waarde van deze parameter."
+              },
+              "zwave": {
+                "index": 130,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveDimmerMaxValueO2",
+              "type": "number",
+              "label": {
+                "en": "Maximum dim value for O2",
+                "nl": "Maximale dimwaarde voor O2"
+              },
+              "value": 99,
+              "attr": {
+                "min": 0,
+                "max": 99
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the maximum dimming value of output 2 (the highest value which can be set on the device).",
+                "nl": "Bepaalt de maximale dimwaarde van output 2 (de hoogste waarde die op het apparaat kan worden ingesteld)."
+              },
+              "zwave": {
+                "index": 122,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveRestoreStateO2",
+              "type": "dropdown",
+              "label": {
+                "en": "Restore state of O2 after power failure",
+                "nl": "Herstel status van O2 na stroom uitval"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Output 2 saves last on/off status and restores it after a power failure",
+                    "nl": "Output 2 hersteld on/off status na stroom uitval"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Output 2 does not save on/off status and does not restore it after a power failure, it remains off",
+                    "nl": "Output 2 is standaard uit na stroom uitval"
+                  }
+                }
+              ],
+              "zwave": {
+                "index": 18,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveAutoOffO2",
+              "type": "number",
+              "label": {
+                "en": "Auto OFF O2 with timer",
+                "nl": "Automatisch UIT O2 met timer"
+              },
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 32535
+              },
+              "units": {
+                "en": "seconds",
+                "nl": "seconden"
+              },
+              "hint": {
+                "en": "Defines the time after which the output 2 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 2 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+              },
+              "zwave": {
+                "index": 21,
+                "size": 2
+              }
+            },
+            {
+              "id": "zwaveAutoOnO2",
+              "type": "number",
+              "label": {
+                "en": "Auto ON O2 with timer",
+                "nl": "Automatisch AAN O2 met timer"
+              },
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 32535
+              },
+              "units": {
+                "en": "seconds",
+                "nl": "seconden"
+              },
+              "hint": {
+                "en": "Defines the time after which output 2 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 2 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+              },
+              "zwave": {
+                "index": 22,
+                "size": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Switch 1 settings",
+            "nl": "Switch 1 instellingen"
+          },
+          "children": [
+            {
+              "id": "zwaveDimmerDualButtonO1",
+              "type": "dropdown",
+              "label": {
+                "en": "SW1 & SW2 Dual button mode",
+                "nl": "SW1 & SW2 dubbele knop modus"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Inactive",
+                    "nl": "Inactief"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Active",
+                    "nl": "Actief"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines the SW1 & SW2 Dual button mode for output 1 (only push button).",
+                "nl": "Bepaalt de SW1 & SW2 dubbele knop modus voor output 1 (alleen drukknop)."
+              },
+              "zwave": {
+                "index": 131,
+                "size": 1
+              }
+            },
+            {
+              "value": "0",
+              "id": "zwaveSwitchTypeSW1",
+              "type": "dropdown",
+              "label": {
+                "en": "Switch type SW1",
+                "nl": "Schakelaar type SW1"
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Momentary switch (push button)",
+                    "nl": "Pulsdrukschakelaar (push button)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Toggle switch (contact closed - ON / contact opened - OFF)",
+                    "nl": "Tuimelschakelaar (contact closed - ON / contact opened - OFF)"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Toggle switch (device changes status when switch changes status)",
+                    "nl": "Tuimelschakelaar (apparaat wijzigt status wanneer schakelaar status wijzigt)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
+              },
+              "zwave": {
+                "index": 1,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveOutputDetached1",
+              "type": "dropdown",
+              "label": {
+                "en": "SW1 detached",
+                "nl": "SW1 ontkoppeld"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Normal mode",
+                    "nl": "Normale modus"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Detached mode",
+                    "nl": "Ontkoppeld"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines if the input switch SW1 is separated from the state of the output.",
+                "nl": "Specificeert of de input schakelaar SW1 is ontkoppeld van de status van de output."
+              },
+              "zwave": {
+                "index": 7,
+                "size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Switch 2 settings",
+            "nl": "Switch 2 instellingen"
+          },
+          "children": [
+            {
+              "value": "0",
+              "id": "zwaveSwitchTypeSW2",
+              "type": "dropdown",
+              "label": {
+                "en": "Switch type SW2",
+                "nl": "Schakelaar type SW2"
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Momentary switch (push button)",
+                    "nl": "Pulsdrukschakelaar (push button)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Toggle switch (contact closed - ON / contact opened - OFF)",
+                    "nl": "Tuimelschakelaar (contact closed - ON / contact opened - OFF)"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Toggle switch (device changes status when switch changes status)",
+                    "nl": "Tuimelschakelaar (apparaat wijzigt status wanneer schakelaar status wijzigt)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Determines the type of switch connected to input 2.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 2."
+              },
+              "zwave": {
+                "index": 2,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveOutputDetached2",
+              "type": "dropdown",
+              "label": {
+                "en": "SW2 detached",
+                "nl": "SW2 ontkoppeld"
+              },
+              "value": "1",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Normal mode",
+                    "nl": "Normale modus"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Detached mode",
+                    "nl": "Ontkoppeld"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines if the input switch SW2 is separated from the state of the output.",
+                "nl": "Specificeert of de input schakelaar SW2 is ontkoppeld van de status van de output."
+              },
+              "zwave": {
+                "index": 8,
+                "size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Switch 3 settings",
+            "nl": "Switch 3 instellingen"
+          },
+          "children": [
+            {
+              "id": "zwaveDimmerDualButtonO2",
+              "type": "dropdown",
+              "label": {
+                "en": "SW3 & SW4 Dual button mode",
+                "nl": "SW3 & SW4 dubbele knop modus"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Inactive",
+                    "nl": "Inactief"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Active",
+                    "nl": "Actief"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines the SW3 & SW4 Dual button mode for output 2 (only push button).",
+                "nl": "Bepaalt de SW3 & SW4 dubbele knop modus voor output 2 (alleen drukknop)."
+              },
+              "zwave": {
+                "index": 132,
+                "size": 1
+              }
+            },
+            {
+              "value": "0",
+              "id": "zwaveSwitchTypeSW3",
+              "type": "dropdown",
+              "label": {
+                "en": "Switch type SW3",
+                "nl": "Schakelaar type SW3"
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Momentary switch (push button)",
+                    "nl": "Pulsdrukschakelaar (push button)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Toggle switch (contact closed - ON / contact opened - OFF)",
+                    "nl": "Tuimelschakelaar (contact closed - ON / contact opened - OFF)"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Toggle switch (device changes status when switch changes status)",
+                    "nl": "Tuimelschakelaar (apparaat wijzigt status wanneer schakelaar status wijzigt)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Determines the type of switch connected to input 3.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 3."
+              },
+              "zwave": {
+                "index": 3,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveOutputDetached3",
+              "type": "dropdown",
+              "label": {
+                "en": "SW3 detached",
+                "nl": "SW3 ontkoppeld"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Normal mode",
+                    "nl": "Normale modus"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Detached mode",
+                    "nl": "Ontkoppeld"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines if the input switch SW3 is separated from the state of the output.",
+                "nl": "Specificeert of de input schakelaar SW3 is ontkoppeld van de status van de output."
+              },
+              "zwave": {
+                "index": 9,
+                "size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Switch 4 settings",
+            "nl": "Switch 4 instellingen"
+          },
+          "children": [
+            {
+              "value": "0",
+              "id": "zwaveSwitchTypeSW4",
+              "type": "dropdown",
+              "label": {
+                "en": "Switch type SW4",
+                "nl": "Schakelaar type SW4"
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Momentary switch (push button)",
+                    "nl": "Pulsdrukschakelaar (push button)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Toggle switch (contact closed - ON / contact opened - OFF)",
+                    "nl": "Tuimelschakelaar (contact closed - ON / contact opened - OFF)"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Toggle switch (device changes status when switch changes status)",
+                    "nl": "Tuimelschakelaar (apparaat wijzigt status wanneer schakelaar status wijzigt)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Determines the type of switch connected to input 4.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 4."
+              },
+              "zwave": {
+                "index": 4,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveOutputDetached4",
+              "type": "dropdown",
+              "label": {
+                "en": "SW4 detached",
+                "nl": "SW4 ontkoppeld"
+              },
+              "value": "1",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Normal mode",
+                    "nl": "Normale modus"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Detached mode",
+                    "nl": "Ontkoppeld"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines if the input switch SW4 is separated from the state of the output.",
+                "nl": "Specificeert of de input schakelaar SW4 is ontkoppeld van de status van de output."
+              },
+              "zwave": {
+                "index": 10,
+                "size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Device Settings",
+            "nl": "Apparaatinstellingen"
+          },
+          "children": [
+            {
+              "value": 10,
+              "id": "zwavePowerReportOnChangeO1",
+              "type": "number",
+              "label": {
+                "en": "Power report on change for O1",
+                "nl": "Power report bij wijziging voor O1"
+              },
+              "attr": {
+                "min": 0,
+                "max": 100
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+              },
+              "zwave": {
+                "index": 36,
+                "size": 1
+              }
+            },
+            {
+              "value": 10,
+              "id": "zwavePowerReportOnChangeO2",
+              "type": "number",
+              "label": {
+                "en": "Power report on change for O2",
+                "nl": "Power report bij wijziging voor O2"
+              },
+              "attr": {
+                "min": 0,
+                "max": 100
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum change in consumed power for output 2 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 2 dat nodig is om een status update naar Homey te versturen."
+              },
+              "zwave": {
+                "index": 37,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveMinimalTimePowerReportO1",
+              "type": "number",
+              "label": {
+                "en": "Minimal time between reports for O1",
+                "nl": "Minimale tijd tussen reports voor O1"
+              },
+              "value": 30,
+              "attr": {
+                "min": 10,
+                "max": 120
+              },
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+              },
+              "zwave": {
+                "index": 39,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveMinimalTimePowerReportO2",
+              "type": "number",
+              "label": {
+                "en": "Minimal time between reports for O2",
+                "nl": "Minimale tijd tussen reports voor O2"
+              },
+              "value": 30,
+              "attr": {
+                "min": 10,
+                "max": 120
+              },
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the minimum time between sending reports to Homey for output 2.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 2."
+              },
+              "zwave": {
+                "index": 40,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveResetToDefaultAndLeave",
+              "type": "dropdown",
+              "label": {
+                "en": "Reset parameters to default and leave network",
+                "nl": "Reset parameters naar fabrieksinstellingen en verlaat netwerk"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Do Not Reset",
+                    "nl": "Niet resetten"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Reset parameters and leave network",
+                    "nl": "Reset parameters en netwerk verlaten"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+              },
+              "zwave": {
+                "index": 120,
+                "size": 1
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "name": {
@@ -9330,67 +10387,8 @@
         {
           "type": "group",
           "label": {
-            "en": "Power Settings",
-            "nl": "Energie instellingen"
-          },
-          "children": [
-            {
-              "zwave": {
-                "index": 40,
-                "size": 1
-              },
-              "id": "zwavePowerReportOnChangeO1",
-              "type": "number",
-              "label": {
-                "en": "Power report on change for O1",
-                "nl": "Power report bij wijziging voor O1"
-              },
-              "value": 50,
-              "attr": {
-                "min": 0,
-                "max": 100
-              },
-              "units": {
-                "en": "%",
-                "nl": "%"
-              },
-              "hint": {
-                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
-                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
-              }
-            },
-            {
-              "attr": {
-                "min": 3,
-                "max": 50
-              },
-              "zwave": {
-                "index": 85,
-                "size": 1
-              },
-              "id": "zwaveMinimalTimePowerReportO1",
-              "type": "number",
-              "label": {
-                "en": "Minimal time between reports for O1",
-                "nl": "Minimale tijd tussen reports voor O1"
-              },
-              "value": 30,
-              "units": {
-                "en": "s",
-                "nl": "s"
-              },
-              "hint": {
-                "en": "Defines the minimum time between sending reports to Homey for output 1.",
-                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
-              }
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "label": {
             "en": "Device Settings",
-            "nl": "Apparaat instellingen"
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -9579,6 +10577,56 @@
               "zwave": {
                 "index": 91,
                 "size": 2
+              }
+            },
+            {
+              "zwave": {
+                "index": 40,
+                "size": 1
+              },
+              "id": "zwavePowerReportOnChangeO1",
+              "type": "number",
+              "label": {
+                "en": "Power report on change for O1",
+                "nl": "Power report bij wijziging voor O1"
+              },
+              "value": 50,
+              "attr": {
+                "min": 0,
+                "max": 100
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+              }
+            },
+            {
+              "attr": {
+                "min": 3,
+                "max": 50
+              },
+              "zwave": {
+                "index": 85,
+                "size": 1
+              },
+              "id": "zwaveMinimalTimePowerReportO1",
+              "type": "number",
+              "label": {
+                "en": "Minimal time between reports for O1",
+                "nl": "Minimale tijd tussen reports voor O1"
+              },
+              "value": 30,
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
               }
             }
           ]
@@ -9822,67 +10870,8 @@
         {
           "type": "group",
           "label": {
-            "en": "Power Settings",
-            "nl": "Energie instellingen"
-          },
-          "children": [
-            {
-              "zwave": {
-                "index": 40,
-                "size": 1
-              },
-              "id": "zwavePowerReportOnChangeO1",
-              "type": "number",
-              "label": {
-                "en": "Power report on change for O1",
-                "nl": "Power report bij wijziging voor O1"
-              },
-              "value": 50,
-              "attr": {
-                "min": 0,
-                "max": 100
-              },
-              "units": {
-                "en": "%",
-                "nl": "%"
-              },
-              "hint": {
-                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
-                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
-              }
-            },
-            {
-              "attr": {
-                "min": 3,
-                "max": 50
-              },
-              "zwave": {
-                "index": 85,
-                "size": 1
-              },
-              "id": "zwaveMinimalTimePowerReportO1",
-              "type": "number",
-              "label": {
-                "en": "Minimal time between reports for O1",
-                "nl": "Minimale tijd tussen reports voor O1"
-              },
-              "value": 30,
-              "units": {
-                "en": "s",
-                "nl": "s"
-              },
-              "hint": {
-                "en": "Defines the minimum time between sending reports to Homey for output 1.",
-                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
-              }
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "label": {
             "en": "Device Settings",
-            "nl": "Apparaat instellingen"
+            "nl": "Apparaatinstellingen"
           },
           "children": [
             {
@@ -10071,6 +11060,56 @@
               "zwave": {
                 "index": 91,
                 "size": 2
+              }
+            },
+            {
+              "zwave": {
+                "index": 40,
+                "size": 1
+              },
+              "id": "zwavePowerReportOnChangeO1",
+              "type": "number",
+              "label": {
+                "en": "Power report on change for O1",
+                "nl": "Power report bij wijziging voor O1"
+              },
+              "value": 50,
+              "attr": {
+                "min": 0,
+                "max": 100
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+              }
+            },
+            {
+              "attr": {
+                "min": 3,
+                "max": 50
+              },
+              "zwave": {
+                "index": 85,
+                "size": 1
+              },
+              "id": "zwaveMinimalTimePowerReportO1",
+              "type": "number",
+              "label": {
+                "en": "Minimal time between reports for O1",
+                "nl": "Minimale tijd tussen reports voor O1"
+              },
+              "value": 30,
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
               }
             }
           ]

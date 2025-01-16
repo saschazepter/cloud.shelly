@@ -43,8 +43,8 @@
     }
   ],
   "hint": {
-    "en": "This parameter (127) defines the time during which the Dimmer will move between the min. and max. dimming values during a continuous press of the momentary switch connected to terminal, by an associated device or through Homey.",
-    "nl": "Deze parameter (127) bepaalt de tijd waarin de dimmer zich zal verplaatsen tussen de minimale en maximale dimwaarden tijdens een continue druk op de impulsdrukker die is aangesloten op de terminal, door een gekoppeld apparaat of via Homey."
+    "en": "Defines the time during which the Dimmer will move between the min. and max. dimming values during a continuous press of the momentary switch for output 1.",
+    "nl": "Bepaalt de tijd waarin de dimmer zich zal verplaatsen tussen de minimale en maximale dimwaarden tijdens een continue druk op de impulsdrukker voor output 1."
   },
   "zwave": {
     "index": 127,

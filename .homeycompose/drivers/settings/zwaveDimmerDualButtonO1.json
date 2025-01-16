@@ -1,0 +1,32 @@
+{
+  "type": "dropdown",
+  "label": {
+    "en": "SW1 & SW2 Dual button mode",
+    "nl": "SW1 & SW2 dubbele knop modus"
+  },
+  "value": "0",
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "Inactive",
+        "nl": "Inactief"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "Active",
+        "nl": "Actief"
+      }
+    }
+  ],
+  "hint": {
+    "en": "Defines the SW1 & SW2 Dual button mode for output 1 (only push button).",
+    "nl": "Bepaalt de SW1 & SW2 dubbele knop modus voor output 1 (alleen drukknop)."
+  },
+  "zwave": {
+    "index": 131,
+    "size": 1
+  }
+}

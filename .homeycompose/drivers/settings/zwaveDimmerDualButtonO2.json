@@ -1,8 +1,8 @@
 {
   "type": "dropdown",
   "label": {
-    "en": "SW1 & SW2 Dual Button Mode",
-    "nl": "SW1 & SW2 dubbele knop modus"
+    "en": "SW3 & SW4 Dual button mode",
+    "nl": "SW3 & SW4 dubbele knop modus"
   },
   "value": "0",
   "values": [
@@ -22,11 +22,11 @@
     }
   ],
   "hint": {
-    "en": "This parameter (131) defines the SW1 & SW2 Dual button mode (only push button).",
-    "nl": "Deze parameter (131) bepaalt de SW1 & SW2 dubbele knop modus (alleen druk knop)."
+    "en": "Defines the SW3 & SW4 Dual button mode for output 2 (only push button).",
+    "nl": "Bepaalt de SW3 & SW4 dubbele knop modus voor output 2 (alleen drukknop)."
   },
   "zwave": {
-    "index": 131,
+    "index": 132,
     "size": 1
   }
 }

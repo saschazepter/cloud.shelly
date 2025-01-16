@@ -1,0 +1,24 @@
+{
+  "type": "number",
+  "label": {
+    "en": "Minimum brightness for O2",
+    "nl": "Minimale helderheid voor O2"
+  },
+  "value": 15,
+  "attr": {
+    "min": 1,
+    "max": 99
+  },
+  "units": {
+    "en": "%",
+    "nl": "%"
+  },
+  "hint": {
+    "en": "Defines the minimum brightness on toggle for output 2. It is applied on toggle on (Off → On state change) when the light brightness is lower than the set value of this parameter.",
+    "nl": "Bepaalt de minimale helderheid bij het inschakelen van output 2. Het wordt toegepast bij het inschakelen (van Uit → Aan) wanneer de helderheid van het licht lager is dan de ingestelde waarde van deze parameter."
+  },
+  "zwave": {
+    "index": 130,
+    "size": 1
+  }
+}

@@ -2,16 +2,37 @@
   {
     "type": "group",
     "label": {
-      "en": "Switch 1 - Output Settings",
-      "nl": "Switch 1 - Output instellingen"
+      "en": "Output 1 settings",
+      "nl": "Output 1 instellingen"
     },
     "children": [
       {
-        "$extends": "zwaveSwitchTypeSW1",
-        "value": "0"
+        "id": "dimmerCalibration",
+        "$extends": "zwaveDimmerCalibrationO1"
       },
       {
-        "$extends": "zwaveOutputDetached1"
+        "id": "dimmerMinValue",
+        "$extends": "zwaveDimmerMinValueO1"
+      },
+      {
+        "id": "dimmerDimTime",
+        "$extends": "zwaveDimmerDimTimeO1"
+      },
+      {
+        "id": "dimmerFadeRate",
+        "$extends": "zwaveDimmerFadeRateO1"
+      },
+      {
+        "id": "dimmerMinBrightness",
+        "$extends": "zwaveDimmerMinBrightnessO1"
+      },
+      {
+        "id": "dimmerMaxValue",
+        "$extends": "zwaveDimmerMaxValueO1"
+      },
+      {
+        "id": "dimmerDualButton",
+        "$extends": "zwaveDimmerDualButtonO1"
       },
       {
         "$extends": "zwaveRestoreStateO1"
@@ -27,8 +48,24 @@
   {
     "type": "group",
     "label": {
-      "en": "Switch 2 - Output Settings",
-      "nl": "Switch 2 - Output instellingen"
+      "en": "Switch 1 settings",
+      "nl": "Switch 1 instellingen"
+    },
+    "children": [
+      {
+        "$extends": "zwaveSwitchTypeSW1",
+        "value": "0"
+      },
+      {
+        "$extends": "zwaveOutputDetached1"
+      }
+    ]
+  },
+  {
+    "type": "group",
+    "label": {
+      "en": "Switch 2 settings",
+      "nl": "Switch 2 instellingen"
     },
     "children": [
       {
@@ -36,16 +73,15 @@
         "value": "0"
       },
       {
-        "$extends": "zwaveOutputDetached2",
-        "value": "1"
+        "$extends": "zwaveOutputDetached2"
       }
     ]
   },
   {
     "type": "group",
     "label": {
-      "en": "Power Settings",
-      "nl": "Energie instellingen"
+      "en": "Device Settings",
+      "nl": "Apparaatinstellingen"
     },
     "children": [
       {
@@ -54,37 +90,8 @@
       },
       {
         "$extends": "zwaveMinimalTimePowerReportO1"
-      }
-    ]
-  },
-  {
-    "type": "group",
-    "label": {
-      "en": "Device Settings",
-      "nl": "Apparaat instellingen"
-    },
-    "children": [
-      {
-        "$extends": "dimmerCalibration"
       },
-      {
-        "$extends": "dimmerMinValue"
-      },
-      {
-        "$extends": "dimmerDimTime"
-      },
-      {
-        "$extends": "dimmerFadeRate"
-      },
-      {
-        "$extends": "dimmerMinBrightness"
-      },
-      {
-        "$extends": "dimmerDualButton"
-      },
-      {
-        "$extends": "dimmerMaxValue"
-      },
+
       {
         "$extends": "zwaveResetToDefaultAndLeave"
       }

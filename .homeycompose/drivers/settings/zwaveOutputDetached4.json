@@ -1,0 +1,32 @@
+{
+  "type": "dropdown",
+  "label": {
+    "en": "SW4 detached",
+    "nl": "SW4 ontkoppeld"
+  },
+  "value": "1",
+  "values": [
+    {
+      "id": "0",
+      "label": {
+        "en": "Normal mode",
+        "nl": "Normale modus"
+      }
+    },
+    {
+      "id": "1",
+      "label": {
+        "en": "Detached mode",
+        "nl": "Ontkoppeld"
+      }
+    }
+  ],
+  "hint": {
+    "en": "Defines if the input switch SW4 is separated from the state of the output.",
+    "nl": "Specificeert of de input schakelaar SW4 is ontkoppeld van de status van de output."
+  },
+  "zwave": {
+    "index": 10,
+    "size": 1
+  }
+}

@@ -23,8 +23,8 @@
   {
     "type": "group",
     "label": {
-      "en": "Power Settings",
-      "nl": "Energie instellingen"
+      "en": "Device Settings",
+      "nl": "Apparaatinstellingen"
     },
     "children": [
       {
@@ -32,16 +32,7 @@
       },
       {
         "$extends": "zwaveMinimalTimePowerReportO1"
-      }
-    ]
-  },
-  {
-    "type": "group",
-    "label": {
-      "en": "Device Settings",
-      "nl": "Apparaat instellingen"
-    },
-    "children": [
+      },
       {
         "$extends": "zwaveResetToDefaultAndLeave"
       }
