@@ -19,7 +19,7 @@
       "Shelly Bluetooth"
     ]
   },
-  "version": "3.36.0",
+  "version": "3.36.1",
   "compatibility": ">=12.2.0",
   "platforms": [
     "local",

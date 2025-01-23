@@ -889,5 +889,8 @@
   },
   "3.36.0": {
     "en": "Fix communication issues with password protected devices (RGB control, virtual component retrieval and BLE proxy script control), add missing second input to Pro 1PM, add flow cards to control BLE scripts"
+  },
+  "3.36.1": {
+    "en": "Add additional UL identifiers for Pro 1/2 (PM), revert second input additional for Pro 1PM"
   }
 }
