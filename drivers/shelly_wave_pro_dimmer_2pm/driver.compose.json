@@ -7,7 +7,8 @@
   "capabilities": [
     "onoff",
     "dim",
-    "button.reset_meter"
+    "button.reset_meter",
+    "actionEvents"
   ],
   "capabilitiesOptions": {
     "button.reset_meter": {

@@ -1,4 +1,8 @@
 import ShellyZwaveDevice from '../../lib/device/ShellyZwaveDevice';
+import {
+  convertIncomingActionEvent,
+  type ShellyActionEvent,
+} from '../../lib/flow/trigger/ActionEventTrigger';
 
 module.exports = class ShellyWaveProDimmer2PMDevice extends ShellyZwaveDevice {
   private dimValues: Array<number | null> = [null, null];
@@ -40,6 +44,46 @@ module.exports = class ShellyWaveProDimmer2PMDevice extends ShellyZwaveDevice {
         .then((result: any) => this.handleDimReport(dimChannel, result))
         .catch(this.error);
     }
+
+    // Button report listeners
+    this.registerReportListener('CENTRAL_SCENE', 'CENTRAL_SCENE_NOTIFICATION', notification => {
+      try {
+        const button = notification['Scene Number'];
+        const action = notification['Properties1']['Key Attributes'];
+
+        const parsedAction = {
+          action: convertIncomingActionEvent(action, 'zwave') + `_${button}`,
+        };
+
+        this.homey.flow.getDeviceTriggerCard('triggerActionEvent')
+          .trigger(this, parsedAction, parsedAction);
+
+      } catch (e) {
+        this.error('Failed parsing scene notification', JSON.stringify(notification), e);
+      }
+    });
+
+    // Switch binary does not seem to work as it should. When the button is configured in switch mode,
+    // it still behaves as a toggle button, which means that the value of the switch input does not
+    // reflect what the user would expect.
+    // for (const multiChannelNodeId of [3, 4, 5, 6]) {
+    //   this.registerMultiChannelReportListener(multiChannelNodeId, 'SWITCH_BINARY', 'SWITCH_BINARY_REPORT', report => {
+    //     this.log('report', multiChannelNodeId, JSON.stringify(report));
+    //   });
+    // }
+  }
+
+  public getPossibleActionEvents(): ShellyActionEvent[] {
+    const result: ShellyActionEvent[] = [];
+
+    for (const input of [1,2,3,4] as const) {
+      // The available events depend on the button settings, the need to be momentary and detached for this to work
+      if (this.getSetting(`zwaveSwitchTypeSW${input}`) == 0 && this.getSetting(`zwaveOutputDetached${input}`) == '1') {
+        result.push(`single_push_${input}`, `double_push_${input}`, `hold_${input}`, `released_${input}`);
+      }
+    }
+
+    return result;
   }
 
   private async configureSubDevice(): Promise<void> {
