@@ -7,7 +7,6 @@
   "capabilities": [
     "onoff",
     "dim",
-    "button.reset_meter",
     "actionEvents"
   ],
   "capabilitiesOptions": {
@@ -52,8 +51,7 @@
           "onoff",
           "dim",
           "measure_power",
-          "meter_power",
-          "button.reset_meter"
+          "meter_power"
         ],
         "capabilitiesOptions": {
           "button.reset_meter": {
@@ -78,8 +76,7 @@
           "onoff",
           "dim",
           "measure_power",
-          "meter_power",
-          "button.reset_meter"
+          "meter_power"
         ],
         "capabilitiesOptions": {
           "button.reset_meter": {
