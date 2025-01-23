@@ -1,5 +1,5 @@
-import {type Device} from 'homey';
-import Homey from 'homey/lib/Homey';
+import type {Device} from 'homey';
+import type Homey from 'homey/lib/Homey';
 import type {ShellyDeviceInterface} from '../../device/ShellyDevice';
 
 export type ShellyActionEvent =

@@ -4,7 +4,7 @@ const Homey = require('homey');
 const Util = require('../lib/util.js');
 const WebSocket = require('ws');
 const tinycolor = require("tinycolor2");
-const {getIp} = require('../lib/localip.js');
+const {getIp} = require('../lib/helper/LocalIp');
 
 class ShellyDevice extends Homey.Device {
 
