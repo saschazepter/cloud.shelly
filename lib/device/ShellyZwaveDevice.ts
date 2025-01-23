@@ -1,9 +1,11 @@
 import Homey, {type ZwaveNode} from 'homey';
 import {ZwaveDevice} from 'homey-zwavedriver';
 import ShellyZwaveDriver from '../driver/ShellyZwaveDriver';
+import type {ShellyActionEvent} from '../flow/trigger/ActionEventTrigger';
 import Logger from '../log/Logger';
+import type {ShellyDeviceInterface} from './ShellyDevice';
 
-export default abstract class ShellyZwaveDevice extends ZwaveDevice {
+export default abstract class ShellyZwaveDevice extends ZwaveDevice implements ShellyDeviceInterface {
   protected logger?: Logger = undefined;
   private startupTimeout: NodeJS.Timeout | null = null;
 
@@ -76,6 +78,8 @@ export default abstract class ShellyZwaveDevice extends ZwaveDevice {
     const deviceChannel = this.node.isMultiChannelNode ? this.node.multiChannelNodeId : 0;
     await this.setStoreValue('channel', deviceChannel);
   }
+
+  public abstract getPossibleActionEvents(): ShellyActionEvent[];
 
   /** Use this method to configure the device specific capabilities */
   protected abstract configureDevice(isMainNode: boolean): Promise<void>;

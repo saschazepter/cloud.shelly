@@ -1,8 +1,15 @@
 import {Device} from 'homey';
+import type {ShellyActionEvent} from '../flow/trigger/ActionEventTrigger';
 import Logger from '../log/Logger';
 
-export class ShellyDevice extends Device {
+export interface ShellyDeviceInterface {
+  getPossibleActionEvents(): ShellyActionEvent[];
+}
+
+export default abstract class ShellyDevice extends Device implements ShellyDeviceInterface {
   protected logger?: Logger = undefined;
+
+  public abstract getPossibleActionEvents(): ShellyActionEvent[];
 
   public async onInit(): Promise<void> {
     this.logger = new Logger(this, super.log, super.error);

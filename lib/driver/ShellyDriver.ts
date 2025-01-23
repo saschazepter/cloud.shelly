@@ -1,7 +1,7 @@
 import {Driver} from 'homey';
 import Logger from '../log/Logger';
 
-export default class ShellyDriver extends Driver {
+export default abstract class ShellyDriver extends Driver {
   protected logger?: Logger = undefined;
 
   public async onInit(): Promise<void> {

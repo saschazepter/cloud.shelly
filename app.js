@@ -9,6 +9,7 @@ const shellies = require('shellies');
 const WebSocket = require('ws');
 const tinycolor = require("tinycolor2");
 const { jwtDecode } = require('jwt-decode');
+const { getPossibleActionEventsForDevice } = require('./lib/flow/trigger/ActionEventTrigger');
 
 class ShellyApp extends OAuth2App {
   homeyLog = new Log({homey: this.homey});
@@ -295,26 +296,20 @@ class ShellyApp extends OAuth2App {
       // GENERIC DEVICE TRIGGER CARDS
 
       /* action events */
-      const listenerActionEvents = this.homey.flow.getDeviceTriggerCard('triggerActionEvent').registerRunListener(async (args, state) => {
-        try {
-          var action = args.action.action ?? args.action.name;
-          if ((state.action === action) || (args.action.id === 999)) {
-            return Promise.resolve(true);
-          } else {
-            return Promise.resolve(false);
-          }
-        } catch (error) {
-          this.error(error)
-        }
-      });
-      listenerActionEvents.getArgument('action').registerAutocompleteListener(async (query, args) => {
-        try {
-          return await this.util.getActions(args.device.getStoreValue('config').callbacks);
-        } catch (error) {
-          this.error(error)
-        }
-      });
+      const listenerActionEvents = this.homey.flow
+        .getDeviceTriggerCard('triggerActionEvent')
+        .registerRunListener((args, state) => {
+          const action = args.action.action ?? args.action.name;
 
+          return state.action === action || args.action.id === 999;
+        });
+
+      listenerActionEvents
+        .getArgument('action')
+        .registerAutocompleteListener((query, args) =>
+          getPossibleActionEventsForDevice(this.homey, args.device)
+            .filter(a => a.name.toLowerCase().includes(query.toLowerCase())),
+        );
 
       /* virtual components */
       const listenerTriggerVirtualComponents = this.homey.flow.getDeviceTriggerCard('triggerVirtualComponents').registerRunListener(async (args, state) => {
