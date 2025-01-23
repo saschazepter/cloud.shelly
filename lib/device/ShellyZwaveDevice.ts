@@ -79,6 +79,15 @@ export default abstract class ShellyZwaveDevice extends ZwaveDevice implements S
     await this.setStoreValue('channel', deviceChannel);
   }
 
+  onSettings({oldSettings, newSettings, changedKeys}: {
+    oldSettings: { [p: string]: boolean | string | number | undefined | null };
+    newSettings: { [p: string]: boolean | string | number | undefined | null };
+    changedKeys: string[]
+  }): Promise<string | void> {
+    this.log('Updating settings:', JSON.stringify(changedKeys), JSON.stringify(newSettings))
+    return super.onSettings({oldSettings, newSettings, changedKeys});
+  }
+
   public abstract getPossibleActionEvents(): ShellyActionEvent[];
 
   /** Use this method to configure the device specific capabilities */

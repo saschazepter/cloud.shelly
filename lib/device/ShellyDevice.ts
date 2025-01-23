@@ -1,4 +1,5 @@
 import {Device} from 'homey';
+import type ShellyDriver from '../driver/ShellyDriver';
 import type {ShellyActionEvent} from '../flow/trigger/ActionEventTrigger';
 import Logger from '../log/Logger';
 
@@ -14,6 +15,19 @@ export default abstract class ShellyDevice extends Device implements ShellyDevic
   public async onInit(): Promise<void> {
     this.logger = new Logger(this, super.log, super.error);
     return super.onInit();
+  }
+
+  onSettings({oldSettings, newSettings, changedKeys}: {
+    oldSettings: { [p: string]: boolean | string | number | undefined | null };
+    newSettings: { [p: string]: boolean | string | number | undefined | null };
+    changedKeys: string[]
+  }): Promise<string | void> {
+    this.log('Updating settings:', JSON.stringify(changedKeys), JSON.stringify(newSettings))
+    return super.onSettings({oldSettings, newSettings, changedKeys});
+  }
+
+  protected getDriver(): ShellyDriver {
+    return this.driver as ShellyDriver;
   }
 
   public log(...args: any[]): void {
