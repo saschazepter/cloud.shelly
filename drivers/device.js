@@ -181,17 +181,7 @@ class ShellyDevice extends Homey.Device {
 
           // Special handling for Wall Display
           if (typeof type === 'string' && type.startsWith('SAWD-') && this.hasCapability('target_temperature')) {
-            const thermostatConfig = await this.util.sendRPCCommand(`/rpc/Thermostat.GetConfig?id=${this.getStoreValue('channel')}`, this.getSetting('address'), this.getSetting('password'));
-            const payload = {
-              id: 0,
-              method: "thermostat.setconfig",
-              params: {
-                config: thermostatConfig,
-              }
-            }
-            payload.params.config.enable = valueObj.onoff;
-
-            return await this.util.sendRPCCommand(`/rpc/Thermostat.SetConfig?id=${this.getStoreValue('channel')}`, this.getSetting('address'), this.getSetting('password'), 'POST', payload);
+            return await this.util.sendRPCCommand(`/rpc/Thermostat.SetConfig?id=${this.getStoreValue('channel')}&config=${encodeURIComponent(`{"enable":${valueObj.onoff ? 'true' : 'false'}}`)}`, this.getSetting('address'), this.getSetting('password'));
           }
 
           if (typeof valueObj.onoff !== 'undefined') {
@@ -644,17 +634,7 @@ class ShellyDevice extends Homey.Device {
         case 'websocket':{
           const type = this.getStoreValue('type')
           if (typeof type === 'string' && type.startsWith('SAWD-')) {
-            const thermostatConfig = await this.util.sendRPCCommand(`/rpc/Thermostat.GetConfig?id=${this.getStoreValue('channel')}`, this.getSetting('address'), this.getSetting('password'));
-            const payload = {
-              id: 0,
-              method: "thermostat.setconfig",
-              params: {
-                config: thermostatConfig,
-              }
-            }
-            payload.params.config.target_C = value;
-
-            return await this.util.sendRPCCommand(`/rpc/Thermostat.SetConfig?id=${this.getStoreValue('channel')}`, this.getSetting('address'), this.getSetting('password'), 'POST', payload);
+            return await this.util.sendRPCCommand(`/rpc/Thermostat.SetConfig?id=${this.getStoreValue('channel')}&config=${encodeURIComponent(`{"target_C":${value}`)}}`, this.getSetting('address'), this.getSetting('password'));
           } else {
             return await this.util.sendRPCCommand('/rpc/Thermostat.Set?id=' + this.getStoreValue('channel') + '&target_C=' + value, this.getSetting('address'), this.getSetting('password'));
           }
