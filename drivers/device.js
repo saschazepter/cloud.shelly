@@ -378,7 +378,7 @@ class ShellyDevice extends Homey.Device {
           case 'websocket': {
             if (typeof valueObj.dim !== 'undefined' ) {
               const onoff_websocket = valueObj.dim === 0 ? false : true;
-              const dim_websocket = valueObj.dim === 0 ? 1 : valueObj.dim * 100;
+              const dim_websocket = valueObj.dim === 0 ? 1 : Math.round(valueObj.dim * 100);
               return await this.util.sendRPCCommand('/rpc/'+ this.getStoreValue('config').extra.component +'.Set?id='+ this.getStoreValue('channel') +'&on='+ onoff_websocket +'&'+ this.getStoreValue('config').extra.dim +'='+ dim_websocket +'&transition_duration='+ dim_duration / 1000, this.getSetting('address'), this.getSetting('password'));
             } else if (typeof valueObj["dim.light"] !== 'undefined' ) {
               const onoff_websocket = valueObj["dim.light"] === 0 ? false : true;
@@ -388,7 +388,7 @@ class ShellyDevice extends Homey.Device {
             }
           }
           case 'coap': {
-            const dim_coap = valueObj.dim === 0 ? 1 : valueObj.dim * 100;
+            const dim_coap = valueObj.dim === 0 ? 1 : Math.round(valueObj.dim * 100);
             const onoff_coap = valueObj.dim === 0 ? 'off' : 'on';
             if (!this.getCapabilityValue('onoff')) {
               return await this.util.sendCommand('/'+ this.getStoreValue('config').extra.component +'/'+ this.getStoreValue('channel') +'?turn='+ onoff_coap +'&'+ dim_component +'='+ dim_coap +'&transition='+ dim_duration +'', this.getSetting('address'), this.getSetting('username'), this.getSetting('password'));
@@ -402,7 +402,7 @@ class ShellyDevice extends Homey.Device {
             } else if (this.getCapabilityValue('onoff') && valueObj.dim === 0) {
               this.updateCapabilityValue('onoff', false, this.getStoreValue('channel'));
             }
-            const dim_cloud = valueObj.dim === 0 ? 1 : valueObj.dim * 100;
+            const dim_cloud = valueObj.dim === 0 ? 1 : Math.round(valueObj.dim * 100);
             return await this.homey.app.websocketSendCommand([this.util.websocketMessage({event: 'Shelly:CommandRequest', command: 'light', command_param: dim_component, command_value: dim_cloud, deviceid: String(this.getSetting('cloud_device_id')), channel: this.getStoreValue('channel')})]);
           }
           default:
