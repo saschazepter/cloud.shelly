@@ -625,7 +625,8 @@ class ShellyDevice extends Homey.Device {
     try {
       switch(this.getStoreValue('communication')) {
         case 'websocket':{
-          if (['SAWD-0A1XX10EU1'].includes(this.getStoreValue('type'))) {
+          const type = this.getStoreValue('type')
+          if (typeof type === 'string' && type.startsWith('SAWD-')) {
             const thermostatConfig = await this.util.sendRPCCommand(`/rpc/Thermostat.GetConfig?id=${this.getStoreValue('channel')}`, this.getSetting('address'), this.getSetting('password'));
             const payload = {
               id: 0,
