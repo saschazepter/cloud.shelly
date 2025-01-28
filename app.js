@@ -172,7 +172,7 @@ class ShellyApp extends OAuth2App {
                 return await this.util.sendCommand('/reboot', args.device.getSetting('address'), args.device.getSetting('username'), args.device.getSetting('password'));
               }
               case 'websocket': {
-                return await this.util.sendRPCCommand('/rpc/Shelly.Reboot', args.device.getSetting('address'), args.device.getSetting('password'));
+                return await this.util.sendRpcReboot(args.device.getStoreValue('type'), args.device.getSetting('address'), args.device.getSetting('password'));
               }
               case 'cloud': {
                 // cloud does not support these commands

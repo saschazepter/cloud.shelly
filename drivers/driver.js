@@ -360,7 +360,7 @@ class ShellyDriver extends Homey.Driver {
         } else if (deviceArray.store.communication === 'websocket') {
           const settings = await this.util.sendRPCCommand('/rpc/Shelly.GetConfig', deviceArray.settings.address, deviceArray.settings.password);
           if (settings.sys.device.name !== null && settings.sys.device.name !== undefined) { deviceArray.name = settings.sys.device.name; }
-          await this.util.setWsServer(deviceArray.settings.address, deviceArray.settings.password);
+          await this.util.setWsServer(deviceArray.store.type, deviceArray.settings.address, deviceArray.settings.password);
           deviceArray.store.wsserver = true;
 
           /* update variable capabilities for Shelly X MOD 1 */
@@ -380,7 +380,7 @@ class ShellyDriver extends Homey.Driver {
           if (settings.name !== null && settings.name !== undefined) { deviceArray.name = settings.name; }
 
           /* set the outbound webserver on the gateway */
-          await this.util.setWsServer(deviceArray.settings.address, deviceArray.settings.password);
+          await this.util.setWsServer(deviceArray.store.type, deviceArray.settings.address, deviceArray.settings.password);
           deviceArray.store.wsserver = true;
 
           return Promise.resolve(deviceArray);

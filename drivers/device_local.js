@@ -29,7 +29,7 @@ class ShellyDevice extends Device {
           await this.util.disableBLEProxy(this.getStoreValue('ble_script_id'), this.getSetting('address'), this.getSetting('password'));
         }
 
-        await this.util.sendRPCCommand('/rpc/Shelly.Reboot', this.getSetting('address'), this.getSetting('password'));
+        await this.util.sendRpcReboot(this.getStoreValue('type'), this.getSetting('address'), this.getSetting('password'));
       }
 
       // TODO: onDelete functionality for gateway subdevice when removing latest gateway device it will remove listener on gateway

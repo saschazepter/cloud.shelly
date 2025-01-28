@@ -158,7 +158,7 @@ class ShellyDevice extends Homey.Device {
         const homey_ip = await getIp(this.homey);
         if (this.getStoreValue('device_settings').hasOwnProperty("ws")) {
           if (this.getStoreValue('device_settings').ws.enable === false || !this.getStoreValue('device_settings').ws.server.includes(homey_ip)){
-            await this.util.setWsServer(this.getSetting('address'), this.getSetting('password'));
+            await this.util.setWsServer(this.getStoreValue('type'), this.getSetting('address'), this.getSetting('password'));
           }
         }
       }
@@ -649,7 +649,7 @@ class ShellyDevice extends Homey.Device {
   /* enableBLEProxy */
   async onMaintenanceEnableBLEPRoxy() {
     try {
-      const scriptID = await this.util.enableBLEProxy(this.getSetting('address'), this.getSetting('password'));
+      const scriptID = await this.util.enableBLEProxy(this.getStoreValue('type'), this.getSetting('address'), this.getSetting('password'));
       await this.setStoreValue('ble_script_version', this.bluetoothScriptVersion);
       return await this.setStoreValue('ble_script_id', scriptID);
     } catch (error) {
@@ -3793,7 +3793,7 @@ class ShellyDevice extends Homey.Device {
             if (config.hasOwnProperty(key) && key.startsWith('script:')) {
               const script = config[key];
               if (script.name === 'Homey BLE Proxy') {
-                const scriptID = await this.util.enableBLEProxy(this.getSetting('address'), this.getSetting('password'));
+                const scriptID = await this.util.enableBLEProxy(this.getStoreValue('type'), this.getSetting('address'), this.getSetting('password'));
                 await this.setStoreValue('ble_script_version', this.bluetoothScriptVersion);
                 await this.setStoreValue('ble_script_id', scriptID);
                 this.log('Updating Homey BLE Script to version', this.bluetoothScriptVersion, 'for', this.getData().id, 'with name', this.getName());
