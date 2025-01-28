@@ -177,6 +177,23 @@ class ShellyDevice extends Homey.Device {
         case 'websocket': {
           let value;
           let component = this.getStoreValue('config').extra.component;
+          const type = this.getStoreValue('type');
+
+          // Special handling for Wall Display
+          if (typeof type === 'string' && type.startsWith('SAWD-') && this.hasCapability('target_temperature')) {
+            const thermostatConfig = await this.util.sendRPCCommand(`/rpc/Thermostat.GetConfig?id=${this.getStoreValue('channel')}`, this.getSetting('address'), this.getSetting('password'));
+            const payload = {
+              id: 0,
+              method: "thermostat.setconfig",
+              params: {
+                config: thermostatConfig,
+              }
+            }
+            payload.params.config.enable = valueObj.onoff;
+
+            return await this.util.sendRPCCommand(`/rpc/Thermostat.SetConfig?id=${this.getStoreValue('channel')}`, this.getSetting('address'), this.getSetting('password'), 'POST', payload);
+          }
+
           if (typeof valueObj.onoff !== 'undefined') {
             value = valueObj.onoff;
           } else if (typeof valueObj["onoff.light"] !== 'undefined') {
@@ -2795,8 +2812,22 @@ class ShellyDevice extends Homey.Device {
     try {
       this.setAvailability(true);
 
+      const type = this.getStoreValue('type');
       switch(capability) {
+        case 'enable': {
+          if (typeof type === 'string' && type.startsWith('SAWD-') && this.hasCapability('target_temperature')) {
+            // Only supported for wall display
+            this.updateCapabilityValue('onoff', value, channel);
+          }
+
+          break;
+        }
         case 'output':
+          if (typeof type === 'string' && type.startsWith('SAWD-') && this.hasCapability('target_temperature')) {
+            // Ignore output status for Wall Display when in thermostat mode
+            return;
+          }
+          // Fallthrough
         case 'relay0':
         case 'relay1':
         case 'relay2':
@@ -2876,7 +2907,7 @@ class ShellyDevice extends Homey.Device {
         case 'energyCounter1':
         case 'energyCounter2':
         case 'energyCounter3':
-          if (this.getStoreValue('type') === 'SHEM' || this.getStoreValue('type') === 'SHEM-3') {
+          if (type === 'SHEM' || type === 'SHEM-3') {
             var meter_power = value / 1000;
           } else {
             var meter_power = value * 0.000017;
@@ -3557,6 +3588,22 @@ class ShellyDevice extends Homey.Device {
           break;
         case 'rssi':
           this.updateCapabilityValue('rssi', value, 0);
+          break;
+        case 'uptime':
+        case 'app_uptime':
+        case 'ram_size':
+        case 'ram_free':
+        case 'fs_size':
+        case 'fs_free':
+        case 'batch_id':
+        case 'batch_date':
+        case 'serial':
+        case 'platform':
+        case 'app':
+        case 'ver':
+        case 'unixtime':
+        case 'awaiting_auth_code':
+          // Known but ignored values
           break;
         default:
           this.debug('Device does not support reported capability ' + capability + ' with value ' + value);
