@@ -625,7 +625,21 @@ class ShellyDevice extends Homey.Device {
     try {
       switch(this.getStoreValue('communication')) {
         case 'websocket':{
-          return await this.util.sendRPCCommand('/rpc/Thermostat.Set?id='+ this.getStoreValue('channel') +'&target_C='+ value, this.getSetting('address'), this.getSetting('password'));
+          if (['SAWD-0A1XX10EU1'].includes(this.getStoreValue('type'))) {
+            const thermostatConfig = await this.util.sendRPCCommand(`/rpc/Thermostat.GetConfig?id=${this.getStoreValue('channel')}`, this.getSetting('address'), this.getSetting('password'));
+            const payload = {
+              id: 0,
+              method: "thermostat.setconfig",
+              params: {
+                config: thermostatConfig,
+              }
+            }
+            payload.params.config.target_C = value;
+
+            return await this.util.sendRPCCommand(`/rpc/Thermostat.SetConfig?id=${this.getStoreValue('channel')}`, this.getSetting('address'), this.getSetting('password'), 'POST', payload);
+          } else {
+            return await this.util.sendRPCCommand('/rpc/Thermostat.Set?id=' + this.getStoreValue('channel') + '&target_C=' + value, this.getSetting('address'), this.getSetting('password'));
+          }
         }
         case 'gateway':{
           return await this.util.sendRPCCommand('/rpc/'+ this.getStoreValue('config').extra.component +'.Call?id='+ this.getStoreValue('componentid') +'&method=TRV.SetTarget&params={"id":0,"target_C":'+ value +'}', this.getSetting('address'), this.getSetting('password'));
