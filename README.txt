@@ -49,7 +49,6 @@ Shelly Plus i4DC
 Shelly Plus Wall Dimmer US
 Shelly Plus Plug S
 Shelly Plus Smoke
-Shelly Wall Panel (as thermostat only on Homey Pro)
 Shelly Plus Uni
 Shelly Plus PM Mini
 Shelly Plus 1 Mini
@@ -88,6 +87,12 @@ Shelly i4 Gen3
 Shelly 2PM Gen3
 Shelly EM Gen3
 Shelly Plug S Gen3
+Shelly Dimmer Gen3
+
+Wall Display (as switch or thermostat, only on Homey Pro)
+-------------
+Shelly Wall Display
+Shelly Wall Display X2
 
 Bluetooth
 -------------
@@ -114,3 +119,4 @@ Shelly Wave i4
 Shelly Wave Pro 3
 Shelly Wave Pro Shutter
 Shelly Wave Pro Dimmer 1PM
+Shelly Wave Pro Dimmer 2PM
