@@ -892,5 +892,8 @@
   },
   "3.36.1": {
     "en": "Add additional UL identifiers for Pro 1/2 (PM), revert second input additional for Pro 1PM"
+  },
+  "3.37.0": {
+    "en": "Add support for Wave Pro Dimmer 2PM, Dimmer Gen3 and Wall Display X2, fix Z-Wave parameter defaults for certain devices, fix thermostat control including on/off control for Wall Display, use soft reboots for Wall Display (X2) instead of hard reboot, fix dim issue with specific values"
   }
 }
