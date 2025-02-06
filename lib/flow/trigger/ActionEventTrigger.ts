@@ -44,7 +44,15 @@ export type ShellyActionEvent =
   | 'triple_push_3'
   | 'triple_push_4'
   | 'longpush_shortpush'
+  | 'longpush_shortpush_1'
+  | 'longpush_shortpush_2'
+  | 'longpush_shortpush_3'
+  | 'longpush_shortpush_4'
   | 'shortpush_longpush'
+  | 'shortpush_longpush_1'
+  | 'shortpush_longpush_2'
+  | 'shortpush_longpush_3'
+  | 'shortpush_longpush_4'
   | 'btn_down'
   | 'btn_down_1'
   | 'btn_down_2'
@@ -113,7 +121,15 @@ const eventLabels: Record<ShellyActionEvent, string> = {
   'triple_push_3': 'Triple Push 3',
   'triple_push_4': 'Triple Push 4',
   'longpush_shortpush': 'Long Push Short Push',
+  'longpush_shortpush_1': 'Long Push Short Push 1',
+  'longpush_shortpush_2': 'Long Push Short Push 2',
+  'longpush_shortpush_3': 'Long Push Short Push 3',
+  'longpush_shortpush_4': 'Long Push Short Push 4',
   'shortpush_longpush': 'Short Push Long Push',
+  'shortpush_longpush_1': 'Short Push Long Push 1',
+  'shortpush_longpush_2': 'Short Push Long Push 2',
+  'shortpush_longpush_3': 'Short Push Long Push 3',
+  'shortpush_longpush_4': 'Short Push Long Push 4',
   'btn_down': 'Button Down',
   'btn_down_1': 'Button Down 1',
   'btn_down_2': 'Button Down 2',
