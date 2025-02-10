@@ -120,3 +120,4 @@ Shelly Wave Pro 3
 Shelly Wave Pro Shutter
 Shelly Wave Pro Dimmer 1PM
 Shelly Wave Pro Dimmer 2PM
+Shelly Wave Door/Window

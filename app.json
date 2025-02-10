@@ -5131,7 +5131,159 @@
                 {
                   "id": "0",
                   "label": {
-                    "en": "Do Not Reset",
+                    "en": "Do not reset",
+                    "nl": "Niet resetten"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Reset parameters and leave network",
+                    "nl": "Reset parameters en netwerk verlaten"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+              },
+              "zwave": {
+                "index": 120,
+                "size": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_door_window/assets/images/large.png",
+        "small": "/drivers/shelly_wave_door_window/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_door_window/assets/icon.svg",
+      "name": {
+        "en": "Shelly Wave Door/Window"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_contact",
+        "measure_luminance",
+        "tilt",
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2032"
+        ]
+      },
+      "zwave": {
+        "manufacturerId": 1120,
+        "associationGroups": [],
+        "associationGroupsMultiChannel": [
+          1
+        ],
+        "productTypeId": [
+          256
+        ],
+        "productId": [
+          129
+        ],
+        "learnmode": {
+          "image": "./assets/zwave-learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the S button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking. Repeat this for step 2 in the pairing process and enter the device key (pincode).",
+            "nl": "Houd de S-knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen. Herhaal dit voor stap 2 in het koppelingsproces en voer de apparaatsleutel (pincode) in."
+          }
+        },
+        "unlearnmode": {
+          "image": "./assets/zwave-learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the S button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking.",
+            "nl": "Houd de S-knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen."
+          }
+        }
+      },
+      "id": "shelly_wave_door_window",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Device Settings",
+            "nl": "Apparaatinstellingen"
+          },
+          "children": [
+            {
+              "id": "zwaveIlluminationMeasurement",
+              "type": "checkbox",
+              "label": {
+                "en": "Enable illumination measurement",
+                "nl": "Lichtsterkte meten"
+              },
+              "value": false,
+              "hint": {
+                "en": "Enables/disables the illumination measurement. The battery life may be significantly reduced when illumination measurement is enabled.",
+                "nl": "Of de lichtsterkte gemeten moet worden. De levensduur van de batterij kan aanzienlijk worden verkort wanneer de lichtmeting is ingeschakeld."
+              },
+              "zwave": {
+                "index": 155,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveTiltingMeasurement",
+              "type": "checkbox",
+              "label": {
+                "en": "Enable tilting measurement",
+                "nl": "Apparaathoek meten"
+              },
+              "value": false,
+              "hint": {
+                "en": "Enables/disables the tilting measurement. The battery life may be significantly reduced when tilting measurement is enabled.",
+                "nl": "Of de hoek van het apparaat gemeten moet worden. De levensduur van de batterij kan aanzienlijk worden verkort wanneer de lichtmeting is ingeschakeld."
+              },
+              "zwave": {
+                "index": 156,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveLedIndicator",
+              "type": "checkbox",
+              "label": {
+                "en": "Enable LED indicator",
+                "nl": "LED-indicator gebruiken"
+              },
+              "value": false,
+              "hint": {
+                "en": "Enables/disables the LED indicator, used when a state change is detected",
+                "nl": "Schakelt de LED-indicator in/uit, die gebruikt wordt wanneer de status wijzigt"
+              },
+              "zwave": {
+                "index": 157,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveResetToDefaultAndLeave",
+              "type": "dropdown",
+              "label": {
+                "en": "Reset parameters to default and leave network",
+                "nl": "Reset parameters naar fabrieksinstellingen en verlaat netwerk"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Do not reset",
                     "nl": "Niet resetten"
                   }
                 },

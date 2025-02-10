@@ -1,0 +1,16 @@
+{
+  "type": "checkbox",
+  "label": {
+    "en": "Enable illumination measurement",
+    "nl": "Lichtsterkte meten"
+  },
+  "value": false,
+  "hint": {
+    "en": "Enables/disables the illumination measurement. The battery life may be significantly reduced when illumination measurement is enabled.",
+    "nl": "Of de lichtsterkte gemeten moet worden. De levensduur van de batterij kan aanzienlijk worden verkort wanneer de lichtmeting is ingeschakeld."
+  },
+  "zwave": {
+    "index": 155,
+    "size": 1
+  }
+}

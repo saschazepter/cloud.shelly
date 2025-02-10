@@ -1,0 +1,16 @@
+{
+  "type": "checkbox",
+  "label": {
+    "en": "Enable LED indicator",
+    "nl": "LED-indicator gebruiken"
+  },
+  "value": false,
+  "hint": {
+    "en": "Enables/disables the LED indicator, used when a state change is detected",
+    "nl": "Schakelt de LED-indicator in/uit, die gebruikt wordt wanneer de status wijzigt"
+  },
+  "zwave": {
+    "index": 157,
+    "size": 1
+  }
+}

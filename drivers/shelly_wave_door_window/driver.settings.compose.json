@@ -1,0 +1,23 @@
+[
+  {
+    "type": "group",
+    "label": {
+      "en": "Device Settings",
+      "nl": "Apparaatinstellingen"
+    },
+    "children": [
+      {
+        "$extends": "zwaveIlluminationMeasurement"
+      },
+      {
+        "$extends": "zwaveTiltingMeasurement"
+      },
+      {
+        "$extends": "zwaveLedIndicator"
+      },
+      {
+        "$extends": "zwaveResetToDefaultAndLeave"
+      }
+    ]
+  }
+]
