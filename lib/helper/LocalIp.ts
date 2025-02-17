@@ -1,7 +1,7 @@
 import Homey from 'homey';
 import type HomeyType from 'homey/lib/Homey';
 
-let lastLoggedIp: string = '';
+let lastLoggedIp = '';
 
 export async function getIp(homey: HomeyType): Promise<string> {
   let ip;
@@ -15,7 +15,8 @@ export async function getIp(homey: HomeyType): Promise<string> {
   }
 
   if (lastLoggedIp !== ip) {
-    // todo: use reference to ShellyApp when converted to Typescript
+    // todo: use reference to ShellyApp when converted to Typescript and remove esline disable
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (homey.app as any).debug('Using local IP', ip);
     lastLoggedIp = ip;
   }

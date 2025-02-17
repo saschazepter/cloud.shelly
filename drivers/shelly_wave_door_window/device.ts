@@ -1,8 +1,5 @@
 import ShellyZwaveDevice from '../../lib/device/ShellyZwaveDevice';
-import {
-  convertIncomingActionEvent,
-  type ShellyActionEvent,
-} from '../../lib/flow/trigger/ActionEventTrigger';
+import {type ShellyActionEvent} from '../../lib/flow/trigger/ActionEventTrigger';
 
 module.exports = class ShellyWaveDoorWindowDevice extends ShellyZwaveDevice {
   protected async configureDevice(): Promise<void> {
@@ -16,8 +13,8 @@ module.exports = class ShellyWaveDoorWindowDevice extends ShellyZwaveDevice {
 
         if (
           report
-          && report.hasOwnProperty('Sensor Type')
-          && report.hasOwnProperty('Sensor Value (Parsed)')
+          && report.hasOwnProperty('Sensor Type') // eslint-disable-line no-prototype-builtins
+          && report.hasOwnProperty('Sensor Value (Parsed)') // eslint-disable-line no-prototype-builtins
         ) {
           if (report['Sensor Type'] === 'Luminance (version 1)') return report['Sensor Value (Parsed)'];
         }
@@ -34,8 +31,8 @@ module.exports = class ShellyWaveDoorWindowDevice extends ShellyZwaveDevice {
 
         if (
           report
-          && report.hasOwnProperty('Sensor Type')
-          && report.hasOwnProperty('Sensor Value (Parsed)')
+          && report.hasOwnProperty('Sensor Type') // eslint-disable-line no-prototype-builtins
+          && report.hasOwnProperty('Sensor Value (Parsed)') // eslint-disable-line no-prototype-builtins
         ) {
           if (report['Sensor Type'] === 'Direction (version 2) ') {
             return report['Sensor Value (Parsed)'];

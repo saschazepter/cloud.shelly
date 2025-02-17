@@ -31,7 +31,7 @@ module.exports = class ShellyWaveProDimmer2PMDevice extends ShellyZwaveDevice {
         multiChannelNodeId,
         'SWITCH_MULTILEVEL',
         'SWITCH_MULTILEVEL_REPORT',
-        (report) => this.handleDimReport(dimChannel, report),
+        report => this.handleDimReport(dimChannel, report),
       );
 
       if (this.dimValues[dimChannel] !== null) {
@@ -41,7 +41,7 @@ module.exports = class ShellyWaveProDimmer2PMDevice extends ShellyZwaveDevice {
       await this
         .getCommandClass('SWITCH_MULTILEVEL', {multiChannelNodeId})
         .SWITCH_MULTILEVEL_GET()
-        .then((result: any) => this.handleDimReport(dimChannel, result))
+        .then(result => this.handleDimReport(dimChannel, result))
         .catch(this.error);
     }
 
@@ -76,7 +76,7 @@ module.exports = class ShellyWaveProDimmer2PMDevice extends ShellyZwaveDevice {
   public getPossibleActionEvents(): ShellyActionEvent[] {
     const result: ShellyActionEvent[] = [];
 
-    for (const input of [1,2,3,4] as const) {
+    for (const input of [1, 2, 3, 4] as const) {
       // The available events depend on the button settings, the need to be momentary and detached for this to work
       if (this.getSetting(`zwaveSwitchTypeSW${input}`) == 0 && this.getSetting(`zwaveOutputDetached${input}`) == '1') {
         result.push(`single_push_${input}`, `double_push_${input}`, `hold_${input}`, `released_${input}`);
@@ -93,17 +93,18 @@ module.exports = class ShellyWaveProDimmer2PMDevice extends ShellyZwaveDevice {
     this.registerCapability('meter_power', 'METER');
   }
 
-  private handleDimReport(channel: number, report: any): void {
+  private handleDimReport(channel: number, report: { 'Current Value (Raw)': number[] }): void {
+    // eslint-disable-next-line no-prototype-builtins
     if (!report.hasOwnProperty('Current Value (Raw)')) {
       return;
     }
 
     const reportValue = report['Current Value (Raw)'][0];
-    this.debug('Handling new dim value', channel, reportValue)
+    this.debug('Handling new dim value', channel, reportValue);
     this.dimValues[channel] = reportValue === 255 ? 1 : (reportValue / 99);
 
     let dimAverage = 0;
-    for (let dimValue of this.dimValues) {
+    for (const dimValue of this.dimValues) {
       if (dimValue === null) {
         // Not fully initialised, yet
         return;

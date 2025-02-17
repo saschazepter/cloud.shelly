@@ -20,6 +20,7 @@
   "scripts": {
     "compile": "tsc",
     "lint": "eslint --ext .ts --ignore-path .gitignore .",
+    "fix": "eslint --fix  --ext .ts .",
     "validate": "homey app validate --level=verified"
   },
   "dependencies": {

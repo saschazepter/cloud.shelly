@@ -1,6 +1,6 @@
 import Homey, {SimpleClass} from 'homey';
 
-type LogMethod = (...args: any[]) => void;
+type LogMethod = (...args: unknown[]) => void;
 
 export default class Logger {
   private context?: string = undefined;
@@ -22,7 +22,7 @@ export default class Logger {
     this.context = context ? `[${context}]` : undefined;
   }
 
-  public log(...args: any[]): void {
+  public log(...args: unknown[]): void {
     if (this.context) {
       args.unshift(this.context);
     }
@@ -30,7 +30,7 @@ export default class Logger {
     this._log(...args);
   }
 
-  public error(...args: any[]): void {
+  public error(...args: unknown[]): void {
     if (this.context) {
       args.unshift(this.context);
     }
@@ -38,7 +38,7 @@ export default class Logger {
     this._error(...args);
   }
 
-  public debug(...args: any[]): void {
+  public debug(...args: unknown[]): void {
     if (Homey.env.DEBUG !== '1') {
       return;
     }

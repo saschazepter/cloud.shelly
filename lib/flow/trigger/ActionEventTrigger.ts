@@ -155,7 +155,7 @@ const eventLabels: Record<ShellyActionEvent, string> = {
   'released_2': 'Released 2',
   'released_3': 'Released 3',
   'released_4': 'Released 4',
-}
+};
 
 const eventMap: {
   coap: Record<string, ShellyActionEvent>,

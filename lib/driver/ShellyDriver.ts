@@ -9,15 +9,15 @@ export default abstract class ShellyDriver extends Driver {
     return super.onInit();
   }
 
-  public log(...args: any[]): void {
+  public log(...args: unknown[]): void {
     this.logger ? this.logger.log(...args) : super.log(...args);
   }
 
-  public error(...args: any[]): void {
+  public error(...args: unknown[]): void {
     this.logger ? this.logger.error(...args) : super.error(...args);
   }
 
-  public debug(...args: any[]): void {
+  public debug(...args: unknown[]): void {
     this.logger?.debug(...args);
   }
 }

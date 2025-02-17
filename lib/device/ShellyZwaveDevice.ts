@@ -84,7 +84,7 @@ export default abstract class ShellyZwaveDevice extends ZwaveDevice implements S
     newSettings: { [p: string]: boolean | string | number | undefined | null };
     changedKeys: string[]
   }): Promise<string | void> {
-    this.log('Updating settings:', JSON.stringify(changedKeys), JSON.stringify(newSettings))
+    this.log('Updating settings:', JSON.stringify(changedKeys), JSON.stringify(newSettings));
     return super.onSettings({oldSettings, newSettings, changedKeys});
   }
 
@@ -97,15 +97,15 @@ export default abstract class ShellyZwaveDevice extends ZwaveDevice implements S
     return this.driver as ShellyZwaveDriver;
   }
 
-  public log(...args: any[]): void {
+  public log(...args: unknown[]): void {
     this.logger ? this.logger.log(...args) : super.log(...args);
   }
 
-  public error(...args: any[]): void {
+  public error(...args: unknown[]): void {
     this.logger ? this.logger.error(...args) : super.error(...args);
   }
 
-  public debug(...args: any[]): void {
+  public debug(...args: unknown[]): void {
     this.logger?.debug(...args);
   }
 }
