@@ -335,6 +335,7 @@ class ShellyDriver extends Homey.Driver {
 
       } catch (error) {
         this.error(error);
+        return Promise.reject(error);
       }
     });
 
