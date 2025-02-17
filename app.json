@@ -19,7 +19,7 @@
       "Shelly Bluetooth"
     ]
   },
-  "version": "3.37.1",
+  "version": "3.38.0",
   "compatibility": ">=12.2.0",
   "platforms": [
     "local",
@@ -5247,7 +5247,7 @@
               "value": false,
               "hint": {
                 "en": "Enables/disables the tilting measurement. The battery life may be significantly reduced when tilting measurement is enabled.",
-                "nl": "Of de hoek van het apparaat gemeten moet worden. De levensduur van de batterij kan aanzienlijk worden verkort wanneer de lichtmeting is ingeschakeld."
+                "nl": "Of de hoek van het apparaat gemeten moet worden. De levensduur van de batterij kan aanzienlijk worden verkort wanneer de hoekmeting is ingeschakeld."
               },
               "zwave": {
                 "index": 156,

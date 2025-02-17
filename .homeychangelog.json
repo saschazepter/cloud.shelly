@@ -898,5 +898,8 @@
   },
   "3.37.1": {
     "en": "Fix action event flow card for i3"
+  },
+  "3.38.0": {
+    "en": "Add support for Wave Door/Window"
   }
 }
