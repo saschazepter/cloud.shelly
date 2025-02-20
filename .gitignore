@@ -4,3 +4,8 @@ node_modules/
 
 # Added by Homey CLI
 /.homeybuild/
+
+# Branded drivers
+/drivers/shelly_wave_plug_s_eu
+/drivers/shelly_wave_plug_uk
+/drivers/shelly_wave_plug_us

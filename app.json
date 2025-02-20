@@ -5888,6 +5888,843 @@
       ]
     },
     {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_plug_s_eu/assets/images/large.png",
+        "small": "/drivers/shelly_wave_plug_s_eu/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_plug_s_eu/assets/icon.svg",
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "measure_power",
+        "meter_power",
+        "button.reset_meter"
+      ],
+      "capabilitiesOptions": {
+        "button.reset_meter": {
+          "maintenanceAction": true,
+          "title": {
+            "en": "Reset power meter",
+            "nl": "Stel stroomverbuik opnieuw in"
+          },
+          "desc": {
+            "en": "Reset the accumulated power usage (kWh), note that this can not be reversed.",
+            "nl": "Stel geaccumuleerde stroomverbruik (kWh) opnieuw in, dit kan niet worden teruggedraaid."
+          }
+        }
+      },
+      "zwave": {
+        "manufacturerId": 1120,
+        "associationGroups": [
+          1
+        ],
+        "productTypeId": [
+          2
+        ],
+        "productId": [
+          135
+        ],
+        "learnmode": {
+          "image": "/drivers/shelly_wave_plug_s_eu/assets/pair.svg",
+          "instruction": {
+            "en": "Press and hold the S button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking. Repeat this for step 2 in the pairing process and enter the device key (pincode).",
+            "nl": "Houd de S-knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen. Herhaal dit voor stap 2 in het koppelingsproces en voer de apparaatsleutel (pincode) in."
+          }
+        },
+        "unlearnmode": {
+          "image": "/drivers/shelly_wave_plug_s_eu/assets/pair.svg",
+          "instruction": {
+            "en": "Press and hold the S button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking.",
+            "nl": "Houd de S-knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen."
+          }
+        }
+      },
+      "name": {
+        "en": "Shelly Wave Plug S (EU)"
+      },
+      "id": "shelly_wave_plug_s_eu",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Switch-Output Settings",
+            "nl": "Switch-Output instellingen"
+          },
+          "children": [
+            {
+              "id": "zwaveRestoreStateO1",
+              "type": "dropdown",
+              "label": {
+                "en": "Restore state of O1 after power failure",
+                "nl": "Herstel status van O1 na stroom uitval"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Output 1 saves last on/off status and restores it after a power failure",
+                    "nl": "Output 1 hersteld on/off status na stroom uitval"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Output 1 does not save on/off status and does not restore it after a power failure, it remains off",
+                    "nl": "Output 1 is standaard uit na stroom uitval"
+                  }
+                }
+              ],
+              "zwave": {
+                "index": 17,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveAutoOffO1",
+              "type": "number",
+              "label": {
+                "en": "Auto OFF O1 with timer",
+                "nl": "Automatisch UIT O1 met timer"
+              },
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 32535
+              },
+              "units": {
+                "en": "seconds",
+                "nl": "seconden"
+              },
+              "hint": {
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+              },
+              "zwave": {
+                "index": 19,
+                "size": 2
+              }
+            },
+            {
+              "id": "zwaveAutoOnO1",
+              "type": "number",
+              "label": {
+                "en": "Auto ON O1 with timer",
+                "nl": "Automatisch AAN O1 met timer"
+              },
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 32535
+              },
+              "units": {
+                "en": "seconds",
+                "nl": "seconden"
+              },
+              "hint": {
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+              },
+              "zwave": {
+                "index": 20,
+                "size": 2
+              }
+            },
+            {
+              "id": "zwaveContactTypeO1",
+              "type": "dropdown",
+              "label": {
+                "en": "Contact type O1 - NO/NC",
+                "nl": "Contacttype O1 - NO/NC"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Normally closed (NC)",
+                    "nl": "Normaal gesloten (NC)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines the type of relay contact type for output 1.",
+                "nl": "Bepaalt het type van relay contact voor output 1."
+              },
+              "zwave": {
+                "index": 23,
+                "size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Device Settings",
+            "nl": "Apparaatinstellingen"
+          },
+          "children": [
+            {
+              "id": "zwavePowerReportOnChangeO1",
+              "type": "number",
+              "label": {
+                "en": "Power report on change for O1",
+                "nl": "Power report bij wijziging voor O1"
+              },
+              "value": 50,
+              "attr": {
+                "min": 0,
+                "max": 100
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+              },
+              "zwave": {
+                "index": 36,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveMinimalTimePowerReportO1",
+              "type": "number",
+              "label": {
+                "en": "Minimal time between reports for O1",
+                "nl": "Minimale tijd tussen reports voor O1"
+              },
+              "value": 30,
+              "attr": {
+                "min": 10,
+                "max": 120
+              },
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+              },
+              "zwave": {
+                "index": 39,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveResetToDefaultAndLeave",
+              "type": "dropdown",
+              "label": {
+                "en": "Reset parameters to default and leave network",
+                "nl": "Reset parameters naar fabrieksinstellingen en verlaat netwerk"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Do not reset",
+                    "nl": "Niet resetten"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Reset parameters and leave network",
+                    "nl": "Reset parameters en netwerk verlaten"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+              },
+              "zwave": {
+                "index": 120,
+                "size": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_plug_uk/assets/images/large.png",
+        "small": "/drivers/shelly_wave_plug_uk/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_plug_uk/assets/icon.svg",
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "measure_power",
+        "meter_power",
+        "button.reset_meter"
+      ],
+      "capabilitiesOptions": {
+        "button.reset_meter": {
+          "maintenanceAction": true,
+          "title": {
+            "en": "Reset power meter",
+            "nl": "Stel stroomverbuik opnieuw in"
+          },
+          "desc": {
+            "en": "Reset the accumulated power usage (kWh), note that this can not be reversed.",
+            "nl": "Stel geaccumuleerde stroomverbruik (kWh) opnieuw in, dit kan niet worden teruggedraaid."
+          }
+        }
+      },
+      "zwave": {
+        "manufacturerId": 1120,
+        "associationGroups": [
+          1
+        ],
+        "productTypeId": [
+          2
+        ],
+        "productId": [
+          137
+        ],
+        "learnmode": {
+          "image": "/drivers/shelly_wave_plug_uk/assets/pair.svg",
+          "instruction": {
+            "en": "Press and hold the S button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking. Repeat this for step 2 in the pairing process and enter the device key (pincode).",
+            "nl": "Houd de S-knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen. Herhaal dit voor stap 2 in het koppelingsproces en voer de apparaatsleutel (pincode) in."
+          }
+        },
+        "unlearnmode": {
+          "image": "/drivers/shelly_wave_plug_uk/assets/pair.svg",
+          "instruction": {
+            "en": "Press and hold the S button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking.",
+            "nl": "Houd de S-knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen."
+          }
+        }
+      },
+      "name": {
+        "en": "Shelly Wave Plug UK"
+      },
+      "id": "shelly_wave_plug_uk",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Switch-Output Settings",
+            "nl": "Switch-Output instellingen"
+          },
+          "children": [
+            {
+              "id": "zwaveRestoreStateO1",
+              "type": "dropdown",
+              "label": {
+                "en": "Restore state of O1 after power failure",
+                "nl": "Herstel status van O1 na stroom uitval"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Output 1 saves last on/off status and restores it after a power failure",
+                    "nl": "Output 1 hersteld on/off status na stroom uitval"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Output 1 does not save on/off status and does not restore it after a power failure, it remains off",
+                    "nl": "Output 1 is standaard uit na stroom uitval"
+                  }
+                }
+              ],
+              "zwave": {
+                "index": 17,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveAutoOffO1",
+              "type": "number",
+              "label": {
+                "en": "Auto OFF O1 with timer",
+                "nl": "Automatisch UIT O1 met timer"
+              },
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 32535
+              },
+              "units": {
+                "en": "seconds",
+                "nl": "seconden"
+              },
+              "hint": {
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+              },
+              "zwave": {
+                "index": 19,
+                "size": 2
+              }
+            },
+            {
+              "id": "zwaveAutoOnO1",
+              "type": "number",
+              "label": {
+                "en": "Auto ON O1 with timer",
+                "nl": "Automatisch AAN O1 met timer"
+              },
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 32535
+              },
+              "units": {
+                "en": "seconds",
+                "nl": "seconden"
+              },
+              "hint": {
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+              },
+              "zwave": {
+                "index": 20,
+                "size": 2
+              }
+            },
+            {
+              "id": "zwaveContactTypeO1",
+              "type": "dropdown",
+              "label": {
+                "en": "Contact type O1 - NO/NC",
+                "nl": "Contacttype O1 - NO/NC"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Normally closed (NC)",
+                    "nl": "Normaal gesloten (NC)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines the type of relay contact type for output 1.",
+                "nl": "Bepaalt het type van relay contact voor output 1."
+              },
+              "zwave": {
+                "index": 23,
+                "size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Device Settings",
+            "nl": "Apparaatinstellingen"
+          },
+          "children": [
+            {
+              "id": "zwavePowerReportOnChangeO1",
+              "type": "number",
+              "label": {
+                "en": "Power report on change for O1",
+                "nl": "Power report bij wijziging voor O1"
+              },
+              "value": 50,
+              "attr": {
+                "min": 0,
+                "max": 100
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+              },
+              "zwave": {
+                "index": 36,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveMinimalTimePowerReportO1",
+              "type": "number",
+              "label": {
+                "en": "Minimal time between reports for O1",
+                "nl": "Minimale tijd tussen reports voor O1"
+              },
+              "value": 30,
+              "attr": {
+                "min": 10,
+                "max": 120
+              },
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+              },
+              "zwave": {
+                "index": 39,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveResetToDefaultAndLeave",
+              "type": "dropdown",
+              "label": {
+                "en": "Reset parameters to default and leave network",
+                "nl": "Reset parameters naar fabrieksinstellingen en verlaat netwerk"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Do not reset",
+                    "nl": "Niet resetten"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Reset parameters and leave network",
+                    "nl": "Reset parameters en netwerk verlaten"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+              },
+              "zwave": {
+                "index": 120,
+                "size": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_plug_us/assets/images/large.png",
+        "small": "/drivers/shelly_wave_plug_us/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_plug_us/assets/icon.svg",
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "measure_power",
+        "meter_power",
+        "button.reset_meter"
+      ],
+      "capabilitiesOptions": {
+        "button.reset_meter": {
+          "maintenanceAction": true,
+          "title": {
+            "en": "Reset power meter",
+            "nl": "Stel stroomverbuik opnieuw in"
+          },
+          "desc": {
+            "en": "Reset the accumulated power usage (kWh), note that this can not be reversed.",
+            "nl": "Stel geaccumuleerde stroomverbruik (kWh) opnieuw in, dit kan niet worden teruggedraaid."
+          }
+        }
+      },
+      "zwave": {
+        "manufacturerId": 1120,
+        "associationGroups": [
+          1
+        ],
+        "productTypeId": [
+          2
+        ],
+        "productId": [
+          136
+        ],
+        "learnmode": {
+          "image": "/drivers/shelly_wave_plug_us/assets/pair.svg",
+          "instruction": {
+            "en": "Press and hold the S button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking. Repeat this for step 2 in the pairing process and enter the device key (pincode).",
+            "nl": "Houd de S-knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen. Herhaal dit voor stap 2 in het koppelingsproces en voer de apparaatsleutel (pincode) in."
+          }
+        },
+        "unlearnmode": {
+          "image": "/drivers/shelly_wave_plug_us/assets/pair.svg",
+          "instruction": {
+            "en": "Press and hold the S button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking.",
+            "nl": "Houd de S-knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen."
+          }
+        }
+      },
+      "name": {
+        "en": "Shelly Wave Plug US"
+      },
+      "id": "shelly_wave_plug_us",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Switch-Output Settings",
+            "nl": "Switch-Output instellingen"
+          },
+          "children": [
+            {
+              "id": "zwaveRestoreStateO1",
+              "type": "dropdown",
+              "label": {
+                "en": "Restore state of O1 after power failure",
+                "nl": "Herstel status van O1 na stroom uitval"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Output 1 saves last on/off status and restores it after a power failure",
+                    "nl": "Output 1 hersteld on/off status na stroom uitval"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Output 1 does not save on/off status and does not restore it after a power failure, it remains off",
+                    "nl": "Output 1 is standaard uit na stroom uitval"
+                  }
+                }
+              ],
+              "zwave": {
+                "index": 17,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveAutoOffO1",
+              "type": "number",
+              "label": {
+                "en": "Auto OFF O1 with timer",
+                "nl": "Automatisch UIT O1 met timer"
+              },
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 32535
+              },
+              "units": {
+                "en": "seconds",
+                "nl": "seconden"
+              },
+              "hint": {
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+              },
+              "zwave": {
+                "index": 19,
+                "size": 2
+              }
+            },
+            {
+              "id": "zwaveAutoOnO1",
+              "type": "number",
+              "label": {
+                "en": "Auto ON O1 with timer",
+                "nl": "Automatisch AAN O1 met timer"
+              },
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 32535
+              },
+              "units": {
+                "en": "seconds",
+                "nl": "seconden"
+              },
+              "hint": {
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+              },
+              "zwave": {
+                "index": 20,
+                "size": 2
+              }
+            },
+            {
+              "id": "zwaveContactTypeO1",
+              "type": "dropdown",
+              "label": {
+                "en": "Contact type O1 - NO/NC",
+                "nl": "Contacttype O1 - NO/NC"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Normally open (NO)",
+                    "nl": "Normaal open (NO)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Normally closed (NC)",
+                    "nl": "Normaal gesloten (NC)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines the type of relay contact type for output 1.",
+                "nl": "Bepaalt het type van relay contact voor output 1."
+              },
+              "zwave": {
+                "index": 23,
+                "size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Device Settings",
+            "nl": "Apparaatinstellingen"
+          },
+          "children": [
+            {
+              "id": "zwavePowerReportOnChangeO1",
+              "type": "number",
+              "label": {
+                "en": "Power report on change for O1",
+                "nl": "Power report bij wijziging voor O1"
+              },
+              "value": 50,
+              "attr": {
+                "min": 0,
+                "max": 100
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+              },
+              "zwave": {
+                "index": 36,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveMinimalTimePowerReportO1",
+              "type": "number",
+              "label": {
+                "en": "Minimal time between reports for O1",
+                "nl": "Minimale tijd tussen reports voor O1"
+              },
+              "value": 30,
+              "attr": {
+                "min": 10,
+                "max": 120
+              },
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+              },
+              "zwave": {
+                "index": 39,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveResetToDefaultAndLeave",
+              "type": "dropdown",
+              "label": {
+                "en": "Reset parameters to default and leave network",
+                "nl": "Reset parameters naar fabrieksinstellingen en verlaat netwerk"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Do not reset",
+                    "nl": "Niet resetten"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Reset parameters and leave network",
+                    "nl": "Reset parameters en netwerk verlaten"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+              },
+              "zwave": {
+                "index": 120,
+                "size": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": {
         "en": "Shelly Wave PM Mini",
         "nl": "Shelly Wave PM Mini"

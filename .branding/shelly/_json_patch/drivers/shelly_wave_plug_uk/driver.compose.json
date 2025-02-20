@@ -1,0 +1,8 @@
+{
+  "name": {
+    "en": "Shelly Wave Plug UK"
+  },
+  "zwave": {
+    "productId": [137]
+  }
+}

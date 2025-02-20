@@ -112,7 +112,9 @@ Shelly Wave 1 (Mini)
 Shelly Wave 1PM (Mini)
 Shelly Wave 2PM
 Shelly Wave Shutter
-Shelly Wave Plug UK/US
+Shelly Wave Plug S (EU)
+Shelly Wave Plug UK
+Shelly Wave Plug US
 Shelly Wave Pro 1
 Shelly Wave Pro 1PM
 Shelly Wave Pro 2
