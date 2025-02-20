@@ -1699,7 +1699,7 @@ class ShellyDevice extends Homey.Device {
       // EM:0 MEASURE POWER (single channel instantaneous power readings like Pro 3EM in triphase mode)
       if (result.hasOwnProperty("em:0")) {
 
-        if (this.getStoreValue('config').id !== 'shellypro3em-triphase') {
+        if (!this.is3EMTriphase()) {
 
           if (this.getStoreValue('channel') === 0) {
 
@@ -1763,7 +1763,7 @@ class ShellyDevice extends Homey.Device {
 
           }
 
-        } else if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+        } else if (this.is3EMTriphase()) {
 
           /* measure_power */
           if (this.getCapabilityValue('measure_power') !== result["em:0"].total_act_power) {
@@ -1795,7 +1795,7 @@ class ShellyDevice extends Homey.Device {
       // EMDATA:0 METER POWER (single channel energy readings like Pro 3EM in triphase mode)
       if (result.hasOwnProperty("emdata:0")) {
 
-        if (this.getStoreValue('config').id !== 'shellypro3em-triphase') {
+        if (!this.is3EMTriphase()) {
           if (this.getStoreValue('channel') === 0) {
 
             /* meter_power */
@@ -1847,7 +1847,7 @@ class ShellyDevice extends Homey.Device {
             }
 
           }
-        } else if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+        } else if (this.is3EMTriphase()) {
 
           /* meter_power */
           const meter_power_total = result["emdata:0"].total_act / 1000;
@@ -2853,30 +2853,30 @@ class ShellyDevice extends Homey.Device {
           this.updateCapabilityValue('measure_power', value, channel);
           break;
         case 'a_act_power':
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('measure_power.a', value, 0);
           } else {
             this.updateCapabilityValue('measure_power', value, 0);
           }
           break;
         case 'b_act_power':
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('measure_power.b', value, 0);
           } else {
             this.updateCapabilityValue('measure_power', value, 1);
           }
           break;
         case 'c_act_power':
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('measure_power.c', value, 0);
           } else {
             this.updateCapabilityValue('measure_power', value, 2);
           }
           break;
         case 'total_act_power':
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('measure_power', value, 0);
-          } else if (this.getStoreValue('config').id !== 'shellypro3em-triphase' && this.getStoreValue('channel') === 0) {
+          } else if (!this.is3EMTriphase() && this.getStoreValue('channel') === 0) {
             if (this.getCapabilityValue('measure_power.total') !== value) {
               this.updateCapabilityValue('measure_power.total', value, 0);
               this.homey.flow.getDeviceTriggerCard('triggerMeasurePowerTotal').trigger(this, {'power': value}, {}).catch(error => { this.error(error) });
@@ -2900,7 +2900,7 @@ class ShellyDevice extends Homey.Device {
           break;
         case 'a_total_act_energy':
           const a_total_act_energy = value / 1000;
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('meter_power.a', a_total_act_energy, 0);
           } else {
             this.updateCapabilityValue('meter_power', a_total_act_energy, 0);
@@ -2908,7 +2908,7 @@ class ShellyDevice extends Homey.Device {
           break;
         case 'b_total_act_energy':
           const b_total_act_energy = value / 1000;
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('meter_power.b', b_total_act_energy, 0);
           } else {
             this.updateCapabilityValue('meter_power', b_total_act_energy, 1);
@@ -2916,7 +2916,7 @@ class ShellyDevice extends Homey.Device {
           break;
         case 'c_total_act_energy':
           const c_total_act_energy = value / 1000;
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('meter_power.c', c_total_act_energy, 0);
           } else {
             this.updateCapabilityValue('meter_power', c_total_act_energy, 2);
@@ -2936,9 +2936,9 @@ class ShellyDevice extends Homey.Device {
           break;
         case 'total_act':
           const meter_power_total_act = value / 1000;
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('meter_power', meter_power_total_act, 0);
-          } else if (this.getStoreValue('config').id !== 'shellypro3em-triphase' && this.getStoreValue('channel') === 0) {
+          } else if (!this.is3EMTriphase() && this.getStoreValue('channel') === 0) {
             if (this.getCapabilityValue('meter_power.total') !== meter_power_total_act) {
               this.updateCapabilityValue('meter_power.total', meter_power_total_act, 0);
               this.homey.flow.getDeviceTriggerCard('triggerMeterPowerTotal').trigger(this, {'energy': meter_power_total_act}, {}).catch(error => { this.error(error) });
@@ -2963,7 +2963,7 @@ class ShellyDevice extends Homey.Device {
           }
           break;
         case 'a_total_act_ret_energy':
-          if (this.getStoreValue('config').id !== 'shellypro3em-triphase') {
+          if (!this.is3EMTriphase()) {
             const a_total_act_ret_energy = value / 1000;
             if (this.getCapabilityValue('meter_power.returned') !== a_total_act_ret_energy) {
               this.updateCapabilityValue('meter_power.returned', a_total_act_ret_energy, 0);
@@ -2972,7 +2972,7 @@ class ShellyDevice extends Homey.Device {
           }
           break;
         case 'b_total_act_ret_energy':
-          if (this.getStoreValue('config').id !== 'shellypro3em-triphase') {
+          if (!this.is3EMTriphase()) {
             const b_total_act_ret_energy = value / 1000;
             if (this.getCapabilityValue('meter_power.returned') !== b_total_act_ret_energy) {
               this.updateCapabilityValue('meter_power.returned', b_total_act_ret_energy, 1);
@@ -2981,7 +2981,7 @@ class ShellyDevice extends Homey.Device {
           }
           break;
         case 'c_total_act_ret_energy':
-          if (this.getStoreValue('config').id !== 'shellypro3em-triphase') {
+          if (!this.is3EMTriphase()) {
             const c_total_act_ret_energy = value / 1000;
             if (this.getCapabilityValue('meter_power.returned') !== c_total_act_ret_energy) {
               this.updateCapabilityValue('meter_power.returned', c_total_act_ret_energy, 2);
@@ -3010,19 +3010,19 @@ class ShellyDevice extends Homey.Device {
           this.updateCapabilityValue('meter_power_factor', value, channel);
           break;
         case 'a_pf':
-          if (this.getStoreValue('config').id !== 'shellypro3em-triphase') {
+          if (!this.is3EMTriphase()) {
             this.updateCapabilityValue('meter_power_factor', value, 0);
             this.homey.flow.getDeviceTriggerCard('triggerMeterPowerFactor').trigger(this, {'pf': value}, {}).catch(error => { this.error(error) });
           }
           break;
         case 'b_pf':
-          if (this.getStoreValue('config').id !== 'shellypro3em-triphase') {
+          if (!this.is3EMTriphase()) {
             this.updateCapabilityValue('meter_power_factor', value, 1);
             this.homey.flow.getDeviceTriggerCard('triggerMeterPowerFactor').trigger(this, {'pf': value}, {}).catch(error => { this.error(error) });
           }
           break;
         case 'c_pf':
-          if (this.getStoreValue('config').id !== 'shellypro3em-triphase') {
+          if (!this.is3EMTriphase()) {
             this.updateCapabilityValue('meter_power_factor', value, 2);
             this.homey.flow.getDeviceTriggerCard('triggerMeterPowerFactor').trigger(this, {'pf': value}, {}).catch(error => { this.error(error) });
           }
@@ -3040,28 +3040,28 @@ class ShellyDevice extends Homey.Device {
           this.updateCapabilityValue('measure_current.light', value, channel);
           break;
         case 'a_current':
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('measure_current.a', value, 0);
           } else {
             this.updateCapabilityValue('measure_current', value, 0);
           }
           break;
         case 'b_current':
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('measure_current.b', value, 0);
           } else {
             this.updateCapabilityValue('measure_current', value, 1);
           }
           break;
         case 'c_current':
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('measure_current.c', value, 0);
           } else {
             this.updateCapabilityValue('measure_current', value, 2);
           }
           break;
         case 'total_current':
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('measure_current', value, 0);
           } else {
             this.updateCapabilityValue('measure_current.total', value, 0);
@@ -3095,21 +3095,21 @@ class ShellyDevice extends Homey.Device {
           this.updateCapabilityValue('measure_voltage.light', value, channel);
           break;
         case 'a_voltage':
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('measure_voltage.a', value, 0);
           } else {
             this.updateCapabilityValue('measure_voltage', value, 0);
           }
           break;
         case 'b_voltage':
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('measure_voltage.b', value, 0);
           } else {
             this.updateCapabilityValue('measure_voltage', value, 1);
           }
           break;
         case 'c_voltage':
-          if (this.getStoreValue('config').id === 'shellypro3em-triphase') {
+          if (this.is3EMTriphase()) {
             this.updateCapabilityValue('measure_voltage.c', value, 0);
           } else {
             this.updateCapabilityValue('measure_voltage', value, 2);
@@ -4017,6 +4017,16 @@ class ShellyDevice extends Homey.Device {
 
     this.log('Updating energy object from', JSON.stringify(this.getEnergy()), 'to', JSON.stringify(energyObject), 'for', this.getName());
     await this.setEnergy(energyObject).catch(this.error);
+  }
+
+  is3EMTriphase() {
+    switch (this.getStoreValue('config').id) {
+      case 'shellypro3em-triphase':
+      case 'shelly3em63g3-triphase':
+        return true;
+      default:
+        return false;
+    }
   }
 
   debug(...args) {
