@@ -25,3 +25,15 @@ include:
   - project: 'intern/runner-templates'
     ref: "15.3"
     file: '/homey/publish.yml'
+
+validate:
+  before_script: &before_script
+    - npm run prep
+
+build:
+  before_script:
+    - *before_script
+
+publish:
+  script:
+    - npm run publish shelly

@@ -18,10 +18,15 @@
   "license": "MIT",
   "homepage": "https://homey.app/a/cloud.shelly",
   "scripts": {
+    "homey": "homey",
     "compile": "tsc",
     "lint": "eslint --ext .ts --ignore-path .gitignore .",
-    "fix": "eslint --fix  --ext .ts .",
-    "validate": "homey app validate --level=verified"
+    "fix": "eslint --fix --ext .ts .",
+    "validate": "homey app validate --level=verified",
+    "prep": "homey-branding-helper prepare shelly",
+    "build": "homey-branding-helper prepare shelly && homey app build",
+    "publish": "homey-branding-helper publish",
+    "run": "homey-branding-helper run shelly"
   },
   "dependencies": {
     "@drenso/homey-log": "9.2.0",
@@ -37,6 +42,7 @@
     "ws": "7.5.10"
   },
   "devDependencies": {
+    "@drenso/homey-branding-helper": "2.6.0",
     "@tsconfig/node16": "1.0.3",
     "@types/homey": "npm:homey-apps-sdk-v3-types@0.3.6",
     "@types/node": "20.14.1",
