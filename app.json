@@ -5615,6 +5615,7 @@
       },
       "class": "socket",
       "icon": "/drivers/shelly_wave_plug/assets/icon.svg",
+      "deprecated": true,
       "capabilities": [
         "onoff",
         "measure_power",

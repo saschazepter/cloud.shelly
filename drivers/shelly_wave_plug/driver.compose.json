@@ -9,6 +9,7 @@
   },
   "class": "socket",
   "icon": "{{driverAssetsPath}}/icon.svg",
+  "deprecated": true,
   "capabilities": [
     "onoff",
     "measure_power",
