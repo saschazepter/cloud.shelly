@@ -901,5 +901,8 @@
   },
   "3.38.0": {
     "en": "Add support for Wave Door/Window"
+  },
+  "3.39.0": {
+    "en": "Add support for Outdoor Plug S Gen3 and 3EM-63 Gen3, improve BLE device type detection, improve translations"
   }
 }
