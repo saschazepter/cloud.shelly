@@ -86,7 +86,9 @@ Shelly Dali Dimmer Gen3
 Shelly i4 Gen3
 Shelly 2PM Gen3
 Shelly EM Gen3
+Shelly 3EM-63 Gen3
 Shelly Plug S Gen3
+Shelly Outdoor Plug S Gen3
 Shelly Dimmer Gen3
 
 Wall Display (als outlet of thermostaat, alleen op Homey Pro)
