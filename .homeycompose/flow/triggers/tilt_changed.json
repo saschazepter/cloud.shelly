@@ -1,0 +1,27 @@
+{
+  "title": {
+    "en": "Tilt has changed",
+    "nl": "Kanteling is veranderd"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": {
+        "driver_id": "shelly_wave_door_window",
+        "capabilities": "tilt"
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "name": "tilt",
+      "type": "number",
+      "title": {
+        "en": "Tilt",
+        "nl": "Kanteling"
+      },
+      "example": 45
+    }
+  ]
+}
