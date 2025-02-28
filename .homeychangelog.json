@@ -910,5 +910,8 @@
   },
   "3.40.0": {
     "en": "Add support for Wave Plug S EU, rework Wave Plugs (UK/US) drivers, deprecate old Wave Plug driver"
+  },
+  "3.40.1": {
+    "en": "Add support for Wave Plug S EU, rework Wave Plugs (UK/US) drivers, deprecate old Wave Plug driver. Fix TRV flow card title, fix loosing IP setting in certain scenarios."
   }
 }
