@@ -907,5 +907,8 @@
   },
   "3.39.1": {
     "en": "Add missing tilt trigger for Wave Door/Window"
+  },
+  "3.40.0": {
+    "en": "Add support for Wave Plug S EU, rework Wave Plugs (UK/US) drivers, deprecate old Wave Plug driver"
   }
 }
