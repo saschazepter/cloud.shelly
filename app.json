@@ -2868,8 +2868,8 @@
           {
             "name": "duration",
             "title": {
-              "en": "Duration in seconds",
-              "nl": "Duur in seconden"
+              "en": "Duration (in seconds for BLE TRV, otherwise minutes)",
+              "nl": "Duur (in seconden voor BLE TRV, anders minuten)"
             },
             "type": "number",
             "min": 0,
