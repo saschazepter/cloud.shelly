@@ -5214,8 +5214,7 @@
       },
       "zwave": {
         "manufacturerId": 1120,
-        "associationGroups": [],
-        "associationGroupsMultiChannel": [
+        "associationGroups": [
           1
         ],
         "productTypeId": [
