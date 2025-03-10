@@ -2616,7 +2616,7 @@ class ShellyDevice extends Homey.Device {
                 value.forEach((element) => {
                   this.homey.flow.getTriggerCard('triggerDeviceOffline').trigger({"device": this.getName(), "device_error": element.toString()}).catch(error => { this.error(error) });
                 });
-              } else if (capability !== 'component' && capability !== 'id' && capability !== 'source' && capability !== 'type' && capability !== 'schedules') {
+              } else if (capability !== 'component' && capability !== 'id' && capability !== 'source' && capability !== 'type' && capability !== 'schedules' && capability !== 'playback') {
 
                 if (typeof value === 'object' && value !== null) { /* parse aenergy and device temperature data */
                   if (capability === 'aenergy') {
