@@ -1338,7 +1338,11 @@ class ShellyDevice extends Homey.Device {
       }
 
       // firmware update available?
-      if (result.hasOwnProperty("update")) {
+      if (result.hasOwnProperty("update")
+        && typeof result.update.old_version === 'string'
+        && typeof result.update.new_version === 'string'
+        && typeof result.update.beta_version === 'string'
+      ) {
         const oldVersionDate = new Date(result.update.old_version.split('/')[0].slice(0, 8).replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3'));
         const newVersionDate = new Date(result.update.new_version.split('/')[0].slice(0, 8).replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3'));
         const betaVersionDate = new Date(result.update.beta_version.split('/')[0].slice(0, 8).replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3'));
