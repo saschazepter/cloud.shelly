@@ -916,5 +916,8 @@
   },
   "3.40.2": {
     "en": "Fix Wave Door/Window on Homey Pro 2019"
+  },
+  "3.40.3": {
+    "en": "Handle missing firmware data gracefully"
   }
 }
