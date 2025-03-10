@@ -919,5 +919,8 @@
   },
   "3.40.3": {
     "en": "Handle missing firmware data gracefully"
+  },
+  "3.40.4": {
+    "en": "Fix incorrect on/off logging with Wall Display"
   }
 }
