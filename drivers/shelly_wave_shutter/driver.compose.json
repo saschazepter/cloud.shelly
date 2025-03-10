@@ -1,11 +1,7 @@
 {
+  "$extends": "zwave",
   "name": {
-    "en": "Shelly Wave Shutter",
-    "nl": "Shelly Wave Shutter"
-  },
-  "images": {
-    "small": "./assets/drivers/shelly_wave_shutter/images/small.jpg",
-    "large": "./assets/drivers/shelly_wave_shutter/images/large.jpg"
+    "en": "Shelly Wave Shutter"
   },
   "class": "windowcoverings",
   "capabilities": [
@@ -40,7 +36,6 @@
       }
     }
   },
-  "icon": "{{driverAssetsPath}}/icon.svg",
   "zwave": {
     "manufacturerId": 1120,
     "productTypeId": [3],
@@ -61,7 +56,5 @@
         "nl": "Houd de S-knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen."
       }
     }
-  },
-  "platforms": [ "local", "cloud" ],
-  "connectivity": [ "zwave" ]
+  }
 }
