@@ -922,5 +922,8 @@
   },
   "3.40.4": {
     "en": "Fix incorrect on/off logging with Wall Display"
+  },
+  "3.41.0": {
+    "en": "Rewrite Wave (Pro) Shutter device support"
   }
 }
