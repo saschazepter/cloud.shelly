@@ -4,8 +4,8 @@ import ShellyZwaveDevice from '../ShellyZwaveDevice';
 
 export class ShellyZWaveShutterDevice extends ShellyZwaveDevice {
   protected async configureDevice(): Promise<void> {
-    this.registerCapability('measure_power', 'METER');
-    this.registerCapability('meter_power', 'METER');
+    this.registerCapability('measure_power', 'METER', {multiChannelNodeId: 1});
+    this.registerCapability('meter_power', 'METER', {multiChannelNodeId: 1});
     this.registerCapability('windowcoverings_set', 'SWITCH_MULTILEVEL', {multiChannelNodeId: 1});
     this.registerCapability('windowcoverings_tilt_set', 'SWITCH_MULTILEVEL', {multiChannelNodeId: 2});
   }
