@@ -1,6 +1,6 @@
 import type {ShellyActionEvent} from '../../flow/trigger/ActionEventTrigger';
 import {addCapabilityIfNotExists, removeCapabilityIfAvailable} from '../../helper/Capabilities';
-import ShellyZwaveDevice from '../ShellyZwaveDevice';
+import ShellyZwaveDevice from './ShellyZwaveDevice';
 
 export class ShellyZWaveShutterDevice extends ShellyZwaveDevice {
   protected async configureDevice(): Promise<void> {

@@ -1,9 +1,9 @@
 import Homey, {type ZwaveNode} from 'homey';
 import {ZwaveDevice} from 'homey-zwavedriver';
-import ShellyZwaveDriver from '../driver/ShellyZwaveDriver';
-import type {ShellyActionEvent} from '../flow/trigger/ActionEventTrigger';
-import Logger from '../log/Logger';
-import type {ShellyDeviceInterface} from './ShellyDevice';
+import ShellyZwaveDriver from '../../driver/ShellyZwaveDriver';
+import type {ShellyActionEvent} from '../../flow/trigger/ActionEventTrigger';
+import Logger from '../../log/Logger';
+import type {ShellyDeviceInterface} from '../ShellyDevice';
 
 export default abstract class ShellyZwaveDevice extends ZwaveDevice implements ShellyDeviceInterface {
   protected logger?: Logger = undefined;

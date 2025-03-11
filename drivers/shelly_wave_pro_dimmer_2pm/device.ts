@@ -1,4 +1,4 @@
-import ShellyZwaveDevice from '../../lib/device/ShellyZwaveDevice';
+import ShellyZwaveDevice from '../../lib/device/zwave/ShellyZwaveDevice';
 import {
   convertIncomingActionEvent,
   type ShellyActionEvent,
