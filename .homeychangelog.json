@@ -925,5 +925,8 @@
   },
   "3.41.0": {
     "en": "Rewrite Wave (Pro) Shutter device support"
+  },
+  "3.41.1": {
+    "en": "Lower Z-Wave logging load"
   }
 }
