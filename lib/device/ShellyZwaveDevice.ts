@@ -19,7 +19,7 @@ export default abstract class ShellyZwaveDevice extends ZwaveDevice implements S
       this.node.isMultiChannelNode ? `chan:${this.node.multiChannelNodeId}` : 'main',
     );
 
-    if (Homey.env.DEBUG) {
+    if (Homey.env.DEBUG === '1') {
       this.enableDebug();
     }
 
