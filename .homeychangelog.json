@@ -928,5 +928,8 @@
   },
   "3.41.1": {
     "en": "Lower Z-Wave logging load"
+  },
+  "3.42.0": {
+    "en": "Add support for Gen4 devices"
   }
 }
