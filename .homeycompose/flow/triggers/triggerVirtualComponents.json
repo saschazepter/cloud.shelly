@@ -88,7 +88,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly&capabilities=deviceGen3"
+      "filter": {
+        "driver_id": "shelly",
+        "capabilities": "deviceGen3"
+      }
     }
   ],
   "platforms": ["local"]

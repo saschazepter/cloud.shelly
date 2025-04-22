@@ -74,7 +74,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly&capabilities=onoff.whitemode"
+      "filter": {
+        "driver_id": "shelly",
+        "capabilities": "onoff.whitemode"
+      }
     }
   ],
   "platforms": ["local"],

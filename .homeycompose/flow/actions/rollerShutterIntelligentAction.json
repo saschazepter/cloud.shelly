@@ -11,7 +11,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly|shelly_cloud&capabilities=windowcoverings_set"
+      "filter": {
+        "driver_id": "shelly|shelly_cloud",
+        "capabilities": "windowcoverings_set"
+      }
     }
   ],
   "platforms": ["local", "cloud"]

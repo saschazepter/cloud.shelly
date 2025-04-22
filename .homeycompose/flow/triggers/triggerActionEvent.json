@@ -34,7 +34,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly|shelly_cloud|shelly_bluetooth|shelly_wave_i4|shelly_wave_pro_dimmer_1pm|shelly_wave_pro_dimmer_2pm&capabilities=actionEvents"
+      "filter": {
+        "driver_id": "shelly|shelly_cloud|shelly_bluetooth|shelly_wave_i4|shelly_wave_pro_dimmer_1pm|shelly_wave_pro_dimmer_2pm",
+        "capabilities": "actionEvents"
+      }
     }
   ],
   "platforms": ["local", "cloud"],

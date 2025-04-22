@@ -7,7 +7,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly|shelly_cloud&capabilities=onoff.whitemode"
+      "filter": {
+        "driver_id": "shelly|shelly_cloud",
+        "capabilities": "onoff.whitemode"
+      }
     }
   ],
   "platforms": ["local", "cloud"]

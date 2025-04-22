@@ -18,7 +18,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly|shelly_cloud&capabilities=input_pulse_counts_total"
+      "filter": {
+        "driver_id": "shelly|shelly_cloud",
+        "capabilities": "input_pulse_counts_total"
+      }
     }
   ],
   "platforms": ["local", "cloud"]

@@ -57,7 +57,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly|shelly_cloud&capabilities=onoff|input_1"
+      "filter": {
+        "driver_id": "shelly|shelly_cloud",
+        "capabilities": "onoff|input_1"
+      }
     }
   ],
   "platforms": ["local", "cloud"]

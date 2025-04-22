@@ -18,7 +18,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly|shelly_cloud&capabilities=meter_power.total"
+      "filter": {
+        "driver_id": "shelly|shelly_cloud",
+        "capabilities": "meter_power.total"
+      }
     }
   ],
   "platforms": ["local", "cloud"]

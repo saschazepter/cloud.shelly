@@ -7,7 +7,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly|shelly_cloud&capabilities=input_3"
+      "filter": {
+        "driver_id": "shelly|shelly_cloud",
+        "capabilities": "input_3"
+      }
     }
   ],
   "platforms": ["local", "cloud"]

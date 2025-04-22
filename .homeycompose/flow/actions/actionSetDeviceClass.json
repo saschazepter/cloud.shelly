@@ -27,7 +27,9 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly|shelly_cloud"
+      "filter": {
+        "driver_id": "shelly|shelly_cloud"
+      }
     }
   ],
   "platforms": ["local", "cloud"]

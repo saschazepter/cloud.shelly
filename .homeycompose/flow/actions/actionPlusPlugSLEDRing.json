@@ -51,7 +51,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly&capabilities=devicePlusPlugS"
+      "filter": {
+        "driver_id": "shelly",
+        "capabilities": "devicePlusPlugS"
+      }
     }
   ],
   "platforms": ["local"]

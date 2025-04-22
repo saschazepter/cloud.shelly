@@ -25,7 +25,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly_wave_shutter|shelly_wave_pro_shutter&capabilities=windowcoverings_tilt_set"
+      "filter": {
+        "driver_id": "shelly_wave_shutter|shelly_wave_pro_shutter",
+        "capabilities": "windowcoverings_tilt_set"
+      }
     }
   ],
   "platforms": ["local", "cloud"]

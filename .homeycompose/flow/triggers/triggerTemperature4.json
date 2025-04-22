@@ -18,7 +18,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_temperature.4"
+      "filter": {
+        "driver_id": "shelly|shelly_cloud",
+        "capabilities": "measure_temperature.4"
+      }
     }
   ]
 }

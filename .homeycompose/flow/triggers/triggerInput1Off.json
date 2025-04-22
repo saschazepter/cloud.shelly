@@ -7,7 +7,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly|shelly_cloud|shelly_wave_i4|shelly_wave_pro_dimmer_1pm&capabilities=input_1"
+      "filter": {
+        "driver_id": "shelly|shelly_cloud|shelly_wave_i4|shelly_wave_pro_dimmer_1pm",
+        "capabilities": "input_1"
+      }
     }
   ],
   "platforms": ["local", "cloud"]

@@ -23,7 +23,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly&capabilities=target_temperature|deviceGen1"
+      "filter": {
+        "driver_id": "shelly",
+        "capabilities": "target_temperature|deviceGen1"
+      }
     }
   ],
   "platforms": ["local"]

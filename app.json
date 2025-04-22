@@ -131,7 +131,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud|shelly_bluetooth|shelly_wave_i4|shelly_wave_pro_dimmer_1pm|shelly_wave_pro_dimmer_2pm&capabilities=actionEvents"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud|shelly_bluetooth|shelly_wave_i4|shelly_wave_pro_dimmer_1pm|shelly_wave_pro_dimmer_2pm",
+              "capabilities": "actionEvents"
+            }
           }
         ],
         "platforms": [
@@ -161,7 +164,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly_bluetooth&capabilities=beacon"
+            "filter": {
+              "driver_id": "shelly_bluetooth",
+              "capabilities": "beacon"
+            }
           }
         ],
         "platforms": [
@@ -179,7 +185,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly_bluetooth&capabilities=beacon"
+            "filter": {
+              "driver_id": "shelly_bluetooth",
+              "capabilities": "beacon"
+            }
           }
         ],
         "platforms": [
@@ -197,7 +206,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly_bluetooth&capabilities=beacon"
+            "filter": {
+              "driver_id": "shelly_bluetooth",
+              "capabilities": "beacon"
+            }
           }
         ],
         "platforms": [
@@ -349,7 +361,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=onoff.1"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "onoff.1"
+            }
           }
         ],
         "platforms": [
@@ -378,7 +393,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=onoff.2"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "onoff.2"
+            }
           }
         ],
         "platforms": [
@@ -407,7 +425,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=onoff.3"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "onoff.3"
+            }
           }
         ],
         "platforms": [
@@ -436,7 +457,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=onoff.4"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "onoff.4"
+            }
           }
         ],
         "platforms": [
@@ -465,7 +489,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=onoff.5"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "onoff.5"
+            }
           }
         ],
         "platforms": [
@@ -543,7 +570,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=gas_concentration"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "gas_concentration"
+            }
           }
         ],
         "platforms": [
@@ -571,7 +601,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_humidity.1"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_humidity.1"
+            }
           }
         ],
         "platforms": [
@@ -600,7 +633,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_humidity.2"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_humidity.2"
+            }
           }
         ],
         "platforms": [
@@ -629,7 +665,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_humidity.3"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_humidity.3"
+            }
           }
         ],
         "platforms": [
@@ -658,7 +697,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_humidity.4"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_humidity.4"
+            }
           }
         ],
         "platforms": [
@@ -687,7 +729,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_humidity.5"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_humidity.5"
+            }
           }
         ],
         "platforms": [
@@ -705,7 +750,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud|shelly_wave_i4|shelly_wave_pro_dimmer_1pm&capabilities=input_1"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud|shelly_wave_i4|shelly_wave_pro_dimmer_1pm",
+              "capabilities": "input_1"
+            }
           }
         ],
         "platforms": [
@@ -723,7 +771,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud|shelly_wave_i4|shelly_wave_pro_dimmer_1pm&capabilities=input_1"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud|shelly_wave_i4|shelly_wave_pro_dimmer_1pm",
+              "capabilities": "input_1"
+            }
           }
         ],
         "platforms": [
@@ -741,7 +792,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud|shelly_wave_i4|shelly_wave_pro_dimmer_1pm&capabilities=input_1"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud|shelly_wave_i4|shelly_wave_pro_dimmer_1pm",
+              "capabilities": "input_1"
+            }
           }
         ],
         "platforms": [
@@ -759,7 +813,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud|shelly_wave_i4|shelly_wave_pro_dimmer_1pm&capabilities=input_2"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud|shelly_wave_i4|shelly_wave_pro_dimmer_1pm",
+              "capabilities": "input_2"
+            }
           }
         ],
         "platforms": [
@@ -777,7 +834,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud|shelly_wave_i4|shelly_wave_pro_dimmer_1pm&capabilities=input_2"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud|shelly_wave_i4|shelly_wave_pro_dimmer_1pm",
+              "capabilities": "input_2"
+            }
           }
         ],
         "platforms": [
@@ -795,7 +855,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud|shelly_wave_i4|shelly_wave_pro_dimmer_1pm&capabilities=input_2"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud|shelly_wave_i4|shelly_wave_pro_dimmer_1pm",
+              "capabilities": "input_2"
+            }
           }
         ],
         "platforms": [
@@ -813,7 +876,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud|shelly_wave_i4&capabilities=input_3"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud|shelly_wave_i4",
+              "capabilities": "input_3"
+            }
           }
         ],
         "platforms": [
@@ -831,7 +897,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud|shelly_wave_i4&capabilities=input_3"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud|shelly_wave_i4",
+              "capabilities": "input_3"
+            }
           }
         ],
         "platforms": [
@@ -849,7 +918,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud|shelly_wave_i4&capabilities=input_3"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud|shelly_wave_i4",
+              "capabilities": "input_3"
+            }
           }
         ],
         "platforms": [
@@ -867,7 +939,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud|shelly_wave_i4&capabilities=input_4"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud|shelly_wave_i4",
+              "capabilities": "input_4"
+            }
           }
         ],
         "platforms": [
@@ -885,7 +960,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud|shelly_wave_i4&capabilities=input_4"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud|shelly_wave_i4",
+              "capabilities": "input_4"
+            }
           }
         ],
         "platforms": [
@@ -903,7 +981,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud|shelly_wave_i4&capabilities=input_4"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud|shelly_wave_i4",
+              "capabilities": "input_4"
+            }
           }
         ],
         "platforms": [
@@ -921,7 +1002,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_5"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_5"
+            }
           }
         ],
         "platforms": [
@@ -939,7 +1023,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_5"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_5"
+            }
           }
         ],
         "platforms": [
@@ -957,7 +1044,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_5"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_5"
+            }
           }
         ],
         "platforms": [
@@ -986,7 +1076,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_pulse_counts_minute"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_pulse_counts_minute"
+            }
           }
         ],
         "platforms": [
@@ -1015,7 +1108,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_pulse_counts_total"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_pulse_counts_total"
+            }
           }
         ],
         "platforms": [
@@ -1044,7 +1140,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_pulse_counts_total_x"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_pulse_counts_total_x"
+            }
           }
         ],
         "platforms": [
@@ -1062,7 +1161,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external"
+            }
           }
         ],
         "platforms": [
@@ -1080,7 +1182,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external"
+            }
           }
         ],
         "platforms": [
@@ -1109,7 +1214,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_power.total"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_power.total"
+            }
           }
         ],
         "platforms": [
@@ -1138,7 +1246,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=meter_power_factor"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "meter_power_factor"
+            }
           }
         ],
         "platforms": [
@@ -1167,7 +1278,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=meter_power_returned|meter_power.returned"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "meter_power_returned|meter_power.returned"
+            }
           }
         ],
         "platforms": [
@@ -1196,7 +1310,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=meter_power.total_returned"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "meter_power.total_returned"
+            }
           }
         ],
         "platforms": [
@@ -1225,7 +1342,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=meter_power.total"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "meter_power.total"
+            }
           }
         ],
         "platforms": [
@@ -1254,7 +1374,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_analog_external_1"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_analog_external_1"
+            }
           }
         ],
         "platforms": [
@@ -1283,7 +1406,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_analog_external_2"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_analog_external_2"
+            }
           }
         ],
         "platforms": [
@@ -1312,7 +1438,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_analog_external_3"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_analog_external_3"
+            }
           }
         ],
         "platforms": [
@@ -1341,7 +1470,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_analog_external_4"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_analog_external_4"
+            }
           }
         ],
         "platforms": [
@@ -1370,7 +1502,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_analog_external_5"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_analog_external_5"
+            }
           }
         ],
         "platforms": [
@@ -1388,7 +1523,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_1"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_1"
+            }
           }
         ],
         "platforms": [
@@ -1406,7 +1544,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_1"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_1"
+            }
           }
         ],
         "platforms": [
@@ -1424,7 +1565,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_1"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_1"
+            }
           }
         ],
         "platforms": [
@@ -1442,7 +1586,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_2"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_2"
+            }
           }
         ],
         "platforms": [
@@ -1460,7 +1607,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_2"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_2"
+            }
           }
         ],
         "platforms": [
@@ -1478,7 +1628,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_2"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_2"
+            }
           }
         ],
         "platforms": [
@@ -1496,7 +1649,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_3"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_3"
+            }
           }
         ],
         "platforms": [
@@ -1514,7 +1670,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_3"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_3"
+            }
           }
         ],
         "platforms": [
@@ -1532,7 +1691,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_3"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_3"
+            }
           }
         ],
         "platforms": [
@@ -1550,7 +1712,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_4"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_4"
+            }
           }
         ],
         "platforms": [
@@ -1568,7 +1733,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_4"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_4"
+            }
           }
         ],
         "platforms": [
@@ -1586,7 +1754,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_4"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_4"
+            }
           }
         ],
         "platforms": [
@@ -1604,7 +1775,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_5"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_5"
+            }
           }
         ],
         "platforms": [
@@ -1622,7 +1796,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_5"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_5"
+            }
           }
         ],
         "platforms": [
@@ -1640,7 +1817,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_external_5"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_external_5"
+            }
           }
         ],
         "platforms": [
@@ -1669,7 +1849,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_temperature.1"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_temperature.1"
+            }
           }
         ],
         "id": "triggerTemperature1"
@@ -1683,7 +1866,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_temperature.1"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_temperature.1"
+            }
           }
         ],
         "id": "triggerTemperature1Failed"
@@ -1708,7 +1894,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_temperature.2"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_temperature.2"
+            }
           }
         ],
         "id": "triggerTemperature2"
@@ -1722,7 +1911,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_temperature.2"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_temperature.2"
+            }
           }
         ],
         "id": "triggerTemperature2Failed"
@@ -1747,7 +1939,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_temperature.3"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_temperature.3"
+            }
           }
         ],
         "id": "triggerTemperature3"
@@ -1761,7 +1956,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_temperature.3"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_temperature.3"
+            }
           }
         ],
         "id": "triggerTemperature3Failed"
@@ -1786,7 +1984,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_temperature.4"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_temperature.4"
+            }
           }
         ],
         "id": "triggerTemperature4"
@@ -1800,7 +2001,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_temperature.4"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_temperature.4"
+            }
           }
         ],
         "id": "triggerTemperature4Failed"
@@ -1825,7 +2029,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_temperature.5"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_temperature.5"
+            }
           }
         ],
         "id": "triggerTemperature5"
@@ -1839,7 +2046,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_temperature.5"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_temperature.5"
+            }
           }
         ],
         "id": "triggerTemperature5Failed"
@@ -1864,7 +2074,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud|shelly_bluetooth&capabilities=tilt"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud|shelly_bluetooth",
+              "capabilities": "tilt"
+            }
           }
         ],
         "platforms": [
@@ -1893,7 +2106,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=target_temperature"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "target_temperature"
+            }
           }
         ],
         "platforms": [
@@ -1991,7 +2207,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=deviceGen3"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "deviceGen3"
+            }
           }
         ],
         "platforms": [
@@ -2019,7 +2238,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_voltage.1"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_voltage.1"
+            }
           }
         ],
         "platforms": [
@@ -2048,7 +2270,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_voltage.2"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_voltage.2"
+            }
           }
         ],
         "platforms": [
@@ -2077,7 +2302,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_voltage.3"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_voltage.3"
+            }
           }
         ],
         "platforms": [
@@ -2106,7 +2334,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_voltage.4"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_voltage.4"
+            }
           }
         ],
         "platforms": [
@@ -2135,7 +2366,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=measure_voltage.5"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "measure_voltage.5"
+            }
           }
         ],
         "platforms": [
@@ -2155,7 +2389,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly_bluetooth&capabilities=beacon"
+            "filter": {
+              "driver_id": "shelly_bluetooth",
+              "capabilities": "beacon"
+            }
           }
         ],
         "platforms": [
@@ -2173,7 +2410,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_1"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_1"
+            }
           }
         ],
         "platforms": [
@@ -2191,7 +2431,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_2"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_2"
+            }
           }
         ],
         "platforms": [
@@ -2209,7 +2452,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_3"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_3"
+            }
           }
         ],
         "platforms": [
@@ -2227,7 +2473,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=input_4"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "input_4"
+            }
           }
         ],
         "platforms": [
@@ -2261,7 +2510,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=target_temperature"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "target_temperature"
+            }
           }
         ],
         "platforms": [
@@ -2337,7 +2589,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=light_hue,deviceGen1"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "light_hue,deviceGen1"
+            }
           }
         ],
         "platforms": [
@@ -2374,7 +2629,9 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly"
+            "filter": {
+              "driver_id": "shelly"
+            }
           }
         ],
         "platforms": [
@@ -2419,7 +2676,9 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly"
+            "filter": {
+              "driver_id": "shelly"
+            }
           }
         ],
         "platforms": [
@@ -2436,7 +2695,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=gas_concentration"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "gas_concentration"
+            }
           }
         ],
         "platforms": [
@@ -2468,7 +2730,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=gas_concentration"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "gas_concentration"
+            }
           }
         ],
         "platforms": [
@@ -2485,7 +2750,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=gas_concentration"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "gas_concentration"
+            }
           }
         ],
         "platforms": [
@@ -2502,7 +2770,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=gas_concentration"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "gas_concentration"
+            }
           }
         ],
         "platforms": [
@@ -2539,7 +2810,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=target_temperature"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "target_temperature"
+            }
           }
         ],
         "platforms": [
@@ -2556,7 +2830,9 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly"
+            "filter": {
+              "driver_id": "shelly"
+            }
           }
         ],
         "platforms": [
@@ -2617,7 +2893,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=devicePlusPlugS"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "devicePlusPlugS"
+            }
           }
         ],
         "platforms": [
@@ -2634,7 +2913,9 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly"
+            "filter": {
+              "driver_id": "shelly"
+            }
           }
         ],
         "platforms": [
@@ -2651,7 +2932,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=meter_power_returned|meter_power.total_returned|meter_power"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "meter_power_returned|meter_power.total_returned|meter_power"
+            }
           }
         ],
         "platforms": [
@@ -2686,7 +2970,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=dim.white"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "dim.white"
+            }
           }
         ],
         "platforms": [
@@ -2703,7 +2990,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=onoff.whitemode"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "onoff.whitemode"
+            }
           }
         ],
         "platforms": [
@@ -2721,7 +3011,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=onoff.whitemode"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "onoff.whitemode"
+            }
           }
         ],
         "platforms": [
@@ -2755,7 +3048,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=meter_power_returned|meter_power.returned|meter_power"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "meter_power_returned|meter_power.returned|meter_power"
+            }
           }
         ],
         "platforms": [
@@ -2794,7 +3090,9 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud"
+            }
           }
         ],
         "platforms": [
@@ -2830,7 +3128,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=windowcoverings_tilt_set"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "windowcoverings_tilt_set"
+            }
           }
         ],
         "platforms": [
@@ -2847,7 +3148,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=devicePlusSmoke"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "devicePlusSmoke"
+            }
           }
         ],
         "platforms": [
@@ -2879,7 +3183,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=target_temperature"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "target_temperature"
+            }
           }
         ],
         "platforms": [
@@ -2896,7 +3203,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=target_temperature|deviceGen3"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "target_temperature|deviceGen3"
+            }
           }
         ],
         "platforms": [
@@ -2939,7 +3249,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=target_temperature|deviceGen3"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "target_temperature|deviceGen3"
+            }
           }
         ],
         "platforms": [
@@ -3021,7 +3334,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=deviceGen3"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "deviceGen3"
+            }
           }
         ],
         "platforms": [
@@ -3066,7 +3382,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=deviceGen3"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "deviceGen3"
+            }
           }
         ],
         "platforms": [
@@ -3108,7 +3427,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=deviceGen3"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "deviceGen3"
+            }
           }
         ],
         "platforms": [
@@ -3150,7 +3472,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=deviceGen3"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "deviceGen3"
+            }
           }
         ],
         "platforms": [
@@ -3183,7 +3508,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=target_temperature|deviceGen1"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "target_temperature|deviceGen1"
+            }
           }
         ],
         "platforms": [
@@ -3216,7 +3544,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=target_temperature"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "target_temperature"
+            }
           }
         ],
         "platforms": [
@@ -3251,7 +3582,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly_wave_shutter|shelly_wave_pro_shutter&capabilities=windowcoverings_tilt_set"
+            "filter": {
+              "driver_id": "shelly_wave_shutter|shelly_wave_pro_shutter",
+              "capabilities": "windowcoverings_tilt_set"
+            }
           }
         ],
         "platforms": [
@@ -3269,7 +3603,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=button.enable_ble_script,button.disable_ble_script"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "button.enable_ble_script,button.disable_ble_script"
+            }
           }
         ],
         "id": "bleRestartProxy"
@@ -3283,7 +3620,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=button.enable_ble_script"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "button.enable_ble_script"
+            }
           }
         ],
         "id": "bleStartProxy"
@@ -3297,7 +3637,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=button.disable_ble_script"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "button.disable_ble_script"
+            }
           }
         ],
         "id": "bleStopProxy"
@@ -3378,7 +3721,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=onoff.whitemode"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "onoff.whitemode"
+            }
           }
         ],
         "platforms": [
@@ -3446,7 +3792,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=onoff|input_1"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "onoff|input_1"
+            }
           }
         ],
         "platforms": [
@@ -3515,7 +3864,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=windowcoverings_set"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "windowcoverings_set"
+            }
           }
         ],
         "platforms": [
@@ -3584,7 +3936,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=windowcoverings_set"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "windowcoverings_set"
+            }
           }
         ],
         "platforms": [
@@ -3605,7 +3960,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=windowcoverings_set"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "windowcoverings_set"
+            }
           }
         ],
         "platforms": [
@@ -3670,7 +4028,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly&capabilities=dim"
+            "filter": {
+              "driver_id": "shelly",
+              "capabilities": "dim"
+            }
           }
         ],
         "platforms": [
@@ -3691,7 +4052,10 @@
           {
             "name": "device",
             "type": "device",
-            "filter": "driver_id=shelly|shelly_cloud&capabilities=windowcoverings_set"
+            "filter": {
+              "driver_id": "shelly|shelly_cloud",
+              "capabilities": "windowcoverings_set"
+            }
           }
         ],
         "platforms": [

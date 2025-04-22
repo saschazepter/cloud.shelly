@@ -18,7 +18,10 @@
     {
       "name": "device",
       "type": "device",
-      "filter": "driver_id=shelly|shelly_cloud&capabilities=input_analog_external_5"
+      "filter": {
+        "driver_id": "shelly|shelly_cloud",
+        "capabilities": "input_analog_external_5"
+      }
     }
   ],
   "platforms": ["local", "cloud"]
