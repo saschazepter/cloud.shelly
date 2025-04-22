@@ -37,7 +37,7 @@
       "type": "device",
       "filter": {
         "driver_id": "shelly",
-        "capabilities": "deviceGen3"
+        "capabilities": "deviceGen3|deviceGen4"
       }
     }
   ],

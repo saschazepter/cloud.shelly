@@ -136,6 +136,7 @@ class ShellyDriver extends Homey.Driver {
               }
             case 'gen2':
             case 'gen3':
+            case 'gen4':
               try {
                 var result = await this.util.sendCommand('/rpc/Shelly.GetDeviceInfo', discoveryResult.address, '', '');
                 var auth = result.auth_en;
@@ -226,6 +227,7 @@ class ShellyDriver extends Homey.Driver {
             break;
           case 'gen2':
           case 'gen3':
+          case 'gen4':
             var result = await this.util.sendCommand('/rpc/Shelly.GetDeviceInfo', data.address, '', '');
             var id = result.id;
             var type = result.model;
@@ -266,6 +268,7 @@ class ShellyDriver extends Homey.Driver {
             }
           case 'gen2':
           case 'gen3':
+          case 'gen4':
             try {
 
               /* update device config if it has a specific profile */

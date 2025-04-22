@@ -1909,6 +1909,18 @@ class ShellyDevice extends Homey.Device {
 
       }
 
+      // EM1DATA:x METER POWER (similar to the previous one, used in the EM Mini Gen4)
+      if (result.hasOwnProperty("em1data:"+ channel)) {
+
+        /* meter_power */
+        this.updateCapabilityValue('meter_power', result["em1data:"+channel].total_act_energy / 1000, channel);
+
+        /* meter_power.returned */
+        const total_act_ret_energy = result["em1data:"+channel].total_act_ret_energy / 1000;
+        this.updateCapabilityValue('meter_power.returned', total_act_ret_energy, channel);
+
+      }
+
       // DEVICE POWER
       if (result.hasOwnProperty("devicepower:"+ channel)) {
 

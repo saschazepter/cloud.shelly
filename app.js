@@ -58,7 +58,7 @@ class ShellyApp extends OAuth2App {
               shellies.start();
               this.log('CoAP listener for gen1 LAN devices started ...');
             } else {
-              this.log('CoAP listener not started as no gen 1 devices where found during app init ...');
+              this.log('CoAP listener not started as no gen 1 devices were found during app init ...');
             }
           } catch (error) {
             this.error(error);
@@ -71,10 +71,11 @@ class ShellyApp extends OAuth2App {
         this.homey.setTimeout(async () => {
           let gen2 = await this.util.getDeviceType('gen2');
           let gen3 = await this.util.getDeviceType('gen3');
-          if (gen2 || gen3) {
+          let gen4 = await this.util.getDeviceType('gen4');
+          if (gen2 || gen3 || gen4) {
             this.websocketLocalListener();
           } else {
-            this.log('Websocket server for gen2 / gen3 devices with outbound websockets not started as no gen2 / gen3 devices where found during app init ...');
+            this.log('Websocket server for gen2 / gen3 / gen4 devices with outbound websockets not started as no gen2 / gen3 / gen4 devices were found during app init ...');
           }
         }, Number(Homey.env.TIMEOUT_WEBSOCKET));
       }
@@ -1023,7 +1024,7 @@ class ShellyApp extends OAuth2App {
     try {
       if (this.wss === null) {
         this.wss = new WebSocket.Server({ port: 6113 });
-        this.log('Websocket server for gen2 / gen3 devices with outbound websockets started ...');
+        this.log('Websocket server for gen2 / gen3 / gen4 devices with outbound websockets started ...');
         this.wss.on("connection", async (wsserver, req) => {
 
           wsserver.send('{"jsonrpc":"2.0", "id":1, "src":"wsserver-getdeviceinfo_onconnect", "method":"Shelly.GetDeviceInfo"}');

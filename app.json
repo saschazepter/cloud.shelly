@@ -2209,7 +2209,7 @@
             "type": "device",
             "filter": {
               "driver_id": "shelly",
-              "capabilities": "deviceGen3"
+              "capabilities": "deviceGen3|deviceGen4"
             }
           }
         ],
@@ -3336,7 +3336,7 @@
             "type": "device",
             "filter": {
               "driver_id": "shelly",
-              "capabilities": "deviceGen3"
+              "capabilities": "deviceGen3|deviceGen4"
             }
           }
         ],
@@ -3384,7 +3384,7 @@
             "type": "device",
             "filter": {
               "driver_id": "shelly",
-              "capabilities": "deviceGen3"
+              "capabilities": "deviceGen3|deviceGen4"
             }
           }
         ],
@@ -3429,7 +3429,7 @@
             "type": "device",
             "filter": {
               "driver_id": "shelly",
-              "capabilities": "deviceGen3"
+              "capabilities": "deviceGen3|deviceGen4"
             }
           }
         ],
@@ -3474,7 +3474,7 @@
             "type": "device",
             "filter": {
               "driver_id": "shelly",
-              "capabilities": "deviceGen3"
+              "capabilities": "deviceGen3|deviceGen4"
             }
           }
         ],
@@ -16149,6 +16149,18 @@
       "title": {
         "en": "Device Generation 3",
         "nl": "Device Generation 3"
+      },
+      "getable": false,
+      "setable": false,
+      "uiComponent": null,
+      "insights": false,
+      "icon": "/assets/icon.svg"
+    },
+    "deviceGen4": {
+      "type": "string",
+      "title": {
+        "en": "Device Generation 4",
+        "nl": "Device Generation 4"
       },
       "getable": false,
       "setable": false,
