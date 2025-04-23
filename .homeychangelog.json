@@ -931,5 +931,8 @@
   },
   "3.42.0": {
     "en": "Add support for Gen4 devices"
+  },
+  "3.42.1": {
+    "en": "Fix Wave (Pro) Shutter calibration button functionality"
   }
 }
