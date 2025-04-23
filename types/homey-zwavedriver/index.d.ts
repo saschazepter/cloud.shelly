@@ -11,7 +11,7 @@ declare module 'homey-zwavedriver' {
     registerMultiChannelReportListener(multiChannelNodeId: number, commandClassId: string, commandId: string, triggerFn: (report: any) => void): void;
     enableDebug(): void;
     async configurationGet(options: {index: number}): Promise<any>;
-    async configurationSet(options: {id: number, index: number, size: number, signed: boolean}, value: any)
+    async configurationSet(options: {index: number, size: number, signed?: boolean, useSettingParser?: boolean}, value: any)
     getCommandClass(commandClassId: string, opts?: {multiChannelNodeId?: number}): ZwaveCommandClass;
     printNode(): void;
     meterReset(payload?: {multiChannelNodeId?: number}, options?: any): Promise<void>;

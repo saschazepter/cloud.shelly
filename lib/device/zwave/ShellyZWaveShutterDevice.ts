@@ -8,6 +8,10 @@ export class ShellyZWaveShutterDevice extends ShellyZwaveDevice {
     this.registerCapability('meter_power', 'METER', {multiChannelNodeId: 1});
     this.registerCapability('windowcoverings_set', 'SWITCH_MULTILEVEL', {multiChannelNodeId: 1});
     this.registerCapability('windowcoverings_tilt_set', 'SWITCH_MULTILEVEL', {multiChannelNodeId: 2});
+
+    if (this.hasCapability('button.calibration')) {
+      this.registerCapabilityListener('button.calibration', async () => this.startCalibration());
+    }
   }
 
   async onSettings({oldSettings, newSettings, changedKeys}: {
@@ -30,5 +34,13 @@ export class ShellyZWaveShutterDevice extends ShellyZwaveDevice {
   public getPossibleActionEvents(): ShellyActionEvent[] {
     // No action events for this device
     return [];
+  }
+
+  protected async startCalibration(): Promise<void> {
+    this.log('Starting calibration');
+    await this.configurationSet({
+      index: 78,
+      size: 1
+    }, 1);
   }
 }

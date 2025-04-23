@@ -11573,8 +11573,8 @@
             "nl": "Start kalibratie"
           },
           "desc": {
-            "en": "Force calibration of the Shelly Wave Pro Shutter. Make sure the blinds are lowered completely before starting the calibration.",
-            "nl": "Start geforceerde kalibratie van de Shelly Wave Pro Shutter. Zorg dat het rolluik of de jaloezieën volledig naar beneden zijn voor het starten van de kalibratie."
+            "en": "Force calibration of the Shelly Wave Pro Shutter. The device will perform the calibration process by completing a full cycle - up, down, up, and down to 50%. It works best if the blinds are halfway lowered before starting calibration.",
+            "nl": "Start geforceerde kalibratie van de Shelly Wave Pro Shutter. Het apparaat voert de calibratie uit door een volledige cyclus te doorlopen - omhoog, omlaag, omhoog, en weer omlaag naar 50%. Het werkt het beste als het rolluik of de jaloezieën ongeveer halverwege staan bij aanvang."
           }
         }
       },
@@ -13819,8 +13819,8 @@
             "nl": "Start kalibratie"
           },
           "desc": {
-            "en": "Force calibration of the Shelly Wave Shutter. Make sure the blinds are lowered completely before starting the calibration.",
-            "nl": "Start geforceerde kalibratie van de Shelly Wave Shutter. Zorg dat het rolluik of de jaloezieën volledig naar beneden zijn voor het starten van de kalibratie."
+            "en": "Force calibration of the Shelly Wave Shutter. The device will perform the calibration process by completing a full cycle - up, down, up, and down to 50%. It works best if the blinds are halfway lowered before starting calibration.",
+            "nl": "Start geforceerde kalibratie van de Shelly Wave Shutter. Het apparaat voert de calibratie uit door een volledige cyclus te doorlopen - omhoog, omlaag, omhoog, en weer omlaag naar 50%. Het werkt het beste als het rolluik of de jaloezieën ongeveer halverwege staan bij aanvang."
           }
         }
       },
