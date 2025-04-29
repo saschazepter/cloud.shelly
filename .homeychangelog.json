@@ -934,5 +934,8 @@
   },
   "3.42.1": {
     "en": "Fix Wave (Pro) Shutter calibration button functionality"
+  },
+  "3.42.2": {
+    "en": "Fix Dimmer (2) dim level status when not controlled by Homey"
   }
 }
