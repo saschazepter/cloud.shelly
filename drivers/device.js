@@ -1065,6 +1065,12 @@ class ShellyDevice extends Homey.Device {
 
           }
 
+          // Shelly Dimmer
+          if (this.getStoreValue('type') === 'SHDM-1' || this.getStoreValue('type') === 'SHDM-2') {
+            let dimValue = Math.min(1, Math.max(0, result.lights[channel].brightness / 100));
+            this.updateCapabilityValue('dim', dimValue, channel);
+          }
+
           /* light_hue & light_saturation */
           if (this.hasCapability('light_hue') && this.hasCapability('light_saturation')) {
             await this.setStoreValue('red', result.lights[channel].red);

@@ -1168,6 +1168,8 @@ class ShellyApp extends OAuth2App {
 
         this.cloudWs.on('message', async (data) => {
           try {
+            this.debug('Incoming websocket message', data);
+
             if (this.cloudWsUnInit === false) {
               const result = JSON.parse(data);
               if (result.event === 'Shelly:StatusOnChange' || result.event === 'Shelly:Online') {
