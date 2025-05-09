@@ -32,7 +32,7 @@
     "@drenso/homey-log": "9.17.0",
     "axios": "1.9.0",
     "crypto": "1.0.1",
-    "homey-lib": "2.34.0",
+    "homey-lib": "2.35.0",
     "homey-oauth2app": "3.6.0",
     "homey-zwavedriver": "2.2.1",
     "http-auth-client": "0.4.1",
