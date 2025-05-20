@@ -1,17 +1,17 @@
 {
   "ids": {
-    "modelId": "Mini1",
+    "modelId": "1",
     "manufacturerName": "Shelly"
   },
   "endpoints": {
-    "ieeeAddress": "a0:85:e3:ff:fe:bc:31:cc",
-    "networkAddress": 45015,
-    "modelId": "Mini1",
+    "ieeeAddress": "a0:85:e3:ff:fe:bc:9b:18",
+    "networkAddress": 41686,
+    "modelId": "1",
     "manufacturerName": "Shelly",
     "endpointDescriptors": [
       {
         "status": "SUCCESS",
-        "nwkAddrOfInterest": 45015,
+        "nwkAddrOfInterest": 41686,
         "_reserved": 18,
         "endpointId": 1,
         "applicationProfileId": 260,
@@ -29,7 +29,7 @@
       },
       {
         "status": "SUCCESS",
-        "nwkAddrOfInterest": 45015,
+        "nwkAddrOfInterest": 41686,
         "_reserved": 12,
         "endpointId": 239,
         "applicationProfileId": 49153,
@@ -44,7 +44,7 @@
       },
       {
         "status": "SUCCESS",
-        "nwkAddrOfInterest": 45015,
+        "nwkAddrOfInterest": 41686,
         "_reserved": 10,
         "endpointId": 242,
         "applicationProfileId": 41440,
@@ -102,7 +102,7 @@
                 ],
                 "id": 5,
                 "name": "modelId",
-                "value": "Mini1"
+                "value": "1"
               }
             ],
             "commandsGenerated": [],
