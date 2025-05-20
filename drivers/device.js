@@ -2626,8 +2626,9 @@ class ShellyDevice extends Homey.Device {
           const components = components_list.map(([component, options]) => { return { component, ...options }; });
 
           components.forEach((element) => {
-            var component = element.component;
-            var channel = element.id
+            const elementPieces = element.component?.split(':') ?? []; // Normal component id is 'output:0', so by splitting on the colon we can find the id
+            const component = elementPieces[0] ?? '';
+            const channel = parseInt(elementPieces[1] ?? 0);
 
             for (const [capability, value] of Object.entries(element)) {
               if (capability === 'errors') { /* handle device errors */
@@ -2744,11 +2745,13 @@ class ShellyDevice extends Homey.Device {
           result.params.events.forEach(async (event) => {
             try {
 
-              if (event.component.startsWith('input') || event.component === undefined) { // parse input events
+              const elementPieces = event.component?.split(':') ?? []; // Normal component id is 'output:0', so by splitting on the colon we can find the id
+              const component = elementPieces[0] ?? '';
+              const channel = parseInt(elementPieces[1] ?? 0);
+              if (component.startsWith('input')) { // parse input events
                 let device;
                 let device_id;
                 let action_event;
-                let channel = event.id || 0;
 
                 // get the right device
                 if (
