@@ -30,7 +30,7 @@
     },
     "learnmode": {
       "instruction": {
-        "en": "Verify that the device is in Zigbee mode (you can enable Zigbee mode by pressing the reset button five times). Press the reset button three times to initialize pairing."
+        "en": "Verify that the device is in Zigbee mode (you can enable Zigbee mode by pressing the reset button five times).\n\nPress the reset button three times to initialize pairing."
       }
     }
   }

@@ -3,7 +3,7 @@
     "zigbee"
   ],
   "name": {
-    "en": "Shelly 1PM Mini Gen4 (Zigbee)"
+    "en": "Shelly 1PM Gen4 (Zigbee)"
   },
   "class": "socket",
   "capabilities": [
@@ -17,7 +17,7 @@
   "zigbee": {
     "manufacturerName": "Shelly",
     "productId": [
-      "Mini1PM"
+      "1PM"
     ],
     "endpoints": {
       "1": {
