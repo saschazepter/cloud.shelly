@@ -16198,6 +16198,53 @@
         "zigbee"
       ],
       "images": {
+        "large": "/drivers/shelly_zigbee_1_mini_gen4/assets/images/large.png",
+        "small": "/drivers/shelly_zigbee_1_mini_gen4/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_zigbee_1_mini_gen4/assets/icon.svg",
+      "name": {
+        "en": "Shelly 1 Mini Gen4 (Zigbee)"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "zigbee": {
+        "manufacturerName": "Shelly",
+        "productId": [
+          "Mini1"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "Verify that the device is in Zigbee mode (you can enable Zigbee mode by pressing the reset button five times). Press the reset button three times to initialize pairing."
+          }
+        }
+      },
+      "id": "shelly_zigbee_1_mini_gen4"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
         "large": "/drivers/shelly_zigbee_1pm_mini_gen4/assets/images/large.png",
         "small": "/drivers/shelly_zigbee_1pm_mini_gen4/assets/images/small.png"
       },
