@@ -17660,6 +17660,59 @@
         "zigbee"
       ],
       "images": {
+        "large": "/drivers/shelly_zigbee_em_mini_gen4/assets/images/large.png",
+        "small": "/drivers/shelly_zigbee_em_mini_gen4/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_zigbee_em_mini_gen4/assets/icon.svg",
+      "name": {
+        "en": "Shelly EM Mini Gen4 (Zigbee)"
+      },
+      "class": "socket",
+      "capabilities": [
+        "meter_power",
+        "measure_current",
+        "measure_frequency",
+        "measure_power",
+        "measure_voltage"
+      ],
+      "zigbee": {
+        "manufacturerName": "Shelly",
+        "productId": [
+          "EM Mini"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              1794,
+              2820
+            ],
+            "bindings": [
+              1794,
+              2820
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "Verify that the device is in Zigbee mode (you can enable Zigbee mode by pressing the reset button five times).\n\nPress the reset button three times to initialize pairing."
+          }
+        }
+      },
+      "id": "shelly_zigbee_em_mini_gen4"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
         "large": "/drivers/shelly_zigbee_flood_gen4/assets/images/large.png",
         "small": "/drivers/shelly_zigbee_flood_gen4/assets/images/small.png"
       },
