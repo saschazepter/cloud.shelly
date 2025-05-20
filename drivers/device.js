@@ -1391,6 +1391,7 @@ class ShellyDevice extends Homey.Device {
 
   /* generic full status updates parser for polling over HTTP, inbound websocket full status updates and cloud full status updates for gen2 */
   async parseFullStatusUpdateGen2(result = {}) {
+    this.debug('Parsing full status update', result);
     try {
       this.setAvailability(true);
 
@@ -2617,6 +2618,7 @@ class ShellyDevice extends Homey.Device {
 
   /* generic component status update parser for local WEBSOCKET messages */
   async parseSingleStatusUpdateGen2(result = {}) {
+    this.debug('Parsing single status update', result);
     try {
       this.setAvailability(true);
 
@@ -3053,6 +3055,7 @@ class ShellyDevice extends Homey.Device {
           }
           break;
         case 'aprt_power':
+        case 'aprtpower':
           this.updateCapabilityValue('measure_power_apparent', value, channel);
           break;
         case 'current':
