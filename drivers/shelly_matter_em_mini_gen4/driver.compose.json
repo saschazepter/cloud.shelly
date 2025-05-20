@@ -1,0 +1,27 @@
+{
+  "$extends": [
+    "matter"
+  ],
+  "name": {
+    "en": "Shelly 1PM Mini Gen4 (Matter)"
+  },
+  "class": "socket",
+  "capabilities": [
+    "meter_power",
+    "meter_power.exported",
+    "measure_current",
+    "measure_frequency",
+    "measure_power",
+    "measure_voltage",
+    "onoff"
+  ],
+  "matter": {
+    "vendorId": 5264,
+    "productId": 4147,
+    "learnmode": {
+      "instruction": {
+        "en": "Enable Matter in the Shelly web interface. The required information for pairing will be shown after enabling."
+      }
+    }
+  }
+}
