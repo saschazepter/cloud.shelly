@@ -940,5 +940,8 @@
   },
   "3.43.0": {
     "en": "Fix event handling for firmware 1.6+, add Zigbee support for 1, 1 Mini, 1PM, 1PM Mini), add Matter definitions"
+  },
+  "3.43.1": {
+    "en": "Fix event handling for firmware 1.6+, add Zigbee support for 1, 1 Mini, 1PM, 1PM Mini), add Matter definitions"
   }
 }
