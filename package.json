@@ -33,7 +33,7 @@
     "@drenso/homey-zigbee-library": "0.23.0",
     "axios": "1.9.0",
     "crypto": "1.0.1",
-    "homey-lib": "2.35.3",
+    "homey-lib": "2.35.4",
     "homey-oauth2app": "3.6.0",
     "homey-zigbeedriver": "2.1.5",
     "homey-zwavedriver": "2.2.1",
