@@ -16292,10 +16292,10 @@
         "zigbee"
       ],
       "images": {
-        "large": "/drivers/shelly_zigbee_1pm_gen4_zigbee/assets/images/large.png",
-        "small": "/drivers/shelly_zigbee_1pm_gen4_zigbee/assets/images/small.png"
+        "large": "/drivers/shelly_zigbee_1pm_gen4/assets/images/large.png",
+        "small": "/drivers/shelly_zigbee_1pm_gen4/assets/images/small.png"
       },
-      "icon": "/drivers/shelly_zigbee_1pm_gen4_zigbee/assets/icon.svg",
+      "icon": "/drivers/shelly_zigbee_1pm_gen4/assets/icon.svg",
       "name": {
         "en": "Shelly 1PM Gen4 (Zigbee)"
       },
@@ -16337,7 +16337,7 @@
           }
         }
       },
-      "id": "shelly_zigbee_1pm_gen4_zigbee"
+      "id": "shelly_zigbee_1pm_gen4"
     },
     {
       "platforms": [
