@@ -3,7 +3,7 @@
     "matter"
   ],
   "name": {
-    "en": "Shelly 1PM Mini Gen4 (Matter)"
+    "en": "Shelly EM Mini Gen4 (Matter)"
   },
   "class": "socket",
   "capabilities": [

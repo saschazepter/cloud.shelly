@@ -4456,7 +4456,7 @@
       },
       "icon": "/drivers/shelly_matter_em_mini_gen4/assets/icon.svg",
       "name": {
-        "en": "Shelly 1PM Mini Gen4 (Matter)"
+        "en": "Shelly EM Mini Gen4 (Matter)"
       },
       "class": "socket",
       "capabilities": [
