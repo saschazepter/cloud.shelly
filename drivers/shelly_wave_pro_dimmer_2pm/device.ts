@@ -1,8 +1,5 @@
 import ShellyZwaveDevice from '../../lib/device/zwave/ShellyZwaveDevice';
-import {
-  convertIncomingActionEvent,
-  type ShellyActionEvent,
-} from '../../lib/flow/trigger/ActionEventTrigger';
+import {type ShellyActionEvent} from '../../lib/flow/trigger/ActionEventTrigger';
 
 module.exports = class ShellyWaveProDimmer2PMDevice extends ShellyZwaveDevice {
   private dimValues: Array<number | null> = [null, null];
@@ -63,7 +60,7 @@ module.exports = class ShellyWaveProDimmer2PMDevice extends ShellyZwaveDevice {
     for (const input of [1, 2, 3, 4] as const) {
       // The available events depend on the button settings, the need to be momentary and detached for this to work
       if (this.getSetting(`zwaveSwitchTypeSW${input}`) == 0 && this.getSetting(`zwaveOutputDetached${input}`) == '1') {
-        result.push(`single_push_${input}`, `double_push_${input}`, `hold_${input}`, `released_${input}`);
+        result.push(`single_push_${input}`, `double_push_${input}`, `long_push_${input}`, `released_${input}`);
       }
     }
 
