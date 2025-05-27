@@ -1,7 +1,7 @@
 import Homey, {type ZwaveNode} from 'homey';
 import {ZwaveDevice} from 'homey-zwavedriver';
 import ShellyZwaveDriver from '../../driver/ShellyZwaveDriver';
-import type {ShellyActionEvent} from '../../flow/trigger/ActionEventTrigger';
+import {convertIncomingActionEvent, ShellyActionEvent} from '../../flow/trigger/ActionEventTrigger';
 import Logger from '../../log/Logger';
 import type {ShellyDeviceInterface} from '../ShellyDevice';
 
@@ -107,5 +107,24 @@ export default abstract class ShellyZwaveDevice extends ZwaveDevice implements S
 
   public debug(...args: unknown[]): void {
     this.logger?.debug(...args);
+  }
+
+  protected initializeButtonScenes(): void {
+    this.registerReportListener('CENTRAL_SCENE', 'CENTRAL_SCENE_NOTIFICATION', notification => {
+      try {
+        const button = notification['Scene Number'];
+        const action = notification['Properties1']['Key Attributes'];
+
+        const parsedAction = {
+          action: convertIncomingActionEvent(action, 'zwave') + `_${button}`,
+        };
+
+        this.homey.flow.getDeviceTriggerCard('triggerActionEvent')
+          .trigger(this, parsedAction, parsedAction);
+
+      } catch (e) {
+        this.error('Failed parsing scene notification', JSON.stringify(notification), e);
+      }
+    });
   }
 }

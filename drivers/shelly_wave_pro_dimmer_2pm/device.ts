@@ -45,23 +45,7 @@ module.exports = class ShellyWaveProDimmer2PMDevice extends ShellyZwaveDevice {
         .catch(this.error);
     }
 
-    // Button report listeners
-    this.registerReportListener('CENTRAL_SCENE', 'CENTRAL_SCENE_NOTIFICATION', notification => {
-      try {
-        const button = notification['Scene Number'];
-        const action = notification['Properties1']['Key Attributes'];
-
-        const parsedAction = {
-          action: convertIncomingActionEvent(action, 'zwave') + `_${button}`,
-        };
-
-        this.homey.flow.getDeviceTriggerCard('triggerActionEvent')
-          .trigger(this, parsedAction, parsedAction);
-
-      } catch (e) {
-        this.error('Failed parsing scene notification', JSON.stringify(notification), e);
-      }
-    });
+    this.initializeButtonScenes();
 
     // Switch binary does not seem to work as it should. When the button is configured in switch mode,
     // it still behaves as a toggle button, which means that the value of the switch input does not
