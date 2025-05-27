@@ -9812,6 +9812,7 @@
         "measure_power",
         "meter_power",
         "button.reset_meter",
+        "actionEvents",
         "deviceWave"
       ],
       "capabilitiesOptions": {
