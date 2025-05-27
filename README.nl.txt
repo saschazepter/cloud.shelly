@@ -134,3 +134,14 @@ Shelly Wave Pro Shutter
 Shelly Wave Pro Dimmer 1PM
 Shelly Wave Pro Dimmer 2PM
 Shelly Wave Door/Window
+
+Zigbee
+-------------
+Shelly 1 Gen4
+Shelly 1 Mini Gen4
+Shelly 1PM Gen4
+Shelly 1PM Mini Gen4
+
+Matter
+-------------
+Homey heeft standaard ondersteuning voor alle Matter apparaten; de apparaatlijst op deze pagina is puur om Matter ondersteuning van de apparaten aan te geven.
