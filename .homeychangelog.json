@@ -946,5 +946,8 @@
   },
   "3.43.2": {
     "en": "Fix cloud device crashes"
+  },
+  "3.43.3": {
+    "en": "Fix event handling with device firmware 1.6 or higher"
   }
 }
