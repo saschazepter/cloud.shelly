@@ -122,6 +122,14 @@ class ShellyCloudDevice extends OAuth2Device {
     }
   }
 
+  debug(...args) {
+    if (Homey.env.DEBUG !== '1') {
+      return;
+    }
+
+    this.log('[dbg]', ...args);
+  }
+
 }
 
 ShellyCloudDevice.prototype.updateCapabilityValue = Device.prototype.updateCapabilityValue;
