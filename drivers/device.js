@@ -1391,7 +1391,7 @@ class ShellyDevice extends Homey.Device {
 
   /* generic full status updates parser for polling over HTTP, inbound websocket full status updates and cloud full status updates for gen2 */
   async parseFullStatusUpdateGen2(result = {}) {
-    this.debug('Parsing full status update', result);
+    this.debug('Parsing full status update', JSON.stringify(result));
     try {
       this.setAvailability(true);
 
@@ -2618,7 +2618,7 @@ class ShellyDevice extends Homey.Device {
 
   /* generic component status update parser for local WEBSOCKET messages */
   async parseSingleStatusUpdateGen2(result = {}) {
-    this.debug('Parsing single status update', result);
+    this.debug('Parsing single status update', JSON.stringify(result));
     try {
       this.setAvailability(true);
 
@@ -2628,9 +2628,9 @@ class ShellyDevice extends Homey.Device {
           const components = components_list.map(([component, options]) => { return { component, ...options }; });
 
           components.forEach((element) => {
-            const elementPieces = element.component?.split(':') ?? []; // Normal component id is 'output:0', so by splitting on the colon we can find the id
-            const component = elementPieces[0] ?? '';
-            const channel = parseInt(elementPieces[1] ?? 0);
+            const component = element.component;
+            // Normal component id is 'output:0', so by splitting on the colon we can find the channel id
+            const channel = parseInt((element.component?.split(':') ?? []).pop() ?? 0);
 
             for (const [capability, value] of Object.entries(element)) {
               if (capability === 'errors') { /* handle device errors */
@@ -2744,13 +2744,12 @@ class ShellyDevice extends Homey.Device {
             }
           });
         } else if (result.method === 'NotifyEvent') { /* parse action event updates */
-          result.params.events.forEach(async (event) => {
+          result.params.events.forEach((event) => {
             try {
 
-              const elementPieces = event.component?.split(':') ?? []; // Normal component id is 'output:0', so by splitting on the colon we can find the id
-              const component = elementPieces[0] ?? '';
-              const channel = parseInt(elementPieces[1] ?? 0);
-              if (component.startsWith('input')) { // parse input events
+              // Normal component id is 'output:0', so by splitting on the colon we can find the channel id
+              const channel = parseInt((event.component?.split(':') ?? []).pop() ?? 0);
+              if (event.component.startsWith('input')) { // parse input events
                 let device;
                 let device_id;
                 let action_event;
