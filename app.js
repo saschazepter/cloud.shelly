@@ -1032,7 +1032,13 @@ class ShellyApp extends OAuth2App {
           wsserver.send('{"jsonrpc":"2.0", "id":1, "src":"wsserver-getfullstatus_onconnect", "method":"Shelly.GetStatus"}');
 
           wsserver.on("message", async (data) => {
-            const result = JSON.parse(data);
+            let result;
+            try {
+              result = JSON.parse(data);
+            } catch (e) {
+              this.error('Invalid JSON data from websocket', e);
+            }
+
             if (result.hasOwnProperty('method') && result.hasOwnProperty("params")) {
               if (result.method === 'NotifyFullStatus') { // parse full status updates
                 const filteredShelliesWss = this.shellyDevices.filter(shelly => shelly.id.toLowerCase().includes(result.src.toLowerCase())).filter(shelly => shelly.channel === 0);
