@@ -46,8 +46,14 @@ export default abstract class ShellyZwaveDevice extends ZwaveDevice implements S
     try {
       this.debug('Starting configuration...');
 
+      const mainNode = !this.node.isMultiChannelNode;
+      if (this.getStoreValue('initialized') !== true) {
+        await this.firstInitConfigureDevice(mainNode);
+        await this.setStoreValue('initialized', true).catch(this.error);
+      }
+
       // Let the device configure itself
-      await this.configureDevice(!this.node.isMultiChannelNode);
+      await this.configureDevice(mainNode);
 
       if (this.hasCapability('button.reset_meter')) {
         this.registerCapabilityListener('button.reset_meter', async () => {
@@ -92,6 +98,11 @@ export default abstract class ShellyZwaveDevice extends ZwaveDevice implements S
 
   /** Use this method to configure the device specific capabilities */
   protected abstract configureDevice(isMainNode: boolean): Promise<void>;
+
+  /** Use this method to configure anything that needs to be configured at first initialization */
+  protected async firstInitConfigureDevice(isMainNode: boolean): Promise<void> { // eslint-disable-line @typescript-eslint/no-unused-vars
+    // To override
+  }
 
   protected getDriver(): ShellyZwaveDriver {
     return this.driver as ShellyZwaveDriver;
