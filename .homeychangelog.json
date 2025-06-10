@@ -949,5 +949,8 @@
   },
   "3.43.3": {
     "en": "Fix event handling with device firmware 1.6 or higher"
+  },
+  "3.44.0": {
+    "en": "Add support for Wave Dimmer, improve Z-Wave startup for older drivers"
   }
 }
