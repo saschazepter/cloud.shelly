@@ -120,6 +120,7 @@ Shelly Wave PM Mini
 Shelly Wave 1 (Mini)
 Shelly Wave 1PM (Mini)
 Shelly Wave 2PM
+Shelly Wave Dimmer
 Shelly Wave Shutter
 Shelly Wave Plug S (EU)
 Shelly Wave Plug UK

@@ -5723,6 +5723,662 @@
         "zwave"
       ],
       "images": {
+        "large": "/drivers/shelly_wave_dimmer/assets/images/large.png",
+        "small": "/drivers/shelly_wave_dimmer/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_dimmer/assets/icon.svg",
+      "name": {
+        "en": "Shelly Wave Dimmer",
+        "nl": "Shelly Wave Dimmer"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "measure_power",
+        "meter_power",
+        "button.reset_meter",
+        "actionEvents",
+        "deviceWave"
+      ],
+      "capabilitiesOptions": {
+        "button.reset_meter": {
+          "maintenanceAction": true,
+          "title": {
+            "en": "Reset power meter",
+            "nl": "Stel stroomverbuik opnieuw in"
+          },
+          "desc": {
+            "en": "Reset the accumulated power usage (kWh), note that this can not be reversed.",
+            "nl": "Stel geaccumuleerde stroomverbruik (kWh) opnieuw in, dit kan niet worden teruggedraaid."
+          }
+        }
+      },
+      "zwave": {
+        "manufacturerId": 1120,
+        "productTypeId": [
+          1
+        ],
+        "productId": [
+          131
+        ],
+        "associationGroups": [],
+        "associationGroupsMultiChannel": [
+          1
+        ],
+        "learnmode": {
+          "image": "./assets/zwave-learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the S button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking. Repeat this for step 2 in the pairing process and enter the device key (pincode).",
+            "nl": "Houd de S-knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen. Herhaal dit voor stap 2 in het koppelingsproces en voer de apparaatsleutel (pincode) in."
+          }
+        },
+        "unlearnmode": {
+          "image": "./assets/zwave-learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the S button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking.",
+            "nl": "Houd de S-knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen."
+          }
+        }
+      },
+      "id": "shelly_wave_dimmer",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Output 1 settings",
+            "nl": "Output 1 instellingen"
+          },
+          "children": [
+            {
+              "id": "dimmerCalibration",
+              "type": "dropdown",
+              "label": {
+                "en": "Dimmer O1 calibration",
+                "nl": "Dimmer O1 kalibratie"
+              },
+              "value": "3",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Default",
+                    "nl": "Standaard"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Start calibration",
+                    "nl": "Start calibratie"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Calibrated (status - read only)",
+                    "nl": "Gekalibreerd (status - read only)"
+                  }
+                },
+                {
+                  "id": "3",
+                  "label": {
+                    "en": "Not calibrated (status - read only)",
+                    "nl": "Niet gekalibreerd (status - read only)"
+                  }
+                },
+                {
+                  "id": "4",
+                  "label": {
+                    "en": "Calibration error (status - read only)",
+                    "nl": "Kalibratie fout (status - read only)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "By setting this to value 1 the device will start executing force calibration procedure for output 1.",
+                "nl": "Door deze in te stellen op waarde 1 zal het apparaat beginnen met het uitvoeren van de geforceerde kalibratieprocedure voor output 1."
+              },
+              "zwave": {
+                "index": 78,
+                "size": 1
+              }
+            },
+            {
+              "id": "dimmerMinValue",
+              "type": "number",
+              "label": {
+                "en": "Minimum dim value for O1",
+                "nl": "Minimale dimwaarde voor O1"
+              },
+              "value": 15,
+              "attr": {
+                "min": 0,
+                "max": 98
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimim dimming value for output 1 (the lowest value which can be set on the device, when, for example, dimming lights with wall switch or slider in Homey.",
+                "nl": "Bepaalt de minimale dimwaarde voor output 1 (de laagste waarde die op het apparaat kan worden ingesteld, bijvoorbeeld bij het dimmen van lichten met een wandschakelaar of schuifregelaar in Homey)."
+              },
+              "zwave": {
+                "index": 123,
+                "size": 1
+              }
+            },
+            {
+              "id": "dimmerDimTime",
+              "type": "number",
+              "label": {
+                "en": "Dimming time for O1",
+                "nl": "Dimtijd voor O1"
+              },
+              "value": 3,
+              "attr": {
+                "min": 1,
+                "max": 10
+              },
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the time during which the device will move between the min. and max. dimming values by a short press of the momentary switch connected to input terminal for output 1.",
+                "nl": "Bepaalt de tijd waarin het apparaat zich zal verplaatsen tussen de minimale en maximale dimwaarden door een korte druk op de impulsdrukker die is verbonden met de ingangsterminal voor output 1."
+              },
+              "zwave": {
+                "index": 125,
+                "size": 1
+              }
+            },
+            {
+              "id": "dimmerFadeRate",
+              "type": "dropdown",
+              "label": {
+                "en": "Fade rate for O1",
+                "nl": "Fade waarde voor O1"
+              },
+              "value": "3",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "5% per sec",
+                    "nl": "5% per sec"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "7% per sec",
+                    "nl": "7% per sec"
+                  }
+                },
+                {
+                  "id": "3",
+                  "label": {
+                    "en": "10% per sec (default)",
+                    "nl": "10% per sec (standaard)"
+                  }
+                },
+                {
+                  "id": "4",
+                  "label": {
+                    "en": "15% per sec",
+                    "nl": "15% per sec"
+                  }
+                },
+                {
+                  "id": "5",
+                  "label": {
+                    "en": "20% per sec",
+                    "nl": "20% per sec"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines the time during which the Dimmer will move between the min. and max. dimming values during a continuous press of the momentary switch for output 1.",
+                "nl": "Bepaalt de tijd waarin de dimmer zich zal verplaatsen tussen de minimale en maximale dimwaarden tijdens een continue druk op de impulsdrukker voor output 1."
+              },
+              "zwave": {
+                "index": 127,
+                "size": 1
+              }
+            },
+            {
+              "id": "dimmerMinBrightness",
+              "type": "number",
+              "label": {
+                "en": "Minimum brightness for O1",
+                "nl": "Minimale helderheid voor O1"
+              },
+              "value": 15,
+              "attr": {
+                "min": 1,
+                "max": 99
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum brightness on toggle for output 1. It is applied on toggle on (Off → On state change) when the light brightness is lower than the set value of this parameter.",
+                "nl": "Bepaalt de minimale helderheid bij het inschakelen van output 1. Het wordt toegepast bij het inschakelen (van Uit → Aan) wanneer de helderheid van het licht lager is dan de ingestelde waarde van deze parameter."
+              },
+              "zwave": {
+                "index": 129,
+                "size": 1
+              }
+            },
+            {
+              "id": "dimmerMaxValue",
+              "type": "number",
+              "label": {
+                "en": "Maximum dim value for O1",
+                "nl": "Maximale dimwaarde voor O1"
+              },
+              "value": 99,
+              "attr": {
+                "min": 0,
+                "max": 99
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the maximum dimming value of output 1 (the highest value which can be set on the device).",
+                "nl": "Bepaalt de maximale dimwaarde van output 1 (de hoogste waarde die op het apparaat kan worden ingesteld)."
+              },
+              "zwave": {
+                "index": 121,
+                "size": 1
+              }
+            },
+            {
+              "id": "dimmerDualButton",
+              "type": "dropdown",
+              "label": {
+                "en": "SW1 & SW2 Dual button mode",
+                "nl": "SW1 & SW2 dubbele knop modus"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Inactive",
+                    "nl": "Inactief"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Active",
+                    "nl": "Actief"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines the SW1 & SW2 Dual button mode for output 1 (only push button).",
+                "nl": "Bepaalt de SW1 & SW2 dubbele knop modus voor output 1 (alleen drukknop)."
+              },
+              "zwave": {
+                "index": 131,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveRestoreStateO1",
+              "type": "dropdown",
+              "label": {
+                "en": "Restore state of O1 after power failure",
+                "nl": "Herstel status van O1 na stroom uitval"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Output 1 saves last on/off status and restores it after a power failure",
+                    "nl": "Output 1 hersteld on/off status na stroom uitval"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Output 1 does not save on/off status and does not restore it after a power failure, it remains off",
+                    "nl": "Output 1 is standaard uit na stroom uitval"
+                  }
+                }
+              ],
+              "zwave": {
+                "index": 17,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveAutoOffO1",
+              "type": "number",
+              "label": {
+                "en": "Auto OFF O1 with timer",
+                "nl": "Automatisch UIT O1 met timer"
+              },
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 32535
+              },
+              "units": {
+                "en": "seconds",
+                "nl": "seconden"
+              },
+              "hint": {
+                "en": "Defines the time after which output 1 is turned off automatically. Note: setting this parameter to zero will disable automatically turning off.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch uitzet. Let op: het instellen van deze parameter op nul schakelt het automatisch uit gaan uit."
+              },
+              "zwave": {
+                "index": 19,
+                "size": 2
+              }
+            },
+            {
+              "id": "zwaveAutoOnO1",
+              "type": "number",
+              "label": {
+                "en": "Auto ON O1 with timer",
+                "nl": "Automatisch AAN O1 met timer"
+              },
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 32535
+              },
+              "units": {
+                "en": "seconds",
+                "nl": "seconden"
+              },
+              "hint": {
+                "en": "Defines the time after which output 1 is turned on automatically after been turned on. Note: setting this parameter to zero will disable automatically turning on.",
+                "nl": "Bepaalt de tijd waarna output 1 zichzelf automatisch aanzet na te zijn uitgeschakeld. Let op: het instellen van deze parameter op nul schakelt het automatisch aan gaan uit."
+              },
+              "zwave": {
+                "index": 20,
+                "size": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Switch 1 settings",
+            "nl": "Switch 1 instellingen"
+          },
+          "children": [
+            {
+              "value": "0",
+              "id": "zwaveSwitchTypeSW1",
+              "type": "dropdown",
+              "label": {
+                "en": "Switch type SW1",
+                "nl": "Schakelaar type SW1"
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Momentary switch (push button)",
+                    "nl": "Pulsdrukschakelaar (push button)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Toggle switch (contact closed - ON / contact opened - OFF)",
+                    "nl": "Tuimelschakelaar (contact closed - ON / contact opened - OFF)"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Toggle switch (device changes status when switch changes status)",
+                    "nl": "Tuimelschakelaar (apparaat wijzigt status wanneer schakelaar status wijzigt)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Determines the type of switch connected to input 1.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 1."
+              },
+              "zwave": {
+                "index": 1,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveOutputDetached1",
+              "type": "dropdown",
+              "label": {
+                "en": "SW1 detached",
+                "nl": "SW1 ontkoppeld"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Normal mode",
+                    "nl": "Normale modus"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Detached mode",
+                    "nl": "Ontkoppeld"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines if the input switch SW1 is separated from the state of the output.",
+                "nl": "Specificeert of de input schakelaar SW1 is ontkoppeld van de status van de output."
+              },
+              "zwave": {
+                "index": 7,
+                "size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Switch 2 settings",
+            "nl": "Switch 2 instellingen"
+          },
+          "children": [
+            {
+              "value": "0",
+              "id": "zwaveSwitchTypeSW2",
+              "type": "dropdown",
+              "label": {
+                "en": "Switch type SW2",
+                "nl": "Schakelaar type SW2"
+              },
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Momentary switch (push button)",
+                    "nl": "Pulsdrukschakelaar (push button)"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Toggle switch (contact closed - ON / contact opened - OFF)",
+                    "nl": "Tuimelschakelaar (contact closed - ON / contact opened - OFF)"
+                  }
+                },
+                {
+                  "id": "2",
+                  "label": {
+                    "en": "Toggle switch (device changes status when switch changes status)",
+                    "nl": "Tuimelschakelaar (apparaat wijzigt status wanneer schakelaar status wijzigt)"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Determines the type of switch connected to input 2.",
+                "nl": "Specificeert het type schakelaar dat is aangesloten op input 2."
+              },
+              "zwave": {
+                "index": 2,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveOutputDetached2",
+              "type": "dropdown",
+              "label": {
+                "en": "SW2 detached",
+                "nl": "SW2 ontkoppeld"
+              },
+              "value": "1",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Normal mode",
+                    "nl": "Normale modus"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Detached mode",
+                    "nl": "Ontkoppeld"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Defines if the input switch SW2 is separated from the state of the output.",
+                "nl": "Specificeert of de input schakelaar SW2 is ontkoppeld van de status van de output."
+              },
+              "zwave": {
+                "index": 8,
+                "size": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Device Settings",
+            "nl": "Apparaatinstellingen"
+          },
+          "children": [
+            {
+              "value": 10,
+              "id": "zwavePowerReportOnChangeO1",
+              "type": "number",
+              "label": {
+                "en": "Power report on change for O1",
+                "nl": "Power report bij wijziging voor O1"
+              },
+              "attr": {
+                "min": 0,
+                "max": 100
+              },
+              "units": {
+                "en": "%",
+                "nl": "%"
+              },
+              "hint": {
+                "en": "Defines the minimum change in consumed power for output 1 that will result in sending new report to Homey.",
+                "nl": "Bepaalt de minimum wijziging in stroomverbruik voor output 1 dat nodig is om een status update naar Homey te versturen."
+              },
+              "zwave": {
+                "index": 36,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveMinimalTimePowerReportO1",
+              "type": "number",
+              "label": {
+                "en": "Minimal time between reports for O1",
+                "nl": "Minimale tijd tussen reports voor O1"
+              },
+              "value": 30,
+              "attr": {
+                "min": 10,
+                "max": 120
+              },
+              "units": {
+                "en": "s",
+                "nl": "s"
+              },
+              "hint": {
+                "en": "Defines the minimum time between sending reports to Homey for output 1.",
+                "nl": "Bepaalt de minimum tijd tussen status updates naar Homey voor output 1."
+              },
+              "zwave": {
+                "index": 39,
+                "size": 1
+              }
+            },
+            {
+              "id": "zwaveResetToDefaultAndLeave",
+              "type": "dropdown",
+              "label": {
+                "en": "Reset parameters to default and leave network",
+                "nl": "Reset parameters naar fabrieksinstellingen en verlaat netwerk"
+              },
+              "value": "0",
+              "values": [
+                {
+                  "id": "0",
+                  "label": {
+                    "en": "Do not reset",
+                    "nl": "Niet resetten"
+                  }
+                },
+                {
+                  "id": "1",
+                  "label": {
+                    "en": "Reset parameters and leave network",
+                    "nl": "Reset parameters en netwerk verlaten"
+                  }
+                }
+              ],
+              "hint": {
+                "en": "Will reset all configuration parameters to factory default settings and device will leave the network.",
+                "nl": "Reset alle configuratie parameters naar de fabrieksinstellingen en apparaat verlaat het netwerk."
+              },
+              "zwave": {
+                "index": 120,
+                "size": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
         "large": "/drivers/shelly_wave_door_window/assets/images/large.png",
         "small": "/drivers/shelly_wave_door_window/assets/images/small.png"
       },
@@ -9795,13 +10451,21 @@
       ]
     },
     {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_pro_dimmer_1pm/assets/images/large.png",
+        "small": "/drivers/shelly_wave_pro_dimmer_1pm/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_pro_dimmer_1pm/assets/icon.svg",
       "name": {
         "en": "Shelly Wave Pro Dimmer 1PM",
         "nl": "Shelly Wave Pro Dimmer 1PM"
-      },
-      "images": {
-        "small": "./assets/drivers/shelly_wave_pro_dimmer_1pm/images/small.jpg",
-        "large": "./assets/drivers/shelly_wave_pro_dimmer_1pm/images/large.jpg"
       },
       "class": "light",
       "capabilities": [
@@ -9826,7 +10490,6 @@
           }
         }
       },
-      "icon": "/drivers/shelly_wave_pro_dimmer_1pm/assets/icon.svg",
       "zwave": {
         "manufacturerId": 1120,
         "productTypeId": [
@@ -9854,13 +10517,6 @@
           }
         }
       },
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zwave"
-      ],
       "id": "shelly_wave_pro_dimmer_1pm",
       "settings": [
         {
