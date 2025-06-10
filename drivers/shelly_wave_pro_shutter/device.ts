@@ -1,4 +1,4 @@
-import {ShellyZWaveShutterDevice} from '../../lib/device/zwave/ShellyZWaveShutterDevice';
+import {ShellyZwaveShutterDevice} from '../../lib/device/zwave/ShellyZwaveShutterDevice';
 
-module.exports = class ShellyWaveProShutterDevice extends ShellyZWaveShutterDevice {
+module.exports = class ShellyWaveProShutterDevice extends ShellyZwaveShutterDevice {
 };
