@@ -1,15 +1,10 @@
 {
+  "$extends": "zwave",
   "name": {
     "en": "Shelly Wave 1PM (Mini)",
     "nl": "Shelly Wave 1PM (Mini)"
   },
-  "images": {
-    "small": "./assets/drivers/shelly_wave_1pm/images/small.jpg",
-    "large": "./assets/drivers/shelly_wave_1pm/images/large.jpg",
-    "xlarge": "./assets/drivers/shelly_wave_1pm/images/xlarge.jpg"
-  },
   "class": "socket",
-  "icon": "{{driverAssetsPath}}/icon.svg",
   "capabilities": [
     "onoff",
     "measure_power",
@@ -49,7 +44,5 @@
         "nl": "Houd de S-knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen."
       }
     }
-  },
-  "platforms": [ "local", "cloud" ],
-  "connectivity": [ "zwave" ]
+  }
 }

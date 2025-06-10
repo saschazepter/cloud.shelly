@@ -4480,21 +4480,27 @@
       "id": "shelly_matter_em_mini_gen4"
     },
     {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_1/assets/images/large.png",
+        "small": "/drivers/shelly_wave_1/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_1/assets/icon.svg",
       "name": {
         "en": "Shelly Wave 1 (Mini)",
         "nl": "Shelly Wave 1 (Mini)"
-      },
-      "images": {
-        "small": "./assets/drivers/shelly_wave_1/images/small.jpg",
-        "large": "./assets/drivers/shelly_wave_1/images/large.jpg",
-        "xlarge": "./assets/drivers/shelly_wave_1/images/xlarge.jpg"
       },
       "class": "socket",
       "capabilities": [
         "onoff",
         "deviceWave"
       ],
-      "icon": "/drivers/shelly_wave_1/assets/icon.svg",
       "zwave": {
         "manufacturerId": 1120,
         "productTypeId": [
@@ -4522,13 +4528,6 @@
           }
         }
       },
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zwave"
-      ],
       "id": "shelly_wave_1",
       "settings": [
         {
@@ -4737,17 +4736,23 @@
       ]
     },
     {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_1pm/assets/images/large.png",
+        "small": "/drivers/shelly_wave_1pm/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_1pm/assets/icon.svg",
       "name": {
         "en": "Shelly Wave 1PM (Mini)",
         "nl": "Shelly Wave 1PM (Mini)"
       },
-      "images": {
-        "small": "./assets/drivers/shelly_wave_1pm/images/small.jpg",
-        "large": "./assets/drivers/shelly_wave_1pm/images/large.jpg",
-        "xlarge": "./assets/drivers/shelly_wave_1pm/images/xlarge.jpg"
-      },
       "class": "socket",
-      "icon": "/drivers/shelly_wave_1pm/assets/icon.svg",
       "capabilities": [
         "onoff",
         "measure_power",
@@ -4795,13 +4800,6 @@
           }
         }
       },
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zwave"
-      ],
       "id": "shelly_wave_1pm",
       "settings": [
         {
@@ -5060,16 +5058,23 @@
       ]
     },
     {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_2pm/assets/images/large.png",
+        "small": "/drivers/shelly_wave_2pm/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_2pm/assets/icon.svg",
       "name": {
         "en": "Shelly Wave 2PM",
         "nl": "Shelly Wave 2PM"
       },
-      "images": {
-        "small": "./assets/drivers/shelly_wave_2pm/images/small.jpg",
-        "large": "./assets/drivers/shelly_wave_2pm/images/large.jpg"
-      },
       "class": "socket",
-      "icon": "/drivers/shelly_wave_2pm/assets/icon.svg",
       "capabilities": [
         "onoff",
         "button.reset_meter",
@@ -5175,13 +5180,6 @@
           }
         }
       },
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zwave"
-      ],
       "id": "shelly_wave_2pm",
       "settings": [
         {
@@ -5868,13 +5866,21 @@
       ]
     },
     {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_i4/assets/images/large.png",
+        "small": "/drivers/shelly_wave_i4/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_i4/assets/icon.svg",
       "name": {
         "en": "Shelly Wave i4",
         "nl": "Shelly Wave i4"
-      },
-      "images": {
-        "small": "./assets/drivers/shelly_wave_i4/images/small.jpg",
-        "large": "./assets/drivers/shelly_wave_i4/images/large.jpg"
       },
       "class": "other",
       "capabilities": [
@@ -5885,7 +5891,6 @@
         "actionEvents",
         "deviceWave"
       ],
-      "icon": "/drivers/shelly_wave_i4/assets/icon.svg",
       "zwave": {
         "manufacturerId": 1120,
         "productTypeId": [
@@ -5913,13 +5918,6 @@
           }
         }
       },
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zwave"
-      ],
       "id": "shelly_wave_i4",
       "settings": [
         {
@@ -6136,16 +6134,23 @@
       ]
     },
     {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_plug/assets/images/large.png",
+        "small": "/drivers/shelly_wave_plug/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_plug/assets/icon.svg",
       "name": {
         "en": "Shelly Wave Plug",
         "nl": "Shelly Wave Plug"
       },
-      "images": {
-        "small": "./assets/drivers/shelly_wave_plug/images/small.jpg",
-        "large": "./assets/drivers/shelly_wave_plug/images/large.jpg"
-      },
       "class": "socket",
-      "icon": "/drivers/shelly_wave_plug/assets/icon.svg",
       "deprecated": true,
       "capabilities": [
         "onoff",
@@ -6194,13 +6199,6 @@
           }
         }
       },
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zwave"
-      ],
       "id": "shelly_wave_plug",
       "settings": [
         {
@@ -7256,16 +7254,23 @@
       ]
     },
     {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_pm_mini/assets/images/large.png",
+        "small": "/drivers/shelly_wave_pm_mini/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_pm_mini/assets/icon.svg",
       "name": {
         "en": "Shelly Wave PM Mini",
         "nl": "Shelly Wave PM Mini"
       },
-      "images": {
-        "small": "./assets/drivers/shelly_wave_pm_mini/images/small.jpg",
-        "large": "./assets/drivers/shelly_wave_pm_mini/images/large.jpg"
-      },
       "class": "socket",
-      "icon": "/drivers/shelly_wave_pm_mini/assets/icon.svg",
       "capabilities": [
         "measure_power",
         "meter_power",
@@ -7311,13 +7316,6 @@
           }
         }
       },
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zwave"
-      ],
       "id": "shelly_wave_pm_mini",
       "settings": [
         {
@@ -7415,20 +7413,27 @@
       ]
     },
     {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_pro_1/assets/images/large.png",
+        "small": "/drivers/shelly_wave_pro_1/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_pro_1/assets/icon.svg",
       "name": {
         "en": "Shelly Wave Pro 1",
         "nl": "Shelly Wave Pro 1"
-      },
-      "images": {
-        "small": "./assets/drivers/shelly_wave_pro_1/images/small.jpg",
-        "large": "./assets/drivers/shelly_wave_pro_1/images/large.jpg"
       },
       "class": "socket",
       "capabilities": [
         "onoff",
         "deviceWave"
       ],
-      "icon": "/drivers/shelly_wave_pro_1/assets/icon.svg",
       "zwave": {
         "manufacturerId": 1120,
         "productTypeId": [
@@ -7455,13 +7460,6 @@
           }
         }
       },
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zwave"
-      ],
       "id": "shelly_wave_pro_1",
       "settings": [
         {
@@ -7719,13 +7717,21 @@
       ]
     },
     {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_pro_1pm/assets/images/large.png",
+        "small": "/drivers/shelly_wave_pro_1pm/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_pro_1pm/assets/icon.svg",
       "name": {
         "en": "Shelly Wave Pro 1PM",
         "nl": "Shelly Wave Pro 1PM"
-      },
-      "images": {
-        "small": "./assets/drivers/shelly_wave_pro_1pm/images/small.jpg",
-        "large": "./assets/drivers/shelly_wave_pro_1pm/images/large.jpg"
       },
       "class": "socket",
       "capabilities": [
@@ -7735,7 +7741,6 @@
         "button.reset_meter",
         "deviceWave"
       ],
-      "icon": "/drivers/shelly_wave_pro_1pm/assets/icon.svg",
       "zwave": {
         "manufacturerId": 1120,
         "productTypeId": [
@@ -7762,13 +7767,6 @@
           }
         }
       },
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zwave"
-      ],
       "id": "shelly_wave_pro_1pm",
       "settings": [
         {
@@ -8076,16 +8074,23 @@
       ]
     },
     {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_pro_2/assets/images/large.png",
+        "small": "/drivers/shelly_wave_pro_2/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_pro_2/assets/icon.svg",
       "name": {
         "en": "Shelly Wave Pro 2",
         "nl": "Shelly Wave Pro 2"
       },
-      "images": {
-        "small": "./assets/drivers/shelly_wave_pro_2/images/small.jpg",
-        "large": "./assets/drivers/shelly_wave_pro_2/images/large.jpg"
-      },
       "class": "socket",
-      "icon": "/drivers/shelly_wave_pro_2/assets/icon.svg",
       "capabilities": [
         "onoff",
         "deviceWave"
@@ -8145,13 +8150,6 @@
           }
         }
       },
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zwave"
-      ],
       "id": "shelly_wave_pro_2",
       "settings": [
         {
@@ -8521,16 +8519,23 @@
       ]
     },
     {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_pro_2pm/assets/images/large.png",
+        "small": "/drivers/shelly_wave_pro_2pm/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_pro_2pm/assets/icon.svg",
       "name": {
         "en": "Shelly Wave Pro 2PM",
         "nl": "Shelly Wave Pro 2PM"
       },
-      "images": {
-        "small": "./assets/drivers/shelly_wave_pro_2pm/images/small.jpg",
-        "large": "./assets/drivers/shelly_wave_pro_2pm/images/large.jpg"
-      },
       "class": "socket",
-      "icon": "/drivers/shelly_wave_pro_2pm/assets/icon.svg",
       "capabilities": [
         "onoff",
         "button.reset_meter",
@@ -8636,13 +8641,6 @@
           }
         }
       },
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zwave"
-      ],
       "id": "shelly_wave_pro_2pm",
       "settings": [
         {
@@ -9178,16 +9176,23 @@
       ]
     },
     {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
+        "large": "/drivers/shelly_wave_pro_3/assets/images/large.png",
+        "small": "/drivers/shelly_wave_pro_3/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_pro_3/assets/icon.svg",
       "name": {
         "en": "Shelly Wave Pro 3",
         "nl": "Shelly Wave Pro 3"
       },
-      "images": {
-        "small": "./assets/drivers/shelly_wave_pro_3/images/small.jpg",
-        "large": "./assets/drivers/shelly_wave_pro_3/images/large.jpg"
-      },
       "class": "socket",
-      "icon": "/drivers/shelly_wave_pro_3/assets/icon.svg",
       "capabilities": [
         "onoff",
         "deviceWave"
@@ -9260,13 +9265,6 @@
           }
         }
       },
-      "platforms": [
-        "local",
-        "cloud"
-      ],
-      "connectivity": [
-        "zwave"
-      ],
       "id": "shelly_wave_pro_3",
       "settings": [
         {

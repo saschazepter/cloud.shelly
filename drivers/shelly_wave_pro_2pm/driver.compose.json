@@ -1,14 +1,10 @@
 {
+  "$extends": "zwave",
   "name": {
     "en": "Shelly Wave Pro 2PM",
     "nl": "Shelly Wave Pro 2PM"
   },
-  "images": {
-    "small": "./assets/drivers/shelly_wave_pro_2pm/images/small.jpg",
-    "large": "./assets/drivers/shelly_wave_pro_2pm/images/large.jpg"
-  },
   "class": "socket",
-  "icon": "{{driverAssetsPath}}/icon.svg",
   "capabilities": [
     "onoff",
     "button.reset_meter",
@@ -107,7 +103,5 @@
         "settings": []
       }
     }
-  },
-  "platforms": [ "local", "cloud" ],
-  "connectivity": [ "zwave" ]
+  }
 }
