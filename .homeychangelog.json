@@ -952,5 +952,8 @@
   },
   "3.44.0": {
     "en": "Add support for Wave Dimmer, improve Z-Wave startup for older drivers"
+  },
+  "3.45.0": {
+    "en": "Add support for Shelly Shutter, fix cloud update parsing"
   }
 }
