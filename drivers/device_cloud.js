@@ -162,5 +162,6 @@ ShellyCloudDevice.prototype.setAvailability = Device.prototype.setAvailability;
 ShellyCloudDevice.prototype.updateDeviceConfig = Device.prototype.updateDeviceConfig;
 ShellyCloudDevice.prototype.updateTemperatureSensor = Device.prototype.updateTemperatureSensor;
 ShellyCloudDevice.prototype.updateEnergyConfiguration = Device.prototype.updateEnergyConfiguration;
+ShellyCloudDevice.prototype.is3EMTriphase = Device.prototype.is3EMTriphase;
 
 module.exports = ShellyCloudDevice;
