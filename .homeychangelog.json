@@ -955,5 +955,8 @@
   },
   "3.45.0": {
     "en": "Add support for Shelly Shutter, fix cloud update parsing"
+  },
+  "3.45.1": {
+    "en": "Fix possible crash on Homey Pro 2016-2019"
   }
 }
