@@ -45,7 +45,7 @@
     "zigbee-clusters": "2.4.2"
   },
   "devDependencies": {
-    "@drenso/homey-branding-helper": "2.6.0",
+    "@drenso/homey-branding-helper": "2.7.0",
     "@tsconfig/node16": "1.0.3",
     "@types/homey": "npm:homey-apps-sdk-v3-types@0.3.6",
     "@types/node": "20.14.1",
