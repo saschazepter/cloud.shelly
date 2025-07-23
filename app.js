@@ -1037,6 +1037,8 @@ class ShellyApp extends OAuth2App {
               result = JSON.parse(data);
             } catch (e) {
               this.error('Invalid JSON data from websocket', e);
+
+              return;
             }
 
             if (result.hasOwnProperty('method') && result.hasOwnProperty("params")) {
