@@ -961,5 +961,8 @@
   },
   "3.45.2": {
     "en": "Prevent crashes when using Z-Wave/Zigbee devices"
+  },
+  "3.46.0": {
+    "en": "Add support for Wave H&T and Wave Motion"
   }
 }
