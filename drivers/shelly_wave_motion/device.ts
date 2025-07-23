@@ -14,10 +14,10 @@ module.exports = class ShellyWaveMotionDevice extends ShellyZwaveDevice
     this.registerReportListener('NOTIFICATION', 'NOTIFICATION_REPORT', async (report: NotificationReport) => {
       if (report["Notification Type"] === 'Home Security') {
         if (report['Event (Parsed)'] === "Motion Detection") {
-          this.log('Presence detected');
+          this.debug('Presence detected');
           await this.setCapabilityValue('alarm_presence', true).catch(this.error);
         } else if (report['Event (Parsed)'] === "Event inactive") {
-          this.log('Presence no longer detected');
+          this.debug('Presence no longer detected');
           await this.setCapabilityValue('alarm_presence', false).catch(this.error);
         }
       }
