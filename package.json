@@ -31,7 +31,7 @@
   "dependencies": {
     "@drenso/homey-log": "9.40.0",
     "@drenso/homey-zigbee-library": "0.25.0",
-    "axios": "1.10.0",
+    "axios": "1.11.0",
     "crypto": "1.0.1",
     "homey-lib": "2.37.3",
     "homey-oauth2app": "3.6.0",
