@@ -964,5 +964,8 @@
   },
   "3.46.0": {
     "en": "Add support for Wave H&T and Wave Motion"
+  },
+  "3.46.1": {
+    "en": "Fix crash on invalid JSON data"
   }
 }
