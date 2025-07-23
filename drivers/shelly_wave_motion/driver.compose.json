@@ -1,0 +1,38 @@
+{
+  "$extends": "zwave",
+  "name": {
+    "en": "Shelly Wave Motion",
+    "nl": "Shelly Wave Motion"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_battery",
+    "alarm_presence",
+    "measure_luminance"
+  ],
+  "energy": {
+    "batteries": [
+      "CR2477"
+    ]
+  },
+  "zwave": {
+    "manufacturerId": 1120,
+    "productTypeId": [256],
+    "productId": [130],
+    "associationGroups": [1, 2],
+    "learnmode": {
+      "image": "./assets/zwave-learnmode.svg",
+      "instruction": {
+        "en": "Press and hold the button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking.",
+        "nl": "Houd de knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen."
+      }
+    },
+    "unlearnmode": {
+      "image": "./assets/zwave-learnmode.svg",
+      "instruction": {
+        "en": "Press and hold the button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking.",
+        "nl": "Houd de knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen."
+      }
+    }
+  }
+}

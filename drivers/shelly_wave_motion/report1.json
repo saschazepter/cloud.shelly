@@ -1,0 +1,20 @@
+{
+  "V1 Alarm Type (Raw)": "<Buffer 00>",
+  "V1 Alarm Type": 0,
+  "V1 Alarm Level (Raw)": "<Buffer 00>",
+  "V1 Alarm Level": 0,
+  "Notification Status (Raw)": "<Buffer ff>",
+  "Notification Status": "On",
+  "Notification Type (Raw)": "<Buffer 07>",
+  "Notification Type": "Home Security",
+  "Event (Raw)": "<Buffer 00>",
+  "Event": 0,
+  "Properties1 (Raw)": "<Buffer 01>",
+  "Properties1": {
+    "Event Parameters Length": 1,
+    "Sequence": false
+  },
+  "Event Parameter (Raw)": "<Buffer 07>",
+  "Event Parameter": "<Buffer 07>",
+  "Event (Parsed)": "Event inactive"
+}

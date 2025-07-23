@@ -1,0 +1,110 @@
+[
+  {
+    "id": "remote_device_reboot",
+    "label": {
+      "en": "Reboot device"
+    },
+    "type": "checkbox",
+    "value": false,
+    "zwave": {
+      "index": 117,
+      "size": 1
+    }
+  },
+  {
+    "id": "factory_reset",
+    "label": {
+      "en": "Factory reset"
+    },
+    "type": "checkbox",
+    "value": false,
+    "zwave": {
+      "index": 120,
+      "size": 1
+    }
+  },
+  {
+    "id": "illumination_measurement",
+    "label": {
+      "en": "Measure ambient illumination"
+    },
+    "type": "checkbox",
+    "value": true,
+    "zwave": {
+      "index": 155,
+      "size": 1
+    }
+  },
+  {
+    "$extends": "zwaveLedIndicator",
+    "value": true
+  },
+  {
+    "id": "motion_sensitivity",
+    "label": {
+      "en": "Motion sensitivity"
+    },
+    "type": "dropdown",
+    "value": "1",
+    "values": [
+      {
+        "id": "0",
+        "label": { "en": "Low" }
+      },
+      {
+        "id": "1",
+        "label": { "en": "Moderate" }
+      },
+      {
+        "id": "2",
+        "label": { "en": "High" }
+      }
+    ],
+    "zwave": {
+      "index": 158,
+      "size": 1
+    }
+  },
+  {
+    "id": "motion_blind_time",
+    "label": {
+      "en": "Motion blind time"
+    },
+    "hint": {
+      "en": "How long the sensor is blind to motion after last detection."
+    },
+    "type": "number",
+    "value": 5,
+    "attr": {
+      "min": 2,
+      "max": 8,
+      "step": 1
+    },
+    "units": "Seconds",
+    "zwave": {
+      "index": 159,
+      "size": 2
+    }
+  },
+  {
+    "id": "motion_not_detected_report_time",
+    "label": {
+      "en": "Motion reset time"
+    },
+    "hint": {
+      "en": "How long the device should not sense detection to report no presence."
+    },
+    "type": "number",
+    "value": 30,
+    "attr": {
+      "min": 1,
+      "max": 32767,
+      "step": 1
+    },
+    "units": "Seconds",
+    "zwave": {
+      "index": 160,
+      "size": 2
+    }
+  }
+]

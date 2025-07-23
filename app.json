@@ -6976,6 +6976,192 @@
         "zwave"
       ],
       "images": {
+        "large": "/drivers/shelly_wave_motion/assets/images/large.png",
+        "small": "/drivers/shelly_wave_motion/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_motion/assets/icon.svg",
+      "name": {
+        "en": "Shelly Wave Motion",
+        "nl": "Shelly Wave Motion"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_battery",
+        "alarm_presence",
+        "measure_luminance"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2477"
+        ]
+      },
+      "zwave": {
+        "manufacturerId": 1120,
+        "productTypeId": [
+          256
+        ],
+        "productId": [
+          130
+        ],
+        "associationGroups": [
+          1,
+          2
+        ],
+        "learnmode": {
+          "image": "./assets/zwave-learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking.",
+            "nl": "Houd de knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen."
+          }
+        },
+        "unlearnmode": {
+          "image": "./assets/zwave-learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking.",
+            "nl": "Houd de knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen."
+          }
+        }
+      },
+      "id": "shelly_wave_motion",
+      "settings": [
+        {
+          "id": "remote_device_reboot",
+          "label": {
+            "en": "Reboot device"
+          },
+          "type": "checkbox",
+          "value": false,
+          "zwave": {
+            "index": 117,
+            "size": 1
+          }
+        },
+        {
+          "id": "factory_reset",
+          "label": {
+            "en": "Factory reset"
+          },
+          "type": "checkbox",
+          "value": false,
+          "zwave": {
+            "index": 120,
+            "size": 1
+          }
+        },
+        {
+          "id": "illumination_measurement",
+          "label": {
+            "en": "Measure ambient illumination"
+          },
+          "type": "checkbox",
+          "value": true,
+          "zwave": {
+            "index": 155,
+            "size": 1
+          }
+        },
+        {
+          "value": true,
+          "id": "zwaveLedIndicator",
+          "type": "checkbox",
+          "label": {
+            "en": "Enable LED indicator",
+            "nl": "LED-indicator gebruiken"
+          },
+          "hint": {
+            "en": "Enables/disables the LED indicator, used when a state change is detected",
+            "nl": "Schakelt de LED-indicator in/uit, die gebruikt wordt wanneer de status wijzigt"
+          },
+          "zwave": {
+            "index": 157,
+            "size": 1
+          }
+        },
+        {
+          "id": "motion_sensitivity",
+          "label": {
+            "en": "Motion sensitivity"
+          },
+          "type": "dropdown",
+          "value": "1",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Low"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "Moderate"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "High"
+              }
+            }
+          ],
+          "zwave": {
+            "index": 158,
+            "size": 1
+          }
+        },
+        {
+          "id": "motion_blind_time",
+          "label": {
+            "en": "Motion blind time"
+          },
+          "hint": {
+            "en": "How long the sensor is blind to motion after last detection."
+          },
+          "type": "number",
+          "value": 5,
+          "attr": {
+            "min": 2,
+            "max": 8,
+            "step": 1
+          },
+          "units": "Seconds",
+          "zwave": {
+            "index": 159,
+            "size": 2
+          }
+        },
+        {
+          "id": "motion_not_detected_report_time",
+          "label": {
+            "en": "Motion reset time"
+          },
+          "hint": {
+            "en": "How long the device should not sense detection to report no presence."
+          },
+          "type": "number",
+          "value": 30,
+          "attr": {
+            "min": 1,
+            "max": 32767,
+            "step": 1
+          },
+          "units": "Seconds",
+          "zwave": {
+            "index": 160,
+            "size": 2
+          }
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
         "large": "/drivers/shelly_wave_plug/assets/images/large.png",
         "small": "/drivers/shelly_wave_plug/assets/images/small.png"
       },
