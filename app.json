@@ -6530,6 +6530,184 @@
         "zwave"
       ],
       "images": {
+        "large": "/drivers/shelly_wave_ht/assets/images/large.png",
+        "small": "/drivers/shelly_wave_ht/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_wave_ht/assets/icon.svg",
+      "name": {
+        "en": "Shelly Wave H&T",
+        "nl": "Shelly Wave H&T"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_battery",
+        "measure_humidity",
+        "measure_temperature"
+      ],
+      "energy": {
+        "batteries": [
+          "CR123A"
+        ]
+      },
+      "zwave": {
+        "manufacturerId": 1120,
+        "productTypeId": [
+          256
+        ],
+        "productId": [
+          131
+        ],
+        "associationGroups": [
+          1
+        ],
+        "learnmode": {
+          "image": "./assets/zwave-learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking.",
+            "nl": "Houd de knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen."
+          }
+        },
+        "unlearnmode": {
+          "image": "./assets/zwave-learnmode.svg",
+          "instruction": {
+            "en": "Press and hold the button on the device until the LED turns solid blue. Release the button and press and hold it again (> 2s) until the blue LED starts blinking.",
+            "nl": "Houd de knop op het apparaat ingedrukt totdat de LED continu blauw wordt. Laat de knop los en druk er opnieuw op en houd deze ingedrukt (> 2s) totdat de blauwe LED begint te knipperen."
+          }
+        }
+      },
+      "id": "shelly_wave_ht",
+      "settings": [
+        {
+          "id": "remote_device_reboot",
+          "label": {
+            "en": "Reboot device"
+          },
+          "type": "checkbox",
+          "value": false,
+          "zwave": {
+            "index": 117,
+            "size": 1
+          }
+        },
+        {
+          "id": "power_source_selection",
+          "label": {
+            "en": "Power source"
+          },
+          "type": "dropdown",
+          "value": "0",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "Battery"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "External"
+              }
+            }
+          ],
+          "zwave": {
+            "index": 119,
+            "size": 1
+          }
+        },
+        {
+          "id": "factory_reset",
+          "label": {
+            "en": "Factory reset"
+          },
+          "type": "checkbox",
+          "value": false,
+          "zwave": {
+            "index": 120,
+            "size": 1
+          }
+        },
+        {
+          "id": "temperature_threshold",
+          "label": {
+            "en": "Temperature threshold"
+          },
+          "type": "number",
+          "value": 0.5,
+          "attr": {
+            "min": 0.1,
+            "max": 5,
+            "step": 0.1
+          },
+          "units": "°C",
+          "hint": {
+            "en": "The minimum change in temperature to be reported."
+          }
+        },
+        {
+          "id": "temperature_offset",
+          "label": {
+            "en": "Temperature calibration"
+          },
+          "type": "number",
+          "value": 0,
+          "attr": {
+            "min": -50,
+            "max": 50,
+            "step": 0.1
+          },
+          "units": "°C"
+        },
+        {
+          "id": "humidity_threshold",
+          "label": {
+            "en": "Humidity threshold"
+          },
+          "type": "number",
+          "value": 1,
+          "attr": {
+            "min": 1,
+            "max": 50,
+            "step": 1
+          },
+          "units": "% RH",
+          "hint": {
+            "en": "The minimum change in humidity to be reported."
+          },
+          "zwave": {
+            "index": 163,
+            "size": 1
+          }
+        },
+        {
+          "id": "humidity_offset",
+          "label": {
+            "en": "Humidity calibration"
+          },
+          "type": "number",
+          "value": 0,
+          "attr": {
+            "min": -50,
+            "max": 50,
+            "step": 1
+          },
+          "units": "% RH",
+          "zwave": {
+            "index": 164,
+            "size": 2
+          }
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "images": {
         "large": "/drivers/shelly_wave_i4/assets/images/large.png",
         "small": "/drivers/shelly_wave_i4/assets/images/small.png"
       },
