@@ -967,5 +967,8 @@
   },
   "3.46.1": {
     "en": "Fix crash on invalid JSON data"
+  },
+  "3.47.0": {
+    "en": "Add support for 1L & 2L Gen3 devices, modernize device icons"
   }
 }
