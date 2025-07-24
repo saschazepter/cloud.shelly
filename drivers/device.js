@@ -2694,7 +2694,7 @@ class ShellyDevice extends Homey.Device {
                       } else if (input === 'input2' || input === 'input3' || input === 'input4') {
                         this.parseCapabilityUpdate(input, value, 1);
                       }
-                    } else if (channel === 0 || this.hasCapability('input_2')) { // if channel is 0 or device is not a multichannel device in Homey we need to hard set channel to 0 to update the capability of this device
+                    } else if (channel === 0 || this.hasCapability('input_2') || this.hasCapability('multiInputs')) { // if channel is 0 or device is not a multichannel device in Homey we need to hard set channel to 0 to update the capability of this device
                       this.parseCapabilityUpdate(input, value, 0);
                     } else { // it's a multichannel input and we need to update the correct device, it's a bit hacky though
                       const device_id = this.getStoreValue('main_device') + '-channel-' + channel;
@@ -3342,7 +3342,7 @@ class ShellyDevice extends Homey.Device {
           if (typeof value == 'number') {
             value = value === 0 ? false : true;
           }
-          if (!this.hasCapability('input_2')) {
+          if (!this.hasCapability('input_2') && !this.hasCapability('multiInputs')) {
             const input2_1Triggercard = value ? 'triggerInput1On' : 'triggerInput1Off';
             this.updateCapabilityValue('input_1', value, channel);
             this.triggerDeviceTriggerCard('input_1', value, channel, input2_1Triggercard, {}, {});
