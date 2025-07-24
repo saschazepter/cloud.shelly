@@ -92,6 +92,7 @@ Shelly Outdoor Plug S Gen3
 Shelly Dimmer Gen3
 Shelly Shutter
 Shelly 1L Gen3
+Shelly 2L Gen3
 
 Gen 4
 -------------
