@@ -3610,6 +3610,7 @@ class ShellyDevice extends Homey.Device {
         case 'ver':
         case 'unixtime':
         case 'awaiting_auth_code':
+        case 'cfg_rev':
           // Known but ignored values
           break;
         default:
