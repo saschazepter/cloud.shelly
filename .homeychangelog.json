@@ -970,5 +970,8 @@
   },
   "3.47.0": {
     "en": "Add support for 1L & 2L Gen3 devices, modernize device icons"
+  },
+  "3.48.0": {
+    "en": "Add support for 2PM Gen4 in cover profile"
   }
 }
