@@ -29,7 +29,7 @@
     "run": "homey-branding-helper run shelly"
   },
   "dependencies": {
-    "@drenso/homey-log": "9.43.0",
+    "@drenso/homey-log": "10.0.0",
     "@drenso/homey-zigbee-library": "0.25.0",
     "axios": "1.11.0",
     "crypto": "1.0.1",
