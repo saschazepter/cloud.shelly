@@ -19,7 +19,7 @@
       "Shelly Bluetooth"
     ]
   },
-  "version": "3.48.0",
+  "version": "3.49.0",
   "compatibility": ">=12.2.0",
   "platforms": [
     "local",
@@ -4461,7 +4461,7 @@
       "class": "windowcoverings",
       "capabilities": [
         "windowcoverings_set",
-        "windowcoverings_state"
+        "windowcoverings_closed"
       ],
       "matter": {
         "vendorId": 5264,
@@ -4492,8 +4492,8 @@
       "class": "socket",
       "capabilities": [
         "meter_power",
+        "meter_power.exported",
         "measure_current",
-        "measure_frequency",
         "measure_power",
         "measure_voltage",
         "onoff"
