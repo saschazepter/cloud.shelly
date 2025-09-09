@@ -4451,6 +4451,72 @@
         "matter"
       ],
       "images": {
+        "large": "/drivers/shelly_matter_2pm_gen4_cover/assets/images/large.png",
+        "small": "/drivers/shelly_matter_2pm_gen4_cover/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_matter_2pm_gen4_cover/assets/icon.svg",
+      "name": {
+        "en": "Shelly 2PM Gen4 Cover mode (Matter)"
+      },
+      "class": "windowcoverings",
+      "capabilities": [
+        "windowcoverings_set",
+        "windowcoverings_state"
+      ],
+      "matter": {
+        "vendorId": 5264,
+        "productId": 4146,
+        "learnmode": {
+          "instruction": {
+            "en": "Enable Matter in the Shelly web interface. The required information for pairing will be shown after enabling."
+          }
+        }
+      },
+      "id": "shelly_matter_2pm_gen4_cover"
+    },
+    {
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "matter"
+      ],
+      "images": {
+        "large": "/drivers/shelly_matter_2pm_gen4_switch/assets/images/large.png",
+        "small": "/drivers/shelly_matter_2pm_gen4_switch/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_matter_2pm_gen4_switch/assets/icon.svg",
+      "name": {
+        "en": "Shelly 2PM Gen4 Switch mode (Matter)"
+      },
+      "class": "socket",
+      "capabilities": [
+        "meter_power",
+        "measure_current",
+        "measure_frequency",
+        "measure_power",
+        "measure_voltage",
+        "onoff"
+      ],
+      "matter": {
+        "vendorId": 5264,
+        "productId": 4146,
+        "learnmode": {
+          "instruction": {
+            "en": "Enable Matter in the Shelly web interface. The required information for pairing will be shown after enabling."
+          }
+        }
+      },
+      "id": "shelly_matter_2pm_gen4_switch"
+    },
+    {
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "matter"
+      ],
+      "images": {
         "large": "/drivers/shelly_matter_em_mini_gen4/assets/images/large.png",
         "small": "/drivers/shelly_matter_em_mini_gen4/assets/images/small.png"
       },
@@ -17413,6 +17479,139 @@
         }
       },
       "id": "shelly_zigbee_1pm_mini_gen4"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/shelly_zigbee_2pm_gen4_cover/assets/images/large.png",
+        "small": "/drivers/shelly_zigbee_2pm_gen4_cover/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_zigbee_2pm_gen4_cover/assets/icon.svg",
+      "name": {
+        "en": "Shelly 2PM Gen4 Cover mode (Zigbee)"
+      },
+      "class": "windowcoverings",
+      "capabilities": [
+        "windowcoverings_set",
+        "windowcoverings_state"
+      ],
+      "zigbee": {
+        "manufacturerName": "Shelly",
+        "productId": [
+          "2PM"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              258
+            ],
+            "bindings": [
+              258
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "Verify that the device is in Zigbee mode and cover mode (you can enable Zigbee mode by pressing the reset button five times).\n\nPress the reset button three times to initialize pairing."
+          }
+        }
+      },
+      "id": "shelly_zigbee_2pm_gen4_cover"
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "large": "/drivers/shelly_zigbee_2pm_gen4_switch/assets/images/large.png",
+        "small": "/drivers/shelly_zigbee_2pm_gen4_switch/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_zigbee_2pm_gen4_switch/assets/icon.svg",
+      "name": {
+        "en": "Shelly 2PM Gen4 Switch mode (Zigbee)"
+      },
+      "class": "socket",
+      "capabilities": [
+        "meter_power",
+        "measure_current",
+        "measure_frequency",
+        "measure_power",
+        "measure_voltage",
+        "onoff"
+      ],
+      "zigbee": {
+        "manufacturerName": "Shelly",
+        "productId": [
+          "2PM"
+        ],
+        "devices": {
+          "secondChannel": {
+            "name": {
+              "en": "Shelly 2PM Gen4 (2)"
+            },
+            "capabilities": [
+              "meter_power",
+              "measure_current",
+              "measure_power",
+              "onoff"
+            ]
+          }
+        },
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              1794,
+              2820
+            ],
+            "bindings": [
+              6,
+              1794,
+              2820
+            ]
+          },
+          "2": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              1794,
+              2820
+            ],
+            "bindings": [
+              6,
+              1794,
+              2820
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "Verify that the device is in Zigbee mode and switch mode (you can enable Zigbee mode by pressing the reset button five times).\n\nPress the reset button three times to initialize pairing."
+          }
+        }
+      },
+      "id": "shelly_zigbee_2pm_gen4_switch"
     }
   ],
   "widgets": {
