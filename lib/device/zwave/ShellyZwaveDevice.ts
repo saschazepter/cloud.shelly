@@ -5,9 +5,13 @@ import {convertIncomingActionEvent, ShellyActionEvent} from '../../flow/trigger/
 import Logger from '../../log/Logger';
 import type {ShellyDeviceInterface} from '../ShellyDevice';
 
+export type NumInput = 1 | 2 | 3 | 4;
+
 export default abstract class ShellyZwaveDevice extends ZwaveDevice implements ShellyDeviceInterface {
   protected logger?: Logger = undefined;
   private startupTimeout: NodeJS.Timeout | null = null;
+  protected readonly switchChannels: Array<NumInput> = [];
+  protected switchDetached = false;
 
   public async onInit(): Promise<void> {
     return super.onInit();
@@ -48,6 +52,24 @@ export default abstract class ShellyZwaveDevice extends ZwaveDevice implements S
 
       const mainNode = !this.node.isMultiChannelNode;
       if (this.getStoreValue('initialized') !== true) {
+        if (this.switchDetached) {
+          for (const inputChannel of this.switchChannels) {
+            const zwaveDetachedModeRaw = await this.configurationGet({index: 6 + inputChannel});
+            const zwaveDetachedModeArray = Array.from(zwaveDetachedModeRaw['Configuration Value']);
+            const zwaveDetachedMode = zwaveDetachedModeArray[0];
+            const capability = `input_${inputChannel}`;
+
+            if (Number(zwaveDetachedMode) === 1) {
+              if (!this.hasCapability(capability)) {
+                await this.addCapability(capability).catch(this.error);
+              }
+            } else {
+              if (this.hasCapability(capability)) {
+                await this.removeCapability(capability).catch(this.error);
+              }
+            }
+          }
+        }
         await this.firstInitConfigureDevice(mainNode);
         await this.setStoreValue('initialized', true).catch(this.error);
       }
@@ -85,16 +107,47 @@ export default abstract class ShellyZwaveDevice extends ZwaveDevice implements S
     await this.setStoreValue('channel', deviceChannel);
   }
 
-  onSettings({oldSettings, newSettings, changedKeys}: {
+  async onSettings({oldSettings, newSettings, changedKeys}: {
     oldSettings: { [p: string]: boolean | string | number | undefined | null };
     newSettings: { [p: string]: boolean | string | number | undefined | null };
     changedKeys: string[]
   }): Promise<string | void> {
     this.log('Updating settings:', JSON.stringify(changedKeys), JSON.stringify(newSettings));
+
+    if (this.switchDetached) {
+      for (const inputChannel of this.switchChannels) {
+        const capability = `input_${inputChannel}`;
+        if (changedKeys.includes(`zwaveOutputDetached${inputChannel}`)) {
+          if (Number(newSettings[`zwaveOutputDetached${inputChannel}`]) === 1) {
+            if (!this.hasCapability(capability)) {
+              await this.addCapability(capability);
+            }
+          } else {
+            if (this.hasCapability(capability)) {
+              await this.removeCapability(capability);
+            }
+          }
+        }
+      }
+    }
     return super.onSettings({oldSettings, newSettings, changedKeys});
   }
 
-  public abstract getPossibleActionEvents(): ShellyActionEvent[];
+  public getPossibleActionEvents(): ShellyActionEvent[] {
+    const result: ShellyActionEvent[] = [];
+
+    for (const input of this.switchChannels) {
+      // The available events depend on the button settings, they need to be momentary and detached for this to work
+      if (
+        this.getSetting(`zwaveSwitchTypeSW${input}`) == 0 &&
+        (this.switchDetached ? (this.getSetting(`zwaveOutputDetached${input}`) == 1) : true)
+      ) {
+        result.push(`single_push_${input}`, `double_push_${input}`, `long_push_${input}`, `released_${input}`);
+      }
+    }
+
+    return result;
+  }
 
   /** Use this method to configure the device specific capabilities */
   protected abstract configureDevice(isMainNode: boolean): Promise<void>;

@@ -1,5 +1,4 @@
 import ShellyZwaveDevice from '../../lib/device/zwave/ShellyZwaveDevice';
-import {type ShellyActionEvent} from '../../lib/flow/trigger/ActionEventTrigger';
 
 module.exports = class ShellyWaveDoorWindowDevice extends ShellyZwaveDevice {
   protected async configureDevice(): Promise<void> {
@@ -58,10 +57,5 @@ module.exports = class ShellyWaveDoorWindowDevice extends ShellyZwaveDevice {
     }
 
     await super.onSettings({oldSettings, newSettings, changedKeys});
-  }
-
-  public getPossibleActionEvents(): ShellyActionEvent[] {
-    // No action events for this device
-    return [];
   }
 };

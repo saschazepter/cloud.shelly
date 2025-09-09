@@ -1,5 +1,4 @@
 import ShellyZwaveDevice from "../../lib/device/zwave/ShellyZwaveDevice";
-import {type ShellyActionEvent} from "../../lib/flow/trigger/ActionEventTrigger";
 
 type HumidityTemperatureHomeySettings = {
   remote_device_reboot: boolean;
@@ -18,11 +17,6 @@ module.exports = class ShellyWaveHTDevice extends ShellyZwaveDevice
 
     this.registerCapability('measure_temperature', 'SENSOR_MULTILEVEL');
     this.registerCapability('measure_humidity', 'SENSOR_MULTILEVEL');
-  }
-
-  public getPossibleActionEvents(): ShellyActionEvent[] {
-    // No action events for this device
-    return [];
   }
 
   async onSettings({oldSettings, newSettings, changedKeys}: SettingsEvent<HumidityTemperatureHomeySettings>): Promise<string | void> {

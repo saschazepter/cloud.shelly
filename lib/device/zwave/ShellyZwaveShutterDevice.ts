@@ -1,4 +1,3 @@
-import type {ShellyActionEvent} from '../../flow/trigger/ActionEventTrigger';
 import {addCapabilityIfNotExists, removeCapabilityIfAvailable} from '../../helper/Capabilities';
 import ShellyZwaveDevice from './ShellyZwaveDevice';
 
@@ -29,11 +28,6 @@ export class ShellyZwaveShutterDevice extends ShellyZwaveDevice {
     }
 
     await super.onSettings({oldSettings, newSettings, changedKeys});
-  }
-
-  public getPossibleActionEvents(): ShellyActionEvent[] {
-    // No action events for this device
-    return [];
   }
 
   protected async startCalibration(): Promise<void> {

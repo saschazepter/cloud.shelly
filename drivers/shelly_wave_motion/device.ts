@@ -1,5 +1,4 @@
 import ShellyZwaveDevice from "../../lib/device/zwave/ShellyZwaveDevice";
-import {type ShellyActionEvent} from "../../lib/flow/trigger/ActionEventTrigger";
 import {NotificationReport} from "../../types/zwave/NotificationReport";
 
 module.exports = class ShellyWaveMotionDevice extends ShellyZwaveDevice
@@ -22,10 +21,5 @@ module.exports = class ShellyWaveMotionDevice extends ShellyZwaveDevice
         }
       }
     });
-  }
-
-  public getPossibleActionEvents(): ShellyActionEvent[] {
-    // No action events for this device
-    return [];
   }
 };
