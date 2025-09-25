@@ -979,5 +979,8 @@
   },
   "3.49.1": {
     "en": "Fix support for Plus RGBW PM alternate modes when connected through cloud"
+  },
+  "3.49.2": {
+    "en": "Rebuild of v3.49.1"
   }
 }
