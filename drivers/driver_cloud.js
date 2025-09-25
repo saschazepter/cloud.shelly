@@ -100,6 +100,17 @@ class ShellyCloudDriver extends OAuth2Driver {
         }
       }
 
+      /* update device config if it's a gen1 RGBW2 in rgb or white mode */
+      if (device_code === 'SNDC-0D4P10WW') {
+        if (value.hasOwnProperty('rgbw:0')) { // RGBW mode
+          device_config = this.util.getDeviceConfig('shellyplusrgbwpm-rgbw', 'id');
+        } else if (value.hasOwnProperty("rgb:0")) { // RGB mode
+          device_config = this.util.getDeviceConfig('shellyplusrgbwpm-rgb', 'id');
+        } else if (value.hasOwnProperty("light:3")) { // Lights mode
+          device_config = this.util.getDeviceConfig('shellyplusrgbwpm-light', 'id');
+        }
+      }
+
       /* update device config if it's a gen2 roller shutter */
       if (value._dev_info.gen === "G2" && value.hasOwnProperty("cover:0")) {
         device_config = this.util.getDeviceConfig(device_config.hostname[0] + 'roller-', 'hostname');
