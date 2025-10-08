@@ -988,5 +988,8 @@
   },
   "3.50.1": {
     "en": "Fix crash when parsing temperature status update"
+  },
+  "3.50.2": {
+    "en": "Maintenance release"
   }
 }
