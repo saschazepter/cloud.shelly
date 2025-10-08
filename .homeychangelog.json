@@ -985,5 +985,8 @@
   },
   "3.50.0": {
     "en": "Add support for Power Strip Gen4"
+  },
+  "3.50.1": {
+    "en": "Fix crash when parsing temperature status update"
   }
 }
