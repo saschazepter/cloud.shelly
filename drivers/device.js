@@ -3992,7 +3992,7 @@ class ShellyDevice extends Homey.Device {
       return;
     }
 
-    this.updateCapabilityValue(capability, temp, 0, true)
+    await this.updateCapabilityValue(capability, temp, 0, true)
         .then(() => {
           if (temp === null) {
             this.homey.flow.getDeviceTriggerCard(failedTrigger).trigger(this, {}, {}).catch(this.error);
