@@ -12,7 +12,8 @@ const { jwtDecode } = require('jwt-decode');
 const { getPossibleActionEventsForDevice } = require('./lib/flow/trigger/ActionEventTrigger');
 
 class ShellyApp extends OAuth2App {
-  homeyLog = new Log({homey: this.homey}, {maxBreadcrumbs: 5});
+  // noinspection JSUnusedGlobalSymbols
+  homeyLog = new Log({homey: this.homey});
 
   static OAUTH2_CLIENT = ShellyOAuth2Client;
   static OAUTH2_DEBUG = Homey.env.DEBUG === '1';
