@@ -184,7 +184,8 @@ export default abstract class ShellyZwaveDevice extends ZwaveDevice implements S
         };
 
         this.homey.flow.getDeviceTriggerCard('triggerActionEvent')
-          .trigger(this, parsedAction, parsedAction);
+          .trigger(this, parsedAction, parsedAction)
+          .catch(this.error);
 
       } catch (e) {
         this.error('Failed parsing scene notification', JSON.stringify(notification), e);
