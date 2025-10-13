@@ -1971,6 +1971,13 @@ class ShellyDevice extends Homey.Device {
         }
       }
 
+      // FLOOD
+      if (result.hasOwnProperty("flood:"+ channel)) {
+        if (result["flood:"+channel].hasOwnProperty("alarm")) {
+          this.updateCapabilityValue('alarm_water', result["flood:"+channel].alarm, channel);
+        }
+      }
+
       // INPUTS
       if (result.hasOwnProperty("input:0") && this.hasCapability('input_1') && channel === 0) { // update input_1 for channel 0
         if (result["input:0"].hasOwnProperty("state") && result["input:0"].state !== null) {
@@ -2708,6 +2715,8 @@ class ShellyDevice extends Homey.Device {
                   }
                 } else if (component.startsWith('smoke') && capability === 'alarm')  {
                   this.parseCapabilityUpdate('alarm_smoke', value, channel);
+                } else if (component.startsWith('flood') && capability === 'alarm')  {
+                  this.parseCapabilityUpdate('alarm_water', value, channel);
                 } else if (component.startsWith('boolean') || component.startsWith('number') || component.startsWith('text') || component.startsWith('enum'))  { // parse virtual component status updates
                   let type = component.substring(0, component.length - 4);
                   let boolean = false;
