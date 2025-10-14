@@ -1,0 +1,29 @@
+{
+  "$extends": [
+    "matter"
+  ],
+  "name": {
+    "en": "Shelly Flood Gen4 (Matter)"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "alarm_water"
+  ],
+  "energy": {
+    "batteries": [
+      "AA",
+      "AA",
+      "AA",
+      "AA"
+    ]
+  },
+  "matter": {
+    "vendorId": 5264,
+    "productId": 6178,
+    "learnmode": {
+      "instruction": {
+        "en": "Enable Matter in the Shelly web interface. The required information for pairing will be shown after enabling."
+      }
+    }
+  }
+}

@@ -4547,6 +4547,45 @@
     },
     {
       "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "matter"
+      ],
+      "images": {
+        "large": "/drivers/shelly_matter_flood_gen4/assets/images/large.png",
+        "small": "/drivers/shelly_matter_flood_gen4/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_matter_flood_gen4/assets/icon.svg",
+      "name": {
+        "en": "Shelly Flood Gen4 (Matter)"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_water",
+        "measure_battery"
+      ],
+      "energy": {
+        "batteries": [
+          "AA",
+          "AA",
+          "AA",
+          "AA"
+        ]
+      },
+      "matter": {
+        "vendorId": 5264,
+        "productId": 6178,
+        "learnmode": {
+          "instruction": {
+            "en": "Enable Matter in the Shelly web interface. The required information for pairing will be shown after enabling."
+          }
+        }
+      },
+      "id": "shelly_matter_flood_gen4"
+    },
+    {
+      "platforms": [
         "local",
         "cloud"
       ],
