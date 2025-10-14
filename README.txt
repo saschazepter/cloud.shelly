@@ -150,6 +150,7 @@ Shelly 1 Mini Gen4
 Shelly 1PM Gen4
 Shelly 1PM Mini Gen4
 Shelly 2PM Gen4
+Shelly Flood Gen4
 
 Matter
 -------------
