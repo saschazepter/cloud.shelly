@@ -117,6 +117,7 @@ Shelly BLU DoorWindow
 Shelly BLU Motion
 Shelly BLU Gateway (BLE to WiFi)
 Shelly BLU HT
+Shelly BLU TRV (i.c.m. BLU Gateway)
 Shelly BLU Wall Switch 4 EU/US
 
 Z-Wave

@@ -2717,6 +2717,32 @@ class ShellyDevice extends Homey.Device {
                   this.parseCapabilityUpdate('alarm_smoke', value, channel);
                 } else if (component.startsWith('flood') && capability === 'alarm')  {
                   this.parseCapabilityUpdate('alarm_water', value, channel);
+                } else if (component.startsWith('blutrv')) {
+                  if (Number(this.getStoreValue('componentid')) !== channel) {
+                    this.debug('Incorrect component id for TRV', this.getStoreValue('componentid'), channel);
+                    return;
+                  }
+
+                  let homeyCapability;
+                  switch (capability) {
+                    case 'battery':
+                      homeyCapability = 'measure_battery';
+                      break;
+                    case 'pos':
+                      homeyCapability = 'valve_position';
+                      break;
+                    case 'current_C':
+                      homeyCapability = 'measure_temperature'
+                      this.updateCapabilityValue('measure_temperature.thermostat', value, 0);
+                      break;
+                    case 'target_C':
+                      homeyCapability = 'target_temperature';
+                      break;
+                    default:
+                      this.debug('TRV does not support reported capability ' + capability + ' with value ' + value);
+                      return;
+                  }
+                  this.updateCapabilityValue(homeyCapability, value, 0);
                 } else if (component.startsWith('boolean') || component.startsWith('number') || component.startsWith('text') || component.startsWith('enum'))  { // parse virtual component status updates
                   let type = component.substring(0, component.length - 4);
                   let boolean = false;
