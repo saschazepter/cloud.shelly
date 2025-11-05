@@ -70,11 +70,11 @@ class ShellyApp extends OAuth2App {
       // WEBSOCKET GEN2: INITIALLY START WEBSOCKET SERVER AND LISTEN FOR GEN2 UPDATES
       if (this.homey.platform !== "cloud") {
         this.homey.setTimeout(async () => {
-          let gen2 = await this.util.getDeviceType('gen2');
-          let gen3 = await this.util.getDeviceType('gen3');
-          let gen4 = await this.util.getDeviceType('gen4');
-          if (gen2 || gen3 || gen4) {
-            this.websocketLocalListener();
+          let gen2 = this.util.getDeviceType('gen2');
+          let gen3 = this.util.getDeviceType('gen3');
+          let gen4 = this.util.getDeviceType('gen4');
+          if (gen2 || gen3 || gen4 || Number(Homey.env.TIMEOUT_WEBSOCKET) === 0) {
+            this.websocketLocalListener().catch(this.error);
           } else {
             this.log('Websocket server for gen2 / gen3 / gen4 devices with outbound websockets not started as no gen2 / gen3 / gen4 devices were found during app init ...');
           }
