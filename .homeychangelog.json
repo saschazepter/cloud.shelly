@@ -1006,5 +1006,8 @@
   },
   "3.53.0": {
     "en": "Add matter definition for Flood Gen4"
+  },
+  "3.53.1": {
+    "en": "Improve BLU TRV update handling"
   }
 }
