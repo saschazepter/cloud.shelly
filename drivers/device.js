@@ -4097,6 +4097,10 @@ class ShellyDevice extends Homey.Device {
       return;
     }
 
+    if (Homey.env.DEBUG_DEVICE_FILTER && Homey.env.DEBUG_DEVICE_FILTER !== this.getAppId()) {
+      return;
+    }
+
     this.log('[dbg]', ...args);
   }
 
