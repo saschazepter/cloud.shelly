@@ -33,7 +33,7 @@ module.exports = class ShellyWaveDoorWindowDevice extends ShellyZwaveDevice {
           && report.hasOwnProperty('Sensor Type') // eslint-disable-line no-prototype-builtins
           && report.hasOwnProperty('Sensor Value (Parsed)') // eslint-disable-line no-prototype-builtins
         ) {
-          if (report['Sensor Type'] === 'Direction (version 2) ') {
+          if (report['Sensor Type'] === 'Direction (version 2) ' || report['Sensor Type'] === 'Direction (version 2)') {
             return report['Sensor Value (Parsed)'];
           }
         }
