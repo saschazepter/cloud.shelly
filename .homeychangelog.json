@@ -1009,5 +1009,8 @@
   },
   "3.53.1": {
     "en": "Improve BLU TRV update handling"
+  },
+  "3.53.2": {
+    "en": "Fix Wave Door/Window parser for coming Homey update"
   }
 }
