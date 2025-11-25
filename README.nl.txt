@@ -110,6 +110,7 @@ Wall Display (als outlet of thermostaat, alleen op Homey Pro)
 -------------
 Shelly Wall Display
 Shelly Wall Display X2
+Shelly Wall Display XL
 
 Bluetooth
 -------------

@@ -110,6 +110,7 @@ Wall Display (as switch or thermostat, only on Homey Pro)
 -------------
 Shelly Wall Display
 Shelly Wall Display X2
+Shelly Wall Display XL
 
 Bluetooth
 -------------
