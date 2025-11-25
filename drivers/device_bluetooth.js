@@ -25,7 +25,9 @@ class ShellyBluetoothDevice extends Device {
       this.BTH[0x1a] = { n: 'alarm_contact_door', t: this.uint8 };
       this.BTH[0x2e] = { n: 'measure_humidity', t: this.uint8, u: "%" };
       this.BTH[0x45] = { n: 'measure_temperature', t: this.int16, f: 0.1, u: "tC" };
+      this.BTH[0x2c] = { n: 'alarm_vibration', t: this.uint8 };
       this.BTH[0x2d] = { n: 'alarm_contact_window', t: this.uint8 };
+      this.BTH[0x40] = { n: 'measure_distance', t: this.uint16, u: 'mm'}
       this.BTH[0x3a] = { n: 'button', t: this.uint8 };
       this.BTH[0x3f] = { n: 'tilt', t: this.int16, f: 0.1 };
       this.BTH[0x21] = { n: 'alarm_motion', t: this.uint8 };
@@ -81,7 +83,7 @@ class ShellyBluetoothDevice extends Device {
           while (buffer.length > 0) {
             _bth = this.BTH[buffer.at(0)];
             if (typeof _bth === "undefined") {
-              this.error("BTH: Unknown type");
+              this.error(`BTH: Unknown type ${buffer.at(0)}`);
               break;
             }
             buffer = buffer.slice(1);
@@ -178,6 +180,7 @@ class ShellyBluetoothDevice extends Device {
   /* generic full status parser for BLU advertisements send over BLE Proxy websocket messages */
   async parseBluetoothEvents(result = {}) {
     try {
+      this.debug('BLE result', JSON.stringify(result));
 
       if (this.getStoreValue('ble_pid') === null || this.getStoreValue('ble_pid') < result.pid || (result.pid < 10 && this.getStoreValue('ble_pid') > 240) || (this.getStoreValue('ble_pid') - result.pid >= 10)) {
 
@@ -200,15 +203,19 @@ class ShellyBluetoothDevice extends Device {
 
         /* alarm_motion */
         if (result.hasOwnProperty("alarm_motion")) {
-          this.updateCapabilityValue('alarm_motion', result.alarm_motion === 1 ? true : false, channel);
+          this.updateCapabilityValue('alarm_motion', result.alarm_motion === 1, channel);
         }
 
         /* alarm_contact */
         if (result.hasOwnProperty("alarm_contact_door")) {
-          this.updateCapabilityValue('alarm_contact', result.alarm_contact_door === 1 ? true : false, channel);
+          this.updateCapabilityValue('alarm_contact', result.alarm_contact_door === 1, channel);
         }
         if (result.hasOwnProperty("alarm_contact_window")) {
-          this.updateCapabilityValue('alarm_contact', result.alarm_contact_window === 1 ? true : false, channel);
+          this.updateCapabilityValue('alarm_contact', result.alarm_contact_window === 1, channel);
+        }
+
+        if (result.hasOwnProperty("alarm_vibration")) {
+          this.updateCapabilityValue('alarm_vibration', result.alarm_vibration === 1, channel);
         }
 
         /* measure_temperature */
@@ -219,6 +226,11 @@ class ShellyBluetoothDevice extends Device {
         /* measure_humidity */
         if (result.hasOwnProperty("measure_humidity")) {
           this.updateCapabilityValue('measure_humidity', result.measure_humidity, channel);
+        }
+
+        /* measure distance */
+        if (result.hasOwnProperty("measure_distance")) {
+          this.updateCapabilityValue('measure_distance', result.measure_distance / 1000, channel);
         }
 
         /* tilt */
