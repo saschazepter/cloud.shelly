@@ -101,6 +101,7 @@ Shelly 1 Mini Gen4
 Shelly 1PM Gen4
 Shelly 1PM Mini Gen4
 Shelly 2PM Gen4
+Shelly Dimmer Gen4
 Shelly EM Mini Gen4
 Shelly Flood Gen4
 Shelly Power Strip 4 Gen4
