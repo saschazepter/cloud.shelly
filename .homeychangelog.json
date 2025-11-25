@@ -1012,5 +1012,8 @@
   },
   "3.53.2": {
     "en": "Fix Wave Door/Window parser for coming Homey update"
+  },
+  "3.54.0": {
+    "en": "Add support for Dimmer Gen4 and Wall Display XL"
   }
 }
