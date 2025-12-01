@@ -1018,5 +1018,8 @@
   },
   "3.55.0": {
     "en": "Add support for Plug PM Gen3"
+  },
+  "3.56.0": {
+    "en": "Add support for EM Gen4 in Zigbee mode"
   }
 }
