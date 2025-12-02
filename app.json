@@ -4531,8 +4531,7 @@
         "measure_current",
         "measure_frequency",
         "measure_power",
-        "measure_voltage",
-        "onoff"
+        "measure_voltage"
       ],
       "matter": {
         "vendorId": 5264,
