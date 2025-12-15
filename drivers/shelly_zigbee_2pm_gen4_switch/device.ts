@@ -1,14 +1,14 @@
-import {ZigBeeDevice} from 'homey-zigbeedriver';
-import {ZigBeeNode} from 'homey';
-import {OnOffCluster, ZCLNode} from 'zigbee-clusters';
-import initOnOffDevice from '@drenso/homey-zigbee-library/capabilities/onOff';
-import initMeteringDevice from '@drenso/homey-zigbee-library/capabilities/metering';
 import initElectricalMeasurementDevice
   from '@drenso/homey-zigbee-library/capabilities/electricalMeasurement';
+import initMeteringDevice from '@drenso/homey-zigbee-library/capabilities/metering';
+import initOnOffDevice from '@drenso/homey-zigbee-library/capabilities/onOff';
+import {ZigBeeNode} from 'homey';
+import {OnOffCluster, ZCLNode} from 'zigbee-clusters';
+import ShellyZigbeeDevice from '../../lib/device/zigbee/ShellyZigbeeDevice';
 
-module.exports = class Shelly2PMGen4SwitchZigbeeDevice extends ZigBeeDevice {
+module.exports = class Shelly2PMGen4SwitchZigbeeDevice extends ShellyZigbeeDevice {
 
-  async onNodeInit(payload: { zclNode: ZCLNode; node: ZigBeeNode}): Promise<void> {
+  async onNodeInit(payload: { zclNode: ZCLNode; node: ZigBeeNode }): Promise<void> {
     await super.onNodeInit(payload);
     try {
       await this.zclNode.endpoints[1].clusters[OnOffCluster.NAME]?.readAttributes(['onOff']);

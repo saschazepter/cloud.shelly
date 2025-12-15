@@ -1,12 +1,12 @@
-import {ZigBeeDevice} from 'homey-zigbeedriver';
+import initWindowCoveringsDevice from '@drenso/homey-zigbee-library/capabilities/windowCoverings';
+import WindowCoveringCluster from '@drenso/homey-zigbee-library/lib/clusters/WindowCoveringCluster';
 import {ZigBeeNode} from 'homey';
 import {ZCLNode} from 'zigbee-clusters';
-import initWindowCoveringsDevice from "@drenso/homey-zigbee-library/capabilities/windowCoverings";
-import WindowCoveringCluster from "@drenso/homey-zigbee-library/lib/clusters/WindowCoveringCluster";
+import ShellyZigbeeDevice from '../../lib/device/zigbee/ShellyZigbeeDevice';
 
-module.exports = class Shelly1PMGen4ZigbeeDevice extends ZigBeeDevice {
+module.exports = class Shelly1PMGen4ZigbeeDevice extends ShellyZigbeeDevice {
 
-  async onNodeInit(payload: { zclNode: ZCLNode; node: ZigBeeNode}): Promise<void> {
+  async onNodeInit(payload: { zclNode: ZCLNode; node: ZigBeeNode }): Promise<void> {
     await super.onNodeInit(payload);
 
     try {

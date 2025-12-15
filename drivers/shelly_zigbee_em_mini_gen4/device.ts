@@ -1,11 +1,11 @@
-import {ZigBeeDevice} from 'homey-zigbeedriver';
-import {ZigBeeNode} from 'homey';
-import {ZCLNode} from 'zigbee-clusters';
-import initMeteringDevice from '@drenso/homey-zigbee-library/capabilities/metering';
 import initElectricalMeasurementDevice
   from '@drenso/homey-zigbee-library/capabilities/electricalMeasurement';
+import initMeteringDevice from '@drenso/homey-zigbee-library/capabilities/metering';
+import {ZigBeeNode} from 'homey';
+import {ZCLNode} from 'zigbee-clusters';
+import ShellyZigbeeDevice from '../../lib/device/zigbee/ShellyZigbeeDevice';
 
-module.exports = class ShellyEMMiniGen4ZigbeeDevice extends ZigBeeDevice {
+module.exports = class ShellyEMMiniGen4ZigbeeDevice extends ShellyZigbeeDevice {
 
   async onNodeInit(payload: { zclNode: ZCLNode; node: ZigBeeNode}): Promise<void> {
     await super.onNodeInit(payload);
