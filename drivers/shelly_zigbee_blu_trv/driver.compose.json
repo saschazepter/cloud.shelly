@@ -1,0 +1,60 @@
+{
+  "$extends": [
+    "zigbee"
+  ],
+  "name": {
+    "en": "Shelly BLU TRV (Zigbee)"
+  },
+  "class": "thermostat",
+  "capabilities": [
+    "thermostat_mode",
+    "measure_temperature",
+    "target_temperature",
+    "measure_battery",
+    "alarm_problem"
+  ],
+  "capability_options": {
+    "alarm_problem": {
+      "title": {
+        "en": "Calibration issue"
+      }
+    },
+    "target_temperature": {
+      "max": 30
+    }
+  },
+  "energy": {
+    "batteries": [
+      "AA",
+      "AA"
+    ]
+  },
+  "zigbee": {
+    "manufacturerName": "Shelly",
+    "productId": [
+      "BLU TRV"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          1,
+          8,
+          513,
+          1026,
+          1030
+        ],
+        "bindings": [
+          8,
+          513,
+          1026,
+          1030
+        ]
+      }
+    },
+    "learnmode": {
+      "instruction": {
+        "en": "Press the reset button three times to initialize Zigbee pairing. The display will show ZbE when in pairing mode."
+      }
+    }
+  }
+}

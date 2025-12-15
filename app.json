@@ -22351,6 +22351,98 @@
         "zigbee"
       ],
       "images": {
+        "large": "/drivers/shelly_zigbee_blu_trv/assets/images/large.png",
+        "small": "/drivers/shelly_zigbee_blu_trv/assets/images/small.png"
+      },
+      "icon": "/drivers/shelly_zigbee_blu_trv/assets/icon.svg",
+      "name": {
+        "en": "Shelly BLU TRV (Zigbee)"
+      },
+      "class": "thermostat",
+      "capabilities": [
+        "thermostat_mode",
+        "measure_temperature",
+        "target_temperature",
+        "measure_battery",
+        "alarm_problem"
+      ],
+      "capability_options": {
+        "alarm_problem": {
+          "title": {
+            "en": "Calibration issue"
+          }
+        },
+        "target_temperature": {
+          "max": 30
+        }
+      },
+      "energy": {
+        "batteries": [
+          "AA",
+          "AA"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": "Shelly",
+        "productId": [
+          "BLU TRV"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              1,
+              8,
+              513,
+              1026,
+              1030
+            ],
+            "bindings": [
+              8,
+              513,
+              1026,
+              1030
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "Press the reset button three times to initialize Zigbee pairing. The display will show ZbE when in pairing mode."
+          }
+        }
+      },
+      "id": "shelly_zigbee_blu_trv",
+      "settings": [
+        {
+          "id": "minSetpoint",
+          "type": "number",
+          "value": 4,
+          "min": 4,
+          "max": 30,
+          "label": {
+            "en": "Minimum setpoint"
+          }
+        },
+        {
+          "id": "maxSetpoint",
+          "type": "number",
+          "value": 30,
+          "min": 4,
+          "max": 30,
+          "label": {
+            "en": "Maximum setpoint"
+          }
+        }
+      ]
+    },
+    {
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
         "large": "/drivers/shelly_zigbee_em_mini_gen4/assets/images/large.png",
         "small": "/drivers/shelly_zigbee_em_mini_gen4/assets/images/small.png"
       },
