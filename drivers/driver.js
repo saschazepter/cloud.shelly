@@ -66,7 +66,7 @@ class ShellyDriver extends Homey.Driver {
         if (devices.length > 0) {
           return devices;
         } else {
-          session.showView('select_pairing');
+          await session.showView('select_pairing');
         }
       } catch (error) {
         this.error(error);
@@ -206,9 +206,9 @@ class ShellyDriver extends Homey.Driver {
           }
 
           if (auth) {
-            session.showView('login_credentials');
+            await session.showView('login_credentials');
           } else {
-            session.showView('icon_select');
+            await session.showView('icon_select');
           }
         }
       } catch (error) {
