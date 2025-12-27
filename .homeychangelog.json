@@ -1021,5 +1021,8 @@
   },
   "3.56.0": {
     "en": "Add support for EM Gen4 in Zigbee mode"
+  },
+  "3.57.0": {
+    "en": "Add support for BLU Distance and Wave Outdoor Plug S"
   }
 }
