@@ -116,6 +116,7 @@ Shelly Wall Display XL
 Bluetooth
 -------------
 Shelly BLU Button 1
+Shelly BLU Distance
 Shelly BLU DoorWindow
 Shelly BLU Motion
 Shelly BLU Gateway (BLE to WiFi)
@@ -145,6 +146,7 @@ Shelly Wave Pro 3
 Shelly Wave Pro Dimmer 1PM
 Shelly Wave Pro Dimmer 2PM
 Shelly Wave Pro Shutter
+Shelly Wave Outdoor Plug S
 Shelly Wave Shutter
 
 Zigbee
