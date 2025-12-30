@@ -10,8 +10,10 @@ export async function getIp(homey: HomeyType): Promise<string> {
   } else {
     ip = await homey.cloud.getLocalAddress();
     // Homey adds a port, so remove that
-    // Old implement was always removing the last three characters, so keep using that for now
-    ip = ip.slice(0, -3);
+    const lastColon = ip.lastIndexOf(':');
+    if (lastColon !== -1) {
+      ip = ip.substring(0, lastColon);
+    }
   }
 
   if (lastLoggedIp !== ip) {
