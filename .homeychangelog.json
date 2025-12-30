@@ -1024,5 +1024,8 @@
   },
   "3.57.0": {
     "en": "Add support for BLU Distance and Wave Outdoor Plug S"
+  },
+  "3.57.1": {
+    "en": "Fix incorrect websocket/ColoT ports when used with SHS"
   }
 }
