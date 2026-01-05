@@ -19,12 +19,12 @@
   "homepage": "https://homey.app/a/cloud.shelly",
   "scripts": {
     "homey": "homey",
-    "compile": "tsc",
+    "build": "tsc",
     "lint": "eslint --ext .ts --ignore-path .gitignore .",
     "fix": "eslint --fix --ext .ts .",
     "validate": "homey app validate --level=verified",
     "prep": "homey-branding-helper prepare shelly",
-    "build": "homey-branding-helper prepare shelly && homey app build",
+    "build_shelly": "homey-branding-helper prepare shelly && homey app build",
     "publish": "homey-branding-helper publish",
     "run": "homey-branding-helper run shelly"
   },
