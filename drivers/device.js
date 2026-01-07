@@ -13,7 +13,7 @@ class ShellyDevice extends Homey.Device {
       if (!this.util) this.util = new Util({homey: this.homey});
 
       // VARIABLES GENERIC
-      this.bluetoothScriptVersion = 6;
+      this.bluetoothScriptVersion = 7;
       this.pollingFailures = 0;
 
       // ADDING CAPABILITY LISTENERS
