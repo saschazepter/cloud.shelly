@@ -1027,5 +1027,8 @@
   },
   "3.57.1": {
     "en": "Fix incorrect websocket/ColoT ports when used with SHS"
+  },
+  "3.57.2": {
+    "en": "Update BLE Proxy script to support BLU Distance correctly"
   }
 }
