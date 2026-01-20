@@ -1030,5 +1030,8 @@
   },
   "3.57.2": {
     "en": "Update BLE Proxy script to support BLU Distance correctly"
+  },
+  "3.57.3": {
+    "en": "Improve Power Strip 4 discovery"
   }
 }
