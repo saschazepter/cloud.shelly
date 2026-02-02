@@ -1036,5 +1036,8 @@
   },
   "3.58.0": {
     "en": "Add support for BLU Wall Switch 4 ZB DK"
+  },
+  "3.58.1": {
+    "en": "Add new event id for BLE hold action"
   }
 }
