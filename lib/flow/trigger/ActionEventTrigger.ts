@@ -214,6 +214,7 @@ const eventMap: {
     '3': 'triple_shortpush',
     '4': 'longpush',
     '5': 'very_longpush',
+    '128': 'hold',
     '254': 'hold',
   },
   'zwave': {
