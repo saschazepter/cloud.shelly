@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@drenso/homey-log": "10.38.0",
-    "@drenso/homey-zigbee-library": "0.25.0",
+    "@drenso/homey-zigbee-library": "0.25.1",
     "axios": "1.13.5",
     "crypto": "1.0.1",
     "homey-lib": "2.44.4",
