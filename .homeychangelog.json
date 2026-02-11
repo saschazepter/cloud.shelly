@@ -1042,5 +1042,8 @@
   },
   "3.58.2": {
     "en": "Resolve issue with certain power strip configurations"
+  },
+  "3.59.0": {
+    "en": "Add Power Strip 4 Gen4 Zigbee support"
   }
 }
