@@ -1045,5 +1045,8 @@
   },
   "3.59.0": {
     "en": "Add Power Strip 4 Gen4 Zigbee support"
+  },
+  "3.60.0": {
+    "en": "Add support for Powered By Shelly Ogemray 25A"
   }
 }
