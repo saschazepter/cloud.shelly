@@ -18959,6 +18959,25 @@
         ]
       ]
     },
+    "shellypbs": {
+      "type": "mdns-sd",
+      "mdns-sd": {
+        "name": "shelly",
+        "protocol": "tcp"
+      },
+      "id": "{{host}}",
+      "conditions": [
+        [
+          {
+            "field": "txt.app",
+            "match": {
+              "type": "string",
+              "value": "Ogemray25"
+            }
+          }
+        ]
+      ]
+    },
     "shellyx": {
       "type": "mdns-sd",
       "mdns-sd": {

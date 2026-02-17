@@ -113,6 +113,10 @@ Shelly Wall Display
 Shelly Wall Display X2
 Shelly Wall Display XL
 
+Powered By Shelly
+-------------
+Ogemray 25A
+
 Bluetooth
 -------------
 Shelly BLU Button 1

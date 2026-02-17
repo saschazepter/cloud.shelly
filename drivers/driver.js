@@ -18,7 +18,10 @@ class ShellyDriver extends Homey.Driver {
     const discoveryStrategyX = this.homey.discovery.getStrategy("shellyx");
     const discoveryResultsX = discoveryStrategyX.getDiscoveryResults();
 
-    const discoveryResultsMerged = {...discoveryResults, ...discoveryResultsX};
+    const discoveryStrategyPbs = this.homey.discovery.getStrategy("shellypbs");
+    const discoveryResultsPbs = discoveryStrategyPbs.getDiscoveryResults();
+
+    const discoveryResultsMerged = {...discoveryResults, ...discoveryResultsX, ...discoveryResultsPbs};
 
     session.setHandler('list_devices', async (data) => {
       try {
