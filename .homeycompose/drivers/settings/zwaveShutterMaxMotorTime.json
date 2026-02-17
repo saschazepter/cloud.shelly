@@ -18,7 +18,7 @@
     "nl": "Wanneer het rolluik niet is gekalibreerd (of de motor niet is uitgerust met een eindschakelaar), definieert deze parameter de bewegingstijd van de motor."
   },
   "zwave": {
-    "index": 91,
+    "index": 81,
     "size": 2
   }
 }
