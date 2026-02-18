@@ -1048,5 +1048,8 @@
   },
   "3.60.0": {
     "en": "Add support for Powered By Shelly Ogemray 25A"
+  },
+  "3.61.0": {
+    "en": "Add support for Wave shutters with latest firmware version"
   }
 }
