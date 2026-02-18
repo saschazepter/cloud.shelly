@@ -1,3 +1,4 @@
 {
-  "GHSA-75v8-2h7p-7m2m": "Severity low and actually not directly utilised by the app"
+  "GHSA-75v8-2h7p-7m2m": "Severity low and actually not directly utilised by the app",
+  "GHSA-2g4f-4pwh-qvx6": "Cannot be fixed as it is a dependency from homey-lib, has no impact on this app"
 }
