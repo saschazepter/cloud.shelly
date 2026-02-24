@@ -66,8 +66,9 @@
       }
     },
     "learnmode": {
+      "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
-        "en": "Press the reset button three times to initialize Zigbee pairing. The display will show ZbP when in pairing mode."
+        "en": "Press the reset button three times to initialize Zigbee pairing. You can also activate the menu by turning the knob in quick short movements for less than 10 steps CCW > CW > CCW> CW (start in either direction) to access the user menu and select ZbP (5 steps CW). The display will blink ZbP when in Zigbee pairing mode."
       }
     }
   }
