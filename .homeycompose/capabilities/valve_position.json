@@ -2,7 +2,7 @@
   "type": "number",
   "title": {
     "en": "Valve position",
-    "nl": "Afsluitklep positie"
+    "nl": "Afsluitkleppositie"
   },
   "getable": true,
   "setable": true,

@@ -22364,16 +22364,27 @@
         "measure_temperature",
         "target_temperature",
         "measure_battery",
-        "alarm_problem"
+        "alarm_problem",
+        "button.calibrate"
       ],
-      "capability_options": {
+      "capabilitiesOptions": {
         "alarm_problem": {
           "title": {
             "en": "Calibration issue"
           }
         },
         "target_temperature": {
-          "max": 30
+          "max": 30,
+          "step": 0.1
+        },
+        "thermostat_mode": {
+          "uiComponent": null
+        },
+        "button.calibrate": {
+          "maintenanceAction": true,
+          "title": {
+            "en": "Start calibration"
+          }
         }
       },
       "energy": {
@@ -22390,14 +22401,17 @@
         "endpoints": {
           "1": {
             "clusters": [
+              0,
               1,
-              8,
+              3,
+              4,
+              5,
               513,
               1026,
-              1030
+              1030,
+              64548
             ],
             "bindings": [
-              8,
               513,
               1026,
               1030
@@ -22406,7 +22420,7 @@
         },
         "learnmode": {
           "instruction": {
-            "en": "Press the reset button three times to initialize Zigbee pairing. The display will show ZbE when in pairing mode."
+            "en": "Press the reset button three times to initialize Zigbee pairing. The display will show ZbP when in pairing mode."
           }
         }
       },
@@ -23429,7 +23443,7 @@
       "type": "number",
       "title": {
         "en": "Valve position",
-        "nl": "Afsluitklep positie"
+        "nl": "Afsluitkleppositie"
       },
       "getable": true,
       "setable": true,

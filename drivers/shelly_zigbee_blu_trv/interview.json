@@ -12,7 +12,7 @@
       {
         "status": "SUCCESS",
         "nwkAddrOfInterest": 63243,
-        "_reserved": 26,
+        "_reserved": 28,
         "endpointId": 1,
         "applicationProfileId": 260,
         "applicationDeviceId": 769,
@@ -23,8 +23,9 @@
           1,
           3,
           4,
-          8,
-          513
+          5,
+          513,
+          64548
         ],
         "outputClusters": [
           3,
@@ -35,7 +36,7 @@
     ],
     "deviceType": "enddevice",
     "receiveWhenIdle": false,
-    "swBuildId": "1.0.0",
+    "swBuildId": "1.3.2",
     "capabilities": {
       "alternatePANCoordinator": false,
       "deviceType": false,
@@ -117,20 +118,9 @@
                   "readable",
                   "reportable"
                 ],
-                "id": 12,
-                "reportingConfiguration": {
-                  "status": "NOT_FOUND",
-                  "direction": "reported"
-                }
-              },
-              {
-                "acl": [
-                  "readable",
-                  "reportable"
-                ],
                 "id": 16384,
                 "name": "swBuildId",
-                "value": "1.0.0",
+                "value": "1.3.2",
                 "reportingConfiguration": {
                   "status": "NOT_FOUND",
                   "direction": "reported"
@@ -168,9 +158,9 @@
                 "reportingConfiguration": {
                   "direction": "reported",
                   "attributeDataType": 32,
-                  "minInterval": 1800,
-                  "maxInterval": 7200,
-                  "minChange": 5,
+                  "minInterval": 60,
+                  "maxInterval": 600,
+                  "minChange": 2,
                   "status": "SUCCESS"
                 }
               },
@@ -279,7 +269,7 @@
               "addGroupIfIdentify"
             ]
           },
-          "levelControl": {
+          "scenes": {
             "attributes": [
               {
                 "acl": [
@@ -287,15 +277,53 @@
                   "reportable"
                 ],
                 "id": 0,
-                "name": "currentLevel",
-                "value": 0,
                 "reportingConfiguration": {
-                  "direction": "reported",
-                  "attributeDataType": 32,
-                  "minInterval": 60,
-                  "maxInterval": 600,
-                  "minChange": 1,
-                  "status": "SUCCESS"
+                  "status": "NOT_FOUND",
+                  "direction": "reported"
+                }
+              },
+              {
+                "acl": [
+                  "readable",
+                  "reportable"
+                ],
+                "id": 1,
+                "reportingConfiguration": {
+                  "status": "NOT_FOUND",
+                  "direction": "reported"
+                }
+              },
+              {
+                "acl": [
+                  "readable",
+                  "reportable"
+                ],
+                "id": 2,
+                "reportingConfiguration": {
+                  "status": "NOT_FOUND",
+                  "direction": "reported"
+                }
+              },
+              {
+                "acl": [
+                  "readable",
+                  "reportable"
+                ],
+                "id": 3,
+                "reportingConfiguration": {
+                  "status": "NOT_FOUND",
+                  "direction": "reported"
+                }
+              },
+              {
+                "acl": [
+                  "readable",
+                  "reportable"
+                ],
+                "id": 4,
+                "reportingConfiguration": {
+                  "status": "NOT_FOUND",
+                  "direction": "reported"
                 }
               },
               {
@@ -312,16 +340,22 @@
                 }
               }
             ],
-            "commandsGenerated": [],
+            "commandsGenerated": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
             "commandsReceived": [
-              "moveToLevel",
-              "move",
-              "step",
-              "stop",
-              "moveToLevelWithOnOff",
-              "moveWithOnOff",
-              "stepWithOnOff",
-              "stopWithOnOff"
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
             ]
           },
           "thermostat": {
@@ -333,15 +367,7 @@
                 ],
                 "id": 0,
                 "name": "localTemperature",
-                "value": 2228,
-                "reportingConfiguration": {
-                  "direction": "reported",
-                  "attributeDataType": 41,
-                  "minInterval": 30,
-                  "maxInterval": 300,
-                  "minChange": 5,
-                  "status": "SUCCESS"
-                }
+                "value": 2203
               },
               {
                 "acl": [
@@ -355,10 +381,6 @@
                   "data": [
                     1
                   ]
-                },
-                "reportingConfiguration": {
-                  "status": "NOT_FOUND",
-                  "direction": "reported"
                 }
               },
               {
@@ -368,11 +390,7 @@
                 ],
                 "id": 3,
                 "name": "absMinHeatSetpointLimit",
-                "value": 400,
-                "reportingConfiguration": {
-                  "status": "NOT_FOUND",
-                  "direction": "reported"
-                }
+                "value": 400
               },
               {
                 "acl": [
@@ -381,11 +399,7 @@
                 ],
                 "id": 4,
                 "name": "absMaxHeatSetpointLimit",
-                "value": 3000,
-                "reportingConfiguration": {
-                  "status": "NOT_FOUND",
-                  "direction": "reported"
-                }
+                "value": 3000
               },
               {
                 "acl": [
@@ -394,15 +408,7 @@
                 ],
                 "id": 8,
                 "name": "pIHeatingDemand",
-                "value": 0,
-                "reportingConfiguration": {
-                  "direction": "reported",
-                  "attributeDataType": 32,
-                  "minInterval": 30,
-                  "maxInterval": 300,
-                  "minChange": 5,
-                  "status": "SUCCESS"
-                }
+                "value": 100
               },
               {
                 "acl": [
@@ -412,11 +418,7 @@
                 ],
                 "id": 16,
                 "name": "localTemperatureCalibration",
-                "value": 0,
-                "reportingConfiguration": {
-                  "status": "NOT_FOUND",
-                  "direction": "reported"
-                }
+                "value": 0
               },
               {
                 "acl": [
@@ -426,11 +428,7 @@
                 ],
                 "id": 18,
                 "name": "occupiedHeatingSetpoint",
-                "value": 400,
-                "reportingConfiguration": {
-                  "status": "NOT_FOUND",
-                  "direction": "reported"
-                }
+                "value": 2460
               },
               {
                 "acl": [
@@ -440,11 +438,7 @@
                 ],
                 "id": 20,
                 "name": "unoccupiedHeatingSetpoint",
-                "value": 400,
-                "reportingConfiguration": {
-                  "status": "NOT_FOUND",
-                  "direction": "reported"
-                }
+                "value": 1300
               },
               {
                 "acl": [
@@ -454,11 +448,7 @@
                 ],
                 "id": 21,
                 "name": "minHeatSetpointLimit",
-                "value": 400,
-                "reportingConfiguration": {
-                  "status": "NOT_FOUND",
-                  "direction": "reported"
-                }
+                "value": 1300
               },
               {
                 "acl": [
@@ -468,11 +458,7 @@
                 ],
                 "id": 22,
                 "name": "maxHeatSetpointLimit",
-                "value": 3000,
-                "reportingConfiguration": {
-                  "status": "NOT_FOUND",
-                  "direction": "reported"
-                }
+                "value": 2500
               },
               {
                 "acl": [
@@ -485,12 +471,8 @@
                 "value": {
                   "type": "Buffer",
                   "data": [
-                    4
+                    0
                   ]
-                },
-                "reportingConfiguration": {
-                  "status": "NOT_FOUND",
-                  "direction": "reported"
                 }
               },
               {
@@ -501,11 +483,7 @@
                 ],
                 "id": 27,
                 "name": "controlSequenceOfOperation",
-                "value": "heating",
-                "reportingConfiguration": {
-                  "status": "NOT_FOUND",
-                  "direction": "reported"
-                }
+                "value": "heating"
               },
               {
                 "acl": [
@@ -515,11 +493,7 @@
                 ],
                 "id": 28,
                 "name": "systemMode",
-                "value": "heat",
-                "reportingConfiguration": {
-                  "status": "NOT_FOUND",
-                  "direction": "reported"
-                }
+                "value": "heat"
               },
               {
                 "acl": [
@@ -531,12 +505,8 @@
                 "value": {
                   "type": "Buffer",
                   "data": [
-                    4
+                    0
                   ]
-                },
-                "reportingConfiguration": {
-                  "status": "NOT_FOUND",
-                  "direction": "reported"
                 }
               },
               {
@@ -546,11 +516,7 @@
                 ],
                 "id": 65533,
                 "name": "clusterRevision",
-                "value": 3,
-                "reportingConfiguration": {
-                  "status": "NOT_FOUND",
-                  "direction": "reported"
-                }
+                "value": 3
               }
             ],
             "commandsGenerated": [],
