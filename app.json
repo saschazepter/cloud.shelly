@@ -6837,7 +6837,8 @@
           129,
           130
         ],
-        "associationGroups": [
+        "associationGroups": [],
+        "associationGroupsMultiChannel": [
           1
         ],
         "learnmode": {
