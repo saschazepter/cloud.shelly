@@ -1060,5 +1060,8 @@
   },
   "3.61.3": {
     "en": "Add support for Wave shutters with latest firmware version"
+  },
+  "3.62.0": {
+    "en": "Add support for BLU TRV in Zigbee mode, update Wave i4 pairing process"
   }
 }
