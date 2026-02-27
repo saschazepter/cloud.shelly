@@ -90,6 +90,7 @@ Shelly EM Gen3
 Shelly Humidity/Temperature Gen3
 Shelly i4 Gen3
 Shelly Outdoor Plug S Gen3
+Shelly Plug M Gen3
 Shelly Plug PM Gen3
 Shelly Plug S Gen3
 Shelly PM Mini Gen3
