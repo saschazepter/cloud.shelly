@@ -36,7 +36,7 @@
     "homey-lib": "2.46.1",
     "homey-oauth2app": "3.6.0",
     "homey-zigbeedriver": "2.2.16",
-    "homey-zwavedriver": "2.2.1",
+    "homey-zwavedriver": "2.2.3",
     "http-auth-client": "0.4.1",
     "jwt-decode": "4.0.0",
     "shellies": "alexryd/node-shellies#296731709c789eb01ea07b4c837d70c8f7f23539",
