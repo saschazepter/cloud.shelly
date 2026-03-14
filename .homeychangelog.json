@@ -1066,5 +1066,8 @@
   },
   "3.63.0": {
     "en": "Add support for Plug M Gen3"
+  },
+  "3.63.1": {
+    "en": "Add additional identifier for Plus RGBW PM"
   }
 }
