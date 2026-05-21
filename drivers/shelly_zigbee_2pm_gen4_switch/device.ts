@@ -1,7 +1,7 @@
 import initElectricalMeasurementDevice
-  from '@drenso/homey-zigbee-library/capabilities/electricalMeasurement';
-import initMeteringDevice from '@drenso/homey-zigbee-library/capabilities/metering';
-import initOnOffDevice from '@drenso/homey-zigbee-library/capabilities/onOff';
+  from '@drenso/homey-zigbee-library/capabilities/electricalMeasurement.mjs';
+import initMeteringDevice from '@drenso/homey-zigbee-library/capabilities/metering.mjs';
+import initOnOffDevice from '@drenso/homey-zigbee-library/capabilities/onOff.mjs';
 import {ZigBeeNode} from 'homey';
 import {OnOffCluster, ZCLNode} from 'zigbee-clusters';
 import ShellyZigbeeDevice from '../../lib/device/zigbee/ShellyZigbeeDevice';

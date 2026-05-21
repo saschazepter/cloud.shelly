@@ -1,4 +1,4 @@
-import initOnOffDevice from '@drenso/homey-zigbee-library/capabilities/onOff';
+import initOnOffDevice from '@drenso/homey-zigbee-library/capabilities/onOff.mjs';
 import {ZigBeeNode} from 'homey';
 import {ZCLNode} from 'zigbee-clusters';
 import ShellyZigbeeDevice from '../../lib/device/zigbee/ShellyZigbeeDevice';

@@ -1,6 +1,6 @@
 import initPowerConfigurationDevice
-  from '@drenso/homey-zigbee-library/capabilities/powerConfiguration';
-import initIasZoneDevice from '@drenso/homey-zigbee-library/lib/iasZoneDevice';
+  from '@drenso/homey-zigbee-library/capabilities/powerConfiguration.mjs';
+import initIasZoneDevice from '@drenso/homey-zigbee-library/lib/iasZoneDevice.mjs';
 import {ZigBeeNode} from 'homey';
 import {ZCLNode} from 'zigbee-clusters';
 import ShellyZigbeeDevice from '../../lib/device/zigbee/ShellyZigbeeDevice';

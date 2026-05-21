@@ -1,10 +1,10 @@
 import {ZigBeeDevice} from 'homey-zigbeedriver';
 import Homey, {ZigBeeNode} from 'homey';
 import {ZCLNode, debug} from 'zigbee-clusters';
-import initOnOffDevice from '@drenso/homey-zigbee-library/capabilities/onOff';
-import initMeteringDevice from '@drenso/homey-zigbee-library/capabilities/metering';
+import initOnOffDevice from '@drenso/homey-zigbee-library/capabilities/onOff.mjs';
+import initMeteringDevice from '@drenso/homey-zigbee-library/capabilities/metering.mjs';
 import initElectricalMeasurementDevice
-  from '@drenso/homey-zigbee-library/capabilities/electricalMeasurement';
+  from '@drenso/homey-zigbee-library/capabilities/electricalMeasurement.mjs';
 
 module.exports = class ShellyPowerStrip4Gen4ZigbeeDevice extends ZigBeeDevice {
 

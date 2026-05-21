@@ -1,5 +1,5 @@
-import initWindowCoveringsDevice from '@drenso/homey-zigbee-library/capabilities/windowCoverings';
 import WindowCoveringCluster from '@drenso/homey-zigbee-library/lib/clusters/WindowCoveringCluster';
+import initWindowCoveringsDevice from '@drenso/homey-zigbee-library/capabilities/windowCoverings.mjs';
 import {ZigBeeNode} from 'homey';
 import {ZCLNode} from 'zigbee-clusters';
 import ShellyZigbeeDevice from '../../lib/device/zigbee/ShellyZigbeeDevice';

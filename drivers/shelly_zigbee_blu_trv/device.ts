@@ -1,12 +1,12 @@
 import initMeasureTemperatureDevice
-  from '@drenso/homey-zigbee-library/capabilities/measureTemperature';
+  from '@drenso/homey-zigbee-library/capabilities/measureTemperature.mjs';
 import initTargetTemperatureDevice
-  from '@drenso/homey-zigbee-library/capabilities/targetTemperature';
+  from '@drenso/homey-zigbee-library/capabilities/targetTemperature.mjs';
 import {ZigBeeNode} from 'homey';
 import {type Bitmap, Cluster, CLUSTER, ZCLNode} from 'zigbee-clusters';
 import ShellyZigbeeDevice from '../../lib/device/zigbee/ShellyZigbeeDevice';
 import ShellyCustomTRVCluster from "../../lib/cluster/ShellyCustomTRVCluster";
-import {initReadOnlyCapability} from "@drenso/homey-zigbee-library/lib/attributeDevice";
+import {initReadOnlyCapability} from "@drenso/homey-zigbee-library/lib/attributeDevice.mjs";
 
 type BluTrvAlarmMask = Bitmap<['initializationFailure', 'hardwareFailure', 'selfCalibrationFailure']>;
 
