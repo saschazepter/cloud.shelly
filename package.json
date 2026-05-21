@@ -29,6 +29,7 @@
     "run": "homey-branding-helper run shelly"
   },
   "dependencies": {
+    "@athombv/data-types": "1.2.2",
     "@drenso/homey-log": "10.5301.0",
     "@drenso/homey-zigbee-library": "2.2.1",
     "axios": "1.16.1",
