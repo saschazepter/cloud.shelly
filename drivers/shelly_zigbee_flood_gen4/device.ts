@@ -9,7 +9,7 @@ module.exports = class ShellyFloodGen4ZigbeeDevice extends ShellyZigbeeDevice {
 
   async onNodeInit(payload: { zclNode: ZCLNode; node: ZigBeeNode }): Promise<void> {
     await initPowerConfigurationDevice(this, payload.zclNode)
-      .catch(e => this.error('Power configuration init failed', e));
+      .catch((e: Error) => this.error('Power configuration init failed', e));
 
     await initIasZoneDevice(
       this,
@@ -18,7 +18,7 @@ module.exports = class ShellyFloodGen4ZigbeeDevice extends ShellyZigbeeDevice {
       ['alarm1'],
       undefined,
       this.isFirstInit(),
-    ).catch(e => this.error('IAS Zone init failed', e));
+    ).catch((e: Error) => this.error('IAS Zone init failed', e));
 
     await super.onNodeInit(payload);
   }

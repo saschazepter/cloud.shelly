@@ -1,5 +1,4 @@
 import { Cluster, ZCLDataTypes } from 'zigbee-clusters';
-import {DefaultResponseCommand} from '@drenso/homey-zigbee-library/lib/clusters/ZCL';
 
 const Attributes = {
   manualMode: {
@@ -24,7 +23,7 @@ const CommandsReceived = {
   },
 } as const;
 
-class ShellyCustomTRVCluster extends Cluster {
+class ShellyCustomTRVCluster extends Cluster<typeof Attributes, typeof CommandsReceived> {
   static get ID(): number {
     return 0xFC24;
   }
@@ -41,27 +40,6 @@ class ShellyCustomTRVCluster extends Cluster {
     return {
       ...CommandsReceived,
     };
-  }
-
-  readAttributes<T extends keyof typeof Attributes>(
-    attributeNames: T[],
-    opts?: { timeout: number },
-  ): Promise<{
-    [p in T]: (typeof Attributes)[p]['type'];
-  }> {
-    return super.readAttributes(attributeNames, opts) as unknown as Promise<{
-      [p in T]: (typeof Attributes)[p]['type'];
-    }>;
-  }
-
-  writeAttributes<T extends keyof typeof Attributes>(attributes: {
-    [p in T]: (typeof Attributes)[p]['type'];
-  }): Promise<{
-    [p in T]: DefaultResponseCommand;
-  }> {
-    return super.writeAttributes(attributes) as unknown as Promise<{
-      [p in T]: DefaultResponseCommand;
-    }>;
   }
 }
 
