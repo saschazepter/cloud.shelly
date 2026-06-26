@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@athombv/data-types": "1.2.2",
-    "@drenso/homey-log": "10.6000.0",
+    "@drenso/homey-log": "10.6100.0",
     "@drenso/homey-zigbee-library": "2.3.1",
     "axios": "1.18.0",
     "crypto": "1.0.1",
