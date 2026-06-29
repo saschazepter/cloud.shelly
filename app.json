@@ -3067,8 +3067,8 @@
           "nl": "Update device class [voor geadvanceerde gebruikers]"
         },
         "titleFormatted": {
-          "en": "Update device class to [[class]]",
-          "nl": "Wijzig device class naar [[class]]"
+          "en": "Update device class to [[class]] for [[device]]",
+          "nl": "Wijzig device class naar [[class]] voor [[device]]"
         },
         "hint": {
           "en": "Only use this card if you know what you are doing as updating the device class can have unwanted side effects.",
@@ -3089,10 +3089,7 @@
           },
           {
             "name": "device",
-            "type": "device",
-            "filter": {
-              "driver_id": "shelly|shelly_cloud"
-            }
+            "type": "device"
           }
         ],
         "platforms": [
