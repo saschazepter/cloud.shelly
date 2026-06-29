@@ -3089,7 +3089,11 @@
           },
           {
             "name": "device",
-            "type": "device"
+            "type": "device",
+            "title": {
+              "en": "Device",
+              "nl": "Apparaat"
+            }
           }
         ],
         "platforms": [
