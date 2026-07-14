@@ -31,7 +31,7 @@
   "dependencies": {
     "@athombv/data-types": "1.2.2",
     "@drenso/homey-log": "10.6500.0",
-    "@drenso/homey-zigbee-library": "2.4.1",
+    "@drenso/homey-zigbee-library": "2.4.2",
     "axios": "1.18.1",
     "crypto": "1.0.1",
     "homey-lib": "2.51.1",
