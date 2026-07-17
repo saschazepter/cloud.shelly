@@ -1075,5 +1075,8 @@
   },
   "3.64.0": {
     "en": "Maintenance update"
+  },
+  "3.64.1": {
+    "en": "Fix crashes on Homey's with older firmware"
   }
 }
