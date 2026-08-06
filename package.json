@@ -32,7 +32,7 @@
     "@athombv/data-types": "1.2.2",
     "@drenso/homey-log": "10.6900.0",
     "@drenso/homey-zigbee-library": "2.6.0",
-    "axios": "1.18.1",
+    "axios": "1.19.0",
     "crypto": "1.0.1",
     "homey-lib": "2.51.4",
     "homey-oauth2app": "3.6.0",
