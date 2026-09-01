@@ -4,16 +4,10 @@
   "sdk": 3,
   "brandColor": "#4f8dc8",
   "name": {
-    "en": "Shelly",
-    "nl": "Shelly"
+    "en": "Shelly (Legacy)"
   },
   "tags": {
     "en": [
-      "Shelly",
-      "Shelly Wave",
-      "Shelly Bluetooth"
-    ],
-    "nl": [
       "Shelly",
       "Shelly Wave",
       "Shelly Bluetooth"

@@ -1,8 +1,10 @@
-Deze Homey app stelt je in staat om een breed spectrum van Shelly apparaten aan te sturen.
+⚠️ Deze app is nu in legacy modus. De nieuwe Shelly Control app is de vervanger! ⚠️
 
-Bezoek het support topic op het community forum voor installatie instructies en aanvullende informatie.
+We zullen ervoor zorgen dat deze app blijft werken voor bestaande installaties, maar we raden je aan om de nieuwe Shelly Control app te gebruiken bij het toevoegen van nieuwe apparaten. Beide apps kunnen naast elkaar draaien, maar zorg ervoor dat je niet hetzelfde apparaat met beide apps toevoegt. Deze app blijft de enige officiële app voor eerste generatie Shelly apparaten. Als je een apparaat mist in de nieuwe Shelly Control app, laat het ons dan weten!
 
-De volgende apparaten worden ondersteund.
+Deze Homey app stelt je in staat om gen1 Shelly apparaten aan te sturen. Bezoek het support topic op het community forum voor installatie instructies en aanvullende informatie.
+
+De volgende apparaten worden ondersteund:
 
 1st generatie
 -------------

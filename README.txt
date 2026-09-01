@@ -1,8 +1,10 @@
-This Homey app allows you to control a wide variety of Shelly devices.
+⚠️ This app is now in legacy mode. Please use the new Shelly Control app instead! ⚠️
 
-Please visit the support topic on the community forum for installation instructions and further details.
+We will make sure that this app keeps working for existing installations, but we recommend you use the new Shelly Control app when adding new devices. Both apps can be run next to each other, but make sure to not add the same device with both apps. This app will remain the only official app for first gen Shelly devices. If you are missing any device in the new Shelly Control app, please let us know!
 
-The following devices are supported.
+This Homey app allows you to control your gen1 Shelly devices. Please visit the support topic on the community forum for installation instructions and further details.
+
+The following devices are supported:
 
 1st generation
 -------------
