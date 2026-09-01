@@ -1078,5 +1078,8 @@
   },
   "3.64.1": {
     "en": "Fix crashes on Homey's with older firmware"
+  },
+  "3.65.0": {
+    "en": "Marked app as legacy: use the Shelly Control app going forward!"
   }
 }
