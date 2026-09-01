@@ -5,6 +5,7 @@
   "name": {
     "en": "Shelly 1 Mini Gen4 (Matter)"
   },
+  "deprecated": true,
   "class": "socket",
   "capabilities": [
     "onoff"

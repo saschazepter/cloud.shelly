@@ -5,6 +5,7 @@
   "name": {
     "en": "Shelly EM Mini Gen4 (Matter)"
   },
+  "deprecated": true,
   "class": "socket",
   "capabilities": [
     "meter_power",

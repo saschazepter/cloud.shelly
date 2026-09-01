@@ -5,6 +5,7 @@
   "name": {
     "en": "Shelly 2PM Gen4 Cover mode (Zigbee)"
   },
+  "deprecated": true,
   "class": "windowcoverings",
   "capabilities": [
     "windowcoverings_set",

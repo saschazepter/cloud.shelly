@@ -5,6 +5,7 @@
   "name": {
     "en": "Shelly 1PM Gen4 (Matter)"
   },
+  "deprecated": true,
   "class": "socket",
   "capabilities": [
     "meter_power",

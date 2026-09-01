@@ -5,6 +5,7 @@
   "name": {
     "en": "Shelly BLU TRV (Zigbee)"
   },
+  "deprecated": true,
   "class": "thermostat",
   "capabilities": [
     "thermostat_mode",

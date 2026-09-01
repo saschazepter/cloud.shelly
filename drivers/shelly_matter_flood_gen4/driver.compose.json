@@ -5,6 +5,7 @@
   "name": {
     "en": "Shelly Flood Gen4 (Matter)"
   },
+  "deprecated": true,
   "class": "sensor",
   "capabilities": [
     "alarm_water"

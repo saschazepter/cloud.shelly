@@ -5,6 +5,7 @@
   "name": {
     "en": "Shelly 1 Gen4 (Zigbee)"
   },
+  "deprecated": true,
   "class": "socket",
   "capabilities": [
     "onoff"

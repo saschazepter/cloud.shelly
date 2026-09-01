@@ -4327,6 +4327,7 @@
       "name": {
         "en": "Shelly 1 Gen4 (Matter)"
       },
+      "deprecated": true,
       "class": "socket",
       "capabilities": [
         "onoff"
@@ -4357,6 +4358,7 @@
       "name": {
         "en": "Shelly 1 Mini Gen4 (Matter)"
       },
+      "deprecated": true,
       "class": "socket",
       "capabilities": [
         "onoff"
@@ -4387,6 +4389,7 @@
       "name": {
         "en": "Shelly 1PM Gen4 (Matter)"
       },
+      "deprecated": true,
       "class": "socket",
       "capabilities": [
         "meter_power",
@@ -4423,6 +4426,7 @@
       "name": {
         "en": "Shelly 1PM Mini Gen4 (Matter)"
       },
+      "deprecated": true,
       "class": "socket",
       "capabilities": [
         "meter_power",
@@ -4459,6 +4463,7 @@
       "name": {
         "en": "Shelly 2PM Gen4 Cover mode (Matter)"
       },
+      "deprecated": true,
       "class": "windowcoverings",
       "capabilities": [
         "windowcoverings_set",
@@ -4490,6 +4495,7 @@
       "name": {
         "en": "Shelly 2PM Gen4 Switch mode (Matter)"
       },
+      "deprecated": true,
       "class": "socket",
       "capabilities": [
         "meter_power",
@@ -4525,6 +4531,7 @@
       "name": {
         "en": "Shelly EM Mini Gen4 (Matter)"
       },
+      "deprecated": true,
       "class": "socket",
       "capabilities": [
         "meter_power",
@@ -4560,6 +4567,7 @@
       "name": {
         "en": "Shelly Flood Gen4 (Matter)"
       },
+      "deprecated": true,
       "class": "sensor",
       "capabilities": [
         "alarm_water"
@@ -22020,6 +22028,7 @@
       "name": {
         "en": "Shelly 1 Gen4 (Zigbee)"
       },
+      "deprecated": true,
       "class": "socket",
       "capabilities": [
         "onoff"
@@ -22067,6 +22076,7 @@
       "name": {
         "en": "Shelly 1 Mini Gen4 (Zigbee)"
       },
+      "deprecated": true,
       "class": "socket",
       "capabilities": [
         "onoff"
@@ -22114,6 +22124,7 @@
       "name": {
         "en": "Shelly 1PM Gen4 (Zigbee)"
       },
+      "deprecated": true,
       "class": "socket",
       "capabilities": [
         "meter_power",
@@ -22170,6 +22181,7 @@
       "name": {
         "en": "Shelly 1PM Mini Gen4 (Zigbee)"
       },
+      "deprecated": true,
       "class": "socket",
       "capabilities": [
         "meter_power",
@@ -22226,6 +22238,7 @@
       "name": {
         "en": "Shelly 2PM Gen4 Cover mode (Zigbee)"
       },
+      "deprecated": true,
       "class": "windowcoverings",
       "capabilities": [
         "windowcoverings_set",
@@ -22274,6 +22287,7 @@
       "name": {
         "en": "Shelly 2PM Gen4 Switch mode (Zigbee)"
       },
+      "deprecated": true,
       "class": "socket",
       "capabilities": [
         "meter_power",
@@ -22359,6 +22373,7 @@
       "name": {
         "en": "Shelly BLU TRV (Zigbee)"
       },
+      "deprecated": true,
       "class": "thermostat",
       "capabilities": [
         "thermostat_mode",
@@ -22466,6 +22481,7 @@
       "name": {
         "en": "Shelly EM Mini Gen4 (Zigbee)"
       },
+      "deprecated": true,
       "class": "socket",
       "capabilities": [
         "meter_power",
@@ -22519,6 +22535,7 @@
       "name": {
         "en": "Shelly Flood Gen4 (Zigbee)"
       },
+      "deprecated": true,
       "class": "sensor",
       "capabilities": [
         "alarm_water",
@@ -22573,6 +22590,7 @@
       "name": {
         "en": "Shelly Power Strip 4 Gen4 (Zigbee)"
       },
+      "deprecated": true,
       "class": "socket",
       "capabilities": [
         "meter_power",

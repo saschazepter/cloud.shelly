@@ -5,6 +5,7 @@
   "name": {
     "en": "Shelly 2PM Gen4 Switch mode (Matter)"
   },
+  "deprecated": true,
   "class": "socket",
   "capabilities": [
     "meter_power",

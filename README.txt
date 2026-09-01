@@ -153,19 +153,3 @@ Shelly Wave Pro Dimmer 2PM
 Shelly Wave Pro Shutter
 Shelly Wave Outdoor Plug S
 Shelly Wave Shutter
-
-Zigbee
--------------
-Shelly 1 Gen4
-Shelly 1 Mini Gen4
-Shelly 1PM Gen4
-Shelly 1PM Mini Gen4
-Shelly 2PM Gen4
-Shelly BLU TRV
-Shelly EM Mini Gen4
-Shelly Flood Gen4
-Shelly Power Strip 4 Gen4
-
-Matter
--------------
-Homey supports all Matter devices by default; the device list on the store page is solely to indicate Matter support availability of the device.
