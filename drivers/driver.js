@@ -102,7 +102,6 @@ class ShellyDriver extends Homey.Driver {
 
           if (typeof device_config === 'undefined') {
             this.error('No device config found for device with hostname', hostname);
-            this.homey.app.homeyLog.captureMessage(`Device config missing for hostname ${hostname}`).catch(this.error);
             throw new Error(this.homey.__('pair.no_device_config') + ' Device has hostname: ' + hostname);
           }
 
@@ -155,7 +154,6 @@ class ShellyDriver extends Homey.Driver {
 
                   if (typeof device_config === 'undefined') {
                     this.error('No device config found for device with hostname', hostname + ', ' + result.profile);
-                    this.homey.app.homeyLog.captureMessage(`Device config missing for hostname ${hostname} and profile ${result.profile}`).catch(this.error);
                     throw new Error(this.homey.__('pair.no_device_config') + ' Device has hostname: ' + hostname + ', ' + result.profile);
                   }
 
@@ -243,7 +241,6 @@ class ShellyDriver extends Homey.Driver {
 
         if (typeof device_config === 'undefined') {
           this.log('No device config found for device with hostname', hostname);
-          this.homey.app.homeyLog.captureMessage(`Device config missing for hostname ${hostname}`).catch(this.error);
           throw new Error(this.homey.__('pair.no_device_config') + ' Device has hostname: ' + hostname);
         }
 
@@ -284,7 +281,6 @@ class ShellyDriver extends Homey.Driver {
 
                 if (typeof device_config === 'undefined') {
                   this.error('No device config found for device with hostname', hostname + ', ' + result.profile);
-                  this.homey.app.homeyLog.captureMessage(`Device config missing for hostname ${hostname} and profile ${result.profile}`).catch(this.error);
                   throw new Error(this.homey.__('pair.no_device_config') + ' Device has hostname: ' + hostname + ', ' + result.profile);
                 }
 
