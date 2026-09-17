@@ -1081,5 +1081,8 @@
   },
   "3.65.0": {
     "en": "Marked app as legacy: use the Shelly Control app going forward!"
+  },
+  "3.65.1": {
+    "en": "Direct users to new Shelly Control app when WiFi device configuration is not found"
   }
 }
