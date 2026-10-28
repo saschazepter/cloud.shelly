@@ -35,7 +35,7 @@
     "axios": "1.20.0",
     "homey-lib": "2.52.3",
     "homey-oauth2app": "3.7.4",
-    "homey-zigbeedriver": "2.2.18",
+    "homey-zigbeedriver": "2.3.0",
     "homey-zwavedriver": "2.2.6",
     "http-auth-client": "0.4.1",
     "jwt-decode": "4.0.0",
